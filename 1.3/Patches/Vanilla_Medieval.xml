@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<!-- Change Research Prerequisites -->
+	
+	<!-- Greatbow -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingDef[defName = "Bow_Great"]/recipeMaker/researchPrerequisite
+		</xpath>
+		<value>
+			<researchPrerequisite>DuneRef_Archery</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<!-- ComplexClothing -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingDef[defName = "HandTailoringBench"]/researchPrerequisites
+		</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DuneRef_ComplexClothing</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingDef[defName = "ElectricTailoringBench"]/researchPrerequisites
+		</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DuneRef_ComplexClothing</li>
+				<li>DuneRef_Electricity</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingDef[
+				   defName = "Apparel_CowboyHat"
+				or defName = "Apparel_Tuque"
+				or defName = "Apparel_Pants"
+				or defName = "Apparel_BasicShirt"
+				or defName = "Apparel_CollarShirt"
+				or defName = "Apparel_Duster"
+				or defName = "Apparel_Jacket"
+				or defName = "Apparel_Tailcap"
+				or defName = "Apparel_Shadecone"
+				or defName = "Apparel_Flophat"
+			]/recipeMaker/researchPrerequisite
+		</xpath>
+		<value>
+			<researchPrerequisite>DuneRef_ComplexClothing</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<!-- ComplexFurniture -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingDef[
+				   defName = "Bed"
+				or defName = "DoubleBed"
+				or defName = "DiningChair"
+				or defName = "Armchair"
+				or defName = "EndTable"
+				or defName = "Shelf"
+				or defName = "Dresser"
+				or defName = "ChessTable"
+				or defName = "PokerTable"
+				or defName = "BilliardsTable"
+				or defName = "ToolCabinet"
+				or defName = "Sarcophagus"
+				or @Name = "SteleBase"
+				or defName = "Vent"
+				or defName = "Drape"
+				or defName = "Brazier"
+				or defName = "Throne"
+			]/researchPrerequisites
+		</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DuneRef_Masonry</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingDef[
+				   defName = "RoyalBed"
+				or defName = "GrandThrone"
+			]/researchPrerequisites
+		</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DuneRef_Construction</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<!-- CarpetMaking -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/TerrainDef[
+				   @Name = "CarpetBase"
+				or @Name = "CarpetFineBase"
+				or @Name = "IdeoCarpetBase"
+			]/researchPrerequisites
+		</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DuneRef_Currency</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<!-- Smithing -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/TerrainDef[@Name = "TileMetalBase"]/researchPrerequisites
+		</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DuneRef_BronzeWorking</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingDef[defName = "FueledSmithy"]/researchPrerequisites
+		</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DuneRef_BronzeWorking</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingDef[defName = "ElectricSmithy"]/researchPrerequisites
+		</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DuneRef_BronzeWorking</li>
+				<li>DuneRef_Electricity</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingDef[
+				   defName = "Apparel_SimpleHelmet"
+				or defName = "MeleeWeapon_BreachAxe"
+				or defName = "MeleeWeapon_Mace"
+				or defName = "MeleeWeapon_Gladius"
+				or defName = "MeleeWeapon_Ikwa"
+				or defName = "MeleeWeapon_Axe"
+			]/recipeMaker/researchPrerequisite
+		</xpath>
+		<value>
+			<researchPrerequisite>DuneRef_BronzeWorking</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<!-- Stonecutting -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/TerrainDef[
+				   defName = "Concrete"
+				or defName = "PavedTile"
+				or @Name = "TileStoneBase"
+				or @Name = "FineTileStoneBase"
+				or @Name = "IdeoStoneTileBase"
+			]/researchPrerequisites
+		</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DuneRef_Mining</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingDef[
+				   defName = "MorbidSlab_Medium"
+				or defName = "MorbidSlab_Broad"
+				or defName = "TableStonecutter"
+			]/researchPrerequisites
+		</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DuneRef_Mining</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/MemeDef[defName = "Tunneler"]/startingResearchProjects
+		</xpath>
+		<value>
+			<startingResearchProjects>
+				<li>DuneRef_Mining</li>
+			</startingResearchProjects>
+		</value>
+	</Operation>
+
+	<!-- LongBlades -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingDef[
+				   defName = "MeleeWeapon_LongSword"
+				or defName = "MeleeWeapon_Spear"
+				or defName = "MeleeWeapon_Warhammer"
+			]/recipeMaker/researchPrerequisite
+		</xpath>
+		<value>
+			<researchPrerequisite>DuneRef_MilitaryTactics</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<!-- PlateArmor -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingDef[defName = "Apparel_PlateArmor"]/recipeMaker/researchPrerequisite
+		</xpath>
+		<value>
+			<researchPrerequisite>DuneRef_MilitaryTactics</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<!-- NobleApparel -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingDef[
+				   @Name = "ApparelShirtRoyalTier2Base"
+				or @Name = "ApparelVestRoyalTier5Base"
+				or @Name = "ApparelHatRoyalTier2"
+				or defName = "Apparel_Beret"
+			]/recipeMaker/researchPrerequisite
+		</xpath>
+		<value>
+			<researchPrerequisite>DuneRef_ComplexClothing</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<!-- RoyalApparel -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingDef[
+				   defName = "Apparel_RobeRoyal"
+				or defName = "Apparel_Coronet"
+				or defName = "Apparel_Crown"
+			]/recipeMaker/researchPrerequisite
+		</xpath>
+		<value>
+			<researchPrerequisite>DuneRef_ComplexClothing</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<!-- Harp -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingDef[defName = "Harp"]/recipeMaker/researchPrerequisite
+		</xpath>
+		<value>
+			<researchPrerequisite>DuneRef_ExpandedCulture</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingDef[defName = "Harp"]/researchPrerequisites
+		</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DuneRef_ExpandedCulture</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<!-- Harpsichord -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingDef[defName = "Harpsichord"]/recipeMaker/researchPrerequisite
+		</xpath>
+		<value>
+			<researchPrerequisite>DuneRef_ExpandedCulture</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingDef[defName = "Harpsichord"]/researchPrerequisites
+		</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DuneRef_ExpandedCulture</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<!-- Remove Old Research Nodes -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/ResearchProjectDef[
+				   defName = "NobleApparel"
+				or defName = "RoyalApparel"
+				or defName = "Harp"
+				or defName = "Harpsichord"
+			]
+		</xpath>
+	</Operation>
+
+	<!-- <Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/ResearchProjectDef[
+				   defName = "Greatbow"
+				or defName = "ComplexClothing" (SmokepopBelt, ShieldBelt, ReconArmor, PoweredArmor)
+				or defName = "ComplexFurniture" (TubeTelevision)
+				or defName = "CarpetMaking"
+				or defName = "Smithing" (Machining)
+				or defName = "Stonecutting"
+				or defName = "LongBlades"
+				or defName = "PlateArmor" (Flak Armor)
+				or defName = "NobleApparel"
+				or defName = "RoyalApparel"
+				or defName = "Harp"
+				or defName = "Harpsichord"
+			]
+		</xpath>
+	</Operation> -->
+
+</Patch>

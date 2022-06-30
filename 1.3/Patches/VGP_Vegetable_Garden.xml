@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<!-- Change Research Prerequisites -->
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				/Defs/ThingDef[@Name = "VG_FruitTree"]/plant/sowResearchPrerequisites
+			</xpath>
+			<value>
+				<sowResearchPrerequisites>
+					<li>DuneRef_Pottery</li>
+				</sowResearchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				/Defs/ThingDef[defName = "PlantPot_BambooBonsai"]/researchPrerequisites 
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_Pottery</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				/Defs/ThingDef[defName = "VG_FoodShelf"]/researchPrerequisites 
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_Masonry</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				/Defs/ThingDef[
+					   defName = "Plant_Snowbeet"
+					or defName = "Plant_redlentil"
+					or defName = "Plant_bean"
+					or defName = "Plant_Olivetree"
+					or defName = "Plantpineapple"
+					or defName = "Plantcloudberry"
+					or defName = "Plantgooseberry"
+					or defName = "Plantgrape"
+					or defName = "Plantblueberry"
+					or defName = "Plantwatermelon"
+					or defName = "VG_Plant_Agave"
+					or defName = "PlantTreeIronwood"
+					or defName = "Plant_Strawberry"
+				]/plant/sowResearchPrerequisites
+			</xpath>
+			<value>
+				<sowResearchPrerequisites>
+					<li>DuneRef_Pottery</li>
+				</sowResearchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="PatchOperationRemove">
+			<xpath>
+				/Defs/ThingDef[
+					   defName = "PlantAppletree"
+					or defName = "PlantBananaTree"
+					or defName = "PlantorangeTree"
+					or defName = "PlantPeachTree"
+					or defName = "DateTree"
+					or defName = "FigTree"
+					or defName = "Coconuttree"
+					or defName = "PlantCherrytree"
+				]/plant/sowResearchPrerequisites
+			</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				/Defs/ThingDef[
+					   defName = "Plantcocoa"
+					or defName = "Plant_TreeBee"
+					or defName = "VG_PlantAmbrosia"
+				]/plant/sowResearchPrerequisites
+			</xpath>
+			<value>
+				<sowResearchPrerequisites>
+					<li>DuneRef_Irrigation</li>
+				</sowResearchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+	
+	<!-- Remove Old Research Nodes -->
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="PatchOperationRemove">
+			<xpath>
+				/Defs/ResearchProjectDef[
+					   defName="agriculture"
+					or defName="agricultureII"
+					or defName="agricultureIII"
+					or defName="VG_Ambrosia"
+					or defName="agricultureIV"
+					or defName="VG_HoneyTree"
+				]
+			</xpath>
+		</match>
+	</Operation>
+	
+</Patch>

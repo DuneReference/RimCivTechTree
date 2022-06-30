@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<!-- Change Research Prerequisites -->
+
+	<!-- Faction: VFEC_CentralRepublic -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/FactionDef[defName = "VFEC_CentralRepublic"]/modExtensions/li/senatorResearch
+			</xpath>
+			<value>
+				<senatorResearch>
+					<li>DuneRef_Pottery</li>
+					<li>DuneRef_Health</li>
+					<li>DuneRef_Mining</li>
+					<li>DuneRef_Clothing</li>
+					<li>DuneRef_Masonry</li>
+				</senatorResearch>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/FactionDef[defName = "VFEC_CentralRepublic"]/modExtensions/li/finalResearch
+			</xpath>
+			<value>
+				<finalResearch>DuneRef_WritingAndCulture</finalResearch>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- Faction: VFEC_WesternRepublic -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/FactionDef[defName = "VFEC_WesternRepublic"]/modExtensions/li/senatorResearch
+			</xpath>
+			<value>
+				<senatorResearch>
+					<li>DuneRef_IronWorking</li>
+					<li>DuneRef_Engineering</li>
+					<li>DuneRef_Construction</li>
+					<li>DuneRef_Irrigation</li>
+					<li>DuneRef_Archery</li>
+				</senatorResearch>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/FactionDef[defName = "VFEC_WesternRepublic"]/modExtensions/li/finalResearch
+			</xpath>
+			<value>
+				<finalResearch>DuneRef_BronzeWorking</finalResearch>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- Faction: VFEC_EasternRepublic -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/FactionDef[defName = "VFEC_EasternRepublic"]/modExtensions/li/senatorResearch
+			</xpath>
+			<value>
+				<senatorResearch>
+					<li>DuneRef_ComplexClothing</li>
+					<li>DuneRef_Currency</li>
+					<li>DuneRef_ExpandedCulture</li>
+					<li>DuneRef_MilitaryTactics</li>
+					<li>DuneRef_Machinery</li>
+				</senatorResearch>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/FactionDef[defName = "VFEC_EasternRepublic"]/modExtensions/li/finalResearch
+			</xpath>
+			<value>
+				<finalResearch>DuneRef_MilitaryEngineering</finalResearch>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- VFEC_MeatDrying -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[defName = "VFEC_MeatDryingRack"]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_Pottery</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- VFEC_Mosaics -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/TerrainDef[@Name = "VFEC_MosaicsStoneBase"]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_Mining</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- VFEC_Thermaebath -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[defName = "VFEC_Thermaebath"]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_Mining</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- VFEC_BronzeWorking -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/RecipeDef[defName = "VFEC_Make_Bronze"]/researchPrerequisite
+			</xpath>
+			<value>
+				<researchPrerequisite>
+					<li>DuneRef_BronzeWorking</li>
+				</researchPrerequisite>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/TerrainDef[defName = "VFEC_BronzeTile"]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_BronzeWorking</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- VFEC_Togas -->
+	<!-- VFEC_LegionnaireArmor -->
+	<!-- VFEC_CenturionArmor -->
+	<!-- VFEC_LegionaryArmaments -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[
+					   defName = "VFEC_Wreath"
+					or defName = "VFEC_Toga"
+				]/recipeMaker/researchPrerequisite
+			</xpath>
+			<value>
+				<researchPrerequisite>DuneRef_Clothing</researchPrerequisite>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[
+					   defName = "VFEC_Apparel_LegionnaireHelmet"
+					or defName = "VFEC_Apparel_CenturionHelmet"
+					or defName = "VFEC_Apparel_LegionnaireArmor"
+					or defName = "VFEC_Apparel_CenturionArmor"
+					or defName = "VFEC_MeleeWeapon_Spatha"
+					or defName = "VFEC_MeleeWeapon_Dagger"
+					or defName = "VFEC_Javelin"
+				]/recipeMaker/researchPrerequisite
+			</xpath>
+			<value>
+				<researchPrerequisite>DuneRef_IronWorking</researchPrerequisite>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[defName = "VFEC_Tent"]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_IronWorking</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- VFEC_TemperatureControl -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[
+					   defName = "VFEC_LargePassiveCooler"
+					or defName = "VFEC_HeatStones"
+				]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_Masonry</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- VFEC_DramaAndComedy -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[defName = "VFEC_TheatreStage"]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_WritingAndCulture</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- VFEC_CraftingBench -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[defName = "VFEC_CraftingBench"]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_BronzeWorking</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- VFEC_CementMaking -->
+	<!-- VFEC_WoodfiredCrematorium -->
+	<!-- VFEC_Beacons -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[
+					   defName = "VFEC_ConcretePress"
+					or defName = "VFEC_WoodFiredCrematorium"
+					or defName = "VFEC_Beacon"
+				]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_Masonry</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- VFEC_TyrianProduction -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[defName = "VFEC_TyrianFarm"]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_Clothing</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- VFEC_HeavyShieldMaking -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[defName = "VFEC_Shield_Heavy"]/recipeMaker/researchPrerequisite
+			</xpath>
+			<value>
+				<researchPrerequisite Inherit="False">DuneRef_IronWorking</researchPrerequisite>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- VFEC_Scorpion -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[defName = "VFEC_Turret_Scorpion"]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_Engineering</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- VFEC_RoadBuilding -->
+	<!-- PROB NEED A HARMONY PATCH WHEN REMOVING THIS -->
+
+	<!-- Remove Old Research Nodes -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationRemove">
+			<xpath>
+				/Defs/ResearchProjectDef[
+					   defName = "VFEC_MeatDrying"
+					or defName = "VFEC_Mosaics"
+					or defName = "VFEC_Thermaebath"
+					or defName = "VFEC_BronzeWorking"
+					or defName = "VFEC_Togas"
+					or defName = "VFEC_TemperatureControl"
+					or defName = "VFEC_DramaAndComedy"
+					or defName = "VFEC_CraftingBench"
+					or defName = "VFEC_CementMaking"
+					or defName = "VFEC_WoodfiredCrematorium"
+					or defName = "VFEC_TyrianProduction"
+					or defName = "VFEC_HeavyShieldMaking"
+					or defName = "VFEC_LegionaryArmaments"
+					or defName = "VFEC_LegionnaireArmor"
+					or defName = "VFEC_CenturionArmor"
+					or defName = "VFEC_Scorpion"
+					or defName = "VFEC_Beacons"
+				]
+			</xpath>
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<!-- Fix Research References -->
+
+	<!-- ScenarioDefs -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ScenarioDef[defName = "TheRichExplorer"]/scenario/parts/li[def = "StartingResearch"]/project
+		</xpath>
+		<value>
+			<project>DuneRef_AdvancedBallistics</project>
+		</value>
+	</Operation>
+
+	<!-- MemeDefs -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/MemeDef[defName = "Tunneler"]/startingResearchProjects
+		</xpath>
+		<value>
+			<startingResearchProjects>
+				<li>DuneRef_AdvancedBallistics</li>
+			</startingResearchProjects>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/MemeDef[defName = "TreeConnection"]/startingResearchProjects
+		</xpath>
+		<value>
+			<startingResearchProjects>
+				<li>DuneRef_Pottery</li>
+			</startingResearchProjects>
+		</value>
+	</Operation>
+
+	<!-- ThingSetMakerDefs -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ThingSetMakerDef[defName = "Reward_ItemsStandard"]/root/options/li/thingSetMaker/options/li/thingSetMaker/thingSetMaker[researchProject="MultiAnalyzer"]/researchProject
+		</xpath>
+		<value>
+			<researchProject>DuneRef_Plastics</researchProject>
+		</value>
+	</Operation>
+
+</Patch>

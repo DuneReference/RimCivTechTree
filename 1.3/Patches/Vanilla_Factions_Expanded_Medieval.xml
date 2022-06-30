@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<!-- Change Research Prerequisites -->
+
+	<!-- Brewing -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[defName = "VFEM_WineBarrel"]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_WritingAndCulture</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- Smithing -->
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[defName = "VFEM_MeleeWeapon_HeavyMace"]/recipeMaker/researchPrerequisite
+			</xpath>
+			<value>
+				<researchPrerequisite>DuneRef_BronzeWorking</researchPrerequisite>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- PlateArmor -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[
+					   defName = "VFEM_Apparel_PlateHelmetLight"
+					or defName = "VFEM_Apparel_PlateHelmetHeavy"
+					or defName = "VFEM_Apparel_PlateArmorHeavy"
+				]/recipeMaker/researchPrerequisite
+			</xpath>
+			<value>
+				<researchPrerequisite>DuneRef_MilitaryTactics</researchPrerequisite>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- VFEM_HeavyCrossbow -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[defName = "VFEM_Bow_HeavyCrossbow"]/recipeMaker/researchPrerequisite
+			</xpath>
+			<value>
+				<researchPrerequisite>DuneRef_Machinery</researchPrerequisite>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- VFEM_NobleMedievalApparel -->
+	<!-- VFEM_PlagueMask -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[
+					   defName = "VFEM_Apparel_JesterHat"
+					or defName = "VFEM_Apparel_DameHat"
+					or defName = "VFEM_Apparel_KingsCrown"
+					or defName = "VFEM_Apparel_PlagueMask"
+					or defName = "VFEM_Apparel_JesterOutfit"
+					or defName = "VFEM_Apparel_DameDress"
+					or defName = "VFEM_Apparel_KingsRobes"
+				]/recipeMaker/researchPrerequisite
+			</xpath>
+			<value>
+				<researchPrerequisite>DuneRef_ComplexClothing</researchPrerequisite>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- VFEM_MeatSmoking -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[defName = "VFEM_MeatSmoker"]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_Masonry</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- VFEM_TreeHealroot -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[defName = "VFEM_Plant_TreeHealroot"]/plant/sowResearchPrerequisites
+			</xpath>
+			<value>
+				<sowResearchPrerequisites Inherit="False">
+					<li>DuneRef_Irrigation</li>
+				</sowResearchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- VGP Vegetable Garden -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>VGP Vegetable Garden</li>
+			</mods>
+			<match Class="PatchOperationReplace">
+				<xpath>
+					Defs/ThingDef[defName = "VFEM_Plant_Grape"]/plant/sowResearchPrerequisites
+				</xpath>
+				<value>
+					<sowResearchPrerequisites>
+						<li>DuneRef_Pottery</li>
+					</sowResearchPrerequisites>
+				</value>
+			</match>
+		</match>
+	</Operation>
+
+	<!-- Remove Old Research Nodes -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval</li>
+		</mods>
+		<match Class="PatchOperationRemove">
+			<xpath>
+				/Defs/ResearchProjectDef[
+					   defName = "VFEM_TreeHealroot"
+					or defName = "VFEM_MeatSmoking"
+					or defName = "VFEM_NobleMedievalApparel"
+					or defName = "VFEM_PlagueMask"
+					or defName = "VFEM_HeavyCrossbow"
+				]
+			</xpath>
+		</match>
+	</Operation>
+
+</Patch>

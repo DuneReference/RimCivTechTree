@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<!-- Change Research Prerequisites -->
+
+	<!-- TubeTelevision -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[defName = "Radio_Industrial"]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_Radio</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[
+					defName = "Joy_Arcade"
+					or defName = "Joy_InudstrialComputer"
+				]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_Computers</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- FlatscreenTelevision -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[
+					defName = "Radio_Spacer"
+					or defName = "Joy_ModernComputer"
+				]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_Lasers</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- AirConditioning -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[defName = "AirConditioningUnit"]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_Refrigeration</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- ComplexFurniture -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[
+					   defName = "Seat_SquareChair"
+					or defName = "Table_Counter"
+					or defName = "Misc_FileCabinet"
+					or defName = "Shelf_1x1c"
+					or defName = "Shelf_WeaponRack"
+				]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_Masonry</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- Electricity -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[defName = "Table_LightEndTable"]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_Electricity</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- MF_BasicFurniture -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[
+					defName = "Bed_Simple"
+					or defName = "Seat_Bench"
+					or defName = "Table_1x1c"
+				]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_Mining</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- MF_ModernFurniture -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[defName = "Joy_Piano"]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_ExpandedCulture</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[
+					defName = "Joy_RouletteTable"
+					or defName = "Joy_DartsBoard"
+					or defName = "Joy_PunchingBag"
+					or defName = "Bed_Ergonomic"
+					or defName = "Bed_DoubleErgonomic"
+					or defName = "Table_Wardrobe"
+					or defName = "Seat_ModernChair"
+				]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_Plastics</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[defName = "Light_ModernLamp"]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_Plastics</li>
+					<li>Electricity</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- MF_RoyalFurniture -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[
+					defName = "Bed_Kingsize"
+					or defName = "Table_RoyalEndTable"
+					or defName = "Table_RoyalDresser"
+					or defName = "Seat_RoyalChair"
+					or defName = "Seat_RoyalArmchair"
+					or @Name = "RoyalTableDesc"
+				]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_Construction</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- MF_WasteDisposal -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ThingDef[
+					defName = "Bin_Small"
+					or defName = "Bin_Large"
+				]/researchPrerequisites
+			</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DuneRef_Industrialization</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- Remove Old Research Nodes -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+		<match Class="PatchOperationRemove">
+			<xpath>
+				/Defs/ResearchProjectDef[
+					   defName = "MF_RoyalFurniture"
+					or defName = "MF_WasteDisposal"
+				]
+			</xpath>
+		</match>
+	</Operation>
+
+	<!-- <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+		<match Class="PatchOperationRemove">
+			<xpath>
+				/Defs/ResearchProjectDef[
+					defName = "MF_BasicFurniture" (ComplexFurniture)
+					or defName = "MF_ModernFurniture"
+					or defName = "MF_RoyalFurniture"
+					or defName = "MF_WasteDisposal"
+				]
+			</xpath>
+		</match>
+	</Operation> -->
+
+</Patch>
