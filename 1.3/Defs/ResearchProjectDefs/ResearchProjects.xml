@@ -47,6 +47,13 @@
 		<techLevel>Neolithic</techLevel>
  		<researchViewX>0</researchViewX>
 		<researchViewY>7</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>Stonecutting</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -70,6 +77,14 @@
 		</prerequisites>
  		<researchViewX>1</researchViewX>
 		<researchViewY>3</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>Cocoa</li>
+					<li>Devilstrand</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -84,6 +99,13 @@
 		</prerequisites>
  		<researchViewX>1</researchViewX>
 		<researchViewY>4</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>Brewing</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -97,6 +119,14 @@
 		</prerequisites>
  		<researchViewX>1</researchViewX>
 		<researchViewY>6</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>RecurveBow</li>
+					<li>Greatbow</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -110,6 +140,13 @@
 		</prerequisites>
  		<researchViewX>2</researchViewX>
 		<researchViewY>6</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>ComplexFurniture</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -123,6 +160,13 @@
 		</prerequisites>
  		<researchViewX>2</researchViewX>
 		<researchViewY>7</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>Smithing</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 	
 	<!-- Classical Era -->
@@ -139,6 +183,13 @@
 		</prerequisites>
  		<researchViewX>3</researchViewX>
 		<researchViewY>2</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>ComplexClothing</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -153,6 +204,13 @@
 		</prerequisites>
  		<researchViewX>3</researchViewX>
 		<researchViewY>4</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>CarpetMaking</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -179,6 +237,13 @@
 		</prerequisites>
  		<researchViewX>4</researchViewX>
 		<researchViewY>1</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>DrugProduction</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -207,6 +272,13 @@
 		</prerequisites>
  		<researchViewX>4</researchViewX>
 		<researchViewY>8</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>WatermillGenerator</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 	
 	<!-- Medieval Era -->
@@ -223,6 +295,14 @@
 		</prerequisites>
  		<researchViewX>5</researchViewX>
 		<researchViewY>2</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>LongBlades</li>
+					<li>PlateArmor</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -339,6 +419,17 @@
 		</prerequisites>
  		<researchViewX>10</researchViewX>
 		<researchViewY>3</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>PsychiteRefining</li>
+					<li>WakeUpProduction</li>
+					<li>GoJuiceProduction</li>
+					<li>PenoxycylineProduction</li>
+					<li>SterileMaterials</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -353,6 +444,14 @@
 		</prerequisites>
  		<researchViewX>10</researchViewX>
 		<researchViewY>7</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>Machining</li>
+					<li>Gunsmithing</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<!-- Modern Era -->
@@ -369,6 +468,15 @@
 		</prerequisites>
  		<researchViewX>11</researchViewX>
 		<researchViewY>4</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>FlakArmor</li>
+					<li>BlowbackOperation</li>
+					<li>GasOperation</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -408,6 +516,15 @@
 		</prerequisites>
  		<researchViewX>12</researchViewX>
 		<researchViewY>1</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>Electricity</li>
+					<li>Batteries</li>
+					<li>ColoredLights</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -422,6 +539,13 @@
 		</prerequisites>
  		<researchViewX>12</researchViewX>
 		<researchViewY>2</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>TransportPod</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -436,6 +560,14 @@
 		</prerequisites>
  		<researchViewX>12</researchViewX>
 		<researchViewY>3</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>NutrientPaste</li>
+					<li>SmokepopBelt</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -450,6 +582,14 @@
 		</prerequisites>
  		<researchViewX>12</researchViewX>
 		<researchViewY>6</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>IEDs</li>
+					<li>Mortars</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -464,6 +604,14 @@
 		</prerequisites>
  		<researchViewX>13</researchViewX>
 		<researchViewY>3</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>DeepDrilling</li>
+					<li>GroundPenetratingScanner</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<!-- Atomic Era -->
@@ -480,6 +628,13 @@
 		</prerequisites>
  		<researchViewX>14</researchViewX>
 		<researchViewY>1</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>AirConditioning</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -508,6 +663,13 @@
 		</prerequisites>
  		<researchViewX>14</researchViewX>
 		<researchViewY>4</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>GunTurrets</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -521,6 +683,16 @@
 		</prerequisites>
  		<researchViewX>14</researchViewX>
 		<researchViewY>6</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>Autodoors</li>
+					<li>MicroelectronicsBasics</li>
+					<li>MultiAnalyzer</li>
+					<li>Fabrication</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -535,6 +707,16 @@
 		</prerequisites>
  		<researchViewX>14</researchViewX>
 		<researchViewY>7</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>BiofuelRefining</li>
+					<li>Hydroponics</li>
+					<li>GeothermalPower</li>
+					<li>MoisturePump</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -548,6 +730,16 @@
 		</prerequisites>
  		<researchViewX>14</researchViewX>
 		<researchViewY>8</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>Prosthetics</li>
+					<li>HospitalBed</li>
+					<li>MedicineProduction</li>
+					<li>VitalsMonitor</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -574,6 +766,15 @@
 		</prerequisites>
  		<researchViewX>15</researchViewX>
 		<researchViewY>3</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>PackagedSurvivalMeal</li>
+					<li>PrecisionRifling</li>
+					<li>MultibarrelWeapons</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -602,6 +803,15 @@
 		</prerequisites>
  		<researchViewX>15</researchViewX>
 		<researchViewY>6</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>SolarPanels</li>
+					<li>Firefoam</li>
+					<li>AdvancedFabrication</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<!-- Information Era -->
@@ -618,6 +828,13 @@
 		</prerequisites>
  		<researchViewX>16</researchViewX>
 		<researchViewY>1</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>TubeTelevision</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -632,6 +849,15 @@
 		</prerequisites>
  		<researchViewX>16</researchViewX>
 		<researchViewY>4</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>LongRangeMineralScanner</li>
+					<li>HeavyTurrets</li>
+					<li>SniperTurret</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -645,6 +871,13 @@
 		</prerequisites>
  		<researchViewX>16</researchViewX>
 		<researchViewY>5</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>FlatscreenTelevision</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -672,6 +905,13 @@
 		</prerequisites>
  		<researchViewX>16</researchViewX>
 		<researchViewY>7</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>ShieldBelt</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -745,6 +985,13 @@
 		</prerequisites>
  		<researchViewX>18</researchViewX>
 		<researchViewY>4</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>Bionics</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -760,6 +1007,18 @@
 		</prerequisites>
  		<researchViewX>18</researchViewX>
 		<researchViewY>5</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>ShipBasics</li>
+					<li>ShipCryptosleep</li>
+					<li>ShipReactor</li>
+					<li>ShipEngine</li>
+					<li>ShipComputerCore</li>
+					<li>ShipSensorCluster</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -773,6 +1032,14 @@
 		</prerequisites>
  		<researchViewX>18</researchViewX>
 		<researchViewY>7</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>ReconArmor</li>
+					<li>PoweredArmor</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -830,6 +1097,13 @@
 		</prerequisites>
  		<researchViewX>20</researchViewX>
 		<researchViewY>2</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>Cryptosleep</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -844,6 +1118,13 @@
 		</prerequisites>
  		<researchViewX>20</researchViewX>
 		<researchViewY>4</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>ChargedShot</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
