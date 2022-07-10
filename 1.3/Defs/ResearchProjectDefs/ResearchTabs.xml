@@ -2,8 +2,8 @@
 <Defs>
 
 	<ResearchTabDef>
-		<defName>DuneRef_CIV</defName>
-		<label>Civilization</label>
+		<defName>DuneRef_Hidden</defName>
+		<label>Hidden (Don't Research These)</label>
 	</ResearchTabDef>
 	
 </Defs>

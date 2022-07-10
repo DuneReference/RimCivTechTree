@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- Hide old techs -->
+
+    <!-- Neolithic -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			/Defs/ResearchProjectDef[				   
+                   defName = "TreeSowing"
+				or defName = "Cocoa"
+				or defName = "Devilstrand"
+				or defName = "PsychoidBrewing"
+				or defName = "Brewing"
+				or defName = "PassiveCooler"
+				or defName = "Pemmican"
+				or defName = "RecurveBow"
+            ]
+		</xpath>
+        <value>
+            <tab>DuneRef_Hidden</tab>
+        </value>
+	</Operation>
+
+    <!-- Medieval -->
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>
+			/Defs/ResearchProjectDef[				   
+                   defName = "Greatbow"
+				or defName = "ComplexClothing"
+				or defName = "ComplexFurniture"
+				or defName = "CarpetMaking"
+				or defName = "Smithing"
+				or defName = "Stonecutting"
+				or defName = "LongBlades"
+				or defName = "PlateArmor"
+				or defName = "NobleApparel"
+				or defName = "RoyalApparel"
+				or defName = "Harp"
+				or defName = "Harpsichord"
+            ]
+		</xpath>
+        <value>
+            <tab>DuneRef_Hidden</tab>
+        </value>
+	</Operation>
+
+    <!-- Industrial -->
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>
+			/Defs/ResearchProjectDef[				   
+                   defName = "DrugProduction"
+				or defName = "PsychiteRefining"
+				or defName = "WakeUpProduction"
+				or defName = "GoJuiceProduction"
+				or defName = "PenoxycylineProduction"
+				or defName = "Electricity"
+				or defName = "Batteries"
+				or defName = "BiofuelRefining"
+				or defName = "WatermillGenerator"
+				or defName = "NutrientPaste"
+				or defName = "SolarPanels"
+				or defName = "AirConditioning"
+				or defName = "Autodoors"
+				or defName = "Hydroponics"
+				or defName = "TubeTelevision"
+				or defName = "PackagedSurvivalMeal"
+				or defName = "Firefoam"
+				or defName = "IEDs"
+				or defName = "GeothermalPower"
+				or defName = "SterileMaterials"
+				or defName = "ColoredLights"
+				or defName = "Machining"
+				or defName = "SmokepopBelt"
+				or defName = "Prosthetics"
+				or defName = "Gunsmithing"
+				or defName = "FlakArmor"
+				or defName = "Mortars"
+				or defName = "BlowbackOperation"
+				or defName = "GasOperation"
+				or defName = "GunTurrets"
+				or defName = "MicroelectronicsBasics"
+				or defName = "FlatscreenTelevision"
+				or defName = "MoisturePump"
+				or defName = "HospitalBed"
+				or defName = "DeepDrilling"
+				or defName = "GroundPenetratingScanner"
+				or defName = "TransportPod"
+				or defName = "MedicineProduction"
+				or defName = "LongRangeMineralScanner"
+				or defName = "ShieldBelt"
+				or defName = "PrecisionRifling"
+				or defName = "HeavyTurrets"
+				or defName = "MultibarrelWeapons"
+				or defName = "MultiAnalyzer"
+				or defName = "VitalsMonitor"
+				or defName = "Fabrication"
+				or defName = "AdvancedFabrication"
+				or defName = "SniperTurret"
+				or defName = "Piano"
+				or defName = "JumpPacks"
+				or defName = "Gunlink"
+				or defName = "Biosculpting"
+				or defName = "Bioregeneration"
+				or defName = "NeuralSupercharger"
+            ]
+		</xpath>
+        <value>
+            <tab>DuneRef_Hidden</tab>
+        </value>
+	</Operation>
+
+    <!-- Spacer -->
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>
+			/Defs/ResearchProjectDef[				   
+                   defName = "Cryptosleep"
+				or defName = "ReconArmor"
+				or defName = "PoweredArmor"
+				or defName = "ChargedShot"
+				or defName = "Bionics"
+				or defName = "ShipBasics"
+				or defName = "ShipSensorCluster"
+				or defName = "ShipCryptosleep"
+				or defName = "ShipReactor"
+				or defName = "ShipEngine"
+				or defName = "ShipComputerCore"
+				or defName = "CataphractArmor"
+				or defName = "BrainWiring"
+				or defName = "SpecializedLimbs"
+				or defName = "CompactWeaponry"
+				or defName = "VenomSynthesis"
+            ]
+		</xpath>
+        <value>
+            <tab>DuneRef_Hidden</tab>
+        </value>
+	</Operation>
+
+    <!-- Ultra -->
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>
+			/Defs/ResearchProjectDef[				   
+                   defName = "ArtificialMetabolism"
+				or defName = "NeuralComputation"
+				or defName = "SkinHardening"
+				or defName = "HealingFactors"
+				or defName = "FleshShaping"
+				or defName = "MolecularAnalysis"
+				or defName = "CircadianInfluence"
+            ]
+		</xpath>
+        <value>
+            <tab>DuneRef_Hidden</tab>
+        </value>
+	</Operation>
+
+</Patch>
