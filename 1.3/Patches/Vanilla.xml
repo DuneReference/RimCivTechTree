@@ -7,7 +7,7 @@
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>
-			/Defs/ResearchProjectDef[				   
+			Defs/ResearchProjectDef[				   
                    defName = "TreeSowing"
 				or defName = "Cocoa"
 				or defName = "Devilstrand"
@@ -27,7 +27,7 @@
 
     <Operation Class="PatchOperationAdd">
 		<xpath>
-			/Defs/ResearchProjectDef[				   
+			Defs/ResearchProjectDef[				   
                    defName = "Greatbow"
 				or defName = "ComplexClothing"
 				or defName = "ComplexFurniture"
@@ -51,7 +51,7 @@
 
     <Operation Class="PatchOperationAdd">
 		<xpath>
-			/Defs/ResearchProjectDef[				   
+			Defs/ResearchProjectDef[				   
                    defName = "DrugProduction"
 				or defName = "PsychiteRefining"
 				or defName = "WakeUpProduction"
@@ -117,7 +117,7 @@
 
     <Operation Class="PatchOperationAdd">
 		<xpath>
-			/Defs/ResearchProjectDef[				   
+			Defs/ResearchProjectDef[				   
                    defName = "Cryptosleep"
 				or defName = "ReconArmor"
 				or defName = "PoweredArmor"
@@ -145,7 +145,7 @@
 
     <Operation Class="PatchOperationAdd">
 		<xpath>
-			/Defs/ResearchProjectDef[				   
+			Defs/ResearchProjectDef[				   
                    defName = "ArtificialMetabolism"
 				or defName = "NeuralComputation"
 				or defName = "SkinHardening"
