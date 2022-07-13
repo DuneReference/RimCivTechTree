@@ -7,7 +7,7 @@
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>
-			Defs/ResearchProjectDef[				   
+			Defs/ResearchProjectDef[
                    defName = "TreeSowing"
 				or defName = "Cocoa"
 				or defName = "Devilstrand"
@@ -27,7 +27,7 @@
 
     <Operation Class="PatchOperationAdd">
 		<xpath>
-			Defs/ResearchProjectDef[				   
+			Defs/ResearchProjectDef[
                    defName = "Greatbow"
 				or defName = "ComplexClothing"
 				or defName = "ComplexFurniture"
@@ -36,10 +36,6 @@
 				or defName = "Stonecutting"
 				or defName = "LongBlades"
 				or defName = "PlateArmor"
-				or defName = "NobleApparel"
-				or defName = "RoyalApparel"
-				or defName = "Harp"
-				or defName = "Harpsichord"
             ]
 		</xpath>
         <value>
@@ -47,11 +43,30 @@
         </value>
 	</Operation>
 
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>
+				Defs/ResearchProjectDef[
+					   defName = "NobleApparel"
+					or defName = "RoyalApparel"
+					or defName = "Harp"
+					or defName = "Harpsichord"
+				]
+			</xpath>
+			<value>
+				<tab>DuneRef_Hidden</tab>
+			</value>
+		</match>
+	</Operation>
+
     <!-- Industrial -->
 
     <Operation Class="PatchOperationAdd">
 		<xpath>
-			Defs/ResearchProjectDef[				   
+			Defs/ResearchProjectDef[
                    defName = "DrugProduction"
 				or defName = "PsychiteRefining"
 				or defName = "WakeUpProduction"
@@ -100,12 +115,6 @@
 				or defName = "Fabrication"
 				or defName = "AdvancedFabrication"
 				or defName = "SniperTurret"
-				or defName = "Piano"
-				or defName = "JumpPacks"
-				or defName = "Gunlink"
-				or defName = "Biosculpting"
-				or defName = "Bioregeneration"
-				or defName = "NeuralSupercharger"
             ]
 		</xpath>
         <value>
@@ -113,11 +122,47 @@
         </value>
 	</Operation>
 
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>
+				Defs/ResearchProjectDef[
+					   defName = "JumpPacks"
+					or defName = "Gunlink"
+					or defName = "Piano"
+				]
+			</xpath>
+			<value>
+				<tab>DuneRef_Hidden</tab>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>
+				Defs/ResearchProjectDef[
+					   defName = "Biosculpting"
+					or defName = "Bioregeneration"
+					or defName = "NeuralSupercharger"
+				]
+			</xpath>
+			<value>
+				<tab>DuneRef_Hidden</tab>
+			</value>
+		</match>
+	</Operation>
+
     <!-- Spacer -->
 
     <Operation Class="PatchOperationAdd">
 		<xpath>
-			Defs/ResearchProjectDef[				   
+			Defs/ResearchProjectDef[
                    defName = "Cryptosleep"
 				or defName = "ReconArmor"
 				or defName = "PoweredArmor"
@@ -129,11 +174,6 @@
 				or defName = "ShipReactor"
 				or defName = "ShipEngine"
 				or defName = "ShipComputerCore"
-				or defName = "CataphractArmor"
-				or defName = "BrainWiring"
-				or defName = "SpecializedLimbs"
-				or defName = "CompactWeaponry"
-				or defName = "VenomSynthesis"
             ]
 		</xpath>
         <value>
@@ -141,23 +181,48 @@
         </value>
 	</Operation>
 
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>
+				Defs/ResearchProjectDef[
+					   defName = "CataphractArmor"
+					or defName = "BrainWiring"
+					or defName = "SpecializedLimbs"
+					or defName = "CompactWeaponry"
+					or defName = "VenomSynthesis"
+				]
+			</xpath>
+			<value>
+				<tab>DuneRef_Hidden</tab>
+			</value>
+		</match>
+	</Operation>
+
     <!-- Ultra -->
 
-    <Operation Class="PatchOperationAdd">
-		<xpath>
-			Defs/ResearchProjectDef[				   
-                   defName = "ArtificialMetabolism"
-				or defName = "NeuralComputation"
-				or defName = "SkinHardening"
-				or defName = "HealingFactors"
-				or defName = "FleshShaping"
-				or defName = "MolecularAnalysis"
-				or defName = "CircadianInfluence"
-            ]
-		</xpath>
-        <value>
-            <tab>DuneRef_Hidden</tab>
-        </value>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>
+				Defs/ResearchProjectDef[
+					   defName = "ArtificialMetabolism"
+					or defName = "NeuralComputation"
+					or defName = "SkinHardening"
+					or defName = "HealingFactors"
+					or defName = "FleshShaping"
+					or defName = "MolecularAnalysis"
+					or defName = "CircadianInfluence"
+				]
+			</xpath>
+			<value>
+				<tab>DuneRef_Hidden</tab>
+			</value>
+		</match>
 	</Operation>
 
 </Patch>
