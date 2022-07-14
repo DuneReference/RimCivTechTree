@@ -69,8 +69,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HarmonyPatches\DubsMintMenus.cs" />
+    <Compile Include="HarmonyPatches\ResearchPalForked.cs" />
     <Compile Include="ModExtensions\ResearchUnlocks.cs" />
-    <Compile Include="HarmonyPatches.cs" />
+    <Compile Include="HarmonyPatches\_HP_Startup.cs" />
     <Compile Include="RimCivTechTree_DefOf.cs" />
     <Compile Include="Debug.cs" />
     <Compile Include="Startup.cs" />
