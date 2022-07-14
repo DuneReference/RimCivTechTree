@@ -11,8 +11,12 @@ namespace DuneRef_RimCivTechTree
 {
     public static class ResearchPalForkedPatches
     {
-        public static void conditionalResearchPalPatches()
+        public static readonly Type patchType = typeof(ResearchPalForkedPatches);
+        public static Harmony Harm = HarmonyPatches.Harm;
+
+        public static void Patches()
         {
+            // Hide nodes to be hidden
             MethodInfo populateNodesInnerMethod = AccessTools.FindIncludingInnerTypes(
                 typeof(ResearchPal.Tree),
                 (type) => AccessTools.FirstMethod(
@@ -20,15 +24,16 @@ namespace DuneRef_RimCivTechTree
                     (method) => method.Name.Contains("<PopulateNodes>") && method.ReturnType == typeof(bool)
                 )
             );
+            Harm.Patch(populateNodesInnerMethod, postfix: new HarmonyMethod(patchType, nameof(ResearchPalTreePopulateNodesHiddenPostfix)));
 
-            HarmonyPatches.Harm.Patch(populateNodesInnerMethod, postfix: new HarmonyMethod(HarmonyPatches.patchType, nameof(ResearchPalTreePopulateNodesHiddenPostfix)));
+            // Unlock techs this higher level tech is associated with
+            Harm.Patch(AccessTools.Method(typeof(ResearchPal.HarmonyPatches_Queue.DoCompletionDialog), "Postfix"), prefix: new HarmonyMethod(CommonPatches.patchType, nameof(CommonPatches.FinishProjectOmniFix)));
 
-            HarmonyPatches.Harm.Patch(AccessTools.Method(typeof(ResearchPal.HarmonyPatches_Queue.DoCompletionDialog), "Postfix"), prefix: new HarmonyMethod(HarmonyPatches.patchType, nameof(HarmonyPatches.FinishProjectOmniFix)));
-
-            HarmonyPatches.Harm.Patch(AccessTools.Method(typeof(ResearchPal.ResearchProjectDef_Extensions), nameof(ResearchPal.ResearchProjectDef_Extensions.GetPlantsUnlocked)), prefix: new HarmonyMethod(HarmonyPatches.patchType, nameof(GetPlantsUnlockedPrefix)));
-            HarmonyPatches.Harm.Patch(AccessTools.Method(typeof(ResearchPal.ResearchProjectDef_Extensions), nameof(ResearchPal.ResearchProjectDef_Extensions.GetRecipesUnlocked)), prefix: new HarmonyMethod(HarmonyPatches.patchType, nameof(GetRecipesUnlockedPrefix)));
-            HarmonyPatches.Harm.Patch(AccessTools.Method(typeof(ResearchPal.ResearchProjectDef_Extensions), nameof(ResearchPal.ResearchProjectDef_Extensions.GetTerrainUnlocked)), prefix: new HarmonyMethod(HarmonyPatches.patchType, nameof(GetTerrainUnlockedPrefix)));
-            HarmonyPatches.Harm.Patch(AccessTools.Method(typeof(ResearchPal.ResearchProjectDef_Extensions), nameof(ResearchPal.ResearchProjectDef_Extensions.GetThingsUnlocked)), prefix: new HarmonyMethod(HarmonyPatches.patchType, nameof(GetThingsUnlockedPrefix)));
+            // Make icons in nodes show up on higher level techs based on the lower nodes they link to.
+            Harm.Patch(AccessTools.Method(typeof(ResearchPal.ResearchProjectDef_Extensions), nameof(ResearchPal.ResearchProjectDef_Extensions.GetPlantsUnlocked)), prefix: new HarmonyMethod(patchType, nameof(GetPlantsUnlockedPrefix)));
+            Harm.Patch(AccessTools.Method(typeof(ResearchPal.ResearchProjectDef_Extensions), nameof(ResearchPal.ResearchProjectDef_Extensions.GetRecipesUnlocked)), prefix: new HarmonyMethod(patchType, nameof(GetRecipesUnlockedPrefix)));
+            Harm.Patch(AccessTools.Method(typeof(ResearchPal.ResearchProjectDef_Extensions), nameof(ResearchPal.ResearchProjectDef_Extensions.GetTerrainUnlocked)), prefix: new HarmonyMethod(patchType, nameof(GetTerrainUnlockedPrefix)));
+            Harm.Patch(AccessTools.Method(typeof(ResearchPal.ResearchProjectDef_Extensions), nameof(ResearchPal.ResearchProjectDef_Extensions.GetThingsUnlocked)), prefix: new HarmonyMethod(patchType, nameof(GetThingsUnlockedPrefix)));
         }
 
         // Harmony Functions

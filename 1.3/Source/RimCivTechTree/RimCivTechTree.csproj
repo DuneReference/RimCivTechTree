@@ -69,6 +69,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HarmonyPatches\Common.cs" />
+    <Compile Include="HarmonyPatches\Vanilla.cs" />
     <Compile Include="HarmonyPatches\DubsMintMenus.cs" />
     <Compile Include="HarmonyPatches\ResearchPalForked.cs" />
     <Compile Include="ModExtensions\ResearchUnlocks.cs" />

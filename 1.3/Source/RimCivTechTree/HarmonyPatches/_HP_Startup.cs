@@ -12,7 +12,6 @@ namespace DuneRef_RimCivTechTree
     [StaticConstructorOnStartup]
     public static class HarmonyPatches
     {
-        public static readonly Type patchType = typeof(HarmonyPatches);
         public static Harmony Harm;
 
         static HarmonyPatches()
@@ -21,29 +20,15 @@ namespace DuneRef_RimCivTechTree
             
             if (ModLister.HasActiveModWithName("ResearchPal - Forked"))
             {
-                ResearchPalForkedPatches.conditionalResearchPalPatches();
+                ResearchPalForkedPatches.Patches();
             }
             else if (ModLister.HasActiveModWithName("Dubs Mint Menus"))
             {
-                DubsMintMenusPatches.conditionalDubsPatches();
+                DubsMintMenusPatches.Patches();
             } 
             else
             {
-                Harm.Patch(AccessTools.Method(typeof(ResearchManager), "FinishProject"), postfix: new HarmonyMethod(patchType, nameof(FinishProjectOmniFix)));
-            }
-        }
-
-        public static void FinishProjectOmniFix(ResearchProjectDef proj)
-        {
-            if (!proj.IsFinished)
-                return;
-
-            if (proj.GetModExtension<ResearchUnlocks>() != null)
-            {
-                foreach (ResearchProjectDef unlock in proj.GetModExtension<ResearchUnlocks>().researchUnlocks)
-                {
-                    Find.ResearchManager.FinishProject(unlock);
-                }
+                VanillaPatches.Patches();
             }
         }
     }
