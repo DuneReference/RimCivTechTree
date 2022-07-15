@@ -58,8 +58,7 @@ namespace DuneRef_RimCivTechTree
                 }
 
                 return found;
-            }
-            );
+            });
 
             return false;
         }
@@ -84,8 +83,7 @@ namespace DuneRef_RimCivTechTree
                 }
 
                 return found;
-            }
-            );
+            });
 
             return false;
         }
@@ -106,8 +104,7 @@ namespace DuneRef_RimCivTechTree
                 }
 
                 return found;
-            }
-            );
+            });
 
             return false;
         }
@@ -128,8 +125,7 @@ namespace DuneRef_RimCivTechTree
                 }
 
                 return found;
-            }
-            );
+            });
 
             return false;
         }
