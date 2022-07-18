@@ -25,6 +25,9 @@ namespace DuneRef_RimCivTechTree
 
             // Hide projects that I designate for hiding.
             Harm.Patch(AccessTools.Method(typeof(MainTabWindow_Research), nameof(MainTabWindow_Research.PostOpen)), postfix: new HarmonyMethod(patchType, nameof(PostOpenPostfix)));
+
+            // Remove CostFactor adjustments
+            Harm.Patch(AccessTools.Method(typeof(ResearchProjectDef), nameof(ResearchProjectDef.CostFactor)), postfix: new HarmonyMethod(patchType, nameof(CostFactorPostfix)));
         }
 
         public static bool UnlockedDefsPrefix(ref List<Def> __result, ResearchProjectDef __instance)
@@ -50,6 +53,11 @@ namespace DuneRef_RimCivTechTree
                     __instance.tabs.Add(new MainTabWindow_Research.ResearchTabRecord(tabDef, tabDef.LabelCap, () => __instance.CurTab = tabDef, () => __instance.CurTab == tabDef));
                 }
             }
+        }
+
+        public static void CostFactorPostfix(ref float __result)
+        {
+            __result = 1f;
         }
     }
 }
