@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-    <!-- Hide old techs -->
+    <!-- Hide old techs & Remove prerequisites -->
 
     <!-- Neolithic -->
 
@@ -21,6 +21,14 @@
         <value>
             <tab>DuneRef_Hidden</tab>
         </value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "Cocoa"
+            ]/prerequisites
+		</xpath>
 	</Operation>
 
     <!-- Medieval -->
@@ -43,6 +51,16 @@
         </value>
 	</Operation>
 
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			Defs/ResearchProjectDef[
+                   defName = "Greatbow"
+				or defName = "LongBlades"
+				or defName = "PlateArmor"
+            ]/prerequisites
+		</xpath>
+	</Operation>
+
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Royalty</li>
@@ -59,6 +77,22 @@
 			<value>
 				<tab>DuneRef_Hidden</tab>
 			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationRemove">
+			<xpath>
+				Defs/ResearchProjectDef[
+					   defName = "NobleApparel"
+					or defName = "RoyalApparel"
+					or defName = "Harp"
+					or defName = "Harpsichord"
+				]/prerequisites
+			</xpath>
 		</match>
 	</Operation>
 
@@ -122,6 +156,59 @@
         </value>
 	</Operation>
 
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "PsychiteRefining"
+				or defName = "WakeUpProduction"
+				or defName = "GoJuiceProduction"
+				or defName = "PenoxycylineProduction"
+				or defName = "Batteries"
+				or defName = "BiofuelRefining"
+				or defName = "WatermillGenerator"
+				or defName = "NutrientPaste"
+				or defName = "SolarPanels"
+				or defName = "AirConditioning"
+				or defName = "Autodoors"
+				or defName = "Hydroponics"
+				or defName = "TubeTelevision"
+				or defName = "PackagedSurvivalMeal"
+				or defName = "Firefoam"
+				or defName = "IEDs"
+				or defName = "GeothermalPower"
+				or defName = "SterileMaterials"
+				or defName = "ColoredLights"
+				or defName = "Machining"
+				or defName = "SmokepopBelt"
+				or defName = "Prosthetics"
+				or defName = "Gunsmithing"
+				or defName = "FlakArmor"
+				or defName = "Mortars"
+				or defName = "BlowbackOperation"
+				or defName = "GasOperation"
+				or defName = "GunTurrets"
+				or defName = "MicroelectronicsBasics"
+				or defName = "FlatscreenTelevision"
+				or defName = "MoisturePump"
+				or defName = "HospitalBed"
+				or defName = "DeepDrilling"
+				or defName = "GroundPenetratingScanner"
+				or defName = "TransportPod"
+				or defName = "MedicineProduction"
+				or defName = "LongRangeMineralScanner"
+				or defName = "ShieldBelt"
+				or defName = "PrecisionRifling"
+				or defName = "HeavyTurrets"
+				or defName = "MultibarrelWeapons"
+				or defName = "MultiAnalyzer"
+				or defName = "VitalsMonitor"
+				or defName = "Fabrication"
+				or defName = "AdvancedFabrication"
+				or defName = "SniperTurret"
+            ]/prerequisites
+		</xpath>
+	</Operation>
+
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Royalty</li>
@@ -142,6 +229,21 @@
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationRemove">
+			<xpath>
+				Defs/ResearchProjectDef[
+					   defName = "JumpPacks"
+					or defName = "Gunlink"
+					or defName = "Piano"
+				]/prerequisites
+			</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
 			<li>Ideology</li>
 		</mods>
 		<match Class="PatchOperationAdd">
@@ -155,6 +257,21 @@
 			<value>
 				<tab>DuneRef_Hidden</tab>
 			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationRemove">
+			<xpath>
+				Defs/ResearchProjectDef[
+					   defName = "Biosculpting"
+					or defName = "Bioregeneration"
+					or defName = "NeuralSupercharger"
+				]/prerequisites
+			</xpath>
 		</match>
 	</Operation>
 
@@ -181,6 +298,24 @@
         </value>
 	</Operation>
 
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			Defs/ResearchProjectDef[
+                   defName = "Cryptosleep"
+				or defName = "ReconArmor"
+				or defName = "PoweredArmor"
+				or defName = "ChargedShot"
+				or defName = "Bionics"
+				or defName = "ShipBasics"
+				or defName = "ShipSensorCluster"
+				or defName = "ShipCryptosleep"
+				or defName = "ShipReactor"
+				or defName = "ShipEngine"
+				or defName = "ShipComputerCore"
+            ]/prerequisites
+		</xpath>
+	</Operation>
+
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Royalty</li>
@@ -198,6 +333,23 @@
 			<value>
 				<tab>DuneRef_Hidden</tab>
 			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationRemove">
+			<xpath>
+				Defs/ResearchProjectDef[
+					   defName = "CataphractArmor"
+					or defName = "BrainWiring"
+					or defName = "SpecializedLimbs"
+					or defName = "CompactWeaponry"
+					or defName = "VenomSynthesis"
+				]/prerequisites
+			</xpath>
 		</match>
 	</Operation>
 
@@ -222,6 +374,25 @@
 			<value>
 				<tab>DuneRef_Hidden</tab>
 			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationRemove">
+			<xpath>
+				Defs/ResearchProjectDef[
+					   defName = "ArtificialMetabolism"
+					or defName = "NeuralComputation"
+					or defName = "SkinHardening"
+					or defName = "HealingFactors"
+					or defName = "FleshShaping"
+					or defName = "MolecularAnalysis"
+					or defName = "CircadianInfluence"
+				]/prerequisites
+			</xpath>
 		</match>
 	</Operation>
 
