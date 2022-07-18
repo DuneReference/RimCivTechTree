@@ -28,8 +28,10 @@ namespace DuneRef_RimCivTechTree
             } 
             else
             {
-                VanillaPatches.Patches();
+                VanillaPatches.ExclusivePatches();
             }
+
+            VanillaPatches.Patches();
         }
     }
 }
