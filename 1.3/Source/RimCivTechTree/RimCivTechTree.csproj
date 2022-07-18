@@ -39,6 +39,10 @@
       <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="CM_Semi_Random_Research">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\2375902187\1.3\Assemblies\CM_Semi_Random_Research.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="DubsMintMenus">
       <HintPath>..\..\..\..\..\..\..\workshop\content\294100\1446523594\1.3\Assemblies\DubsMintMenus.dll</HintPath>
       <Private>False</Private>
@@ -70,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HarmonyPatches\Common.cs" />
+    <Compile Include="HarmonyPatches\SemiRandomResearch.cs" />
     <Compile Include="HarmonyPatches\Vanilla.cs" />
     <Compile Include="HarmonyPatches\DubsMintMenus.cs" />
     <Compile Include="HarmonyPatches\ResearchPalForked.cs" />
@@ -86,6 +91,6 @@
     <PackageReference Include="Krafs.Publicizer" Version="1.0.2" />
   </ItemGroup>
   <ItemGroup>
-      <Publicize Include="Assembly-CSharp" />
+    <Publicize Include="Assembly-CSharp" />
   </ItemGroup>
 </Project>

@@ -55,7 +55,6 @@ namespace DuneRef_RimCivTechTree
             }
         }
 
-        [HarmonyDebug]
         public static IEnumerable<CodeInstruction> DrawModsListTranspiler(IEnumerable<CodeInstruction> instructions, ILGenerator generator)
         {
             try

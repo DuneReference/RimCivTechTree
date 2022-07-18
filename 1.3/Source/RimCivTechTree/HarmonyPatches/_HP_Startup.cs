@@ -1,11 +1,5 @@
-﻿using System;
-
-using Verse;
+﻿using Verse;
 using HarmonyLib;
-using System.Reflection;
-using RimWorld;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace DuneRef_RimCivTechTree
 {
@@ -29,6 +23,11 @@ namespace DuneRef_RimCivTechTree
             else
             {
                 VanillaPatches.ExclusivePatches();
+            }
+
+            if (ModLister.HasActiveModWithName("Semi Random Research"))
+            {
+                SemiRandomResearchPatches.Patches();
             }
 
             VanillaPatches.Patches();
