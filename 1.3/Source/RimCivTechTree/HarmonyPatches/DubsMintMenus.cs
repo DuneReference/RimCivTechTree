@@ -118,7 +118,7 @@ namespace DuneRef_RimCivTechTree
 
         public static List<ResearchTabDef> CullHiddenTab(List<ResearchTabDef> source)
         {
-            return source.Where((x) => x != RimCivTechTree_DefOf.DuneRef_Hidden).ToList();
+            return source.Where((x) => x.GetModExtension<HiddenTab>() == null || x.GetModExtension<HiddenTab>().hidden == false).ToList();
         }
 
         public static bool ProjectsAvailablePrefix(ref List<ResearchProjectDef> __result, object __instance)

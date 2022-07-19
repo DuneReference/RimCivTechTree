@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+    <!-- Move mods research to hidden tab -->
+
     <Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>VGP Vegetable Garden</li>
@@ -22,6 +24,8 @@
 		</match>
 	</Operation>
 
+    <!-- remove prerequisites so no funky stuff happens when we try to unlock them automatically -->
+
     <Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>VGP Vegetable Garden</li>
@@ -38,6 +42,8 @@
 			</xpath>
 		</match>
 	</Operation>
+
+    <!-- Add techs to RimCivTechTree researches -->
 
     <Operation Class="PatchOperationFindMod">
 		<mods>
@@ -74,6 +80,28 @@
             </value>
 		</match>
 	</Operation>
+
+    <!-- Hide tabs created by this mod -->
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>
+				Defs/ResearchTabDef[defName = "VG"]
+			</xpath>
+            <value>
+				<modExtensions>
+					<li Class="DuneRef_RimCivTechTree.HiddenTab">
+						<hidden>True</hidden>
+					</li>
+				</modExtensions>
+            </value>
+		</match>
+	</Operation>
+
+    <!-- Don't want to show wild trees on research trees since it's duplicates with plantable trees (both just say "Apple Tree" for example)-->
 
     <Operation Class="PatchOperationFindMod">
 		<mods>

@@ -48,7 +48,7 @@ namespace DuneRef_RimCivTechTree
 
             foreach (ResearchTabDef tabDef in DefDatabase<ResearchTabDef>.AllDefs)
             {
-                if (tabDef != RimCivTechTree_DefOf.DuneRef_Hidden)
+                if (tabDef.GetModExtension<HiddenTab>() == null || tabDef.GetModExtension<HiddenTab>().hidden == false)
                 {
                     __instance.tabs.Add(new MainTabWindow_Research.ResearchTabRecord(tabDef, tabDef.LabelCap, () => __instance.CurTab = tabDef, () => __instance.CurTab == tabDef));
                 }

@@ -4,6 +4,11 @@
 	<ResearchTabDef>
 		<defName>DuneRef_Hidden</defName>
 		<label>Hidden (Don't Research These)</label>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.HiddenTab">
+				<hidden>True</hidden>
+			</li>
+		</modExtensions>
 	</ResearchTabDef>
 	
 </Defs>
