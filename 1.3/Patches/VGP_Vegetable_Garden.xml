@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ResearchProjectDef[
+                       defName = "agriculture"
+                    or defName = "agricultureII"
+                    or defName = "agricultureIII"
+                    or defName = "VG_Ambrosia"
+                    or defName = "agricultureIV"
+                    or defName = "VG_HoneyTree"
+                ]/tab
+			</xpath>
+			<value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+		</match>
+	</Operation>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="PatchOperationRemove">
+			<xpath>
+				Defs/ResearchProjectDef[
+				       defName = "agricultureII"
+                    or defName = "agricultureIII"
+                    or defName = "VG_Ambrosia"
+                    or defName = "agricultureIV"
+                    or defName = "VG_HoneyTree"
+                ]/prerequisites
+			</xpath>
+		</match>
+	</Operation>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>
+				Defs/ResearchProjectDef[
+				       defName = "DuneRef_Pottery"
+                ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+			</xpath>
+            <value>
+                <li>agriculture</li>
+                <li>agricultureII</li>
+                <li>agricultureIII</li>
+                <li>agricultureIV</li>
+            </value>
+		</match>
+	</Operation>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>
+				Defs/ResearchProjectDef[
+				       defName = "DuneRef_Irrigation"
+                ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+			</xpath>
+            <value>
+                <li>VG_HoneyTree</li>
+                <li>VG_Ambrosia</li>
+            </value>
+		</match>
+	</Operation>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>
+				Defs/ThingDef[@Name="VG_WildFruitTree"]/plant
+			</xpath>
+            <value>
+                <sowResearchPrerequisites Inherit="False">
+                </sowResearchPrerequisites>
+            </value>
+		</match>
+	</Operation>
+
+</Patch>
