@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Dragons Descent</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>
+				Defs/ResearchProjectDef[
+                       defName = "DraconicDrugProduction"
+                    or defName = "DraconicIncubation"
+                    or defName = "DraconicApparelAndWeapons"
+                    or defName = "DraconicAdvancedIncubation"
+                ]/tab
+			</xpath>
+			<value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+		</match>
+	</Operation>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Dragons Descent</li>
+		</mods>
+		<match Class="PatchOperationRemove">
+			<xpath>
+				Defs/ResearchProjectDef[
+				       defName = "DraconicDrugProduction"
+                    or defName = "DraconicIncubation"
+                    or defName = "DraconicApparelAndWeapons"
+                    or defName = "DraconicAdvancedIncubation"
+                ]/prerequisites
+			</xpath>
+		</match>
+	</Operation>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Dragons Descent</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>
+				Defs/ResearchProjectDef[
+				       defName = "DuneRef_Irrigation"
+                ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+			</xpath>
+            <value>
+                <li>DraconicDrugProduction</li>
+            </value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Dragons Descent</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>
+				Defs/ResearchProjectDef[
+				       defName = "DuneRef_Currency"
+                ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+			</xpath>
+            <value>
+                <li>DraconicIncubation</li>
+            </value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Dragons Descent</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>
+				Defs/ResearchProjectDef[
+				       defName = "DuneRef_MilitaryTactics"
+                ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+			</xpath>
+            <value>
+                <li>DraconicApparelAndWeapons</li>
+            </value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Dragons Descent</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>
+				Defs/ResearchProjectDef[
+				       defName = "DuneRef_Electricity"
+                ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+			</xpath>
+            <value>
+                <li>DraconicAdvancedIncubation</li>
+            </value>
+		</match>
+	</Operation>
+
+</Patch>
