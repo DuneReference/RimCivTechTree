@@ -59,7 +59,7 @@ namespace DuneRef_RimCivTechTree
                             {
                                 found = x.plant != null &&
                                         x.plant.sowResearchPrerequisites != null &&
-                                        x.plant.sowResearchPrerequisites.Contains(proj);
+                                        x.plant.sowResearchPrerequisites.Contains(unlock);
                                 if (found) break;
                             }
                         }
@@ -89,6 +89,5 @@ namespace DuneRef_RimCivTechTree
             .Distinct()
             .ToList();
         }
-        
     }
 }
