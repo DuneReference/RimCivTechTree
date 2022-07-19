@@ -27,7 +27,7 @@ namespace DuneRef_RimCivTechTree
             Harm.Patch(AccessTools.Method(typeof(DubsMintMenus.MainTabWindow_MintResearch), "DrawModsList"), transpiler: new HarmonyMethod(patchType, nameof(DrawModsListTranspiler)));
             Harm.Patch(AccessTools.PropertyGetter(typeof(DubsMintMenus.MainTabWindow_MintResearch), "ProjectsAvailable"), prefix: new HarmonyMethod(patchType, nameof(ProjectsAvailablePrefix)));
         }
-
+        
         public static bool AllUnlockedByPrefix(ref List<Def> __result, ResearchProjectDef proj, ref Dictionary<ResearchProjectDef, List<Def>> ___CachedUnlocks)
         {
             if (!___CachedUnlocks.TryGetValue(proj, out _))
@@ -43,7 +43,6 @@ namespace DuneRef_RimCivTechTree
 
         public static bool AllProjectsForTabPrefix(ref List<ResearchProjectDef> __result, ResearchTabDef tab)
         {
-            Log.Message($"All projects for tab {tab}");
             if (tab == RimCivTechTree_DefOf.DuneRef_Hidden)
             {
                 __result = new List<ResearchProjectDef>();
@@ -122,10 +121,9 @@ namespace DuneRef_RimCivTechTree
             return source.Where((x) => x != RimCivTechTree_DefOf.DuneRef_Hidden).ToList();
         }
 
-        public static bool ProjectsAvailablePrefix(ref List<ResearchProjectDef> __result, DubsMintMenus.MainTabWindow_MintResearch __instance)
+        public static bool ProjectsAvailablePrefix(ref List<ResearchProjectDef> __result, object __instance)
         {
-            Log.Message("ProjectsAvailablePrefix");
-            MethodInfo Parc = AccessTools.Method(typeof(DubsMintMenus.MainTabWindow_MintResearch), "parc");
+            MethodInfo Parc = AccessTools.Method(__instance.GetType(), "parc");
 
             __result = DefDatabase<ResearchProjectDef>.AllDefsListForReading
                 .Where(x => x.tab != RimCivTechTree_DefOf.DuneRef_Hidden)

@@ -46,7 +46,7 @@ namespace DuneRef_RimCivTechTree
 
                 ____unlocksCache.Add(research, __result);
             }
-                
+
             return false;
         }
 

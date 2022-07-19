@@ -2,10 +2,6 @@
 
 using Verse;
 using HarmonyLib;
-using System.Reflection;
-using RimWorld;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace DuneRef_RimCivTechTree
 {
