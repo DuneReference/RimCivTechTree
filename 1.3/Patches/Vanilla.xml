@@ -96,6 +96,19 @@
 		</match>
 	</Operation>
 
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationRemove">
+			<xpath>
+				Defs/ResearchProjectDef[
+					defName = "RoyalApparel"
+				]/hiddenPrerequisites
+			</xpath>
+		</match>
+	</Operation>
+
     <!-- Industrial -->
 
     <Operation Class="PatchOperationAdd">
@@ -209,6 +222,23 @@
 		</xpath>
 	</Operation>
 
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "TubeTelevision"
+				or defName = "SmokepopBelt"
+				or defName = "FlakArmor"
+				or defName = "MoisturePump"
+				or defName = "HospitalBed"
+				or defName = "TransportPod"
+				or defName = "LongRangeMineralScanner"
+				or defName = "ShieldBelt"
+				or defName = "MultiAnalyzer"
+				or defName = "SniperTurret"
+            ]/hiddenPrerequisites
+		</xpath>
+	</Operation>
+
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Royalty</li>
@@ -238,6 +268,19 @@
 					or defName = "Gunlink"
 					or defName = "Piano"
 				]/prerequisites
+			</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationRemove">
+			<xpath>
+				Defs/ResearchProjectDef[
+					defName = "JumpPacks"
+				]/hiddenPrerequisites
 			</xpath>
 		</match>
 	</Operation>
@@ -316,6 +359,17 @@
 		</xpath>
 	</Operation>
 
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "ReconArmor"
+				or defName = "PoweredArmor"
+				or defName = "ChargedShot"
+				or defName = "Bionics"
+            ]/hiddenPrerequisites
+		</xpath>
+	</Operation>
+
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Royalty</li>
@@ -349,6 +403,21 @@
 					or defName = "CompactWeaponry"
 					or defName = "VenomSynthesis"
 				]/prerequisites
+			</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationRemove">
+			<xpath>
+				Defs/ResearchProjectDef[
+					   defName = "BrainWiring"
+					or defName = "SpecializedLimbs"
+					or defName = "CompactWeaponry"
+				]/hiddenPrerequisites
 			</xpath>
 		</match>
 	</Operation>
@@ -392,6 +461,25 @@
 					or defName = "MolecularAnalysis"
 					or defName = "CircadianInfluence"
 				]/prerequisites
+			</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationRemove">
+			<xpath>
+				Defs/ResearchProjectDef[
+					   defName = "ArtificialMetabolism"
+					or defName = "NeuralComputation"
+					or defName = "SkinHardening"
+					or defName = "HealingFactors"
+					or defName = "FleshShaping"
+					or defName = "MolecularAnalysis"
+					or defName = "CircadianInfluence"
+				]/hiddenPrerequisites
 			</xpath>
 		</match>
 	</Operation>
