@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- Hide old techs & Remove prerequisites -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "Biosculpting"
+				or defName = "Bioregeneration"
+				or defName = "NeuralSupercharger"
+			]
+		</xpath>
+		<value>
+			<tab>DuneRef_Hidden</tab>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "Biosculpting"
+				or defName = "Bioregeneration"
+				or defName = "NeuralSupercharger"
+			]/prerequisites
+		</xpath>
+	</Operation>
+
+</Patch>

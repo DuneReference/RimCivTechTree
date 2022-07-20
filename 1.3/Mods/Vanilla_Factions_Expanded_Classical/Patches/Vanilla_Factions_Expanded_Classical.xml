@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- Move mods research to hidden tab -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "VFEC_Togas"
+				or defName = "VFEC_TemperatureControl"
+				or defName = "VFEC_MeatDrying"
+				or defName = "VFEC_Mosaics"
+				or defName = "VFEC_Thermaebath"
+				or defName = "VFEC_DramaAndComedy"
+				or defName = "VFEC_BronzeWorking"
+				or defName = "VFEC_CraftingBench"
+				or defName = "VFEC_CementMaking"
+				or defName = "VFEC_WoodfiredCrematorium"
+				or defName = "VFEC_TyrianProduction"
+				or defName = "VFEC_RoadBuilding"
+				or defName = "VFEC_HeavyShieldMaking"
+				or defName = "VFEC_LegionaryArmaments"
+				or defName = "VFEC_LegionnaireArmor"
+				or defName = "VFEC_CenturionArmor"
+				or defName = "VFEC_Scorpion"
+				or defName = "VFEC_Beacons"
+			]/tab
+		</xpath>
+		<value>
+			<tab>DuneRef_Hidden</tab>
+		</value>
+	</Operation>
+
+    <!-- Add techs to RimCivTechTree researches -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "DuneRef_Clothing"
+			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+		</xpath>
+		<value>
+			<li>VFEC_Togas</li>
+			<li>VFEC_TyrianProduction</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "DuneRef_Masonry"
+			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+		</xpath>
+		<value>
+			<li>VFEC_TemperatureControl</li>
+			<li>VFEC_CementMaking</li>
+			<li>VFEC_WoodfiredCrematorium</li>
+			<li>VFEC_Beacons</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "DuneRef_Pottery"
+			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+		</xpath>
+		<value>
+			<li>VFEC_MeatDrying</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "DuneRef_Mining"
+			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+		</xpath>
+		<value>
+			<li>VFEC_Mosaics</li>
+			<li>VFEC_Thermaebath</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "DuneRef_WritingAndCulture"
+			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+		</xpath>
+		<value>
+			<li>VFEC_DramaAndComedy</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "DuneRef_BronzeWorking"
+			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+		</xpath>
+		<value>
+			<li>VFEC_BronzeWorking</li>
+			<li>VFEC_CraftingBench</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "DuneRef_Currency"
+			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+		</xpath>
+		<value>
+			<li>VFEC_RoadBuilding</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "DuneRef_IronWorking"
+			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+		</xpath>
+		<value>
+			<li>VFEC_HeavyShieldMaking</li>
+			<li>VFEC_LegionaryArmaments</li>
+			<li>VFEC_LegionnaireArmor</li>
+			<li>VFEC_CenturionArmor</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "DuneRef_Engineering"
+			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+		</xpath>
+		<value>
+			<li>VFEC_Scorpion</li>
+		</value>
+	</Operation>
+
+    <!-- Hide tabs created by this mod -->
+
+	<!-- Special conditional tab edit since all their techs in various mods are in the same tab -->
+    <Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]/modExtensions</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]/modExtensions/li[@Class="DuneRef_RimCivTechTree.HiddenTab"]</xpath>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]/modExtensions</xpath>
+				<value>
+					<li Class="DuneRef_RimCivTechTree.HiddenTab">
+						<hidden>True</hidden>
+					</li>
+				</value>
+			</nomatch>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]</xpath>
+			<value>
+				<modExtensions>
+					<li Class="DuneRef_RimCivTechTree.HiddenTab">
+						<hidden>True</hidden>
+					</li>
+				</modExtensions>
+			</value>
+		</nomatch>
+	</Operation>
+
+</Patch>
