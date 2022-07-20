@@ -64,6 +64,11 @@
 		<techLevel>Neolithic</techLevel>
  		<researchViewX>1</researchViewX>
 		<researchViewY>0</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -224,6 +229,11 @@
 		</prerequisites>
  		<researchViewX>3</researchViewX>
 		<researchViewY>7</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -258,6 +268,11 @@
 		</prerequisites>
  		<researchViewX>4</researchViewX>
 		<researchViewY>6</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -316,6 +331,11 @@
 		</prerequisites>
  		<researchViewX>5</researchViewX>
 		<researchViewY>8</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -330,6 +350,11 @@
 		</prerequisites>
  		<researchViewX>6</researchViewX>
 		<researchViewY>6</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<!-- Renaissance Era -->
@@ -347,6 +372,11 @@
 		</prerequisites>
  		<researchViewX>7</researchViewX>
 		<researchViewY>5</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 	
 	<!-- Industrial Era -->
@@ -365,6 +395,11 @@
 		</prerequisites>
  		<researchViewX>9</researchViewX>
 		<researchViewY>2</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -378,6 +413,11 @@
 		</prerequisites>
  		<researchViewX>9</researchViewX>
 		<researchViewY>3</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -392,6 +432,11 @@
 		</prerequisites>
  		<researchViewX>9</researchViewX>
 		<researchViewY>5</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -406,6 +451,11 @@
 		</prerequisites>
  		<researchViewX>10</researchViewX>
 		<researchViewY>1</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -490,6 +540,11 @@
 		</prerequisites>
  		<researchViewX>11</researchViewX>
 		<researchViewY>5</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -503,6 +558,11 @@
 		</prerequisites>
  		<researchViewX>11</researchViewX>
 		<researchViewY>6</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -649,6 +709,11 @@
 		</prerequisites>
  		<researchViewX>14</researchViewX>
 		<researchViewY>3</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -753,6 +818,11 @@
 		</prerequisites>
  		<researchViewX>15</researchViewX>
 		<researchViewY>1</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -789,6 +859,11 @@
 		</prerequisites>
  		<researchViewX>15</researchViewX>
 		<researchViewY>5</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -891,6 +966,11 @@
 		</prerequisites>
  		<researchViewX>16</researchViewX>
 		<researchViewY>6</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -927,6 +1007,11 @@
 		</prerequisites>
  		<researchViewX>17</researchViewX>
 		<researchViewY>2</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -941,6 +1026,11 @@
 		</prerequisites>
  		<researchViewX>17</researchViewX>
 		<researchViewY>6</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<!-- Future Era -->
@@ -957,6 +1047,11 @@
 		</prerequisites>
  		<researchViewX>18</researchViewX>
 		<researchViewY>1</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -970,6 +1065,11 @@
 		</prerequisites>
  		<researchViewX>18</researchViewX>
 		<researchViewY>3</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -1054,6 +1154,11 @@
 		</prerequisites>
  		<researchViewX>18</researchViewX>
 		<researchViewY>8</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -1068,6 +1173,11 @@
 		</prerequisites>
  		<researchViewX>19</researchViewX>
 		<researchViewY>5</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -1081,6 +1191,11 @@
 		</prerequisites>
  		<researchViewX>19</researchViewX>
 		<researchViewY>6</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<!-- Spacer Era -->
@@ -1139,6 +1254,11 @@
 		</prerequisites>
  		<researchViewX>20</researchViewX>
 		<researchViewY>5</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -1153,6 +1273,11 @@
 		</prerequisites>
  		<researchViewX>20</researchViewX>
 		<researchViewY>6</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -1166,6 +1291,11 @@
 		</prerequisites>
  		<researchViewX>20</researchViewX>
 		<researchViewY>8</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -1180,6 +1310,11 @@
 		</prerequisites>
  		<researchViewX>21</researchViewX>
 		<researchViewY>7</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<!-- Ultra Era -->
@@ -1198,6 +1333,11 @@
 		</prerequisites>
  		<researchViewX>22</researchViewX>
 		<researchViewY>1</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -1212,6 +1352,11 @@
 		</prerequisites>
  		<researchViewX>22</researchViewX>
 		<researchViewY>3</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -1225,6 +1370,11 @@
 		</prerequisites>
  		<researchViewX>22</researchViewX>
 		<researchViewY>5</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -1239,6 +1389,11 @@
 		</prerequisites>
  		<researchViewX>22</researchViewX>
 		<researchViewY>6</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -1253,6 +1408,11 @@
 		</prerequisites>
  		<researchViewX>22</researchViewX>
 		<researchViewY>7</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<!-- Archotech Era -->
@@ -1271,6 +1431,11 @@
 		</prerequisites>
  		<researchViewX>23</researchViewX>
 		<researchViewY>3</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -1287,6 +1452,11 @@
 		</prerequisites>
  		<researchViewX>23</researchViewX>
 		<researchViewY>6</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks />
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
  </Defs>
