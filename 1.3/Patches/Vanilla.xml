@@ -38,7 +38,6 @@
 			Defs/ResearchProjectDef[
                    defName = "Greatbow"
 				or defName = "ComplexClothing"
-				or defName = "ComplexFurniture"
 				or defName = "CarpetMaking"
 				or defName = "Smithing"
 				or defName = "Stonecutting"
@@ -49,6 +48,23 @@
         <value>
             <tab>DuneRef_Hidden</tab>
         </value>
+	</Operation>
+
+	<!-- Conditional because Vanilla Furniture Expanded adds tab -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName = "ComplexFurniture"]/tab</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName = "ComplexFurniture"]/tab</xpath>
+			<value>
+				<tab>DuneRef_Hidden</tab>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName = "ComplexFurniture"]</xpath>
+			<value>
+				<tab>DuneRef_Hidden</tab>
+			</value>
+		</nomatch>
 	</Operation>
 
 	<Operation Class="PatchOperationRemove">
@@ -80,7 +96,6 @@
 				or defName = "AirConditioning"
 				or defName = "Autodoors"
 				or defName = "Hydroponics"
-				or defName = "TubeTelevision"
 				or defName = "PackagedSurvivalMeal"
 				or defName = "Firefoam"
 				or defName = "IEDs"
@@ -97,7 +112,6 @@
 				or defName = "GasOperation"
 				or defName = "GunTurrets"
 				or defName = "MicroelectronicsBasics"
-				or defName = "FlatscreenTelevision"
 				or defName = "MoisturePump"
 				or defName = "HospitalBed"
 				or defName = "DeepDrilling"
@@ -119,6 +133,40 @@
         <value>
             <tab>DuneRef_Hidden</tab>
         </value>
+	</Operation>
+
+	<!-- Conditional because Vanilla Furniture Expanded adds tab -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName = "TubeTelevision"]/tab</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName = "TubeTelevision"]/tab</xpath>
+			<value>
+				<tab>DuneRef_Hidden</tab>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName = "TubeTelevision"]</xpath>
+			<value>
+				<tab>DuneRef_Hidden</tab>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- Conditional because Vanilla Furniture Expanded adds tab -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName = "FlatscreenTelevision"]/tab</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName = "FlatscreenTelevision"]/tab</xpath>
+			<value>
+				<tab>DuneRef_Hidden</tab>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName = "FlatscreenTelevision"]</xpath>
+			<value>
+				<tab>DuneRef_Hidden</tab>
+			</value>
+		</nomatch>
 	</Operation>
 
 	<Operation Class="PatchOperationRemove">

@@ -20,5 +20,12 @@
 		<li IfModActive="VanillaExpanded.VWEL">1.3/Mods/Vanilla_Weapons_Expanded_Laser</li>
 		<li IfModActive="VanillaExpanded.VWENL">1.3/Mods/Vanilla_Weapons_Expanded_Non_Lethal</li>
 		<li IfModActive="VanillaExpanded.VWEQ">1.3/Mods/Vanilla_Weapons_Expanded_Quickdraw</li>
+		<li IfModActive="VanillaExpanded.VFECore">1.3/Mods/Vanilla_Furniture_Expanded</li>
+		<li IfModActive="VanillaExpanded.VFEArt">1.3/Mods/Vanilla_Furniture_Expanded_Art</li>
+		<li IfModActive="VanillaExpanded.VFEFarming">1.3/Mods/Vanilla_Furniture_Expanded_Farming</li>
+		<li IfModActive="VanillaExpanded.VFEPower">1.3/Mods/Vanilla_Furniture_Expanded_Power</li>
+		<li IfModActive="VanillaExpanded.VFEProduction">1.3/Mods/Vanilla_Furniture_Expanded_Production</li>
+		<li IfModActive="VanillaExpanded.VFESecurity">1.3/Mods/Vanilla_Furniture_Expanded_Security</li>
+		<li IfModActive="VanillaExpanded.VFESpacer">1.3/Mods/Vanilla_Furniture_Expanded_Spacer</li>
 	</v1.3>
 </loadFolders>
