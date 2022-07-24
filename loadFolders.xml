@@ -29,5 +29,6 @@
 		<li IfModActive="VanillaExpanded.VFESpacer">1.3/Mods/VEF/Vanilla_Furniture_Expanded/Spacer</li>
 		<li IfModActive="VanillaExpanded.VGeneticsE">1.3/Mods/VEF/Vanilla_Genetics_Expanded/Base</li>
 		<li IfModActive="VanillaExpanded.VGeneticsEMoreLabStuff">1.3/Mods/VEF/Vanilla_Genetics_Expanded/More_Lab_Stuff</li>
+		<li IfModActive="VanillaExpanded.VAPPE">1.3/Mods/VEF/Vanilla_Apparel_Expanded/Base</li>
 	</v1.3>
 </loadFolders>
