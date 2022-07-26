@@ -43,7 +43,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>
 			Defs/ResearchProjectDef[
-				   defName = "JumpPacks"
+				   defName = "JumpPack"
 				or defName = "Gunlink"
 				or defName = "Piano"
 			]
@@ -56,7 +56,7 @@
 	<Operation Class="PatchOperationRemove">
 		<xpath>
 			Defs/ResearchProjectDef[
-				   defName = "JumpPacks"
+				   defName = "JumpPack"
 				or defName = "Gunlink"
 				or defName = "Piano"
 			]/prerequisites
@@ -66,7 +66,7 @@
 	<Operation Class="PatchOperationRemove">
 		<xpath>
 			Defs/ResearchProjectDef[
-				   defName = "JumpPacks"
+				   defName = "JumpPack"
 			]/hiddenPrerequisites
 		</xpath>
 	</Operation>
