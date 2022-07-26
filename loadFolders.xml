@@ -36,5 +36,7 @@
 		<li IfModActive="VanillaExpanded.VBrewE">1.3/Mods/VEF/Vanilla_Brewing_Expanded/Vanilla_Brewing_Expanded</li>
 		<li IfModActive="VanillaExpanded.VBrewE">1.3/Mods/VEF/Vanilla_Brewing_Expanded/Coffees_and_Teas</li>
 		<li IfModActive="OskarPotocki.VFE.Pirates">1.3/Mods/VEF/Vanilla_Factions_Expanded/Pirates</li>
+		<li IfModActive="Ykara.EPOE">1.3/Mods/Expanded_Prosthetics_and_Organ_Engineering</li>
+		<li IfModActive="vat.epoeforked">1.3/Mods/Expanded_Prosthetics_and_Organ_Engineering_Forked</li>
 	</v1.3>
 </loadFolders>

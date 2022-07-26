@@ -104,7 +104,6 @@
 				or defName = "ColoredLights"
 				or defName = "Machining"
 				or defName = "SmokepopBelt"
-				or defName = "Prosthetics"
 				or defName = "Gunsmithing"
 				or defName = "FlakArmor"
 				or defName = "Mortars"
@@ -133,6 +132,23 @@
         <value>
             <tab>DuneRef_Hidden</tab>
         </value>
+	</Operation>
+
+	<!-- Conditional because EPOE adds tab -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName = "Prosthetics"]/tab</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName = "Prosthetics"]/tab</xpath>
+			<value>
+				<tab>DuneRef_Hidden</tab>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName = "Prosthetics"]</xpath>
+			<value>
+				<tab>DuneRef_Hidden</tab>
+			</value>
+		</nomatch>
 	</Operation>
 
 	<!-- Conditional because Vanilla Furniture Expanded adds tab -->
@@ -248,7 +264,6 @@
 				or defName = "ReconArmor"
 				or defName = "PoweredArmor"
 				or defName = "ChargedShot"
-				or defName = "Bionics"
 				or defName = "ShipBasics"
 				or defName = "ShipSensorCluster"
 				or defName = "ShipCryptosleep"
@@ -260,6 +275,23 @@
         <value>
             <tab>DuneRef_Hidden</tab>
         </value>
+	</Operation>
+
+	<!-- Conditional because EPOE adds tab -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName = "Bionics"]/tab</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName = "Bionics"]/tab</xpath>
+			<value>
+				<tab>DuneRef_Hidden</tab>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName = "Bionics"]</xpath>
+			<value>
+				<tab>DuneRef_Hidden</tab>
+			</value>
+		</nomatch>
 	</Operation>
 
 	<Operation Class="PatchOperationRemove">

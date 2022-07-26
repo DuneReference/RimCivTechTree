@@ -77,7 +77,6 @@
 		<xpath>
 			Defs/ResearchProjectDef[
 				   defName = "CataphractArmor"
-				or defName = "BrainWiring"
 				or defName = "SpecializedLimbs"
 				or defName = "CompactWeaponry"
 				or defName = "VenomSynthesis"
@@ -86,6 +85,23 @@
 		<value>
 			<tab>DuneRef_Hidden</tab>
 		</value>
+	</Operation>
+
+	<!-- Conditional because EPOE adds tab -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName = "BrainWiring"]/tab</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName = "BrainWiring"]/tab</xpath>
+			<value>
+				<tab>DuneRef_Hidden</tab>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName = "BrainWiring"]</xpath>
+			<value>
+				<tab>DuneRef_Hidden</tab>
+			</value>
+		</nomatch>
 	</Operation>
 
 	<Operation Class="PatchOperationRemove">
