@@ -677,21 +677,24 @@
 	<!-- Atomic Era -->
 
 	<ResearchProjectDef>
-		<defName>DuneRef_Refrigeration</defName>
-		<label>Refrigeration</label>
-		<description>Refrigeration</description>
+		<defName>DuneRef_Ecology</defName>
+		<label>Ecology</label>
+		<description>Ecology</description>
 		<baseCost>1000</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
-			<li>DuneRef_Chemistry</li>
-			<li>DuneRef_Electricity</li>
+			<li>DuneRef_Industrialization</li>
+			<li>DuneRef_Sanitation</li>
 		</prerequisites>
  		<researchViewX>14</researchViewX>
-		<researchViewY>1</researchViewY>
+		<researchViewY>2</researchViewY>
 		<modExtensions>
 			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
 				<researchUnlocks>
-					<li>AirConditioning</li>
+					<li>BiofuelRefining</li>
+					<li>Hydroponics</li>
+					<li>GeothermalPower</li>
+					<li>MoisturePump</li>
 				</researchUnlocks>
 			</li>
 		</modExtensions>
@@ -739,6 +742,27 @@
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
+		<defName>DuneRef_Refrigeration</defName>
+		<label>Refrigeration</label>
+		<description>Refrigeration</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>DuneRef_Chemistry</li>
+			<li>DuneRef_Electricity</li>
+		</prerequisites>
+ 		<researchViewX>14</researchViewX>
+		<researchViewY>5</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>AirConditioning</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
 		<defName>DuneRef_Plastics</defName>
 		<label>Plastics</label>
 		<description>Plastics</description>
@@ -756,53 +780,6 @@
 					<li>MicroelectronicsBasics</li>
 					<li>MultiAnalyzer</li>
 					<li>Fabrication</li>
-				</researchUnlocks>
-			</li>
-		</modExtensions>
-	</ResearchProjectDef>
-
-	<ResearchProjectDef>
-		<defName>DuneRef_Ecology</defName>
-		<label>Ecology</label>
-		<description>Ecology</description>
-		<baseCost>1000</baseCost>
-		<techLevel>Industrial</techLevel>
-		<prerequisites>
-			<li>DuneRef_Industrialization</li>
-			<li>DuneRef_Sanitation</li>
-		</prerequisites>
- 		<researchViewX>14</researchViewX>
-		<researchViewY>7</researchViewY>
-		<modExtensions>
-			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
-				<researchUnlocks>
-					<li>BiofuelRefining</li>
-					<li>Hydroponics</li>
-					<li>GeothermalPower</li>
-					<li>MoisturePump</li>
-				</researchUnlocks>
-			</li>
-		</modExtensions>
-	</ResearchProjectDef>
-
-	<ResearchProjectDef>
-		<defName>DuneRef_Medicine</defName>
-		<label>Medicine</label>
-		<description>Medicine</description>
-		<baseCost>1000</baseCost>
-		<techLevel>Industrial</techLevel>
-		<prerequisites>
-			<li>DuneRef_Refrigeration</li>
-		</prerequisites>
- 		<researchViewX>14</researchViewX>
-		<researchViewY>8</researchViewY>
-		<modExtensions>
-			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
-				<researchUnlocks>
-					<li>Prosthetics</li>
-					<li>HospitalBed</li>
-					<li>MedicineProduction</li>
-					<li>VitalsMonitor</li>
 				</researchUnlocks>
 			</li>
 		</modExtensions>
@@ -836,13 +813,36 @@
 			<li>DuneRef_AdvancedBallistics</li>
 		</prerequisites>
  		<researchViewX>15</researchViewX>
-		<researchViewY>3</researchViewY>
+		<researchViewY>2</researchViewY>
 		<modExtensions>
 			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
 				<researchUnlocks>
 					<li>PackagedSurvivalMeal</li>
 					<li>PrecisionRifling</li>
 					<li>MultibarrelWeapons</li>
+				</researchUnlocks>
+			</li>
+		</modExtensions>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>DuneRef_Medicine</defName>
+		<label>Medicine</label>
+		<description>Medicine</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>DuneRef_Refrigeration</li>
+		</prerequisites>
+ 		<researchViewX>15</researchViewX>
+		<researchViewY>4</researchViewY>
+		<modExtensions>
+			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+				<researchUnlocks>
+					<li>Prosthetics</li>
+					<li>HospitalBed</li>
+					<li>MedicineProduction</li>
+					<li>VitalsMonitor</li>
 				</researchUnlocks>
 			</li>
 		</modExtensions>
@@ -924,7 +924,7 @@
 			<li>DuneRef_AdvancedBallistics</li>
 		</prerequisites>
  		<researchViewX>16</researchViewX>
-		<researchViewY>4</researchViewY>
+		<researchViewY>3</researchViewY>
 		<modExtensions>
 			<li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
 				<researchUnlocks>
