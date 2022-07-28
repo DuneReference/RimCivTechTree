@@ -39,5 +39,6 @@
 		<li IfModActive="Ykara.EPOE">1.3/Mods/Expanded_Prosthetics_and_Organ_Engineering</li>
 		<li IfModActive="vat.epoeforked">1.3/Mods/Expanded_Prosthetics_and_Organ_Engineering_Forked</li>
 		<li IfModActive="spoonshortage.ADogSaidAnimalProsthetics">1.3/Mods/A_Dog_Said_Animal_Prosthetics</li>
+		<li IfModActive="UT.AutoDrill">1.3/Mods/AutoDrill</li>
 	</v1.3>
 </loadFolders>
