@@ -44,5 +44,7 @@
 		<li IfModActive="torann.CraftablePlasteel">1.3/Mods/Craftable_Plasteel</li>
 		<li IfModActive="roolo.whatthehack">1.3/Mods/What_the_Hack</li>
 		<li IfModActive="wemd.simpleconcrete">1.3/Mods/Simple_Concrete</li>
+		<li IfModActive="sumghai.replimat">1.3/Mods/Replimat</li>
+		<li IfModActive="sumghai.medpod">1.3/Mods/MedPod</li>
 	</v1.3>
 </loadFolders>
