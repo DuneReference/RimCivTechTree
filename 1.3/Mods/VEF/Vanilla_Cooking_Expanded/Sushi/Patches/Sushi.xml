@@ -25,32 +25,4 @@
 		</value>
 	</Operation>
 
-    <!-- Hide tabs created by this mod -->
-
-	<!-- Special conditional tab edit since all their techs in various mods are in the same tab -->
-    <Operation Class="PatchOperationConditional">
-		<xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]/modExtensions</xpath>
-		<match Class="PatchOperationConditional">
-			<xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]/modExtensions/li[@Class="DuneRef_RimCivTechTree.HiddenTab"]</xpath>
-			<nomatch Class="PatchOperationAdd">
-				<xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]/modExtensions</xpath>
-				<value>
-					<li Class="DuneRef_RimCivTechTree.HiddenTab">
-						<hidden>True</hidden>
-					</li>
-				</value>
-			</nomatch>
-		</match>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]</xpath>
-			<value>
-				<modExtensions>
-					<li Class="DuneRef_RimCivTechTree.HiddenTab">
-						<hidden>True</hidden>
-					</li>
-				</modExtensions>
-			</value>
-		</nomatch>
-	</Operation>
-
 </Patch>
