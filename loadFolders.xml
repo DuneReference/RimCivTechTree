@@ -49,5 +49,6 @@
 		<li IfModActive="sumghai.replimat">1.3/Mods/Replimat</li>
 		<li IfModActive="sumghai.medpod">1.3/Mods/MedPod</li>
 		<li IfModActive="nephlite.orbitaltradecolumn">1.3/Mods/Utility_Columns</li>
+		<li IfModActive="gt.sam.tilledsoil">1.3/Mods/Tilled_Soil</li>
 	</v1.3>
 </loadFolders>
