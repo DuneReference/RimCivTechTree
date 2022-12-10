@@ -52,5 +52,6 @@
 		<li IfModActive="gt.sam.tilledsoil">1.3/Mods/Tilled_Soil</li>
 		<li IfModActive="lanilor.simplerecycling">1.3/Mods/Simple_Recycling</li>
 		<li IfModActive="cousinnic.reinforcedstructures">1.3/Mods/ReinforcedStructures</li>
+		<li IfModActive="regrowth.botr.core">1.3/Mods/ReGrowth__Core</li>
 	</v1.3>
 </loadFolders>
