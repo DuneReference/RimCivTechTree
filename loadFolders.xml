@@ -50,5 +50,6 @@
 		<li IfModActive="sumghai.medpod">1.3/Mods/MedPod</li>
 		<li IfModActive="nephlite.orbitaltradecolumn">1.3/Mods/Utility_Columns</li>
 		<li IfModActive="gt.sam.tilledsoil">1.3/Mods/Tilled_Soil</li>
+		<li IfModActive="lanilor.simplerecycling">1.3/Mods/Simple_Recycling</li>
 	</v1.3>
 </loadFolders>
