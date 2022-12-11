@@ -58,5 +58,8 @@
 		<li IfModActive="rikiki.miningco.mms">1.3/Mods/MiningCo__MMS</li>
 		<li IfModActive="rikiki.miningco.drillturret">1.3/Mods/MiningCo__DrillTurret</li>
 		<li IfModActive="roolo.giddyupmechanoids">1.3/Mods/Giddy_up__Mechanoids</li>
+		<li IfModActive="rimeffect.core">1.3/Mods/Rim_Effect__Core</li>
+		<li IfModActive="rimeffect.asarireapers">1.3/Mods/Rim_Effect__Asari_and_Reapers</li>
+		<li IfModActive="rimeffect.n7">1.3/Mods/Rim_Effect__N7</li>
 	</v1.3>
 </loadFolders>
