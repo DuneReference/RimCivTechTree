@@ -61,5 +61,6 @@
 		<li IfModActive="rimeffect.core">1.3/Mods/Rim_Effect__Core</li>
 		<li IfModActive="rimeffect.asarireapers">1.3/Mods/Rim_Effect__Asari_and_Reapers</li>
 		<li IfModActive="rimeffect.n7">1.3/Mods/Rim_Effect__N7</li>
+		<li IfModActive="dubwise.dubsbadhygiene">1.3/Mods/Dubs_Bad_Hygiene</li>
 	</v1.3>
 </loadFolders>

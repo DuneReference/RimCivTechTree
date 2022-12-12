@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Move mods research to hidden tab -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "SewageSludgeComposting"
+				or defName = "MultiSplitAirCon"
+				or defName = "Plumbing"
+				or defName = "LogBoilers"
+                or defName = "CentralHeating"
+                or defName = "GeothermalHeating"
+                or defName = "Saunas"
+                or defName = "ModernFixtures"
+                or defName = "ElectricPumps"
+                or defName = "AdvancedShowers"
+                or defName = "AdvancedToilets"
+                or defName = "HotTubs"
+                or defName = "LargeWaterPumps"
+                or defName = "DeepWells"
+                or defName = "WashingMachines"
+                or defName = "WaterFiltration"
+                or defName = "HygieneBionics"
+                or defName = "SepticTanks"
+                or defName = "SewageTreatment"
+                or defName = "SwimmingPools"
+                or defName = "Irrigation"
+                or defName = "FireSuppression"
+			]/tab
+		</xpath>
+		<value>
+			<tab>DuneRef_Hidden</tab>
+		</value>
+	</Operation>
+
+	<!-- remove prerequisites so no funky stuff happens when we try to unlock them automatically -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "MultiSplitAirCon"
+				or defName = "CentralHeating"
+                or defName = "GeothermalHeating"
+                or defName = "Saunas"
+                or defName = "ModernFixtures"
+                or defName = "ElectricPumps"
+                or defName = "AdvancedShowers"
+                or defName = "AdvancedToilets"
+                or defName = "HotTubs"
+                or defName = "LargeWaterPumps"
+                or defName = "DeepWells"
+                or defName = "WashingMachines"
+                or defName = "WaterFiltration"
+                or defName = "HygieneBionics"
+                or defName = "SepticTanks"
+                or defName = "SewageTreatment"
+                or defName = "SwimmingPools"
+                or defName = "Irrigation"
+                or defName = "FireSuppression"
+			]/prerequisites
+		</xpath>
+	</Operation>
+
+	<!-- Add techs to RimCivTechTree researches -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "DuneRef_Irrigation"
+			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+		</xpath>
+		<value>
+			<li>SewageSludgeComposting</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "DuneRef_Refrigeration"
+			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+		</xpath>
+		<value>
+			<li>MultiSplitAirCon</li>
+            <li>CentralHeating</li>
+            <li>GeothermalHeating</li>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "DuneRef_Engineering"
+			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+		</xpath>
+		<value>
+			<li>Plumbing</li>
+            <li>LogBoilers</li>
+            <li>Saunas</li>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "DuneRef_Sanitation"
+			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+		</xpath>
+		<value>
+			<li>ModernFixtures</li>
+            <li>SepticTanks</li>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "DuneRef_Plastics"
+			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+		</xpath>
+		<value>
+			<li>ElectricPumps</li>
+            <li>HotTubs</li>
+            <li>LargeWaterPumps</li>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "DuneRef_Robotics"
+			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+		</xpath>
+		<value>
+			<li>AdvancedShowers</li>
+            <li>AdvancedToilets</li>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "DuneRef_Refining"
+			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+		</xpath>
+		<value>
+			<li>DeepWells</li>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "DuneRef_Medicine"
+			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+		</xpath>
+		<value>
+			<li>WashingMachines</li>
+            <li>WaterFiltration</li>
+            <li>SewageTreatment</li>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "DuneRef_SmartMaterials"
+			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+		</xpath>
+		<value>
+			<li>HygieneBionics</li>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "DuneRef_Construction"
+			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+		</xpath>
+		<value>
+			<li>SwimmingPools</li>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ResearchProjectDef[
+				   defName = "DuneRef_Industrialization"
+			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+		</xpath>
+		<value>
+			<li>Irrigation</li>
+            <li>FireSuppression</li>
+		</value>
+	</Operation>
+
+	<!-- Hide tabs created by this mod -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ResearchTabDef[defName = "DubsBadHygiene"]
+		</xpath>
+		<value>
+			<modExtensions>
+				<li Class="DuneRef_RimCivTechTree.HiddenTab">
+					<hidden>True</hidden>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>
+
+</Patch>
