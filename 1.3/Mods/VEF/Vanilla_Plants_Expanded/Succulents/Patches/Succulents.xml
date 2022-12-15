@@ -3,26 +3,26 @@
 
     <!-- Move mods research to hidden tab -->
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>
-			Defs/ResearchProjectDef[defName = "VCE_SucculentSowing"]/tab
-		</xpath>
-		<value>
-			<tab>DuneRef_Hidden</tab>
-		</value>
-	</Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ResearchProjectDef[defName = "VCE_SucculentSowing"]/tab
+        </xpath>
+        <value>
+            <tab>DuneRef_Hidden</tab>
+        </value>
+    </Operation>
 
     <!-- Add techs to RimCivTechTree researches -->
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>
-			Defs/ResearchProjectDef[
-				   defName = "DuneRef_Pottery"
-			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
-		</xpath>
-		<value>
-			<li>VCE_SucculentSowing</li>
-		</value>
-	</Operation> 
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Pottery"
+            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>VCE_SucculentSowing</li>
+        </value>
+    </Operation> 
 
 </Patch>

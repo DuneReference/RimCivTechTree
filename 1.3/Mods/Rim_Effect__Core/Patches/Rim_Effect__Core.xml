@@ -1,139 +1,139 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<!-- Move mods research to hidden tab -->
+    <!-- Move mods research to hidden tab -->
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>
-			Defs/ResearchProjectDef[
-				   defName = "RE_MassEffectFieldManipulation"
-				or defName = "RE_BasicPrefabrication"
-				or defName = "RE_ComplexPrefabrication"
-				or defName = "RE_PrefabSolarPanels"
-				or defName = "RE_PrefabGeothermalPlant"
-				or defName = "RE_MassAcceleration"
-				or defName = "RE_AmmunitionModification"
-				or defName = "RE_FusionReactor"
-				or defName = "RE_ElementZero"
-				or defName = "RE_EezoPowerGeneration"
-				or defName = "RE_BioticAmp"
-				or defName = "RE_OmniTool"
-				or defName = "RE_MediGelFabrication"
-				or defName = "RE_HighTechBodyImplants"
-				or defName = "RE_ComplexSpacerClothing"
-				or defName = "RE_AllianceCooperation"
-				or defName = "RE_AllianceWeaponry"
-				or defName = "RE_HeavyAllianceWeapons"
-				or defName = "RE_AllianceArmoury"
-				or defName = "RE_HeavyAllianceArmor"
-				or defName = "RE_AllianceKodiak"
-				or defName = "RE_ColonyDefenseForce"
-				or defName = "RE_YMIRMech"
-			]/tab
-		</xpath>
-		<value>
-			<tab>DuneRef_Hidden</tab>
-		</value>
-	</Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "RE_MassEffectFieldManipulation"
+                or defName = "RE_BasicPrefabrication"
+                or defName = "RE_ComplexPrefabrication"
+                or defName = "RE_PrefabSolarPanels"
+                or defName = "RE_PrefabGeothermalPlant"
+                or defName = "RE_MassAcceleration"
+                or defName = "RE_AmmunitionModification"
+                or defName = "RE_FusionReactor"
+                or defName = "RE_ElementZero"
+                or defName = "RE_EezoPowerGeneration"
+                or defName = "RE_BioticAmp"
+                or defName = "RE_OmniTool"
+                or defName = "RE_MediGelFabrication"
+                or defName = "RE_HighTechBodyImplants"
+                or defName = "RE_ComplexSpacerClothing"
+                or defName = "RE_AllianceCooperation"
+                or defName = "RE_AllianceWeaponry"
+                or defName = "RE_HeavyAllianceWeapons"
+                or defName = "RE_AllianceArmoury"
+                or defName = "RE_HeavyAllianceArmor"
+                or defName = "RE_AllianceKodiak"
+                or defName = "RE_ColonyDefenseForce"
+                or defName = "RE_YMIRMech"
+            ]/tab
+        </xpath>
+        <value>
+            <tab>DuneRef_Hidden</tab>
+        </value>
+    </Operation>
 
-	<!-- remove prerequisites so no funky stuff happens when we try to unlock them automatically -->
+    <!-- remove prerequisites so no funky stuff happens when we try to unlock them automatically -->
 
-	<Operation Class="PatchOperationRemove">
-		<xpath>
-			Defs/ResearchProjectDef[
-				   defName = "RE_MassEffectFieldManipulation"
-				or defName = "RE_BasicPrefabrication"
-				or defName = "RE_ComplexPrefabrication"
-				or defName = "RE_PrefabSolarPanels"
-				or defName = "RE_PrefabGeothermalPlant"
-				or defName = "RE_MassAcceleration"
-				or defName = "RE_AmmunitionModification"
-				or defName = "RE_FusionReactor"
-				or defName = "RE_ElementZero"
-				or defName = "RE_EezoPowerGeneration"
-				or defName = "RE_BioticAmp"
-				or defName = "RE_OmniTool"
-				or defName = "RE_MediGelFabrication"
-				or defName = "RE_HighTechBodyImplants"
-				or defName = "RE_ComplexSpacerClothing"
-				or defName = "RE_AllianceCooperation"
-				or defName = "RE_AllianceWeaponry"
-				or defName = "RE_HeavyAllianceWeapons"
-				or defName = "RE_AllianceArmoury"
-				or defName = "RE_HeavyAllianceArmor"
-				or defName = "RE_AllianceKodiak"
-				or defName = "RE_ColonyDefenseForce"
-				or defName = "RE_YMIRMech"
-			]/prerequisites
-		</xpath>
-	</Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "RE_MassEffectFieldManipulation"
+                or defName = "RE_BasicPrefabrication"
+                or defName = "RE_ComplexPrefabrication"
+                or defName = "RE_PrefabSolarPanels"
+                or defName = "RE_PrefabGeothermalPlant"
+                or defName = "RE_MassAcceleration"
+                or defName = "RE_AmmunitionModification"
+                or defName = "RE_FusionReactor"
+                or defName = "RE_ElementZero"
+                or defName = "RE_EezoPowerGeneration"
+                or defName = "RE_BioticAmp"
+                or defName = "RE_OmniTool"
+                or defName = "RE_MediGelFabrication"
+                or defName = "RE_HighTechBodyImplants"
+                or defName = "RE_ComplexSpacerClothing"
+                or defName = "RE_AllianceCooperation"
+                or defName = "RE_AllianceWeaponry"
+                or defName = "RE_HeavyAllianceWeapons"
+                or defName = "RE_AllianceArmoury"
+                or defName = "RE_HeavyAllianceArmor"
+                or defName = "RE_AllianceKodiak"
+                or defName = "RE_ColonyDefenseForce"
+                or defName = "RE_YMIRMech"
+            ]/prerequisites
+        </xpath>
+    </Operation>
 
-	<!-- Add techs to RimCivTechTree researches -->
+    <!-- Add techs to RimCivTechTree researches -->
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>
-			Defs/ResearchProjectDef[
-				   defName = "DuneRef_ElementZero"
-			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
-		</xpath>
-		<value>
-			<li>RE_MassEffectFieldManipulation</li>
-			<li>RE_BasicPrefabrication</li>
-			<li>RE_ComplexPrefabrication</li>
-			<li>RE_PrefabSolarPanels</li>
-			<li>RE_ElementZero</li>
-			<li>RE_EezoPowerGeneration</li>
-			<li>RE_BioticAmp</li>
-			<li>RE_OmniTool</li>
-			<li>RE_MediGelFabrication</li>
-			<li>RE_HighTechBodyImplants</li>
-			<li>RE_ComplexSpacerClothing</li>
-			<li>RE_AllianceCooperation</li>
-		</value>
-	</Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_ElementZero"
+            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>RE_MassEffectFieldManipulation</li>
+            <li>RE_BasicPrefabrication</li>
+            <li>RE_ComplexPrefabrication</li>
+            <li>RE_PrefabSolarPanels</li>
+            <li>RE_ElementZero</li>
+            <li>RE_EezoPowerGeneration</li>
+            <li>RE_BioticAmp</li>
+            <li>RE_OmniTool</li>
+            <li>RE_MediGelFabrication</li>
+            <li>RE_HighTechBodyImplants</li>
+            <li>RE_ComplexSpacerClothing</li>
+            <li>RE_AllianceCooperation</li>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>
-			Defs/ResearchProjectDef[
-				   defName = "DuneRef_QuantumArmaments"
-			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
-		</xpath>
-		<value>
-			<li>RE_MassAcceleration</li>
-			<li>RE_AmmunitionModification</li>
-			<li>RE_AllianceWeaponry</li>
-			<li>RE_HeavyAllianceWeapons</li>
-			<li>RE_AllianceArmoury</li>
-			<li>RE_HeavyAllianceArmor</li>
-			<li>RE_ColonyDefenseForce</li>
-			<li>RE_YMIRMech</li>
-		</value>
-	</Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_QuantumArmaments"
+            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>RE_MassAcceleration</li>
+            <li>RE_AmmunitionModification</li>
+            <li>RE_AllianceWeaponry</li>
+            <li>RE_HeavyAllianceWeapons</li>
+            <li>RE_AllianceArmoury</li>
+            <li>RE_HeavyAllianceArmor</li>
+            <li>RE_ColonyDefenseForce</li>
+            <li>RE_YMIRMech</li>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>
-			Defs/ResearchProjectDef[
-				   defName = "DuneRef_QuantumIndustry"
-			]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
-		</xpath>
-		<value>
-			<li>RE_AllianceKodiak</li>
-		</value>
-	</Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_QuantumIndustry"
+            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>RE_AllianceKodiak</li>
+        </value>
+    </Operation>
 
-	<!-- Hide tabs created by this mod -->
+    <!-- Hide tabs created by this mod -->
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>
-			Defs/ResearchTabDef[defName = "RimEffect"]
-		</xpath>
-		<value>
-			<modExtensions>
-				<li Class="DuneRef_RimCivTechTree.HiddenTab">
-					<hidden>True</hidden>
-				</li>
-			</modExtensions>
-		</value>
-	</Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchTabDef[defName = "RimEffect"]
+        </xpath>
+        <value>
+            <modExtensions>
+                <li Class="DuneRef_RimCivTechTree.HiddenTab">
+                    <hidden>True</hidden>
+                </li>
+            </modExtensions>
+        </value>
+    </Operation>
 
 </Patch>
