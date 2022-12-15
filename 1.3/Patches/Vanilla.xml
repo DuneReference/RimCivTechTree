@@ -264,17 +264,108 @@
                 or defName = "ReconArmor"
                 or defName = "PoweredArmor"
                 or defName = "ChargedShot"
-                or defName = "ShipBasics"
-                or defName = "ShipSensorCluster"
-                or defName = "ShipCryptosleep"
-                or defName = "ShipReactor"
-                or defName = "ShipEngine"
-                or defName = "ShipComputerCore"
             ]
         </xpath>
         <value>
             <tab>DuneRef_Hidden</tab>
         </value>
+    </Operation>
+
+    <!-- Conditional because SoS2 adds tab -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName = "ShipBasics"]/tab</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ResearchProjectDef[defName = "ShipBasics"]/tab</xpath>
+            <value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName = "ShipBasics"]</xpath>
+            <value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName = "ShipReactor"]/tab</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ResearchProjectDef[defName = "ShipReactor"]/tab</xpath>
+            <value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName = "ShipReactor"]</xpath>
+            <value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName = "ShipEngine"]/tab</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ResearchProjectDef[defName = "ShipEngine"]/tab</xpath>
+            <value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName = "ShipEngine"]</xpath>
+            <value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName = "ShipComputerCore"]/tab</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ResearchProjectDef[defName = "ShipComputerCore"]/tab</xpath>
+            <value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName = "ShipComputerCore"]</xpath>
+            <value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName = "ShipSensorCluster"]/tab</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ResearchProjectDef[defName = "ShipSensorCluster"]/tab</xpath>
+            <value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName = "ShipSensorCluster"]</xpath>
+            <value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName = "ShipCryptosleep"]/tab</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ResearchProjectDef[defName = "ShipCryptosleep"]/tab</xpath>
+            <value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName = "ShipCryptosleep"]</xpath>
+            <value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+        </nomatch>
     </Operation>
 
     <!-- Conditional because EPOE adds tab -->
