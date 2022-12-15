@@ -13,8 +13,8 @@
         <li IfModActive="VanillaExpanded.VPlantsEMore">1.3/Mods/VEF/Vanilla_Plants_Expanded/More_Plants</li>
         <li IfModActive="VanillaExpanded.VPlantsESucculents">1.3/Mods/VEF/Vanilla_Plants_Expanded/Succulents</li>
         <li IfModActive="VanillaExpanded.VCookE">1.3/Mods/VEF/Vanilla_Cooking_Expanded/Vanilla_Cooking_Expanded</li>
-        <li IfModActive="VanillaExpanded.VCookE">1.3/Mods/VEF/Vanilla_Cooking_Expanded/Stews</li>
-        <li IfModActive="VanillaExpanded.VCookE">1.3/Mods/VEF/Vanilla_Cooking_Expanded/Sushi</li>
+        <li IfModActive="vanillaexpanded.vcookestews">1.3/Mods/VEF/Vanilla_Cooking_Expanded/Stews</li>
+        <li IfModActive="vanillaexpanded.vcookesushi">1.3/Mods/VEF/Vanilla_Cooking_Expanded/Sushi</li>
         <li IfModActive="VanillaExpanded.VWE">1.3/Mods/VEF/Vanilla_Weapons_Expanded/Vanilla_Weapons_Expanded</li>
         <li IfModActive="VanillaExpanded.VWEC">1.3/Mods/VEF/Vanilla_Weapons_Expanded/Coilguns</li>
         <li IfModActive="VanillaExpanded.VWEFT">1.3/Mods/VEF/Vanilla_Weapons_Expanded/Frontier</li>
