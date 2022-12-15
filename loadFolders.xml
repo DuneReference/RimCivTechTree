@@ -35,6 +35,7 @@
         <li IfModActive="VanillaExpanded.VAPPE">1.3/Mods/VEF/Vanilla_Apparel_Expanded/Vanilla_Apparel_Expanded</li>
         <li IfModActive="VanillaExpanded.VARME">1.3/Mods/VEF/Vanilla_Armour_Expanded/Vanilla_Armour_Expanded</li>
         <li IfModActive="VanillaExpanded.VBooksE">1.3/Mods/VEF/Vanilla_Books_Expanded/Vanilla_Books_Expanded</li>
+		<li IfModActive="vanillaexpanded.vpsycastse">1.3/Mods/VEF/Vanilla_Psycasts_Expanded/Vanilla_Psycasts_Expanded</li>
         <li IfModActive="Xercaine.IndustrialAge.Artillery">1.3/Mods/Artillery_Gun</li>
         <li IfModActive="cousinnic.tieredconcrete">1.3/Mods/Tiered_Concrete</li>
         <li IfModActive="VanillaExpanded.VBrewE">1.3/Mods/VEF/Vanilla_Brewing_Expanded/Vanilla_Brewing_Expanded</li>
