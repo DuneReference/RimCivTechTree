@@ -14,6 +14,16 @@
         </value>
     </Operation>
 
+    <!-- remove tags with faction start info so we can apply the start info to new techs that contain this one -->
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "RG_MushroomCultivation"
+            ]/tags/li[text()="TribalStart"]
+        </xpath>
+    </Operation>
+
     <!-- Add techs to RimCivTechTree researches -->
 
     <Operation Class="PatchOperationAdd">

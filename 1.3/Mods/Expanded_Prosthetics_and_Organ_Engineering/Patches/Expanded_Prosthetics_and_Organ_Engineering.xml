@@ -45,6 +45,29 @@
         </xpath>
     </Operation>
 
+    <!-- remove tags with faction start info so we can apply the start info to new techs that contain this one -->
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "BasicProsthetics"
+            ]/tags/li[text()="ClassicStart"]
+        </xpath>
+    </Operation>
+
+    <!-- Conditional for royalty -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+        <match Class="PatchOperationRemove">
+            <xpath>
+                Defs/ResearchProjectDef[
+                       defName = "BrainWiring"
+                ]/tags/li[text()="ClassicStart"]</xpath>
+        </match>
+    </Operation>
+
     <!-- Add techs to RimCivTechTree researches -->
 
     <Operation Class="PatchOperationAdd">

@@ -31,6 +31,112 @@
         </value>
     </Operation>
 
+    <!-- remove tags with faction start info so we can apply the start info to new techs that contain this one -->
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "VFEC_Togas"
+                or defName = "VFEC_TemperatureControl"
+                or defName = "VFEC_MeatDrying"
+                or defName = "VFEC_Mosaics"
+                or defName = "VFEC_Thermaebath"
+                or defName = "VFEC_DramaAndComedy"
+                or defName = "VFEC_BronzeWorking"
+                or defName = "VFEC_CraftingBench"
+                or defName = "VFEC_CementMaking"
+                or defName = "VFEC_WoodfiredCrematorium"
+                or defName = "VFEC_TyrianProduction"
+                or defName = "VFEC_RoadBuilding"
+                or defName = "VFEC_HeavyShieldMaking"
+                or defName = "VFEC_LegionaryArmaments"
+                or defName = "VFEC_LegionnaireArmor"
+                or defName = "VFEC_CenturionArmor"
+                or defName = "VFEC_Scorpion"
+                or defName = "VFEC_Beacons"
+                or defName = "PsychoidBrewing"
+                or defName = "TreeSowing"
+                or defName = "PassiveCooler"
+                or defName = "Pemmican"
+                or defName = "RecurveBow"
+            ]/tags/li[text()="ClassicalStart"]
+        </xpath>
+    </Operation>
+
+    <!-- add tags with faction start info to the cooresponding new ResearchProjectDefs so we can auto-unlock those at the start -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Archery"]/tags</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Archery"]/tags</xpath>
+            <value>
+                <li>ClassicalStart</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Archery"]</xpath>
+            <value>
+                <tags>
+                    <li>ClassicalStart</li>
+                </tags>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Masonry"]/tags</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Masonry"]/tags</xpath>
+            <value>
+                <li>ClassicalStart</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Masonry"]</xpath>
+            <value>
+                <tags>
+                    <li>ClassicalStart</li>
+                </tags>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Currency"]/tags</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Currency"]/tags</xpath>
+            <value>
+                <li>ClassicalStart</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Currency"]</xpath>
+            <value>
+                <tags>
+                    <li>ClassicalStart</li>
+                </tags>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Engineering"]/tags</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Engineering"]/tags</xpath>
+            <value>
+                <li>ClassicalStart</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Engineering"]</xpath>
+            <value>
+                <tags>
+                    <li>ClassicalStart</li>
+                </tags>
+            </value>
+        </nomatch>
+    </Operation>
+
     <!-- Add techs to RimCivTechTree researches -->
 
     <Operation Class="PatchOperationAdd">

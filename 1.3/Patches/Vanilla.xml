@@ -31,6 +31,28 @@
         </xpath>
     </Operation>
 
+    <!-- remove tags with faction start info so we can apply the start info to new techs that contain this one -->
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "PsychoidBrewing"
+                or defName = "TreeSowing"
+                or defName = "PassiveCooler"
+                or defName = "Pemmican"
+                or defName = "RecurveBow"
+            ]/tags/li[text()="TribalStart"]
+        </xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "PassiveCooler"
+            ]/tags/li[text()="ClassicStart"]
+        </xpath>
+    </Operation>
+
     <!-- Medieval -->
 
     <Operation Class="PatchOperationAdd">
@@ -74,6 +96,18 @@
                 or defName = "LongBlades"
                 or defName = "PlateArmor"
             ]/prerequisites
+        </xpath>
+    </Operation>
+
+    <!-- remove tags with faction start info so we can apply the start info to new techs that contain this one -->
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "ComplexFurniture"
+                or defName = "Stonecutting"
+                or defName = "ComplexClothing"
+            ]/tags/li[text()="ClassicStart"]
         </xpath>
     </Operation>
 
@@ -252,6 +286,18 @@
                 or defName = "MultiAnalyzer"
                 or defName = "SniperTurret"
             ]/hiddenPrerequisites
+        </xpath>
+    </Operation>
+
+    <!-- remove tags with faction start info so we can apply the start info to new techs that contain this one -->
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "Electricity"
+                or defName = "NutrientPaste"
+                or defName = "AirConditioning"
+            ]/tags/li[text()="ClassicStart"]
         </xpath>
     </Operation>
 

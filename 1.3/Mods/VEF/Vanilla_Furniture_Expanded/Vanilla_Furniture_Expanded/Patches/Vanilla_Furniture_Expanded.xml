@@ -35,6 +35,17 @@
         </xpath>
     </Operation>
 
+    <!-- remove tags with faction start info so we can apply the start info to new techs that contain this one -->
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "MF_BasicFurniture"
+                or defName = "ComplexFurniture"
+            ]/tags/li[text()="ClassicStart"]
+        </xpath>
+    </Operation>
+
     <!-- Add techs to RimCivTechTree researches -->
 
     <Operation Class="PatchOperationAdd">

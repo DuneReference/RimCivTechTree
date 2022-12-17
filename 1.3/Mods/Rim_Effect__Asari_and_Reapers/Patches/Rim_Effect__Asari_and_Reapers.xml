@@ -28,6 +28,16 @@
         </xpath>
     </Operation>
 
+    <!-- remove tags with faction start info so we can apply the start info to new techs that contain this one -->
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "RE_AsariCooperation"
+            ]/tags/li[text()="AllianceColonyStart"]
+        </xpath>
+    </Operation>
+
     <!-- Add techs to RimCivTechTree researches -->
 
     <Operation Class="PatchOperationAdd">

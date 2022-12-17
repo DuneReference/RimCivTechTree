@@ -63,6 +63,21 @@
         </xpath>
     </Operation>
 
+    <!-- remove tags with faction start info so we can apply the start info to new techs that contain this one -->
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "Plumbing"
+                or defName = "LogBoilers"
+                or defName = "CentralHeating"
+                or defName = "ModernFixtures"
+                or defName = "ElectricPumps"
+                or defName = "Irrigation"
+            ]/tags/li[text()="ClassicStart"]
+        </xpath>
+    </Operation>
+
     <!-- Add techs to RimCivTechTree researches -->
 
     <Operation Class="PatchOperationAdd">

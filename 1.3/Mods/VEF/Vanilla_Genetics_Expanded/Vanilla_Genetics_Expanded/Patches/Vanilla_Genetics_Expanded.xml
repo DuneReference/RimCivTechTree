@@ -62,6 +62,53 @@
         </value>
     </Operation>
 
+    <!-- Conditional for Vanilla Factions Expanded Insectoids -->
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Insectoids</li>
+		</mods>
+        <match Class="PatchOperationReplace">
+            <xpath>
+                Defs/ResearchProjectDef[
+                    defName = "GR_InsectoidBioengineering"
+                ]/tab
+            </xpath>
+            <value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Insectoids</li>
+		</mods>
+        <match Class="PatchOperationRemove">
+            <xpath>
+                Defs/ResearchProjectDef[
+                    defName = "GR_InsectoidBioengineering"
+                ]/prerequisites
+            </xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Insectoids</li>
+		</mods>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs/ResearchProjectDef[
+                       defName = "DuneRef_Genetics"
+                ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            </xpath>
+            <value>
+                <li>GR_InsectoidBioengineering</li>
+            </value>
+        </match>
+    </Operation>
+
     <!-- Hide tabs created by this mod -->
 
     <!-- Special conditional tab edit since all their techs in various mods are in the same tab -->

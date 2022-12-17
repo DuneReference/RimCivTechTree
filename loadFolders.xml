@@ -10,6 +10,7 @@
         <li IfModActive="OskarPotocki.VanillaFactionsExpanded.MedievalModule">1.3/Mods/VEF/Vanilla_Factions_Expanded/Medieval</li>
         <li IfModActive="OskarPotocki.VFE.Vikings">1.3/Mods/VEF/Vanilla_Factions_Expanded/Vikings</li>
 		<li IfModActive="vanillaexpanded.vfea">1.3/Mods/VEF/Vanilla_Factions_Expanded/Ancients</li>
+		<li IfModActive="oskarpotocki.vfe.insectoid">1.3/Mods/VEF/Vanilla_Factions_Expanded/Insectoids</li>
 		<li IfModActive="oskarpotocki.vfe.mechanoid">1.3/Mods/VEF/Vanilla_Factions_Expanded/Mechanoids</li>
         <li IfModActive="VanillaExpanded.VPlantsEMore">1.3/Mods/VEF/Vanilla_Plants_Expanded/More_Plants</li>
         <li IfModActive="VanillaExpanded.VPlantsESucculents">1.3/Mods/VEF/Vanilla_Plants_Expanded/Succulents</li>
