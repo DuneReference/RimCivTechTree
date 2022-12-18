@@ -56,17 +56,30 @@
 
     <!-- Hide tabs created by this mod -->
 
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/ResearchTabDef[defName = "Reinforced"]
-        </xpath>
-        <value>
-            <modExtensions>
-                <li Class="DuneRef_RimCivTechTree.HiddenTab">
-                    <hidden>True</hidden>
-                </li>
-            </modExtensions>
-        </value>
+    <!-- Special conditional tab edit since Tiered Concrete and Reinforced Structures are in the same tab -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ResearchTabDef[defName="Reinforced"]/modExtensions</xpath>
+        <match Class="PatchOperationConditional">
+            <xpath>Defs/ResearchTabDef[defName="Reinforced"]/modExtensions/li[@Class="DuneRef_RimCivTechTree.HiddenTab"]</xpath>
+            <nomatch Class="PatchOperationAdd">
+                <xpath>Defs/ResearchTabDef[defName="Reinforced"]/modExtensions</xpath>
+                <value>
+                    <li Class="DuneRef_RimCivTechTree.HiddenTab">
+                        <hidden>True</hidden>
+                    </li>
+                </value>
+            </nomatch>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ResearchTabDef[defName="Reinforced"]</xpath>
+            <value>
+                <modExtensions>
+                    <li Class="DuneRef_RimCivTechTree.HiddenTab">
+                        <hidden>True</hidden>
+                    </li>
+                </modExtensions>
+            </value>
+        </nomatch>
     </Operation>
 
 </Patch>
