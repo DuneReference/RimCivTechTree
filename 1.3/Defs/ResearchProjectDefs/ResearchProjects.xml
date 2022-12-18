@@ -43,9 +43,9 @@
     </ResearchProjectDef>
     
     <ResearchProjectDef>
-        <defName>DuneRef_Mining</defName>
-        <label>Mining</label>
-        <description>Mining</description>
+        <defName>DuneRef_Masonry</defName>
+        <label>Masonry</label>
+        <description>Masonry</description>
         <baseCost>500</baseCost>
         <techLevel>Neolithic</techLevel>
         <researchViewX>0</researchViewX>
@@ -60,7 +60,7 @@
     </ResearchProjectDef>
     
     <ResearchProjectDef>
-        <defName>DuneRef_Clothing</defName>
+        <defName>DuneRef_Clothworking</defName>
         <label>Clothing</label>
         <description>Clothing</description>
         <baseCost>1000</baseCost>
@@ -96,16 +96,38 @@
     </ResearchProjectDef>
     
     <ResearchProjectDef>
-        <defName>DuneRef_WritingAndCulture</defName>
-        <label>Writing and Culture</label>
-        <description>Writing and Culture</description>
+        <defName>DuneRef_Woodworking</defName>
+        <label>Woodworking</label>
+        <description>Woodworking</description>
         <baseCost>1000</baseCost>
         <techLevel>Neolithic</techLevel>
         <prerequisites>
-            <li>DuneRef_Pottery</li>
             <li>DuneRef_Health</li>
         </prerequisites>
         <researchViewX>1</researchViewX>
+        <researchViewY>6</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+                <researchUnlocks>
+                    <li>ComplexFurniture</li>
+                    <li>RecurveBow</li>
+                    <li>Greatbow</li>
+                </researchUnlocks>
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_WritingAndCulture</defName>
+        <label>Writing and Culture</label>
+        <description>Writing and Culture</description>
+        <baseCost>1500</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <prerequisites>
+            <li>DuneRef_Pottery</li>
+            <li>DuneRef_Woodworking</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
         <researchViewY>4</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -115,62 +137,18 @@
             </li>
         </modExtensions>
     </ResearchProjectDef>
-    
+
     <ResearchProjectDef>
-        <defName>DuneRef_Archery</defName>
-        <label>Archery</label>
-        <description>Archery</description>
-        <baseCost>1000</baseCost>
-        <techLevel>Neolithic</techLevel>
-        <prerequisites>
-            <li>DuneRef_Health</li>
-        </prerequisites>
-        <researchViewX>1</researchViewX>
-        <researchViewY>6</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
-                <researchUnlocks>
-                    <li>RecurveBow</li>
-                    <li>Greatbow</li>
-                </researchUnlocks>
-            </li>
-        </modExtensions>
-        <tags>
-            <li>TribalStart</li>
-        </tags>
-    </ResearchProjectDef>
-    
-    <ResearchProjectDef>
-        <defName>DuneRef_Masonry</defName>
-        <label>Masonry</label>
-        <description>Masonry</description>
+        <defName>DuneRef_SteelWorking</defName>
+        <label>Steel Working</label>
+        <description>Steel Working</description>
         <baseCost>1500</baseCost>
         <techLevel>Neolithic</techLevel>
         <prerequisites>
-            <li>DuneRef_Mining</li>
+            <li>DuneRef_Masonry</li>
         </prerequisites>
         <researchViewX>2</researchViewX>
         <researchViewY>6</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
-                <researchUnlocks>
-                    <li>ComplexFurniture</li>
-                </researchUnlocks>
-            </li>
-        </modExtensions>
-    </ResearchProjectDef>
-    
-    <ResearchProjectDef>
-        <defName>DuneRef_BronzeWorking</defName>
-        <label>Bronze Working</label>
-        <description>Bronze Working</description>
-        <baseCost>1500</baseCost>
-        <techLevel>Neolithic</techLevel>
-        <prerequisites>
-            <li>DuneRef_Mining</li>
-        </prerequisites>
-        <researchViewX>2</researchViewX>
-        <researchViewY>7</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
                 <researchUnlocks>
@@ -183,13 +161,13 @@
     <!-- Classical Era -->
 
     <ResearchProjectDef>
-        <defName>DuneRef_ComplexClothing</defName>
+        <defName>DuneRef_ComplexClothworking</defName>
         <label>Complex Clothing</label>
         <description>Complex Clothing</description>
         <baseCost>2000</baseCost>
         <techLevel>Neolithic</techLevel>
         <prerequisites>
-            <li>DuneRef_Clothing</li>
+            <li>DuneRef_Clothworking</li>
             <li>DuneRef_WritingAndCulture</li>
         </prerequisites>
         <researchViewX>3</researchViewX>
@@ -210,7 +188,7 @@
         <baseCost>2000</baseCost>
         <techLevel>Neolithic</techLevel>
         <prerequisites>
-            <li>DuneRef_Clothing</li>
+            <li>DuneRef_Clothworking</li>
             <li>DuneRef_WritingAndCulture</li>
         </prerequisites>
         <researchViewX>3</researchViewX>
@@ -220,24 +198,6 @@
                 <researchUnlocks>
                     <li>CarpetMaking</li>
                 </researchUnlocks>
-            </li>
-        </modExtensions>
-    </ResearchProjectDef>
-    
-    <ResearchProjectDef>
-        <defName>DuneRef_IronWorking</defName>
-        <label>Iron Working</label>
-        <description>Iron Working</description>
-        <baseCost>2000</baseCost>
-        <techLevel>Neolithic</techLevel>
-        <prerequisites>
-            <li>DuneRef_BronzeWorking</li>
-        </prerequisites>
-        <researchViewX>3</researchViewX>
-        <researchViewY>7</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
-                <researchUnlocks />
             </li>
         </modExtensions>
     </ResearchProjectDef>
@@ -269,8 +229,8 @@
         <baseCost>2500</baseCost>
         <techLevel>Neolithic</techLevel>
         <prerequisites>
-            <li>DuneRef_Masonry</li>
-            <li>DuneRef_BronzeWorking</li>
+            <li>DuneRef_Woodworking</li>
+            <li>DuneRef_SteelWorking</li>
         </prerequisites>
         <researchViewX>4</researchViewX>
         <researchViewY>6</researchViewY>
@@ -288,8 +248,8 @@
         <baseCost>2500</baseCost>
         <techLevel>Neolithic</techLevel>
         <prerequisites>
-            <li>DuneRef_ComplexClothing</li>
-            <li>DuneRef_IronWorking</li>
+            <li>DuneRef_ComplexClothworking</li>
+            <li>DuneRef_SteelWorking</li>
         </prerequisites>
         <researchViewX>4</researchViewX>
         <researchViewY>5</researchViewY>
@@ -311,8 +271,8 @@
         <baseCost>3000</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
-            <li>DuneRef_ComplexClothing</li>
-            <li>DuneRef_IronWorking</li>
+            <li>DuneRef_ComplexClothworking</li>
+            <li>DuneRef_SteelWorking</li>
         </prerequisites>
         <researchViewX>5</researchViewX>
         <researchViewY>0</researchViewY>
@@ -327,31 +287,12 @@
     </ResearchProjectDef>
     
     <ResearchProjectDef>
-        <defName>DuneRef_Machinery</defName>
-        <label>Machinery</label>
-        <description>Machinery</description>
-        <baseCost>3000</baseCost>
-        <techLevel>Medieval</techLevel>
-        <prerequisites>
-            <li>DuneRef_Engineering</li>
-        </prerequisites>
-        <researchViewX>5</researchViewX>
-        <researchViewY>6</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
-                <researchUnlocks />
-            </li>
-        </modExtensions>
-    </ResearchProjectDef>
-    
-    <ResearchProjectDef>
         <defName>DuneRef_MilitaryEngineering</defName>
         <label>Military Engineering</label>
         <description>Military Engineering</description>
         <baseCost>3500</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
-            <li>DuneRef_Archery</li>
             <li>DuneRef_Engineering</li>
             <li>DuneRef_Construction</li>
         </prerequisites>
@@ -395,15 +336,16 @@
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_ExpandedCulture</li>
-            <li>DuneRef_Machinery</li>
             <li>DuneRef_Construction</li>
-            <li>DuneRef_ComplexClothing</li>
+            <li>DuneRef_ComplexClothworking</li>
         </prerequisites>
         <researchViewX>9</researchViewX>
         <researchViewY>2</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
-                <researchUnlocks />
+                <researchUnlocks>
+                    <li>Machining</li>
+                </researchUnlocks>
             </li>
         </modExtensions>
     </ResearchProjectDef>
@@ -420,25 +362,6 @@
         </prerequisites>
         <researchViewX>9</researchViewX>
         <researchViewY>3</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
-                <researchUnlocks />
-            </li>
-        </modExtensions>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>DuneRef_Ballistics</defName>
-        <label>Ballistics</label>
-        <description>Ballistics</description>
-        <baseCost>5000</baseCost>
-        <techLevel>Industrial</techLevel>
-        <prerequisites>
-            <li>DuneRef_Machinery</li>
-            <li>DuneRef_Gunpowder</li>
-        </prerequisites>
-        <researchViewX>9</researchViewX>
-        <researchViewY>5</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
                 <researchUnlocks />
@@ -496,14 +419,14 @@
         <baseCost>6000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>DuneRef_Ballistics</li>
+            <li>DuneRef_Gunpowder</li>
+            <li>DuneRef_Industrialization</li>
         </prerequisites>
         <researchViewX>10</researchViewX>
         <researchViewY>5</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
                 <researchUnlocks>
-                    <li>Machining</li>
                     <li>Gunsmithing</li>
                 </researchUnlocks>
             </li>
@@ -534,24 +457,6 @@
                     <li>BlowbackOperation</li>
                     <li>GasOperation</li>
                 </researchUnlocks>
-            </li>
-        </modExtensions>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>DuneRef_Steel</defName>
-        <label>Steel</label>
-        <description>Steel</description>
-        <baseCost>7000</baseCost>
-        <techLevel>Industrial</techLevel>
-        <prerequisites>
-            <li>DuneRef_Industrialization</li>
-        </prerequisites>
-        <researchViewX>11</researchViewX>
-        <researchViewY>7</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
-                <researchUnlocks />
             </li>
         </modExtensions>
     </ResearchProjectDef>
@@ -646,7 +551,6 @@
         <baseCost>8000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>DuneRef_Steel</li>
             <li>DuneRef_Refining</li>
         </prerequisites>
         <researchViewX>12</researchViewX>

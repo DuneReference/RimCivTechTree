@@ -66,33 +66,15 @@
     <!-- add tags with faction start info to the cooresponding new ResearchProjectDefs so we can auto-unlock those at the start -->
 
     <Operation Class="PatchOperationConditional">
-        <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Archery"]/tags</xpath>
+        <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Woodworking"]/tags</xpath>
         <match Class="PatchOperationAdd">
-            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Archery"]/tags</xpath>
+            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Woodworking"]/tags</xpath>
             <value>
                 <li>ClassicalStart</li>
             </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Archery"]</xpath>
-            <value>
-                <tags>
-                    <li>ClassicalStart</li>
-                </tags>
-            </value>
-        </nomatch>
-    </Operation>
-
-    <Operation Class="PatchOperationConditional">
-        <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Masonry"]/tags</xpath>
-        <match Class="PatchOperationAdd">
-            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Masonry"]/tags</xpath>
-            <value>
-                <li>ClassicalStart</li>
-            </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Masonry"]</xpath>
+            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Woodworking"]</xpath>
             <value>
                 <tags>
                     <li>ClassicalStart</li>
@@ -142,7 +124,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_Clothing"
+                   defName = "DuneRef_Clothworking"
             ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -179,7 +161,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_Mining"
+                   defName = "DuneRef_Masonry"
             ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -202,7 +184,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_BronzeWorking"
+                   defName = "DuneRef_SteelWorking"
             ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -225,7 +207,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_IronWorking"
+                   defName = "DuneRef_SteelWorking"
             ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>

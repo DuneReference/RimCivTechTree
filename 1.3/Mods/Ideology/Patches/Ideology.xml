@@ -26,4 +26,27 @@
         </xpath>
     </Operation>
 
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Bioregeneration"
+            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>Biosculpting</li>
+            <li>Bioregeneration</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_SmartMaterials"
+            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>NeuralSupercharger</li>
+        </value>
+    </Operation>
+
 </Patch>

@@ -121,7 +121,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_Steel"
+                   defName = "DuneRef_Industrialization"
             ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -210,6 +210,23 @@
                 </modExtensions>
             </value>
         </nomatch>
+    </Operation>
+
+    <!-- Fix for this mod until it's fixed by author -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "VFES_Platform"
+                ]/researchPrerequisites/li
+            </xpath>
+            <value>
+                <li>VWE_TrenchWarfare</li>
+            </value>
+        </match>
     </Operation>
 
 </Patch>

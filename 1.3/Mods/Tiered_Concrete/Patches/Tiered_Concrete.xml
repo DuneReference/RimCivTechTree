@@ -41,16 +41,6 @@
         <value>
             <li>ConcreteMixing</li>
             <li>ConcreteRecipe</li>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/ResearchProjectDef[
-                   defName = "DuneRef_Steel"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
-        </xpath>
-        <value>
             <li>SteelConcreteInfusion</li>
         </value>
     </Operation>

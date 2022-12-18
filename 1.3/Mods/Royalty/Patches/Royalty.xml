@@ -38,6 +38,32 @@
         </xpath>
     </Operation>
 
+    <!-- Add techs to RimCivTechTree researches -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_ComplexClothworking"
+            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>NobleApparel</li>
+            <li>RoyalApparel</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_ExpandedCulture"
+            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>Harp</li>
+            <li>Harpsichord</li>
+        </value>
+    </Operation>
+
     <!-- Industrial -->
 
     <Operation Class="PatchOperationAdd">
@@ -69,6 +95,31 @@
                    defName = "JumpPack"
             ]/hiddenPrerequisites
         </xpath>
+    </Operation>
+
+    <!-- Add techs to RimCivTechTree researches -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_PredictiveSystems"
+            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>JumpPack</li>
+            <li>Gunlink</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_ExpandedCulture"
+            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>Piano</li>
+        </value>
     </Operation>
 
     <!-- Spacer -->
@@ -126,6 +177,42 @@
         </xpath>
     </Operation>
 
+    <!-- Add techs to RimCivTechTree researches -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_AdvancedShields"
+            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>CataphractArmor</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Medicine"
+            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>SpecializedLimbs</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Cybernetics"
+            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>CompactWeaponry</li>
+            <li>VenomSynthesis</li>
+        </value>
+    </Operation>
+
     <!-- Ultra -->
 
     <Operation Class="PatchOperationAdd">
@@ -171,6 +258,25 @@
                 or defName = "CircadianInfluence"
             ]/hiddenPrerequisites
         </xpath>
+    </Operation>
+
+    <!-- Add techs to RimCivTechTree researches -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Bioregeneration"
+            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>ArtificialMetabolism</li>
+            <li>NeuralComputation</li>
+            <li>SkinHardening</li>
+            <li>HealingFactors</li>
+            <li>FleshShaping</li>
+            <li>MolecularAnalysis</li>
+            <li>CircadianInfluence</li>
+        </value>
     </Operation>
 
 </Patch>
