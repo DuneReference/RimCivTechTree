@@ -244,7 +244,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_Currency"
+                   defName = "DuneRef_Woodworking"
             ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -264,6 +264,74 @@
                     <hidden>True</hidden>
                 </li>
             </modExtensions>
+        </value>
+    </Operation>
+
+    <!-- Moving Individual items to different techs -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/TerrainDef[
+                   @Name = "PRF_ConcreteFloorBase"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Industrialization</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "PRF_FermentingBarrel"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>PRF_SelfCooking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "TableRoboticMachining"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Electronics</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "PRF_StoneWorks"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Computers</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "PRF_SALAutoMinerI"
+                or defName = "PRF_GenericAnimalHarvester_II"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_PredictiveSystems</li>
+            </researchPrerequisites>
         </value>
     </Operation>
 

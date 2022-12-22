@@ -15,12 +15,19 @@ namespace DuneRef_RimCivTechTree
 
                 if (proj.GetModExtension<ResearchUnlocks>() != null)
                 {
-                    foreach (ResearchProjectDef unlock in proj.GetModExtension<ResearchUnlocks>().researchUnlocks)
+                    found = x.researchPrerequisite == proj ||
+                           (x.researchPrerequisites != null &&
+                            x.researchPrerequisites.Contains(proj));
+
+                    if (!found)
                     {
-                        found = x.researchPrerequisite == unlock ||
-                               (x.researchPrerequisites != null &&
-                                x.researchPrerequisites.Contains(unlock));
-                        if (found) break;
+                        foreach (ResearchProjectDef unlock in proj.GetModExtension<ResearchUnlocks>().researchUnlocks)
+                        {
+                            found = x.researchPrerequisite == unlock ||
+                                   (x.researchPrerequisites != null &&
+                                    x.researchPrerequisites.Contains(unlock));
+                            if (found) break;
+                        }
                     }
                 }
 
@@ -36,11 +43,17 @@ namespace DuneRef_RimCivTechTree
 
                         if (proj.GetModExtension<ResearchUnlocks>() != null)
                         {
-                            foreach (ResearchProjectDef unlock in proj.GetModExtension<ResearchUnlocks>().researchUnlocks)
+                            found = x.researchPrerequisites != null &&
+                                    x.researchPrerequisites.Contains(proj);
+
+                            if (!found)
                             {
-                                found = x.researchPrerequisites != null &&
-                                        x.researchPrerequisites.Contains(unlock);
-                                if (found) break;
+                                foreach (ResearchProjectDef unlock in proj.GetModExtension<ResearchUnlocks>().researchUnlocks)
+                                {
+                                    found = x.researchPrerequisites != null &&
+                                            x.researchPrerequisites.Contains(unlock);
+                                    if (found) break;
+                                }
                             }
                         }
 
@@ -55,12 +68,19 @@ namespace DuneRef_RimCivTechTree
 
                         if (proj.GetModExtension<ResearchUnlocks>() != null)
                         {
-                            foreach (ResearchProjectDef unlock in proj.GetModExtension<ResearchUnlocks>().researchUnlocks)
+                            found = x.plant != null &&
+                                    x.plant.sowResearchPrerequisites != null &&
+                                    x.plant.sowResearchPrerequisites.Contains(proj);
+
+                            if (!found)
                             {
-                                found = x.plant != null &&
-                                        x.plant.sowResearchPrerequisites != null &&
-                                        x.plant.sowResearchPrerequisites.Contains(unlock);
-                                if (found) break;
+                                foreach (ResearchProjectDef unlock in proj.GetModExtension<ResearchUnlocks>().researchUnlocks)
+                                {
+                                    found = x.plant != null &&
+                                            x.plant.sowResearchPrerequisites != null &&
+                                            x.plant.sowResearchPrerequisites.Contains(unlock);
+                                    if (found) break;
+                                }
                             }
                         }
 
@@ -75,11 +95,17 @@ namespace DuneRef_RimCivTechTree
 
                         if (proj.GetModExtension<ResearchUnlocks>() != null)
                         {
-                            foreach (ResearchProjectDef unlock in proj.GetModExtension<ResearchUnlocks>().researchUnlocks)
+                            found = x.researchPrerequisites != null &&
+                                    x.researchPrerequisites.Contains(proj);
+
+                            if (!found)
                             {
-                                found = x.researchPrerequisites != null &&
-                                        x.researchPrerequisites.Contains(unlock);
-                                if (found) break;
+                                foreach (ResearchProjectDef unlock in proj.GetModExtension<ResearchUnlocks>().researchUnlocks)
+                                {
+                                    found = x.researchPrerequisites != null &&
+                                            x.researchPrerequisites.Contains(unlock);
+                                    if (found) break;
+                                }
                             }
                         }
 

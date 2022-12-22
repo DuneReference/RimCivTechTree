@@ -81,4 +81,34 @@
         </nomatch>
     </Operation>
 
+    <!-- Moving Individual items to different techs -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Spacer_SunLamp"
+                or defName = "Light_SpacerLamp"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Nanotechnology</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Spacer_OutdoorLamp"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Electronics</li>
+                <li>DuneRef_SyntheticMaterials</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
 </Patch>

@@ -136,4 +136,33 @@
         </nomatch>
     </Operation>
 
+    <!-- Moving Individual items to different techs -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   @Name = "VFEP_BaseCannonBuilding"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Gunpowder</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFEP_Box_WarcasketLaserBolter"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_PredictiveSystems</li>
+                <li>DuneRef_QuantumArmaments</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
 </Patch>

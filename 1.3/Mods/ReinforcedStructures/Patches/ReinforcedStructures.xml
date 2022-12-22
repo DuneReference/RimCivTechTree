@@ -82,4 +82,19 @@
         </nomatch>
     </Operation>
 
+    <!-- Moving Individual items to different techs -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Embrasure"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_BrutalWarfare</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
 </Patch>

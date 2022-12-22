@@ -42,15 +42,15 @@
     </Operation>
 
     <Operation Class="PatchOperationConditional">
-        <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Electricity"]/tags</xpath>
+        <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Electronics"]/tags</xpath>
         <match Class="PatchOperationAdd">
-            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Electricity"]/tags</xpath>
+            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Electronics"]/tags</xpath>
             <value>
                 <li>MercenaryStart</li>
             </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Electricity"]</xpath>
+            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Electronics"]</xpath>
             <value>
                 <tags>
                     <li>MercenaryStart</li>

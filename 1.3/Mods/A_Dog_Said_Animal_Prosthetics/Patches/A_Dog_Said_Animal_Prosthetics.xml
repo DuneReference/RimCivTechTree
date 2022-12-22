@@ -77,4 +77,17 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VEF_AdvancedAnimalImplantsTable"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>VEF_AdvancedAnimalImplants</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
 </Patch>

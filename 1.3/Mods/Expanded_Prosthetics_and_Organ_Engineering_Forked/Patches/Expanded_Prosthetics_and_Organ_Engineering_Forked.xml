@@ -102,4 +102,15 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "EPOE_MAAI_Chip"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False">DuneRef_SmartMaterials</researchPrerequisite>
+        </value>
+    </Operation>
+
 </Patch>

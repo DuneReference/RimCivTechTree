@@ -229,4 +229,32 @@
         </match>
     </Operation>
 
+    <!-- Moving Individual items to different techs -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFES_CavalrySpikes"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Woodworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+            <xpath>
+            Defs/ThingDef[
+                   defName = "VFES_BearTrap"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_SteelWorking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
 </Patch>

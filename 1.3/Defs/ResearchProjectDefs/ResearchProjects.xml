@@ -18,9 +18,6 @@
                 </researchUnlocks>
             </li>
         </modExtensions>
-        <tags>
-            <li>TribalStart</li>
-        </tags>
     </ResearchProjectDef>
     
     <ResearchProjectDef>
@@ -255,9 +252,7 @@
         <researchViewY>5</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
-                <researchUnlocks>
-                    <li>WatermillGenerator</li>
-                </researchUnlocks>
+                <researchUnlocks />
             </li>
         </modExtensions>
     </ResearchProjectDef>
@@ -329,17 +324,39 @@
     <!-- Industrial Era -->
 
     <ResearchProjectDef>
+        <defName>DuneRef_ScientificTheory</defName>
+        <label>Scientific Theory</label>
+        <description>Scientific Theory</description>
+        <baseCost>5000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>DuneRef_Irrigation</li>
+            <li>DuneRef_Engineering</li>
+        </prerequisites>
+        <researchViewX>9</researchViewX>
+        <researchViewY>4</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+                <researchUnlocks>
+                    <li>BiofuelRefining</li>
+                </researchUnlocks>
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
         <defName>DuneRef_Industrialization</defName>
         <label>Industrialization</label>
         <description>Industrialization</description>
         <baseCost>5000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
+            <li>DuneRef_ScientificTheory</li>
             <li>DuneRef_ExpandedCulture</li>
             <li>DuneRef_Construction</li>
             <li>DuneRef_ComplexClothworking</li>
         </prerequisites>
-        <researchViewX>9</researchViewX>
+        <researchViewX>10</researchViewX>
         <researchViewY>2</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -351,35 +368,16 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>DuneRef_ScientificTheory</defName>
-        <label>Scientific Theory</label>
-        <description>Scientific Theory</description>
-        <baseCost>5000</baseCost>
-        <techLevel>Industrial</techLevel>
-        <prerequisites>
-            <li>DuneRef_Irrigation</li>
-            <li>DuneRef_Engineering</li>
-        </prerequisites>
-        <researchViewX>9</researchViewX>
-        <researchViewY>3</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
-                <researchUnlocks />
-            </li>
-        </modExtensions>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>DuneRef_SteamPower</defName>
-        <label>Steam Power</label>
-        <description>Steam Power</description>
+        <defName>DuneRef_GasPower</defName>
+        <label>Gas Power</label>
+        <description>Gas Power</description>
         <baseCost>6000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Industrialization</li>
             <li>DuneRef_ExpandedCulture</li>
         </prerequisites>
-        <researchViewX>10</researchViewX>
+        <researchViewX>11</researchViewX>
         <researchViewY>1</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -397,7 +395,7 @@
         <prerequisites>
             <li>DuneRef_ScientificTheory</li>
         </prerequisites>
-        <researchViewX>10</researchViewX>
+        <researchViewX>11</researchViewX>
         <researchViewY>3</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -422,7 +420,7 @@
             <li>DuneRef_Gunpowder</li>
             <li>DuneRef_Industrialization</li>
         </prerequisites>
-        <researchViewX>10</researchViewX>
+        <researchViewX>11</researchViewX>
         <researchViewY>5</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -448,7 +446,7 @@
             <li>DuneRef_Rifling</li>
             <li>DuneRef_ScientificTheory</li>
         </prerequisites>
-        <researchViewX>11</researchViewX>
+        <researchViewX>12</researchViewX>
         <researchViewY>4</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -470,7 +468,7 @@
         <prerequisites>
             <li>DuneRef_Industrialization</li>
         </prerequisites>
-        <researchViewX>11</researchViewX>
+        <researchViewX>12</researchViewX>
         <researchViewY>8</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -480,15 +478,15 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>DuneRef_Electricity</defName>
-        <label>Electricity</label>
-        <description>Electricity</description>
+        <defName>DuneRef_Electronics</defName>
+        <label>Electronics</label>
+        <description>Electronics</description>
         <baseCost>8000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>DuneRef_SteamPower</li>
+            <li>DuneRef_GasPower</li>
         </prerequisites>
-        <researchViewX>12</researchViewX>
+        <researchViewX>13</researchViewX>
         <researchViewY>1</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -496,6 +494,7 @@
                     <li>Electricity</li>
                     <li>Batteries</li>
                     <li>ColoredLights</li>
+                    <li>WatermillGenerator</li>
                 </researchUnlocks>
             </li>
         </modExtensions>
@@ -511,7 +510,7 @@
             <li>DuneRef_Refining</li>
             <li>DuneRef_ReplaceableParts</li>
         </prerequisites>
-        <researchViewX>12</researchViewX>
+        <researchViewX>13</researchViewX>
         <researchViewY>4</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -532,7 +531,7 @@
             <li>DuneRef_Sanitation</li>
             <li>DuneRef_ReplaceableParts</li>
         </prerequisites>
-        <researchViewX>12</researchViewX>
+        <researchViewX>13</researchViewX>
         <researchViewY>3</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -553,7 +552,7 @@
         <prerequisites>
             <li>DuneRef_Refining</li>
         </prerequisites>
-        <researchViewX>12</researchViewX>
+        <researchViewX>13</researchViewX>
         <researchViewY>8</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -572,11 +571,11 @@
         <baseCost>9000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>DuneRef_SteamPower</li>
+            <li>DuneRef_Electronics</li>
             <li>DuneRef_Flight</li>
         </prerequisites>
-        <researchViewX>13</researchViewX>
-        <researchViewY>3</researchViewY>
+        <researchViewX>14</researchViewX>
+        <researchViewY>2</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
                 <researchUnlocks>
@@ -600,11 +599,10 @@
             <li>DuneRef_Sanitation</li>
         </prerequisites>
         <researchViewX>14</researchViewX>
-        <researchViewY>2</researchViewY>
+        <researchViewY>7</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
                 <researchUnlocks>
-                    <li>BiofuelRefining</li>
                     <li>Hydroponics</li>
                     <li>GeothermalPower</li>
                     <li>MoisturePump</li>
@@ -623,7 +621,7 @@
             <li>DuneRef_Radio</li>
             <li>DuneRef_Chemistry</li>
         </prerequisites>
-        <researchViewX>14</researchViewX>
+        <researchViewX>15</researchViewX>
         <researchViewY>3</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -642,7 +640,7 @@
             <li>DuneRef_Combustion</li>
             <li>DuneRef_ReplaceableParts</li>
         </prerequisites>
-        <researchViewX>14</researchViewX>
+        <researchViewX>15</researchViewX>
         <researchViewY>4</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -661,7 +659,7 @@
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Chemistry</li>
-            <li>DuneRef_Electricity</li>
+            <li>DuneRef_Electronics</li>
         </prerequisites>
         <researchViewX>14</researchViewX>
         <researchViewY>5</researchViewY>
@@ -686,7 +684,7 @@
         <prerequisites>
             <li>DuneRef_Combustion</li>
         </prerequisites>
-        <researchViewX>14</researchViewX>
+        <researchViewX>15</researchViewX>
         <researchViewY>8</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -710,9 +708,9 @@
         <baseCost>11000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>DuneRef_Electricity</li>
+            <li>DuneRef_Electronics</li>
         </prerequisites>
-        <researchViewX>15</researchViewX>
+        <researchViewX>16</researchViewX>
         <researchViewY>1</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -731,7 +729,7 @@
             <li>DuneRef_MilitaryTactics</li>
             <li>DuneRef_AdvancedBallistics</li>
         </prerequisites>
-        <researchViewX>15</researchViewX>
+        <researchViewX>16</researchViewX>
         <researchViewY>0</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -754,7 +752,7 @@
             <li>DuneRef_Ecology</li>
             <li>DuneRef_Refrigeration</li>
         </prerequisites>
-        <researchViewX>15</researchViewX>
+        <researchViewX>16</researchViewX>
         <researchViewY>4</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -775,10 +773,10 @@
         <baseCost>11000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>DuneRef_AdvancedBallistics</li>
             <li>DuneRef_Computers</li>
+            <li>DuneRef_Rocketry</li>
         </prerequisites>
-        <researchViewX>15</researchViewX>
+        <researchViewX>17</researchViewX>
         <researchViewY>5</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -797,7 +795,7 @@
             <li>DuneRef_Plastics</li>
             <li>DuneRef_Chemistry</li>
         </prerequisites>
-        <researchViewX>15</researchViewX>
+        <researchViewX>17</researchViewX>
         <researchViewY>8</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -822,7 +820,7 @@
             <li>DuneRef_Computers</li>
             <li>DuneRef_Radio</li>
         </prerequisites>
-        <researchViewX>16</researchViewX>
+        <researchViewX>18</researchViewX>
         <researchViewY>1</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -843,7 +841,7 @@
             <li>DuneRef_Rocketry</li>
             <li>DuneRef_AdvancedBallistics</li>
         </prerequisites>
-        <researchViewX>16</researchViewX>
+        <researchViewX>18</researchViewX>
         <researchViewY>3</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -865,7 +863,7 @@
         <prerequisites>
             <li>DuneRef_NuclearFission</li>
         </prerequisites>
-        <researchViewX>16</researchViewX>
+        <researchViewX>18</researchViewX>
         <researchViewY>5</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -883,10 +881,52 @@
         <baseCost>12000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
+            <li>DuneRef_Ecology</li>
             <li>DuneRef_SyntheticMaterials</li>
         </prerequisites>
-        <researchViewX>16</researchViewX>
+        <researchViewX>18</researchViewX>
         <researchViewY>7</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+                <researchUnlocks />
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_Robotics</defName>
+        <label>Robotics</label>
+        <description>Robotics</description>
+        <baseCost>14000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>DuneRef_Computers</li>
+            <li>DuneRef_GuidanceSystems</li>
+            <li>DuneRef_Lasers</li>
+        </prerequisites>
+        <researchViewX>19</researchViewX>
+        <researchViewY>2</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+                <researchUnlocks />
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <!-- Future Era -->
+
+    <ResearchProjectDef>
+        <defName>DuneRef_Nanotechnology</defName>
+        <label>Nanotechnology</label>
+        <description>Nanotechnology</description>
+        <baseCost>14000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>DuneRef_Composites</li>
+            <li>DuneRef_Computers</li>
+        </prerequisites>
+        <researchViewX>20</researchViewX>
+        <researchViewY>6</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
                 <researchUnlocks />
@@ -904,73 +944,13 @@
             <li>DuneRef_SyntheticMaterials</li>
             <li>DuneRef_Computers</li>
         </prerequisites>
-        <researchViewX>16</researchViewX>
+        <researchViewX>20</researchViewX>
         <researchViewY>8</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
                 <researchUnlocks>
                     <li>ShieldBelt</li>
                 </researchUnlocks>
-            </li>
-        </modExtensions>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>DuneRef_Robotics</defName>
-        <label>Robotics</label>
-        <description>Robotics</description>
-        <baseCost>14000</baseCost>
-        <techLevel>Spacer</techLevel>
-        <prerequisites>
-            <li>DuneRef_Computers</li>
-            <li>DuneRef_GuidanceSystems</li>
-            <li>DuneRef_Lasers</li>
-        </prerequisites>
-        <researchViewX>17</researchViewX>
-        <researchViewY>2</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
-                <researchUnlocks />
-            </li>
-        </modExtensions>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>DuneRef_Nanotechnology</defName>
-        <label>Nanotechnology</label>
-        <description>Nanotechnology</description>
-        <baseCost>14000</baseCost>
-        <techLevel>Spacer</techLevel>
-        <prerequisites>
-            <li>DuneRef_Composites</li>
-            <li>DuneRef_Computers</li>
-        </prerequisites>
-        <researchViewX>17</researchViewX>
-        <researchViewY>6</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
-                <researchUnlocks />
-            </li>
-        </modExtensions>
-    </ResearchProjectDef>
-
-    <!-- Future Era -->
-
-    <ResearchProjectDef>
-        <defName>DuneRef_AdvancedAI</defName>
-        <label>Advanced AI</label>
-        <description>Advanced AI</description>
-        <baseCost>16000</baseCost>
-        <techLevel>Spacer</techLevel>
-        <prerequisites>
-            <li>DuneRef_Robotics</li>
-            <li>DuneRef_Telecommunications</li>
-        </prerequisites>
-        <researchViewX>18</researchViewX>
-        <researchViewY>3</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
-                <researchUnlocks />
             </li>
         </modExtensions>
     </ResearchProjectDef>
@@ -986,13 +966,32 @@
             <li>DuneRef_Robotics</li>
             <li>DuneRef_Nanotechnology</li>
         </prerequisites>
-        <researchViewX>18</researchViewX>
+        <researchViewX>20</researchViewX>
         <researchViewY>4</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
                 <researchUnlocks>
                     <li>Bionics</li>
                 </researchUnlocks>
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_AdvancedAI</defName>
+        <label>Advanced AI</label>
+        <description>Advanced AI</description>
+        <baseCost>16000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>DuneRef_Robotics</li>
+            <li>DuneRef_Telecommunications</li>
+        </prerequisites>
+        <researchViewX>21</researchViewX>
+        <researchViewY>3</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
+                <researchUnlocks />
             </li>
         </modExtensions>
     </ResearchProjectDef>
@@ -1006,7 +1005,7 @@
         <prerequisites>
             <li>DuneRef_Shields</li>
         </prerequisites>
-        <researchViewX>18</researchViewX>
+        <researchViewX>21</researchViewX>
         <researchViewY>7</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -1024,7 +1023,7 @@
         <prerequisites>
             <li>DuneRef_AdvancedAI</li>
         </prerequisites>
-        <researchViewX>19</researchViewX>
+        <researchViewX>22</researchViewX>
         <researchViewY>1</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -1043,7 +1042,7 @@
             <li>DuneRef_AdvancedAI</li>
             <li>DuneRef_Cybernetics</li>
         </prerequisites>
-        <researchViewX>19</researchViewX>
+        <researchViewX>22</researchViewX>
         <researchViewY>2</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -1063,7 +1062,7 @@
             <li>DuneRef_AdvancedAI</li>
             <li>DuneRef_Nanotechnology</li>
         </prerequisites>
-        <researchViewX>19</researchViewX>
+        <researchViewX>22</researchViewX>
         <researchViewY>4</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -1088,7 +1087,7 @@
         <prerequisites>
             <li>DuneRef_AdvancedAI</li>
         </prerequisites>
-        <researchViewX>19</researchViewX>
+        <researchViewX>22</researchViewX>
         <researchViewY>5</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -1110,7 +1109,7 @@
             <li>DuneRef_Medicine</li>
             <li>DuneRef_PredictiveSystems</li>
         </prerequisites>
-        <researchViewX>20</researchViewX>
+        <researchViewX>23</researchViewX>
         <researchViewY>7</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -1131,7 +1130,7 @@
             <li>DuneRef_OffworldMissions</li>
             <li>DuneRef_SmartMaterials</li>
         </prerequisites>
-        <researchViewX>21</researchViewX>
+        <researchViewX>24</researchViewX>
         <researchViewY>4</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -1152,7 +1151,7 @@
             <li>DuneRef_AdvancedPowerCells</li>
             <li>DuneRef_SmartMaterials</li>
         </prerequisites>
-        <researchViewX>21</researchViewX>
+        <researchViewX>24</researchViewX>
         <researchViewY>5</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -1171,7 +1170,7 @@
             <li>DuneRef_OffworldMissions</li>
             <li>DuneRef_SmartMaterials</li>
         </prerequisites>
-        <researchViewX>21</researchViewX>
+        <researchViewX>24</researchViewX>
         <researchViewY>6</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -1190,7 +1189,7 @@
             <li>DuneRef_Genetics</li>
             <li>DuneRef_SmartMaterials</li>
         </prerequisites>
-        <researchViewX>22</researchViewX>
+        <researchViewX>25</researchViewX>
         <researchViewY>2</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -1211,7 +1210,7 @@
             <li>DuneRef_MechanoidTechnology</li>
             <li>DuneRef_Genetics</li>
         </prerequisites>
-        <researchViewX>22</researchViewX>
+        <researchViewX>25</researchViewX>
         <researchViewY>7</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -1229,7 +1228,7 @@
         <prerequisites>
             <li>DuneRef_MechanoidTechnology</li>
         </prerequisites>
-        <researchViewX>22</researchViewX>
+        <researchViewX>25</researchViewX>
         <researchViewY>8</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -1253,7 +1252,7 @@
             <li>DuneRef_AdvancedLasers</li>
             <li>DuneRef_AdvancedShields</li>
         </prerequisites>
-        <researchViewX>23</researchViewX>
+        <researchViewX>26</researchViewX>
         <researchViewY>1</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -1272,7 +1271,7 @@
             <li>DuneRef_MechanoidTechnology</li>
             <li>DuneRef_ElementZero</li>
         </prerequisites>
-        <researchViewX>23</researchViewX>
+        <researchViewX>26</researchViewX>
         <researchViewY>5</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -1290,7 +1289,7 @@
         <prerequisites>
             <li>DuneRef_Bioregeneration</li>
         </prerequisites>
-        <researchViewX>23</researchViewX>
+        <researchViewX>26</researchViewX>
         <researchViewY>2</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -1309,7 +1308,7 @@
             <li>DuneRef_MechanoidTechnology</li>
             <li>DuneRef_PsychicDevelopment</li>
         </prerequisites>
-        <researchViewX>24</researchViewX>
+        <researchViewX>27</researchViewX>
         <researchViewY>2</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -1328,7 +1327,7 @@
             <li>DuneRef_ElementZero</li>
             <li>DuneRef_PsychicDevelopment</li>
         </prerequisites>
-        <researchViewX>24</researchViewX>
+        <researchViewX>27</researchViewX>
         <researchViewY>6</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -1351,7 +1350,7 @@
             <li>DuneRef_QuantumIndustry</li>
             <li>DuneRef_Mechahybridization</li>
         </prerequisites>
-        <researchViewX>25</researchViewX>
+        <researchViewX>28</researchViewX>
         <researchViewY>3</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
@@ -1373,7 +1372,7 @@
             <li>DuneRef_AdvancedShields</li>
             <li>DuneRef_InterstellarTechnology</li>
         </prerequisites>
-        <researchViewX>25</researchViewX>
+        <researchViewX>28</researchViewX>
         <researchViewY>6</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">

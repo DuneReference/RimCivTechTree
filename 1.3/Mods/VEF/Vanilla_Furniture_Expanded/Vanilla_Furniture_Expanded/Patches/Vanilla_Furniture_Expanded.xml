@@ -11,7 +11,6 @@
                 or defName = "MF_RoyalFurniture"
                 or defName = "MF_ModernFurniture"
                 or defName = "MF_WasteDisposal"
-                or defName = "TubeTelevision"
                 or defName = "FlatscreenTelevision"
             ]/tab
         </xpath>
@@ -29,7 +28,6 @@
                 or defName = "MF_RoyalFurniture"
                 or defName = "MF_ModernFurniture"
                 or defName = "MF_WasteDisposal"
-                or defName = "TubeTelevision"
                 or defName = "FlatscreenTelevision"
             ]/prerequisites
         </xpath>
@@ -102,17 +100,6 @@
             <li>MF_WasteDisposal</li>
         </value>
     </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/ResearchProjectDef[
-                   defName = "DuneRef_Radio"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
-        </xpath>
-        <value>
-            <li>TubeTelevision</li>
-        </value>
-    </Operation>
     
     <Operation Class="PatchOperationAdd">
         <xpath>
@@ -151,6 +138,106 @@
                 </modExtensions>
             </value>
         </nomatch>
+    </Operation>
+
+    <!-- Moving Individual items to different techs -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Bed_StoneSlab"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Masonry</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Table_1x1c"
+                or defName = "Bed_Simple"
+                or defName = "Seat_Bench"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Health</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+            <xpath>
+            Defs/ThingDef[
+                   defName = "Misc_FileCabinet"
+                or defName = "Shelf_1x1c"
+                or defName = "Seat_SquareChair"
+                or defName = "Table_Counter"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Woodworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+            <xpath>
+            Defs/ThingDef[
+                   defName = "Shelf_WeaponRack"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_SteelWorking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+            <xpath>
+            Defs/ThingDef[
+                   defName = "Seat_RoyalArmchair"
+                or defName = "Seat_RoyalChair"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_ComplexClothworking</li>
+                <li>DuneRef_Construction</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+            <xpath>
+            Defs/ThingDef[
+                   defName = "Radio_Industrial"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Radio</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+            <xpath>
+            Defs/ThingDef[
+                   defName = "Joy_InudstrialComputer"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Computers</li>
+            </researchPrerequisites>
+        </value>
     </Operation>
 
 </Patch>

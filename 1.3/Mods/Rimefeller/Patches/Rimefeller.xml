@@ -122,4 +122,20 @@
         </value>
     </Operation>
 
+    <!-- Moving Individual items to different techs -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/TerrainDef[
+                   defName = "Wood_ParquetHerring"
+                or defName = "Wood_ParquetVersailles"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Woodworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
 </Patch>

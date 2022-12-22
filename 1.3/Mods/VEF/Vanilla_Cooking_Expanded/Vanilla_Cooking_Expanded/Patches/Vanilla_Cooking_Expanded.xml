@@ -37,7 +37,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_Pottery"
+                   defName = "DuneRef_ExpandedCulture"
             ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -92,6 +92,36 @@
                     <hidden>True</hidden>
                 </li>
             </modExtensions>
+        </value>
+    </Operation>
+
+    <!-- Moving Individual items to different techs -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VCE_CondimentPrepTable"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_SteelWorking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/RecipeDef[
+                   defName = "VBE_MakeLuciferiumPowder"
+                or defName = "VBE_MakeGoJuiceStock"
+                or defName = "VBE_MakeWakeUpPowder"
+            ]/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Sanitation</li>
+            </researchPrerequisites>
         </value>
     </Operation>
 

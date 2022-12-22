@@ -257,4 +257,87 @@
         </nomatch>
     </Operation>
 
+    <!-- Moving Individual items to different techs -->
+
+    <Operation Class="PatchOperationReplace">
+            <xpath>
+            Defs/ThingDef[
+                   defName = "VFEC_MeatDryingRack"
+                or defName = "VFEC_LargePassiveCooler"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Woodworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+            <xpath>
+            Defs/ThingDef[
+                   defName = "VFEC_HeatStones"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Health</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+            <xpath>
+            Defs/ThingDef[
+                   defName = "VFEC_Wreath"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Clothworking</li>
+                <li>DuneRef_SteelWorking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+            <xpath>
+            Defs/ThingDef[
+                   defName = "VFEC_TyrianFarm"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Clothworking</li>
+                <li>DuneRef_Woodworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationReplace">
+            <xpath>
+            Defs/ThingDef[
+                   defName = "VFEC_Tent"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_ComplexClothworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+            <xpath>
+            Defs/ThingDef[
+                   defName = "VFEC_Turret_Scorpion"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_MilitaryEngineering</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
 </Patch>
