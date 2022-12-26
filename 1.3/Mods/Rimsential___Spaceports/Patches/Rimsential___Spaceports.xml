@@ -6,14 +6,19 @@
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
-                   defName = "Bed_OperatingTable"
+                   defName = "Spaceports_FuelProcessor"
+                or defName = "Spaceports_FuelTank"
+                or defName = "Spaceports_FuelDispenser"
+                or defName = "Spaceports_ShuttleLandingPad"
+                or defName = "Spaceports_VisitorSpot"
             ]/researchPrerequisites
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Sanitation</li>
+                <li>DuneRef_OffworldMissions</li>
             </researchPrerequisites>
         </value>
     </Operation>
 
 </Patch>
+

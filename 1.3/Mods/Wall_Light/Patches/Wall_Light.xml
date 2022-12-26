@@ -6,12 +6,13 @@
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
-                   defName = "Bed_OperatingTable"
+                   defName = "Lighting_MURWallSunLight"
             ]/researchPrerequisites
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Sanitation</li>
+                <li>DuneRef_Electronics</li>
+                <li>DuneRef_Ecology</li>
             </researchPrerequisites>
         </value>
     </Operation>

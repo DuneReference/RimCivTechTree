@@ -212,9 +212,7 @@
         <researchViewY>1</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
-                <researchUnlocks>
-                    <li>DrugProduction</li>
-                </researchUnlocks>
+                <researchUnlocks />
             </li>
         </modExtensions>
     </ResearchProjectDef>
@@ -536,7 +534,7 @@
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
                 <researchUnlocks>
-                    <li>NutrientPaste</li>
+                    <li>PackagedSurvivalMeal</li>
                     <li>SmokepopBelt</li>
                 </researchUnlocks>
             </li>
@@ -689,9 +687,7 @@
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
                 <researchUnlocks>
-                    <li>Autodoors</li>
                     <li>MicroelectronicsBasics</li>
-                    <li>MultiAnalyzer</li>
                     <li>Fabrication</li>
                 </researchUnlocks>
             </li>
@@ -734,7 +730,6 @@
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
                 <researchUnlocks>
-                    <li>PackagedSurvivalMeal</li>
                     <li>PrecisionRifling</li>
                     <li>MultibarrelWeapons</li>
                 </researchUnlocks>
@@ -800,6 +795,7 @@
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
                 <researchUnlocks>
+                    <li>NutrientPaste</li>
                     <li>SolarPanels</li>
                     <li>Firefoam</li>
                     <li>AdvancedFabrication</li>
@@ -908,7 +904,10 @@
         <researchViewY>2</researchViewY>
         <modExtensions>
             <li Class="DuneRef_RimCivTechTree.ResearchUnlocks">
-                <researchUnlocks />
+                <researchUnlocks>
+                    <li>MultiAnalyzer</li>
+                    <li>Autodoors</li>
+                </researchUnlocks>
             </li>
         </modExtensions>
     </ResearchProjectDef>

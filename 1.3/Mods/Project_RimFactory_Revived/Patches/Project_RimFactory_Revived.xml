@@ -298,7 +298,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
-                   defName = "TableRoboticMachining"
+                   defName = "PRF_FurnaceII"
             ]/researchPrerequisites
         </xpath>
         <value>
@@ -312,6 +312,7 @@
         <xpath>
             Defs/ThingDef[
                    defName = "PRF_StoneWorks"
+                or defName = "TableRoboticMachining"
             ]/researchPrerequisites
         </xpath>
         <value>
@@ -331,6 +332,48 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_PredictiveSystems</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "PRF_SunWallLight"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Electronics</li>
+                <li>DuneRef_Ecology</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "PRF_RecipeDatabase"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Nanotechnology</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "PRF_16k_Battery"
+                or defName = "PRF_4k_Battery"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Electronics</li>
+                <li>DuneRef_SyntheticMaterials</li>
             </researchPrerequisites>
         </value>
     </Operation>

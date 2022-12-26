@@ -177,6 +177,7 @@
                 or defName = "Shelf_1x1c"
                 or defName = "Seat_SquareChair"
                 or defName = "Table_Counter"
+                or defName = "Table_Wardrobe"
             ]/researchPrerequisites
         </xpath>
         <value>
@@ -236,6 +237,33 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_Computers</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+            <xpath>
+            Defs/ThingDef[
+                   defName = "Joy_Piano"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_ExpandedCulture</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+            <xpath>
+            Defs/ThingDef[
+                   defName = "Joy_ModernComputer"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Computers</li>
+                <li>DuneRef_Lasers</li>
             </researchPrerequisites>
         </value>
     </Operation>

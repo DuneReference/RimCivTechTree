@@ -90,4 +90,18 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "TableAnimalProsthetics"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Electronics</li>
+                <li>DuneRef_Medicine</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
 </Patch>

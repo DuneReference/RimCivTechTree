@@ -127,7 +127,7 @@
         <match Class="PatchOperationAdd">
             <xpath>
                 Defs/ResearchProjectDef[
-                    defName = "DuneRef_Refrigeration"
+                    defName = "DuneRef_Robotics"
                 ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
             </xpath>
             <value>
@@ -176,7 +176,7 @@
         <match Class="PatchOperationAdd">
             <xpath>
                 Defs/ResearchProjectDef[
-                    defName = "DuneRef_Refrigeration"
+                    defName = "DuneRef_Robotics"
                 ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
             </xpath>
             <value>
@@ -224,7 +224,7 @@
         <match Class="PatchOperationAdd">
             <xpath>
                 Defs/ResearchProjectDef[
-                    defName = "DuneRef_Refrigeration"
+                    defName = "DuneRef_Ecology"
                 ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
             </xpath>
             <value>
@@ -271,7 +271,7 @@
         <match Class="PatchOperationAdd">
             <xpath>
                 Defs/ResearchProjectDef[
-                    defName = "DuneRef_Refrigeration"
+                    defName = "DuneRef_Ecology"
                 ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
             </xpath>
             <value>
@@ -332,6 +332,20 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
+                <li>DuneRef_Robotics</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFE_IndustrialApiary"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Ecology</li>
                 <li>DuneRef_Robotics</li>
             </researchPrerequisites>
         </value>

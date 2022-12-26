@@ -114,4 +114,18 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VAE_Headgear_Glasses"
+                or defName = "VAE_Apparel_LabCoat"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_ScientificTheory</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
 </Patch>
