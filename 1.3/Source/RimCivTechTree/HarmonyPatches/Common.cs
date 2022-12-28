@@ -2,6 +2,8 @@
 
 using Verse;
 using HarmonyLib;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace DuneRef_RimCivTechTree
 {
@@ -19,7 +21,27 @@ namespace DuneRef_RimCivTechTree
             {
                 foreach (ResearchProjectDef unlock in proj.GetModExtension<ResearchUnlocks>().researchUnlocks)
                 {
-                    Find.ResearchManager.FinishProject(unlock);
+                    List<ResearchProjectDef> researchDefs = DefDatabase<ResearchProjectDef>.AllDefsListForReading
+                                                            .Where(x => x.tab != RimCivTechTree_DefOf.DuneRef_Hidden)
+                                                            .ToList();
+
+                    bool notFinished = false;
+
+                    foreach (ResearchProjectDef researchDef in researchDefs) 
+                    {
+                        if (researchDef != proj &&
+                            !researchDef.IsFinished &&
+                            researchDef.GetModExtension<ResearchUnlocks>() != null && 
+                            researchDef.GetModExtension<ResearchUnlocks>().researchUnlocks.Contains(unlock))
+                        {
+                            notFinished = true;
+                        }
+                    }
+
+                    if (!notFinished)
+                    {
+                        Find.ResearchManager.FinishProject(unlock);
+                    } 
                 }
             }
         }

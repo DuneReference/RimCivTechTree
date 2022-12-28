@@ -56,6 +56,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Plastics"
+                or defName = "DuneRef_BrutalWarfare"
             ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -151,40 +152,23 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationReplace">
-        <xpath>
-            Defs/ThingDef[
-                   defName = "VFEP_Box_WarcasketLaserBolter"
-            ]/researchPrerequisites
-        </xpath>
-        <value>
-            <researchPrerequisites Inherit="False">
-                <li>DuneRef_PredictiveSystems</li>
-                <li>DuneRef_QuantumArmaments</li>
-            </researchPrerequisites>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationReplace">
-        <xpath>
-            Defs/VFEPirates.WarcasketDef[
-                   defName = "VFEP_Warcasket_Cataphract"
-                or defName = "VFEP_WarcasketHelmet_Cataphract"
-                or defName = "VFEP_WarcasketShoulders_Cataphract"
-                or defName = "VFEP_Warcasket_Marine"
-                or defName = "VFEP_WarcasketHelmet_Marine"
-                or defName = "VFEP_WarcasketShoulders_Marine"
-                or defName = "VFEP_Warcasket_Recon"
-                or defName = "VFEP_WarcasketHelmet_Recon"
-                or defName = "VFEP_WarcasketShoulders_Recon"
-            ]/researchPrerequisites
-        </xpath>
-        <value>
-            <researchPrerequisites Inherit="False">
-                <li>DuneRef_Plastics</li>
-                <li>DuneRef_BrutalWarfare</li>
-            </researchPrerequisites>
-        </value>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded - Laser</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>
+                Defs/ThingDef[
+                    defName = "VFEP_Box_WarcasketLaserBolter"
+                ]/researchPrerequisites
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_PredictiveSystems</li>
+                    <li>DuneRef_QuantumArmaments</li>
+                </researchPrerequisites>
+            </value>
+        </match>
     </Operation>
 
     <Operation Class="PatchOperationReplace">

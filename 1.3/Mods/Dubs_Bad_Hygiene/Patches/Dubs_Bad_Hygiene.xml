@@ -100,7 +100,6 @@
         <value>
             <li>MultiSplitAirCon</li>
             <li>CentralHeating</li>
-            <li>GeothermalHeating</li>
         </value>
     </Operation>
 
@@ -209,6 +208,18 @@
         <value>
             <li>Irrigation</li>
             <li>FireSuppression</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Electronics"
+                or defName = "DuneRef_Composites"
+            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>GeothermalHeating</li>
         </value>
     </Operation>
 
@@ -332,8 +343,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
-                   defName = "GeothermHeater"
-                or defName = "SolarHeater"
+                   defName = "SolarHeater"
             ]/researchPrerequisites
         </xpath>
         <value>

@@ -129,6 +129,17 @@
         </xpath>
         <value>
             <li>VFEC_Togas</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Clothworking"
+                or defName = "DuneRef_Woodworking"
+            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
             <li>VFEC_TyrianProduction</li>
         </value>
     </Operation>
@@ -296,20 +307,6 @@
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_Clothworking</li>
                 <li>DuneRef_SteelWorking</li>
-            </researchPrerequisites>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationReplace">
-            <xpath>
-            Defs/ThingDef[
-                   defName = "VFEC_TyrianFarm"
-            ]/researchPrerequisites
-        </xpath>
-        <value>
-            <researchPrerequisites Inherit="False">
-                <li>DuneRef_Clothworking</li>
-                <li>DuneRef_Woodworking</li>
             </researchPrerequisites>
         </value>
     </Operation>

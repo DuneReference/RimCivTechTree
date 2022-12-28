@@ -69,7 +69,8 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_Computers"
+                   defName = "DuneRef_Refining"
+                or defName = "DuneRef_Radio"
             ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -134,20 +135,6 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_Woodworking</li>
-            </researchPrerequisites>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationReplace">
-        <xpath>
-            Defs/ThingDef[
-                   defName = "DeepOilWell"
-            ]/researchPrerequisites
-        </xpath>
-        <value>
-            <researchPrerequisites Inherit="False">
-                <li>DuneRef_Refining</li>
-                <li>DuneRef_Radio</li>
             </researchPrerequisites>
         </value>
     </Operation>

@@ -162,7 +162,7 @@
         <label>Complex Clothworking</label>
         <description>Complex Clothworking</description>
         <baseCost>2000</baseCost>
-        <techLevel>Neolithic</techLevel>
+        <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_Clothworking</li>
             <li>DuneRef_WritingAndCulture</li>
@@ -183,7 +183,7 @@
         <label>Currency</label>
         <description>Currency</description>
         <baseCost>2000</baseCost>
-        <techLevel>Neolithic</techLevel>
+        <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_Clothworking</li>
             <li>DuneRef_WritingAndCulture</li>
@@ -204,7 +204,7 @@
         <label>Expanded Culture</label>
         <description>Expanded Culture</description>
         <baseCost>2500</baseCost>
-        <techLevel>Neolithic</techLevel>
+        <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_WritingAndCulture</li>
         </prerequisites>
@@ -222,7 +222,7 @@
         <label>Construction</label>
         <description>Construction</description>
         <baseCost>2500</baseCost>
-        <techLevel>Neolithic</techLevel>
+        <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_Woodworking</li>
             <li>DuneRef_SteelWorking</li>
@@ -241,7 +241,7 @@
         <label>Engineering</label>
         <description>Engineering</description>
         <baseCost>2500</baseCost>
-        <techLevel>Neolithic</techLevel>
+        <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_ComplexClothworking</li>
             <li>DuneRef_SteelWorking</li>

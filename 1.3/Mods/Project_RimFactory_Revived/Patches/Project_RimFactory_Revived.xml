@@ -175,7 +175,8 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_SyntheticMaterials"
+                   defName = "DuneRef_Electronics"
+                or defName = "DuneRef_SyntheticMaterials"
             ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -359,21 +360,6 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_Nanotechnology</li>
-            </researchPrerequisites>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationReplace">
-        <xpath>
-            Defs/ThingDef[
-                   defName = "PRF_16k_Battery"
-                or defName = "PRF_4k_Battery"
-            ]/researchPrerequisites
-        </xpath>
-        <value>
-            <researchPrerequisites Inherit="False">
-                <li>DuneRef_Electronics</li>
-                <li>DuneRef_SyntheticMaterials</li>
             </researchPrerequisites>
         </value>
     </Operation>
