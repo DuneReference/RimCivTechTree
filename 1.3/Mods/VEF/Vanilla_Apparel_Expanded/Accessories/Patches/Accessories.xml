@@ -15,5 +15,18 @@
             </researchPrerequisites>
         </value>
     </Operation>
-
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VAEA_Apparel_MiniTurretPack"
+            ]/recipeMaker
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Robotics</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    
 </Patch>

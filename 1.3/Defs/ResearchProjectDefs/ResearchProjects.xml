@@ -58,8 +58,8 @@
     
     <ResearchProjectDef>
         <defName>DuneRef_Clothworking</defName>
-        <label>Clothing</label>
-        <description>Clothing</description>
+        <label>Clothworking</label>
+        <description>Clothworking</description>
         <baseCost>1000</baseCost>
         <techLevel>Neolithic</techLevel>
         <researchViewX>1</researchViewX>
@@ -159,8 +159,8 @@
 
     <ResearchProjectDef>
         <defName>DuneRef_ComplexClothworking</defName>
-        <label>Complex Clothing</label>
-        <description>Complex Clothing</description>
+        <label>Complex Clothworking</label>
+        <description>Complex Clothworking</description>
         <baseCost>2000</baseCost>
         <techLevel>Neolithic</techLevel>
         <prerequisites>
