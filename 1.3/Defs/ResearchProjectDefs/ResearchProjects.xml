@@ -18,6 +18,9 @@
                 </researchUnlocks>
             </li>
         </modExtensions>
+        <tags>
+            <li>TribalStart</li>
+        </tags>
     </ResearchProjectDef>
     
     <ResearchProjectDef>
@@ -37,6 +40,9 @@
                 </researchUnlocks>
             </li>
         </modExtensions>
+        <tags>
+            <li>TribalStart</li>
+        </tags>
     </ResearchProjectDef>
     
     <ResearchProjectDef>

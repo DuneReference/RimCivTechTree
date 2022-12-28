@@ -115,6 +115,61 @@
         </nomatch>
     </Operation>
 
+    <!-- remove tags with faction start info so we can apply the start info to new techs that contain this one -->
+    <!-- didn't put in the HeavyTurrets research for CE for now -->
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "PsychoidBrewing"
+                or defName = "TreeSowing"
+                or defName = "Brewing"
+                or defName = "ComplexFurniture"
+                or defName = "Stonecutting"
+                or defName = "ComplexClothing"
+                or defName = "Smithing"
+            ]/tags/li[text()="VFEM_MedievalStart"]
+        </xpath>
+    </Operation>
+
+    <!-- add tags with faction start info to the cooresponding new ResearchProjectDefs so we can auto-unlock those at the start -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName = "DuneRef_ComplexClothworking"]/tags</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_ComplexClothworking"]/tags</xpath>
+            <value>
+                <li>VFEM_MedievalStart</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_ComplexClothworking"]</xpath>
+            <value>
+                <tags>
+                    <li>VFEM_MedievalStart</li>
+                </tags>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName = "DuneRef_SteelWorking"]/tags</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_SteelWorking"]/tags</xpath>
+            <value>
+                <li>VFEM_MedievalStart</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_SteelWorking"]</xpath>
+            <value>
+                <tags>
+                    <li>VFEM_MedievalStart</li>
+                </tags>
+            </value>
+        </nomatch>
+    </Operation>
+
     <!-- Moving Individual items to different techs -->
 
     <Operation Class="PatchOperationAdd">
