@@ -286,12 +286,25 @@
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
+                   defName = "PRF_DeepQuarry_mkI"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Industrialization</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
                    defName = "PRF_FermentingBarrel"
             ]/researchPrerequisites
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>PRF_SelfCooking</li>
+                <li>DuneRef_Computers</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -300,7 +313,27 @@
         <xpath>
             Defs/ThingDef[
                    defName = "PRF_FurnaceII"
+                or defName = "PRF_SimplePuller_I"
+                or defName = "PRF_Conveyor_Simple_II"
+                or defName = "PRF_Conveyor_Wall_I"
+                or defName = "PRF_Conveyor_UG_I"
+                or defName = "PRF_ItemSlide"
             ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Electronics</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "PRF_Conveyor_Simple_I"
+                or defName = "PRF_Conveyor_Connector_To_UG"
+                or defName = "PRF_Conveyor_Connector_To_Floor"
+            ]
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
@@ -314,6 +347,20 @@
             Defs/ThingDef[
                    defName = "PRF_StoneWorks"
                 or defName = "TableRoboticMachining"
+                or defName = "PRF_RecipeDatabase"
+                or defName = "PRF_SelfCookerI"
+                or defName = "PRF_MeatGrinder"
+                or defName = "PRF_SelfPrepper"
+                or defName = "PRF_Sprinkler_I"
+                or defName = "PRF_Recycler"
+                or defName = "PRF_MetalRefinery"
+                or defName = "PRF_PartAssembler"
+                or defName = "PRF_FurnaceII"
+                or defName = "PRF_FuelingMachine"
+                or defName = "PRF_SmartHopper"
+                or defName = "PRF_Conveyor_Simple_III"
+                or defName = "PRF_DeepQuarry_mkII"
+                or defName = "PRF_ResearchTerminal"
             ]/researchPrerequisites
         </xpath>
         <value>
@@ -323,11 +370,75 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>FishIndustry</li>
+			<li>Fishing Nets</li>
+			<li>[RF] Fishing</li>
+			<li>Thanks For All The Fish</li>
+			<li>Vanilla Fishing Expanded</li>
+		</mods>
+        <match Class="PatchOperationReplace">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "PRF_T1_Aquaculture"
+                    or defName = "PRF_T2_Aquaculture"
+                ]/researchPrerequisites
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_Computers</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "PRF_TypeOneAssembler_I"
+                or defName = "PRF_SelfCookerII"
+                or defName = "PRF_DroneCultivator_I"
+                or defName = "PRF_OldTypeCultivator_I"
+                or defName = "PRF_OldTypeCultivator_Sun"
+                or defName = "PRF_OldTypeCultivator_Xl"
+                or defName = "PRF_FurnaceIII"
+                or defName = "PRF_GrowzonePuller_I"
+                or defName = "PRF_SimplePuller_II_Side"
+                or defName = "PRF_Conveyor_Splitter_I"
+                or defName = "PRF_Conveyor_Splitter_Wall"
+                or defName = "PRF_Conveyor_Splitter_UG"
+                or defName = "PRF_OverclockedAutoAssembler"
+                or defName = "PRF_SALAutoMinerI"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Robotics</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "PRF_SimplePuller_II"
+                or defName = "PRF_SimplePuller_II_Wall"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Robotics</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
                    defName = "PRF_SALAutoMinerI"
                 or defName = "PRF_GenericAnimalHarvester_II"
+                or defName = "PRF_OverclockedAutoAssemblerII"
             ]/researchPrerequisites
         </xpath>
         <value>
@@ -354,14 +465,66 @@
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
-                   defName = "PRF_RecipeDatabase"
+                   defName = "PRF_Slaughterhouse"
+                or defName = "PRF_TypeTwoAssembler_I"
+                or defName = "PRF_SelfCookerIII"
+                or defName = "PRF_SALAutoCooker"
+                or defName = "PRF_Sprinkler_II"
+                or defName = "PRF_MrTsArtMachine"
+                or defName = "PRF_AutoCrafter"
+                or defName = "PRF_TheArtMachine"
             ]/researchPrerequisites
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Nanotechnology</li>
+                <li>DuneRef_AdvancedAI</li>
             </researchPrerequisites>
         </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "PRF_BillTypeMiner_I"
+                or defName = "PRF_TheArtMaster"
+                or defName = "PRF_ColdStorageUnit_I"
+                or defName = "PRF_ColdStorageUnit_I"
+                or defName = "PRF_IOPort_I"
+                or defName = "PRF_IOPPusher_I"
+                or defName = "PRF_IOPort_II"
+                or defName = ""
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_QuantumIndustry</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Simple Utilities: Fridge</li>
+        </mods>
+        <nomatch Class="PatchOperationFindMod">
+            <mods>
+                <li>[KV] RimFridge - 1.1</li>
+                <li>[KV] RimFridge</li>
+            </mods>
+            <match Class="PatchOperationReplace">
+                <xpath>
+                    Defs/ThingDef[
+                        defName = "PRF_IOPort_IFridge"
+                        or defName = "PRFCoolDSU"
+                    ]/researchPrerequisites
+                </xpath>
+                <value>
+                    <researchPrerequisites Inherit="False">
+                        <li>DuneRef_QuantumIndustry</li>
+                    </researchPrerequisites>
+                </value>
+            </match>
+        </nomatch>
     </Operation>
 
 </Patch>

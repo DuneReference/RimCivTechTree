@@ -921,4 +921,37 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "HiTechResearchBench"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Computers</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <!-- Remove steel requirement from simple research bench -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "SimpleResearchBench"
+            ]/costStuffCount
+        </xpath>
+        <value>
+            <costStuffCount>100</costStuffCount>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "SimpleResearchBench"
+            ]/costList
+        </xpath>
+    </Operation>
+
 </Patch>

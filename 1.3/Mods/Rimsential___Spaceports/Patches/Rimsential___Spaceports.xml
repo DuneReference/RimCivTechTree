@@ -11,6 +11,7 @@
                 or defName = "Spaceports_FuelDispenser"
                 or defName = "Spaceports_ShuttleLandingPad"
                 or defName = "Spaceports_VisitorSpot"
+                or defName = "Spaceports_Beacon"
             ]/researchPrerequisites
         </xpath>
         <value>
