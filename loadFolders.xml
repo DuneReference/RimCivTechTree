@@ -81,6 +81,7 @@
         <li IfModActive="dubwise.dubsrimkit">1.3/Mods/Dubs_Rimkit</li>
         <li IfModActive="spdskatr.projectrimfactory">1.3/Mods/Project_RimFactory_Revived</li>
 		<li IfModActive="smashphil.neceros.srtsexpanded">1.3/Mods/SRTS_Expanded</li>
+        <li IfModActive="elif.srts.helicopters">1.3/Mods/_ELIF__SRTS___Helicopters</li>
 		<li IfModActive="kentington.saveourship2">1.3/Mods/Save_Our_Ship_2</li>
         <li IfModActive="lwm.deepstorage">1.3/Mods/LWM_s_Deep_Storage</li>
         <li IfModActive="captinjoehenry.autocleanfloors">1.3/Mods/AutoClean_Floors__ever_everclean_</li>
@@ -92,5 +93,7 @@
         <li IfModActive="hol.extrematorium">1.3/Mods/Extrematorium_Etc_</li>
         <li IfModActive="joeyjoejoeshabidoo.evaporationpond">1.3/Mods/Evaporation_Pond</li>
         <li IfModActive="solaris.bioreactor">1.3/Mods/BioReactor</li>
+        <li IfModActive="mlie.hightechlaboratoryfacilities">1.3/Mods/High_Tech_Laboratory_Facilities__Continued_</li>
+        <li IfModActive="glasses.sos2srtszone">1.3/Mods/SRTS_Landing_Zone_for_SOS2</li>
     </v1.3>
 </loadFolders>
