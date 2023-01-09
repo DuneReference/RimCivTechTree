@@ -26,7 +26,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_AdvancedBallistics"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>ArtilleryGun</li>

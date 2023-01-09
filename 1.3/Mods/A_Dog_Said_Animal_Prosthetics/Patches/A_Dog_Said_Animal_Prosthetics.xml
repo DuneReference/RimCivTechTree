@@ -33,7 +33,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Medicine"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>SimpleAnimalProsthetics</li>
@@ -44,7 +44,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Sanitation"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>AnimalHeal</li>
@@ -55,7 +55,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Cybernetics"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>AnimalBionics</li>
@@ -70,7 +70,7 @@
         </xpath>
         <value>
             <modExtensions>
-                <li Class="DuneRef_RimCivTechTree.HiddenTab">
+                <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
                     <hidden>True</hidden>
                 </li>
             </modExtensions>

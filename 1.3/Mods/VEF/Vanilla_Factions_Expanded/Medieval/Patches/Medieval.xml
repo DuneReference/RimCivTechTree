@@ -46,7 +46,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_MilitaryEngineering"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>VFEM_HeavyCrossbow</li>
@@ -57,7 +57,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_ComplexClothworking"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>VFEM_NobleMedievalApparel</li>
@@ -69,7 +69,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Irrigation"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>VFEM_TreeHealroot</li>
@@ -80,7 +80,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Masonry"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>VFEM_MeatSmoking</li>
@@ -93,11 +93,11 @@
     <Operation Class="PatchOperationConditional">
         <xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]/modExtensions</xpath>
         <match Class="PatchOperationConditional">
-            <xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]/modExtensions/li[@Class="DuneRef_RimCivTechTree.HiddenTab"]</xpath>
+            <xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.HiddenTab"]</xpath>
             <nomatch Class="PatchOperationAdd">
                 <xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]/modExtensions</xpath>
                 <value>
-                    <li Class="DuneRef_RimCivTechTree.HiddenTab">
+                    <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
                         <hidden>True</hidden>
                     </li>
                 </value>
@@ -107,7 +107,7 @@
             <xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]</xpath>
             <value>
                 <modExtensions>
-                    <li Class="DuneRef_RimCivTechTree.HiddenTab">
+                    <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
                         <hidden>True</hidden>
                     </li>
                 </modExtensions>

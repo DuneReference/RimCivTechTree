@@ -5,7 +5,7 @@
         <defName>DuneRef_Hidden</defName>
         <label>Hidden (Don't Research These)</label>
         <modExtensions>
-            <li Class="DuneRef_RimCivTechTree.HiddenTab">
+            <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
                 <hidden>True</hidden>
             </li>
         </modExtensions>

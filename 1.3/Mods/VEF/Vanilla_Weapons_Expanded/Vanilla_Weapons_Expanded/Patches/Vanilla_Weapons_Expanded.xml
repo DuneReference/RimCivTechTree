@@ -51,7 +51,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Woodworking"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>VWE_Longbow</li>
@@ -62,7 +62,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_MilitaryEngineering"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>VWE_Crossbow</li>
@@ -74,7 +74,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Engineering"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>VWE_Tools</li>
@@ -85,7 +85,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Gunpowder"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>VWE_Gunpowder</li>
@@ -96,7 +96,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_ReplaceableParts"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>VWE_TrenchWarfare</li>
@@ -108,7 +108,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Rocketry"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>VWE_HeavyWeapons</li>
@@ -119,7 +119,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Refining"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>VWE_Flamethrower</li>
@@ -130,7 +130,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Composites"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>VWE_SpecializedFirearms</li>
@@ -141,7 +141,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_BrutalWarfare"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>VWE_DesignatedMarksmanRifle</li>
@@ -152,7 +152,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_AdvancedLasers"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>VWE_LaserTargetingSystems</li>
@@ -165,11 +165,11 @@
     <Operation Class="PatchOperationConditional">
         <xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]/modExtensions</xpath>
         <match Class="PatchOperationConditional">
-            <xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]/modExtensions/li[@Class="DuneRef_RimCivTechTree.HiddenTab"]</xpath>
+            <xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.HiddenTab"]</xpath>
             <nomatch Class="PatchOperationAdd">
                 <xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]/modExtensions</xpath>
                 <value>
-                    <li Class="DuneRef_RimCivTechTree.HiddenTab">
+                    <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
                         <hidden>True</hidden>
                     </li>
                 </value>
@@ -179,7 +179,7 @@
             <xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]</xpath>
             <value>
                 <modExtensions>
-                    <li Class="DuneRef_RimCivTechTree.HiddenTab">
+                    <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
                         <hidden>True</hidden>
                     </li>
                 </modExtensions>

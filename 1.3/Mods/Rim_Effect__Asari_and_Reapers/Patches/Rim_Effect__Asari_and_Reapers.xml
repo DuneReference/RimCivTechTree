@@ -44,7 +44,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_ElementZero"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>RE_AsariCooperation</li>
@@ -55,7 +55,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_QuantumArmaments"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>RE_AsariWeaponry</li>

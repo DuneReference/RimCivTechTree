@@ -161,7 +161,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_ElementZero"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>RE_MassEffectFieldManipulation</li>
@@ -183,7 +183,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_QuantumArmaments"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>RE_MassAcceleration</li>
@@ -201,7 +201,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_QuantumIndustry"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>RE_AllianceKodiak</li>
@@ -216,7 +216,7 @@
         </xpath>
         <value>
             <modExtensions>
-                <li Class="DuneRef_RimCivTechTree.HiddenTab">
+                <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
                     <hidden>True</hidden>
                 </li>
             </modExtensions>

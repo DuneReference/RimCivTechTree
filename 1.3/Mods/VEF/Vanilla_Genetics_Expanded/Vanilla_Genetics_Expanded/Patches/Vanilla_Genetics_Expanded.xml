@@ -40,7 +40,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Genetics"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>GR_GeneticAlteration</li>
@@ -55,7 +55,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Mechahybridization"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>GR_GeneticMechahybridization</li>
@@ -101,7 +101,7 @@
             <xpath>
                 Defs/ResearchProjectDef[
                        defName = "DuneRef_Genetics"
-                ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+                ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
             </xpath>
             <value>
                 <li>GR_InsectoidBioengineering</li>
@@ -118,7 +118,7 @@
         </xpath>
         <value>
             <modExtensions>
-                <li Class="DuneRef_RimCivTechTree.HiddenTab">
+                <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
                     <hidden>True</hidden>
                 </li>
             </modExtensions>

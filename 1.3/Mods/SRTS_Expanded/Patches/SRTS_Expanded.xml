@@ -44,7 +44,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Flight"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>Research_SRTSSuperpod</li>
@@ -55,7 +55,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Rocketry"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>Research_SRTSSkip</li>
@@ -68,7 +68,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_GuidanceSystems"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>Research_SRTSMkII</li>
@@ -79,7 +79,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_AdvancedShields"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>Research_SRTSMkIII</li>
@@ -91,7 +91,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_UnseenFlight"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>Research_SRTSMkIV</li>
@@ -106,7 +106,7 @@
         </xpath>
         <value>
             <modExtensions>
-                <li Class="DuneRef_RimCivTechTree.HiddenTab">
+                <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
                     <hidden>True</hidden>
                 </li>
             </modExtensions>

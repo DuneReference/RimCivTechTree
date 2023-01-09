@@ -36,7 +36,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Irrigation"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>DraconicDrugProduction</li>
@@ -47,7 +47,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Currency"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>DraconicIncubation</li>
@@ -58,7 +58,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_MilitaryTactics"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>DraconicApparelAndWeapons</li>
@@ -69,7 +69,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Electronics"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>DraconicAdvancedIncubation</li>
@@ -84,7 +84,7 @@
         </xpath>
         <value>
             <modExtensions>
-                <li Class="DuneRef_RimCivTechTree.HiddenTab">
+                <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
                     <hidden>True</hidden>
                 </li>
             </modExtensions>

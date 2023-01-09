@@ -50,7 +50,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Masonry"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>MF_BasicFurniture</li> 
@@ -61,7 +61,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Masonry"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>ComplexFurniture</li>
@@ -72,7 +72,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Construction"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>MF_RoyalFurniture</li>
@@ -83,7 +83,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Plastics"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>MF_ModernFurniture</li>
@@ -94,7 +94,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Industrialization"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>MF_WasteDisposal</li>
@@ -105,7 +105,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Lasers"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>FlatscreenTelevision</li>
@@ -118,11 +118,11 @@
     <Operation Class="PatchOperationConditional">
         <xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]/modExtensions</xpath>
         <match Class="PatchOperationConditional">
-            <xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]/modExtensions/li[@Class="DuneRef_RimCivTechTree.HiddenTab"]</xpath>
+            <xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.HiddenTab"]</xpath>
             <nomatch Class="PatchOperationAdd">
                 <xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]/modExtensions</xpath>
                 <value>
-                    <li Class="DuneRef_RimCivTechTree.HiddenTab">
+                    <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
                         <hidden>True</hidden>
                     </li>
                 </value>
@@ -132,7 +132,7 @@
             <xpath>Defs/ResearchTabDef[defName="VanillaExpanded"]</xpath>
             <value>
                 <modExtensions>
-                    <li Class="DuneRef_RimCivTechTree.HiddenTab">
+                    <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
                         <hidden>True</hidden>
                     </li>
                 </modExtensions>

@@ -74,7 +74,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Health"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>BasicProsthetics</li>
@@ -85,7 +85,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Nanotechnology"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>SurrogateOrgans</li>
@@ -97,7 +97,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Cybernetics"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>BrainSurgery</li>
@@ -111,7 +111,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_SmartMaterials"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>AdvancedBionics</li>
@@ -130,7 +130,7 @@
         </xpath>
         <value>
             <modExtensions>
-                <li Class="DuneRef_RimCivTechTree.HiddenTab">
+                <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
                     <hidden>True</hidden>
                 </li>
             </modExtensions>

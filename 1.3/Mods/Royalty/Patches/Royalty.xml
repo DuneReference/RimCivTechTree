@@ -44,7 +44,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_ComplexClothworking"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>NobleApparel</li>
@@ -56,7 +56,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_ExpandedCulture"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>Harp</li>
@@ -103,7 +103,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_PredictiveSystems"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>JumpPack</li>
@@ -115,7 +115,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_ExpandedCulture"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>Piano</li>
@@ -183,7 +183,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_AdvancedShields"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>CataphractArmor</li>
@@ -194,7 +194,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Medicine"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>SpecializedLimbs</li>
@@ -205,7 +205,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Cybernetics"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>CompactWeaponry</li>
@@ -266,7 +266,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Bioregeneration"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>ArtificialMetabolism</li>

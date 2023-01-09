@@ -38,7 +38,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_ExpandedCulture"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>VCE_CondimentsResearch</li>
@@ -49,7 +49,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Electronics"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>VCE_SoupCooking</li>
@@ -62,7 +62,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_SteelWorking"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>VCE_Grilling</li>
@@ -73,7 +73,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_WritingAndCulture"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>VCE_CheeseMaking</li>
@@ -88,7 +88,7 @@
         </xpath>
         <value>
             <modExtensions>
-                <li Class="DuneRef_RimCivTechTree.HiddenTab">
+                <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
                     <hidden>True</hidden>
                 </li>
             </modExtensions>

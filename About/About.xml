@@ -7,15 +7,99 @@
         <li>1.3</li>
     </supportedVersions>
     <loadAfter>
+        <li>Ludeon.RimWorld.Royalty</li>
+        <li>Ludeon.RimWorld.Ideology</li>
         <li>dismarzero.VGP.VGPVegetableGarden</li>
         <li>onyxae.dragonsdescent</li>
-        <li>ykara.epoe</li>
+        <li>OskarPotocki.VFE.Classical</li>
+        <li>OskarPotocki.VanillaFactionsExpanded.MedievalModule</li>
+        <li>OskarPotocki.VFE.Vikings</li>
+        <li>vanillaexpanded.vfea</li>
+        <li>oskarpotocki.vfe.insectoid</li>
+        <li>oskarpotocki.vfe.mechanoid</li>
+        <li>oskarpotocki.vanillafactionsexpanded.settlersmodule</li>
+        <li>VanillaExpanded.VPlantsEMore</li>
+        <li>VanillaExpanded.VPlantsESucculents</li>
+        <li>VanillaExpanded.VCookE</li>
+        <li>vanillaexpanded.vcookestews</li>
+        <li>vanillaexpanded.vcookesushi</li>
+        <li>VanillaExpanded.VWE</li>
+        <li>VanillaExpanded.VWEC</li>
+        <li>VanillaExpanded.VWEFT</li>
+        <li>VanillaExpanded.VWEHW</li>
+        <li>VanillaExpanded.VWEL</li>
+        <li>VanillaExpanded.VWENL</li>
+        <li>VanillaExpanded.VWEQ</li>
+        <li>vanillaexpanded.vweg</li>
+        <li>VanillaExpanded.VFECore</li>
+        <li>vanillaexpanded.vfearchitect</li>
+        <li>VanillaExpanded.VFEArt</li>
+        <li>VanillaExpanded.VFEFarming</li>
+        <li>VanillaExpanded.VFEPower</li>
+        <li>VanillaExpanded.VFEProduction</li>
+        <li>VanillaExpanded.VFESecurity</li>
+        <li>VanillaExpanded.VFESpacer</li>
+        <li>vanillaexpanded.vfemedical</li>
+        <li>VanillaExpanded.VGeneticsE</li>
+        <li>VanillaExpanded.VGeneticsEMoreLabStuff1.</li>
+        <li>VanillaExpanded.VAPPE</li>
+        <li>vanillaexpanded.vaeaccessories</li>
+        <li>VanillaExpanded.VARME</li>
+        <li>VanillaExpanded.VBooksE</li>
+        <li>vanillaexpanded.vpsycastse</li>
+        <li>vanillaexpanded.vhe</li>
+        <li>vanillaexpanded.vchemfuele</li>
+        <li>oskarpotocki.vanillaexpanded.ideologypatches</li>
+        <li>Xercaine.IndustrialAge.Artillery</li>
+        <li>cousinnic.tieredconcrete</li>
+        <li>VanillaExpanded.VBrewE</li>
+        <li>vanillaexpanded.vbrewecandt</li>
+        <li>OskarPotocki.VFE.Pirates</li>
+        <li>Ykara.EPOE</li>
+        <li>vat.epoeforked</li>
+        <li>spoonshortage.ADogSaidAnimalProsthetics</li>
+        <li>UT.AutoDrill</li>
+        <li>sarg.alphaanimals</li>
+        <li>sarg.alphabiomes</li>
+        <li>torann.CraftablePlasteel</li>
+        <li>roolo.whatthehack</li>
+        <li>wemd.simpleconcrete</li>
+        <li>sumghai.replimat</li>
+        <li>sumghai.medpod</li>
+        <li>nephlite.orbitaltradecolumn</li>
+        <li>gt.sam.tilledsoil</li>
+        <li>lanilor.simplerecycling</li>
+        <li>cousinnic.reinforcedstructures</li>
+        <li>regrowth.botr.core</li>
+        <li>haplo.powerswitch</li>
+        <li>rikiki.miningco.laserfence</li>
+        <li>rikiki.miningco.mms</li>
+        <li>rikiki.miningco.drillturret</li>
+        <li>roolo.giddyupmechanoids</li>
+        <li>rimeffect.core</li>
+        <li>rimeffect.asarireapers</li>
+        <li>rimeffect.n7</li>
+        <li>dubwise.dubsbadhygiene</li>
+        <li>dubwise.dubsskylights</li>
+        <li>dubwise.rimatomics</li>
+        <li>dubwise.rimefeller</li>
+        <li>dubwise.dubsrimkit</li>
         <li>spdskatr.projectrimfactory</li>
-        <li>oskarpotocki.vfe.classical</li>
-        <li>oskarpotocki.vanillafactionsexpanded.medievalmodule</li>
-        <li>oskarpotocki.vfe.vikings</li>
-        <li>vanillaexpanded.vfecore</li>
-        <li>vanillaexpanded.vfeart</li>
+        <li>smashphil.neceros.srtsexpanded</li>
+        <li>elif.srts.helicopters</li>
+        <li>kentington.saveourship2</li>
+        <li>lwm.deepstorage</li>
+        <li>captinjoehenry.autocleanfloors</li>
+        <li>murmur.walllight</li>
+        <li>somewhereoutinspace.spaceports</li>
+        <li>goudaquiche.teleporter</li>
+        <li>ushanka.luciferiumexpansion</li>
+        <li>joeyjoejoeshabidoo.desalination</li>
+        <li>hol.extrematorium</li>
+        <li>joeyjoejoeshabidoo.evaporationpond</li>
+        <li>solaris.bioreactor</li>
+        <li>mlie.hightechlaboratoryfacilities</li>
+        <li>glasses.sos2srtszone</li>
     </loadAfter>
     <description>Play through the technological ages of civilization in your game of RimWorld!</description>
 </ModMetaData>

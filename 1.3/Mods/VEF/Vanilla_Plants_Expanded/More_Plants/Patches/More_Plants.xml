@@ -40,7 +40,7 @@
             <xpath>
                 Defs/ResearchProjectDef[
                     defName = "DuneRef_Electronics"
-                ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+                ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
             </xpath>
             <value>
                 <li>VCE_VegMilkExtraction</li>

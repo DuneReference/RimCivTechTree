@@ -111,7 +111,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_SwarmIntelligence"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>ArchotechMechanites</li>
@@ -125,7 +125,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_UnseenGrasp"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>SoSArchotechOrgans</li>
@@ -138,7 +138,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_ExoticParticles"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>ArchotechHullConversion</li>
@@ -156,7 +156,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_PsychicDevelopment"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>ArchotechPsychicField</li>
@@ -176,7 +176,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_InterstellarTechnology"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>SoSJTDrive</li>
@@ -203,7 +203,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_OffworldMissions"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>ShipPilotSeat</li>
@@ -228,7 +228,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_AdvancedAI"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>Holodeck_Basic</li>
@@ -246,7 +246,7 @@
         </xpath>
         <value>
             <modExtensions>
-                <li Class="DuneRef_RimCivTechTree.HiddenTab">
+                <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
                     <hidden>True</hidden>
                 </li>
             </modExtensions>

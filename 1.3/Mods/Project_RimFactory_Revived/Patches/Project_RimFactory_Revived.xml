@@ -82,7 +82,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_AdvancedAI"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>PRF_AutomaticFarmingI</li>
@@ -103,7 +103,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_PredictiveSystems"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>PRF_AutomaticFarmingIII</li>
@@ -124,7 +124,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Composites"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>PRF_MetalRefining</li>
@@ -135,7 +135,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Computers"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>PRF_MagneticTape</li>
@@ -147,7 +147,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Robotics"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>PRF_UniversalAutocrafting</li>
@@ -162,7 +162,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_QuantumIndustry"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>PRF_SelfCorrectingAssemblersII</li>
@@ -177,7 +177,7 @@
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Electronics"
                 or defName = "DuneRef_SyntheticMaterials"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>PRF_EnhancedBatteries</li>
@@ -189,7 +189,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_AdvancedPowerCells"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>PRF_VeryLargeBatteries</li>
@@ -200,7 +200,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Industrialization"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>PRF_CoreTierO</li>
@@ -212,7 +212,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_ReplaceableParts"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>PRF_BeltsI</li>
@@ -224,7 +224,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_SmartMaterials"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>PRF_AdvancedDrones</li>
@@ -235,7 +235,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_AdvancedLasers"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>PRF_AutonomousMiningIII</li>
@@ -246,7 +246,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Woodworking"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>PRF_Crates</li>
@@ -261,7 +261,7 @@
         </xpath>
         <value>
             <modExtensions>
-                <li Class="DuneRef_RimCivTechTree.HiddenTab">
+                <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
                     <hidden>True</hidden>
                 </li>
             </modExtensions>

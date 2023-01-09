@@ -57,7 +57,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Refining"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>OilDrilling</li>
@@ -71,7 +71,7 @@
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Refining"
                 or defName = "DuneRef_Radio"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>DeepOilWells</li>
@@ -82,7 +82,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_SyntheticMaterials"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>NeutroamineProduction</li>
@@ -99,7 +99,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Composites"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>SynthamideCompositeProduction</li>
@@ -116,7 +116,7 @@
         </xpath>
         <value>
             <modExtensions>
-                <li Class="DuneRef_RimCivTechTree.HiddenTab">
+                <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
                     <hidden>True</hidden>
                 </li>
             </modExtensions>

@@ -30,7 +30,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Bioregeneration"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>Biosculpting</li>
@@ -42,7 +42,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_SmartMaterials"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>NeuralSupercharger</li>

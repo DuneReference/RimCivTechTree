@@ -84,7 +84,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Irrigation"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>SewageSludgeComposting</li>
@@ -95,7 +95,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Refrigeration"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>MultiSplitAirCon</li>
@@ -107,7 +107,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Engineering"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>Plumbing</li>
@@ -120,7 +120,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Sanitation"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>ModernFixtures</li>
@@ -132,7 +132,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Plastics"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>ElectricPumps</li>
@@ -145,7 +145,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Robotics"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>AdvancedShowers</li>
@@ -157,7 +157,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Refining"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>DeepWells</li>
@@ -168,7 +168,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Medicine"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>WashingMachines</li>
@@ -181,7 +181,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_SmartMaterials"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>HygieneBionics</li>
@@ -192,7 +192,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Construction"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>SwimmingPools</li>
@@ -203,7 +203,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Industrialization"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>Irrigation</li>
@@ -216,7 +216,7 @@
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Electronics"
                 or defName = "DuneRef_Composites"
-            ]/modExtensions/li[@Class="DuneRef_RimCivTechTree.ResearchUnlocks"]/researchUnlocks
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>GeothermalHeating</li>
@@ -231,7 +231,7 @@
         </xpath>
         <value>
             <modExtensions>
-                <li Class="DuneRef_RimCivTechTree.HiddenTab">
+                <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
                     <hidden>True</hidden>
                 </li>
             </modExtensions>
