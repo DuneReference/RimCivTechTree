@@ -321,11 +321,11 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationReplace">
+    <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ThingDef[
                    defName = "GrandThrone"
-            ]/researchPrerequisites
+            ]
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
@@ -433,11 +433,11 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationReplace">
+    <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ThingDef[
                    defName = "Throne"
-            ]/researchPrerequisites
+            ]
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">

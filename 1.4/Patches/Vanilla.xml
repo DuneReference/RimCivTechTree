@@ -161,6 +161,7 @@
                 or defName = "Fabrication"
                 or defName = "AdvancedFabrication"
                 or defName = "SniperTurret"
+                or defName = "FoamTurret"
             ]
         </xpath>
         <value>
@@ -268,6 +269,7 @@
                 or defName = "Fabrication"
                 or defName = "AdvancedFabrication"
                 or defName = "SniperTurret"
+                or defName = "FoamTurret"
             ]/prerequisites
         </xpath>
     </Operation>
@@ -285,6 +287,7 @@
                 or defName = "ShieldBelt"
                 or defName = "MultiAnalyzer"
                 or defName = "SniperTurret"
+                or defName = "FoamTurret"
             ]/hiddenPrerequisites
         </xpath>
     </Operation>
@@ -723,7 +726,6 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_Chemistry</li>
-                <li>DuneRef_Composites</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -930,6 +932,19 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_Computers</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Apparel_FirefoampopPack"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Chemistry</li>
             </researchPrerequisites>
         </value>
     </Operation>

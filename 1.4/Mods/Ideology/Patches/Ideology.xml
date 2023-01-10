@@ -16,6 +16,8 @@
         </value>
     </Operation>
 
+    <!-- remove prerequisites so no funky stuff happens when we try to unlock them automatically -->
+
     <Operation Class="PatchOperationRemove">
         <xpath>
             Defs/ResearchProjectDef[
@@ -25,6 +27,8 @@
             ]/prerequisites
         </xpath>
     </Operation>
+
+    <!-- Add techs to RimCivTechTree researches -->
 
     <Operation Class="PatchOperationAdd">
         <xpath>
@@ -54,9 +58,21 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ThingDef[
-                   defName = "StylingStation"
-                or defName = "GibbetCage"
+                   defName = "GibbetCage"
             ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_SteelWorking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "StylingStation"
+            ]/researchPrerequisites
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
@@ -79,11 +95,11 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationAdd">
+    <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
                    defName = "Reliquary"
-            ]
+            ]/researchPrerequisites
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
