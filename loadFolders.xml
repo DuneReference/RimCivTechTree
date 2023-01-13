@@ -194,6 +194,10 @@
         <li IfModActive="hol.extrematorium">1.4/Mods/Extrematorium_Etc_</li>
         <li IfModActive="solaris.bioreactor">1.4/Mods/BioReactor</li>
         <li IfModActive="mlie.hightechlaboratoryfacilities">1.4/Mods/High_Tech_Laboratory_Facilities__Continued_</li>
+        <li IfModActive="kit.gunpowderweaponsscp">1.4/Mods/Kit_s_Gunpowder_Weapons</li>
+        <li IfModActive="kit.industrialweapons">1.4/Mods/Kit_s_Industrial_Weapons</li>
+        <li IfModActive="kit.powerprotein">1.4/Mods/Kit_s_Power Protein_Continued</li>
+        <li IfModActive="kit.vfeweapons">1.4/Mods/Kit_s_VFE_Weapons_Continued</li>
         <li IfModActive="scpchemfuel.appliances">1.4/Mods/Appliances_Expanded</li>
         <li IfModActive="sirvan.eltexweaponry">1.4/Mods/Eltex_Weaponry</li>
         <li IfModActive="harkon.biotechaddon.medievaldeathrestcoffin">1.4/Mods/_HRK__Medieval_deathrest_coffin</li>
