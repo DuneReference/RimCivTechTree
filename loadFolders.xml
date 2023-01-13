@@ -200,6 +200,7 @@
         <li IfModActive="kit.vfeweapons">1.4/Mods/Kit_s_VFE_Weapons_Continued</li>
         <li IfModActive="scpchemfuel.appliances">1.4/Mods/Appliances_Expanded</li>
         <li IfModActive="sirvan.eltexweaponry">1.4/Mods/Eltex_Weaponry</li>
+        <li IfModActive="simmin.powertools">1.4/Mods/Power_Tools</li>
         <li IfModActive="harkon.biotechaddon.medievaldeathrestcoffin">1.4/Mods/_HRK__Medieval_deathrest_coffin</li>
         <li IfModActive="arandomkiwi.powerpp">1.4/Mods/Power__</li>
     </v1.4>
