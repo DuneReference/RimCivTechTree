@@ -194,5 +194,6 @@
         <li IfModActive="hol.extrematorium">1.4/Mods/Extrematorium_Etc_</li>
         <li IfModActive="solaris.bioreactor">1.4/Mods/BioReactor</li>
         <li IfModActive="mlie.hightechlaboratoryfacilities">1.4/Mods/High_Tech_Laboratory_Facilities__Continued_</li>
+        <li IfModActive="harkon.biotechaddon.medievaldeathrestcoffin">1.4/Mods/_HRK__Medieval_deathrest_coffin</li>
     </v1.4>
 </loadFolders>
