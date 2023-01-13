@@ -137,7 +137,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_ExoticParticles"
+                   defName = "DuneRef_Nanites"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -155,7 +155,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_PsychicDevelopment"
+                   defName = "DuneRef_SwarmIntelligence"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -175,7 +175,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_InterstellarTechnology"
+                   defName = "DuneRef_SpaceTechnology"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -252,6 +252,8 @@
             </modExtensions>
         </value>
     </Operation>
+
+    <!-- Moving Individual items to different techs -->
 
     <Operation Class="PatchOperationAdd">
         <xpath>

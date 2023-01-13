@@ -439,6 +439,7 @@
                    defName = "PRF_SALAutoMinerI"
                 or defName = "PRF_GenericAnimalHarvester_II"
                 or defName = "PRF_OverclockedAutoAssemblerII"
+                or defName = "PRF_IOPort_I"
             ]/researchPrerequisites
         </xpath>
         <value>
@@ -489,10 +490,8 @@
                 or defName = "PRF_TheArtMaster"
                 or defName = "PRF_ColdStorageUnit_I"
                 or defName = "PRF_ColdStorageUnit_I"
-                or defName = "PRF_IOPort_I"
                 or defName = "PRF_IOPPusher_I"
                 or defName = "PRF_IOPort_II"
-                or defName = ""
             ]/researchPrerequisites
         </xpath>
         <value>

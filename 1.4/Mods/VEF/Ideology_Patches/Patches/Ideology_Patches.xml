@@ -16,7 +16,7 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationReplace">
+    <!-- <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
                    defName = "Spacer_OutdoorDarkLamp"
@@ -28,9 +28,9 @@
                 <li>DuneRef_Composites</li>
             </researchPrerequisites>
         </value>
-    </Operation>
+    </Operation> -->
 
-    <Operation Class="PatchOperationReplace">
+    <!-- <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
                    defName = "Light_SpacerDarkLamp"
@@ -41,6 +41,6 @@
                 <li>DuneRef_Nanotechnology</li>
             </researchPrerequisites>
         </value>
-    </Operation>
+    </Operation> -->
 
 </Patch>

@@ -9,7 +9,6 @@
                    defName = "VWE_Longbow"
                 or defName = "VWE_Crossbow"
                 or defName = "VWE_CompoundBow"
-                or defName = "VWE_Tools"
                 or defName = "VWE_Gunpowder"
                 or defName = "VWE_TrenchWarfare"
                 or defName = "VWE_HeavyWeapons"
@@ -33,7 +32,6 @@
                    defName = "VWE_Longbow"
                 or defName = "VWE_Crossbow"
                 or defName = "VWE_CompoundBow"
-                or defName = "VWE_Tools"
                 or defName = "VWE_TrenchWarfare"
                 or defName = "VWE_HeavyWeapons"
                 or defName = "VWE_Flamethrower"
@@ -67,17 +65,6 @@
         <value>
             <li>VWE_Crossbow</li>
             <li>VWE_CompoundBow</li>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/ResearchProjectDef[
-                   defName = "DuneRef_Engineering"
-            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
-        </xpath>
-        <value>
-            <li>VWE_Tools</li>
         </value>
     </Operation>
 

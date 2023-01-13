@@ -107,19 +107,4 @@
         </nomatch>
     </Operation>
 
-    <!-- Moving Individual items to different techs -->
-
-    <Operation Class="PatchOperationReplace">
-        <xpath>
-            Defs/ThingDef[
-                   defName = "VAE_Headgear_NightVisionGoggles"
-            ]/recipeMaker/researchPrerequisite
-        </xpath>
-        <value>
-            <researchPrerequisites Inherit="False">
-                <li>DuneRef_Lasers</li>
-            </researchPrerequisites>
-        </value>
-    </Operation>
-
 </Patch>

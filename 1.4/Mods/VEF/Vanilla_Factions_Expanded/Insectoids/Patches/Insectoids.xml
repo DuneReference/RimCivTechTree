@@ -131,4 +131,38 @@
         </nomatch>
     </Operation>
 
+    <!-- Moving Individual items to different techs -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFEI_SonicInfestationRepeller"
+            ]
+        </xpath>
+        <value>
+            <designationCategory>Security</designationCategory>
+            <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_AdvancedShields</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFE_Gun_Plasmacutter"
+                or defName = "VFE_Gun_Plasmapiercer"
+                or defName = "VFE_Gun_PlasmabeamRifle"
+                or defName = "VFE_Gun_PlasmaScattergun"
+                or defName = "VFE_Plasmasaw"
+            ]
+        </xpath>
+        <value>
+            <recipeMaker>
+			    <researchPrerequisite Inherit='False'>DuneRef_AdvancedShields</researchPrerequisite>
+            </recipeMaker>
+        </value>
+    </Operation>
+
 </Patch>  

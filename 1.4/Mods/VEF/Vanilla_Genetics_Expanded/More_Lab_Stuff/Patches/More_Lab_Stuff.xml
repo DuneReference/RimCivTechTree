@@ -25,7 +25,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_Mechahybridization"
+                   defName = "DuneRef_Genetics"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>

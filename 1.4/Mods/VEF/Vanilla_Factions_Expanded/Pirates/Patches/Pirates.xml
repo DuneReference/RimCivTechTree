@@ -152,25 +152,6 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Vanilla Weapons Expanded - Laser</li>
-        </mods>
-        <match Class="PatchOperationReplace">
-            <xpath>
-                Defs/ThingDef[
-                    defName = "VFEP_Box_WarcasketLaserBolter"
-                ]/researchPrerequisites
-            </xpath>
-            <value>
-                <researchPrerequisites Inherit="False">
-                    <li>DuneRef_PredictiveSystems</li>
-                    <li>DuneRef_QuantumArmaments</li>
-                </researchPrerequisites>
-            </value>
-        </match>
-    </Operation>
-
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/VFEPirates.WarcasketDef[

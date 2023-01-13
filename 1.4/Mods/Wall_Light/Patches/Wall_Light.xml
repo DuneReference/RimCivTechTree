@@ -3,11 +3,11 @@
 
     <!-- Moving Individual items to different techs -->
 
-    <Operation Class="PatchOperationReplace">
+    <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ThingDef[
                    defName = "Lighting_MURWallSunLight"
-            ]/researchPrerequisites
+            ]
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">

@@ -88,7 +88,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_MechanoidTechnology"
+                   defName = "DuneRef_Mechanites"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -573,7 +573,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_MechanoidTechnology</li>
+                <li>DuneRef_Mechanites</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -587,7 +587,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_MechanoidTechnology</li>
+                <li>DuneRef_Mechanites</li>
             </researchPrerequisites>
         </value>
     </Operation>

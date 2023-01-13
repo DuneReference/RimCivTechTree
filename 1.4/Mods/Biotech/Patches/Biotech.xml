@@ -125,7 +125,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_MechanoidTechnology"
+                   defName = "DuneRef_Mechanites"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -197,6 +197,18 @@
                 <li>DuneRef_GasPower</li>
                 <li>DuneRef_AdvancedBallistics</li>
             </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <!-- to remove rifling that gets added from base class -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Gun_ToxbombLauncher"
+            ]/recipeMaker
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False"></researchPrerequisite>
         </value>
     </Operation>
 

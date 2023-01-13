@@ -6,11 +6,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "VFE_IndustrialGenerators"
-                or defName = "VFE_AdvancedBatteries"
-                or defName = "VFE_AdvancedPowerSources"
-                or defName = "VFE_NuclearPower"
-                or defName = "VFE_TidalPower"
+                   defName = "VHGE_GasExtraction"
             ]/tab
         </xpath>
         <value>
@@ -23,11 +19,7 @@
     <Operation Class="PatchOperationRemove">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "VFE_IndustrialGenerators"
-                or defName = "VFE_AdvancedBatteries"
-                or defName = "VFE_AdvancedPowerSources"
-                or defName = "VFE_NuclearPower"
-                or defName = "VFE_TidalPower"
+                   defName = "VHGE_GasExtraction"
             ]/prerequisites
         </xpath>
     </Operation>
@@ -37,46 +29,11 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_Refining"
+                   defName = "DuneRef_GasPower"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
-            <li>VFE_IndustrialGenerators</li>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/ResearchProjectDef[
-                   defName = "DuneRef_AdvancedPowerCells"
-            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
-        </xpath>
-        <value>
-            <li>VFE_AdvancedBatteries</li>
-            <li>VFE_AdvancedPowerSources</li>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/ResearchProjectDef[
-                   defName = "DuneRef_NuclearFission"
-            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
-        </xpath>
-        <value>
-            <li>VFE_NuclearPower</li>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/ResearchProjectDef[
-                   defName = "DuneRef_Electronics"
-                or defName = "DuneRef_Composites"
-            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
-        </xpath>
-        <value>
-            <li>VFE_TidalPower</li>
+            <li>VHGE_GasExtraction</li>
         </value>
     </Operation>
 
@@ -113,13 +70,13 @@
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
-                   defName = "VFE_AdvancedWatermillGenerator"
-                or defName = "VFE_AdvancedSolarGenerator"
+                   defName = "VHGE_GasPoweredSmithy"
+                or defName = "VHGE_GasOperatedPodLauncher"
             ]/researchPrerequisites
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>VFE_AdvancedPowerSources</li>
+                <li>VHGE_GasExtraction</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -127,12 +84,13 @@
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
-                   defName = "VFE_IndustrialWoodFiredGenerator"
+                   defName = "VHGE_GasSunLamp"
             ]/researchPrerequisites
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Industrialization</li>
+                <li>DuneRef_GasPower</li>
+                <li>DuneRef_Ecology</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -140,12 +98,13 @@
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
-                   defName = "VFE_PortableChemfuelPoweredGenerator"
+                   defName = "VHGE_IndustrialHelixienGenerator"
+                or defName = "VHGE_GasPoweredRefinery"
             ]/researchPrerequisites
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Plastics</li>
+                <li>DuneRef_GasPower</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -153,13 +112,13 @@
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
-                   defName = "VPE_AdvancedGeothermalGenerator"
+                   defName = "VHGE_GasCooler"
             ]/researchPrerequisites
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Composites</li>
-                <li>DuneRef_AdvancedPowerCells</li>
+                <li>DuneRef_GasPower</li>
+                <li>DuneRef_Refrigeration</li>
             </researchPrerequisites>
         </value>
     </Operation>

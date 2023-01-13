@@ -127,4 +127,40 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFEV_TrainingDummy"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_MilitaryEngineering</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFEV_Shield_Crypto"
+                or defName = "VFEV_CryptoHeavyAxe"
+                or defName = "VFEV_CryptoLightAxe"
+                or defName = "VFEV_CryptoHeavyCrossbow"
+                or defName = "VFEV_CryptoLightCrossbow"
+                or defName = "VFEV_CryptoPistol"
+                or defName = "VFEV_CryptoRifle"
+                or defName = "VFEV_CryptoHeavyArmor"
+                or defName = "VFEV_CryptoArmor"
+                or defName = "VFEV_Apparel_CryptoHeavyHelmet"
+                or defName = "VFEV_Apparel_CryptoLightHelmet"
+            ]
+        </xpath>
+        <value>
+            <recipeMaker>
+			    <researchPrerequisite Inherit='False'>DuneRef_AdvancedShields</researchPrerequisite>
+            </recipeMaker>
+        </value>
+    </Operation>
+
 </Patch>

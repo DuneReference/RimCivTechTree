@@ -180,7 +180,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Woodworking</li>
+                <li>DuneRef_MilitaryEngineering</li>
             </researchPrerequisites>
         </value>
     </Operation>

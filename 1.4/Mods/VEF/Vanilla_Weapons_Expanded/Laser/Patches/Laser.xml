@@ -7,7 +7,6 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "VWE_LaserWeapons"
-                or defName = "VWE_UltratechLaserWeapons"
             ]/tab
         </xpath>
         <value>
@@ -21,7 +20,6 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "VWE_LaserWeapons"
-                or defName = "VWE_UltratechLaserWeapons"
             ]/prerequisites
         </xpath>
     </Operation>
@@ -31,22 +29,11 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_MechanoidTechnology"
+                   defName = "DuneRef_Lasers"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>VWE_LaserWeapons</li>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/ResearchProjectDef[
-                   defName = "DuneRef_QuantumArmaments"
-            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
-        </xpath>
-        <value>
-            <li>VWE_UltratechLaserWeapons</li>
         </value>
     </Operation>
     
@@ -76,6 +63,61 @@
                 </modExtensions>
             </value>
         </nomatch>
+    </Operation>
+
+    <!-- Restoring Ultratech Lasers to be buildable and place them in my tech tree -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VWEL_Gun_LaserPistol"
+                or defName = "VWEL_Gun_LaserSMG"
+                or defName = "VWEL_Gun_LaserRifle"
+                or defName = "VWEL_Gun_LaserShotgun"
+                or defName = "VWEL_Gun_LaserSniperRifle"
+            ]
+        </xpath>
+        <value>
+            <recipeMaker>
+                <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+                <workSkill>Intellectual</workSkill>
+                <effectWorking>Smith</effectWorking>
+                <soundWorking>Recipe_Smith</soundWorking>
+                <skillRequirements>
+                    <Crafting>8</Crafting>
+                </skillRequirements>
+                <recipeUsers Inherit="False">
+                    <li>FabricationBench</li>
+                </recipeUsers>
+                <unfinishedThingDef Inherit="False">UnfinishedGun</unfinishedThingDef>
+                <researchPrerequisite Inherit="False">DuneRef_QuantumArmaments</researchPrerequisite>
+            </recipeMaker>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VWEL_Gun_LaserMinigun"
+                or defName = "VWEL_Gun_TeslaGun"
+            ]
+        </xpath>
+        <value>
+            <recipeMaker>
+                <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+                <workSkill>Intellectual</workSkill>
+                <effectWorking>Smith</effectWorking>
+                <soundWorking>Recipe_Smith</soundWorking>
+                <skillRequirements>
+                    <Crafting>10</Crafting>
+                </skillRequirements>
+                <recipeUsers Inherit="False">
+                    <li>FabricationBench</li>
+                </recipeUsers>
+                <unfinishedThingDef Inherit="False">UnfinishedGun</unfinishedThingDef>
+                <researchPrerequisite Inherit="False">DuneRef_QuantumArmaments</researchPrerequisite>
+            </recipeMaker>
+        </value>
     </Operation>
 
 </Patch>

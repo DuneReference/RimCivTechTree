@@ -3,11 +3,12 @@
 
     <!-- Move mods research to hidden tab -->
 
-    <Operation Class="PatchOperationAdd">
+    <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "RG_MushroomCultivation"
-            ]
+                or defName = "RG_BerryCultivation"
+            ]/tab
         </xpath>
         <value>
             <tab>DuneRef_Hidden</tab>
@@ -20,8 +21,32 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "RG_MushroomCultivation"
+                or defName = "RG_BerryCultivation"
             ]/tags/li[text()="TribalStart"]
         </xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "RG_MushroomCultivation"
+            ]/tags/li[text()="ClassicStart"]
+        </xpath>
+    </Operation>
+    
+    <!-- Hide tabs created by this mod -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchTabDef[defName = "RG_ReGrowth"]
+        </xpath>
+        <value>
+            <modExtensions>
+                <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
+                    <hidden>True</hidden>
+                </li>
+            </modExtensions>
+        </value>
     </Operation>
 
     <!-- Add techs to RimCivTechTree researches -->
@@ -34,6 +59,7 @@
         </xpath>
         <value>
             <li>RG_MushroomCultivation</li>
+            <li>RG_BerryCultivation</li>
         </value>
     </Operation>
 
