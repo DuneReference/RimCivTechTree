@@ -201,5 +201,6 @@
         <li IfModActive="scpchemfuel.appliances">1.4/Mods/Appliances_Expanded</li>
         <li IfModActive="sirvan.eltexweaponry">1.4/Mods/Eltex_Weaponry</li>
         <li IfModActive="harkon.biotechaddon.medievaldeathrestcoffin">1.4/Mods/_HRK__Medieval_deathrest_coffin</li>
+        <li IfModActive="arandomkiwi.powerpp">1.4/Mods/Power__</li>
     </v1.4>
 </loadFolders>
