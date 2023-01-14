@@ -1333,7 +1333,7 @@
         <defName>DuneRef_SwarmIntelligence</defName>
         <label>Swarm Intelligence</label>
         <description>Swarm Intelligence</description>
-        <baseCost>6300</baseCost>
+        <baseCost>63000</baseCost>
         <techLevel>Ultra</techLevel>
         <prerequisites>
             <li>DuneRef_Mechanites</li>
