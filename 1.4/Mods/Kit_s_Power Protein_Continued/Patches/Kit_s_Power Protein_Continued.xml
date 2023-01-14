@@ -23,7 +23,7 @@
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
-            <li>KIT_EarlyGunsmithing</li>
+            <li>KIT_LabGrownMeat</li>
         </value>
     </Operation>
 

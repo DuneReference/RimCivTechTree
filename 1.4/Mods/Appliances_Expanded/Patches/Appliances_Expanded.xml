@@ -83,6 +83,7 @@
             <xpath>
                 Defs/ThingDef[
                        defName = "CA_ChemfuelStoveLarge"
+                    or defName = "CE_FueledSmithyLarge"
                 ]/researchPrerequisites
             </xpath>
             <value>

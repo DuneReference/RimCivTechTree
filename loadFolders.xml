@@ -133,7 +133,7 @@
         <li IfModActive="VanillaExpanded.VFESecurity">1.4/Mods/VEF/Vanilla_Furniture_Expanded/Security</li>
         <li IfModActive="VanillaExpanded.VFESpacer">1.4/Mods/VEF/Vanilla_Furniture_Expanded/Spacer</li>
         <li IfModActive="vanillaexpanded.vfemedical">1.4/Mods/VEF/Vanilla_Furniture_Expanded/Medical</li>
-        <li IfModActive="VanillaExpanded.VFEPower">1.4/Mods/VEF/Vanilla_Helixien_Gas_Expanded/Vanilla_Helixien_Gas_Expanded</li>
+        <li IfModActive="vanillaexpanded.helixiengas">1.4/Mods/VEF/Vanilla_Helixien_Gas_Expanded/Vanilla_Helixien_Gas_Expanded</li>
         <li IfModActive="VanillaExpanded.VGeneticsE">1.4/Mods/VEF/Vanilla_Genetics_Expanded/Vanilla_Genetics_Expanded</li>
         <li IfModActive="VanillaExpanded.VGeneticsEMoreLabStuff">1.4/Mods/VEF/Vanilla_Genetics_Expanded/More_Lab_Stuff</li>
         <li IfModActive="VanillaExpanded.VAPPE">1.4/Mods/VEF/Vanilla_Apparel_Expanded/Vanilla_Apparel_Expanded</li>

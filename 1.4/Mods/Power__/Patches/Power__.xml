@@ -134,4 +134,22 @@
         </value>
     </Operation>
 
+    <!-- Moving Individual items to different techs -->
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "ARKPPP_WirelessPowerReceptor"
+                or defName = "ARKPPP_WirelessPortablePowerReceptor"
+                or defName = "ARKPPP_WirelessPowerEmitter"
+                or defName = "ARKPPP_WirelessPowerEmitterAdvanced"
+                or defName = "ARKPPP_LocalWirelessPowerEmitter"
+                or defName = "ARKPPP_LocalWirelessPortablePowerEmitter"
+                or defName = "ARKPPP_PowerBeamAbsorptionDish"
+                or defName = "ARKPPP_PowerBeamSatelliteTargetingSystem"
+                or defName = "ARKPPP_ADRelayTower"
+            ]/researchPrerequisites/li[text()="Electricity"]
+        </xpath>
+    </Operation>
+
 </Patch>
