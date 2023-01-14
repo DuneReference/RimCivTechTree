@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+    <!-- @@ Neolithic Era @@ -->
     <!-- Ancient Era -->
 
     <ResearchProjectDef>
@@ -161,6 +162,7 @@
         </modExtensions>
     </ResearchProjectDef>
     
+    <!-- @@ Middle Ages @@ -->
     <!-- Classical Era -->
 
     <ResearchProjectDef>
@@ -325,6 +327,7 @@
         </modExtensions>
     </ResearchProjectDef>
     
+    <!-- @@ Industrial Era @@ -->
     <!-- Industrial Era -->
 
     <ResearchProjectDef>
@@ -589,6 +592,7 @@
         </modExtensions>
     </ResearchProjectDef>
 
+    <!-- @@ Modern Era @@ -->
     <!-- Atomic Era -->
 
     <ResearchProjectDef>
@@ -926,6 +930,7 @@
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     </ResearchProjectDef>
 
+    <!-- @@ Spacer Era @@ -->
     <!-- Future Era -->
 
     <ResearchProjectDef>
@@ -1280,6 +1285,7 @@
         </requiredResearchFacilities>
     </ResearchProjectDef>
 
+    <!-- @@ Ultra Era @@ -->
     <!-- Ultra Era -->
 
     <ResearchProjectDef>
