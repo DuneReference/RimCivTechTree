@@ -2,7 +2,6 @@
 <Patch>
 
     <!-- remove tags with faction start info so we can apply the start info to new techs that contain this one -->
-    <!-- didn't put in the HeavyTurrets research for CE for now -->
 
     <Operation Class="PatchOperationRemove">
         <xpath>
@@ -148,7 +147,7 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationAdd">
+    <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
                    defName = "VFE_Gun_Plasmacutter"
@@ -156,7 +155,7 @@
                 or defName = "VFE_Gun_PlasmabeamRifle"
                 or defName = "VFE_Gun_PlasmaScattergun"
                 or defName = "VFE_Plasmasaw"
-            ]
+            ]/recipeMaker
         </xpath>
         <value>
             <recipeMaker>
