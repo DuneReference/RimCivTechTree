@@ -8,12 +8,24 @@
             Defs/ThingDef[
                    defName = "VWE_Apparel_GrenadeFlashBelt"
                 or defName = "VWE_Apparel_GrenadeSmokeBelt"
-                or defName = "VWE_Apparel_GrenadeToxicBelt"
             ]/recipeMaker/researchPrerequisite
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_Chemistry</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VWE_Apparel_GrenadeToxicBelt"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_GasPower</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -60,7 +72,7 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_Plastics</li>
-                <li>DuneRef_Computers</li>
+                <li>DuneRef_AdvancedBallistics</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -79,6 +91,42 @@
                 <researchPrerequisites Inherit="False">
                     <li>DuneRef_ScientificTheory</li>
                 </researchPrerequisites>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Settlers</li>
+		</mods>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                        defName = "VWE_Apparel_DynamiteBelt"
+                ]/recipeMaker
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_ScientificTheory</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Settlers</li>
+		</mods>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                        defName = "VWE_Apparel_DynamiteBelt"
+                ]/recipeMaker/recipeUsers
+            </xpath>
+            <value>
+                <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+                <li>CraftingSpot</li>
             </value>
         </match>
     </Operation>

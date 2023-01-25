@@ -661,18 +661,23 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationReplace">
-        <xpath>
-            Defs/ThingDef[
-                   defName = "Weapon_GrenadeFrag"
-                or defName = "Weapon_GrenadeMolotov"
-            ]/recipeMaker/researchPrerequisite
-        </xpath>
-        <value>
-            <researchPrerequisites Inherit="False">
-                <li>DuneRef_Rifling</li>
-            </researchPrerequisites>
-        </value>
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<nomatch Class="PatchOperationReplace">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "Weapon_GrenadeFrag"
+                    or defName = "Weapon_GrenadeMolotov"
+                ]/recipeMaker/researchPrerequisite
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_Rifling</li>
+                </researchPrerequisites>
+            </value>
+        </nomatch>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
@@ -804,31 +809,41 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationReplace">
-        <xpath>
-            Defs/ThingDef[
-                   defName = "Gun_EmpLauncher"
-            ]/recipeMaker/researchPrerequisite
-        </xpath>
-        <value>
-            <researchPrerequisites Inherit="False">
-                <li>DuneRef_Plastics</li>
-                <li>DuneRef_Computers</li>
-                <li>DuneRef_AdvancedBallistics</li>
-            </researchPrerequisites>
-        </value>
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<nomatch Class="PatchOperationReplace">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "Gun_EmpLauncher"
+                ]/recipeMaker/researchPrerequisite
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_Plastics</li>
+                    <li>DuneRef_Computers</li>
+                    <li>DuneRef_AdvancedBallistics</li>
+                </researchPrerequisites>
+            </value>
+        </nomatch>
     </Operation>
 
     <!-- to remove rifling that gets added from base class -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/ThingDef[
-                   defName = "Gun_EmpLauncher"
-            ]/recipeMaker
-        </xpath>
-        <value>
-            <researchPrerequisite Inherit="False"></researchPrerequisite>
-        </value>
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<nomatch Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "Gun_EmpLauncher"
+                ]/recipeMaker
+            </xpath>
+            <value>
+                <researchPrerequisite Inherit="False"></researchPrerequisite>
+            </value>
+        </nomatch>
     </Operation>
 
     <Operation Class="PatchOperationReplace">

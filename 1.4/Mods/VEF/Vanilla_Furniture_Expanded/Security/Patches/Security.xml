@@ -282,4 +282,17 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFES_Turret_Artillery"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>VFES_Artillery</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
 </Patch>

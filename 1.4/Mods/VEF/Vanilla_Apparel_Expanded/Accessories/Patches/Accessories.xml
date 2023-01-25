@@ -3,6 +3,19 @@
 
     <!-- Moving Individual items to different techs -->
 
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/VAE_Accessories.CaravanCapacityApparelDef[
+                   defName = "VAEA_Apparel_Backpack"
+            ]/recipeMaker
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_ComplexClothworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[

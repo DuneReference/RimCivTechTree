@@ -61,19 +61,46 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/ThingDef[
-                   defName = "VFES_Weapon_GrenadeDynamite"
-            ]
-        </xpath>
-        <value>
-            <recipeMaker>
-                <researchPrerequisites Inherit="False">
-                    <li>DuneRef_ScientificTheory</li>
-                </researchPrerequisites>
-            </recipeMaker>
-        </value>
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<nomatch Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                    defName = "VFES_Weapon_GrenadeDynamite"
+                ]
+            </xpath>
+            <value>
+                <recipeMaker>
+                    <researchPrerequisites Inherit="False">
+                        <li>DuneRef_ScientificTheory</li>
+                    </researchPrerequisites>
+                </recipeMaker>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<nomatch Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                        defName = "VFES_Weapon_GrenadeDynamite"
+                ]
+            </xpath>
+            <value>
+                <recipeMaker>
+                    <recipeUsers>
+                        <li>ElectricSmithy</li>
+                        <li>FueledSmithy</li>
+                        <li>CraftingSpot</li>
+                    </recipeUsers>
+                </recipeMaker>
+            </value>
+        </nomatch>
     </Operation>
 
 </Patch>

@@ -158,18 +158,23 @@
 
     <!-- Moving Individual items to different techs -->
 
-    <Operation Class="PatchOperationReplace">
-        <xpath>
-            Defs/ThingDef[
-                   defName = "Weapon_GrenadeTox"
-            ]/recipeMaker/researchPrerequisite
-        </xpath>
-        <value>
-            <researchPrerequisites Inherit="False">
-                <li>DuneRef_GasPower</li>
-                <li>DuneRef_Chemistry</li>
-            </researchPrerequisites>
-        </value>
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<nomatch Class="PatchOperationReplace">
+            <xpath>
+                Defs/ThingDef[
+                    defName = "Weapon_GrenadeTox"
+                ]/recipeMaker/researchPrerequisite
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_GasPower</li>
+                    <li>DuneRef_Chemistry</li>
+                </researchPrerequisites>
+            </value>
+        </nomatch>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
@@ -186,30 +191,40 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationReplace">
-        <xpath>
-            Defs/ThingDef[
-                   defName = "Gun_ToxbombLauncher"
-            ]/recipeMaker/researchPrerequisite
-        </xpath>
-        <value>
-            <researchPrerequisites Inherit="False">
-                <li>DuneRef_GasPower</li>
-                <li>DuneRef_AdvancedBallistics</li>
-            </researchPrerequisites>
-        </value>
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<nomatch Class="PatchOperationReplace">
+            <xpath>
+                Defs/ThingDef[
+                    defName = "Gun_ToxbombLauncher"
+                ]/recipeMaker/researchPrerequisite
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_GasPower</li>
+                    <li>DuneRef_AdvancedBallistics</li>
+                </researchPrerequisites>
+            </value>
+        </nomatch>
     </Operation>
 
     <!-- to remove rifling that gets added from base class -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/ThingDef[
-                   defName = "Gun_ToxbombLauncher"
-            ]/recipeMaker
-        </xpath>
-        <value>
-            <researchPrerequisite Inherit="False"></researchPrerequisite>
-        </value>
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<nomatch Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "Gun_ToxbombLauncher"
+                ]/recipeMaker
+            </xpath>
+            <value>
+                <researchPrerequisite Inherit="False"></researchPrerequisite>
+            </value>
+        </nomatch>
     </Operation>
 
     <Operation Class="PatchOperationReplace">

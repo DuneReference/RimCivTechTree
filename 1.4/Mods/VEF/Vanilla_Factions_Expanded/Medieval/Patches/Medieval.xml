@@ -116,7 +116,6 @@
     </Operation>
 
     <!-- remove tags with faction start info so we can apply the start info to new techs that contain this one -->
-    <!-- didn't put in the HeavyTurrets research for CE for now -->
 
     <Operation Class="PatchOperationRemove">
         <xpath>

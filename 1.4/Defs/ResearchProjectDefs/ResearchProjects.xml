@@ -152,7 +152,7 @@
             <li>DuneRef_Masonry</li>
         </prerequisites>
         <researchViewX>2</researchViewX>
-        <researchViewY>6</researchViewY>
+        <researchViewY>7</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
@@ -408,6 +408,7 @@
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
+                    <li>DrugProduction</li>
                     <li>PsychiteRefining</li>
                     <li>WakeUpProduction</li>
                     <li>GoJuiceProduction</li>
@@ -1198,7 +1199,7 @@
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_AdvancedPowerCells</li>
-            <li>DuneRef_SmartMaterials</li>
+            <li>DuneRef_AdvancedLasers</li>
             <li>DuneRef_PredictiveSystems</li>
         </prerequisites>
         <researchViewX>24</researchViewX>

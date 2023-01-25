@@ -203,5 +203,13 @@
         <li IfModActive="simmin.powertools">1.4/Mods/Power_Tools</li>
         <li IfModActive="harkon.biotechaddon.medievaldeathrestcoffin">1.4/Mods/_HRK__Medieval_deathrest_coffin</li>
         <li IfModActive="arandomkiwi.powerpp">1.4/Mods/Power__</li>
+        <li IfModActive="dunereference.peoplemover">1.4/Mods/PeopleMover</li>
+        <li IfModActive="ceteam.combatextended">1.4/Mods/Combat_Extended/Combat_Extended</li>
+        <!-- <li IfModActive="ceteam.combatextendedarmors">1.4/Mods/Combat_Extended/Combat_Extended_Armors</li>
+        <li IfModActive="ceteam.combatextendedarmory">1.4/Mods/Combat_Extended/Combat_Extended_Armory</li>
+        <li IfModActive="ceteam.combatextendedattachments">1.4/Mods/Combat_Extended/Combat_Extended_Attachments</li>
+        <li IfModActive="ceteam.combatextendedguns">1.4/Mods/Combat_Extended/Combat_Extended_Guns</li>
+        <li IfModActive="ceteam.combatextendedmelee">1.4/Mods/Combat_Extended/Combat_Extended_Melee</li> -->
+        <li IfModActive="bbbbilly.makereinforcedbarrel">1.4/Mods/Make_Reinforced_Barrel</li>
     </v1.4>
 </loadFolders>
