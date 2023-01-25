@@ -262,16 +262,21 @@
 
     <!-- VFE - Classical -->
 
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/RecipeDef[
-                   defName = "MakeAmmo_VFEC_Javelin"
-                or defName = "MakeAmmo_VFE_Harpoon"
-            ]
-        </xpath>
-        <value>
-            <researchPrerequisite Inherit='False'>DuneRef_SteelWorking</researchPrerequisite>
-        </value>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Factions Expanded - Classical</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs/RecipeDef[
+                       defName = "MakeAmmo_VFEC_Javelin"
+                    or defName = "MakeAmmo_VFE_Harpoon"
+                ]
+            </xpath>
+            <value>
+                <researchPrerequisite Inherit='False'>DuneRef_SteelWorking</researchPrerequisite>
+            </value>
+        </match>
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
