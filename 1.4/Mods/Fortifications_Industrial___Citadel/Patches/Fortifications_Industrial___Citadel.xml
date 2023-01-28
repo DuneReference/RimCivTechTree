@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- Move mods research to hidden tab -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "FTC_Decoy"
+                or defName = "FTC_PermanentStructure"
+                or defName = "FTC_PermanentBunker"
+                or defName = "FTC_TurretBunker"
+            ]
+        </xpath>
+        <value>
+            <tab>DuneRef_Hidden</tab>
+        </value>
+    </Operation>
+
+    <!-- remove prerequisites so no funky stuff happens when we try to unlock them automatically -->
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "FTC_Decoy"
+                or defName = "FTC_PermanentStructure"
+                or defName = "FTC_PermanentBunker"
+                or defName = "FTC_TurretBunker"
+            ]/prerequisites
+        </xpath>
+    </Operation>
+
+    <!-- Add techs to RimCivTechTree researches -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                defName = "DuneRef_Telecommunications"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>FTC_Decoy</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                defName = "DuneRef_BrutalWarfare"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>FTC_PermanentStructure</li>
+            <li>FTC_PermanentBunker</li>
+            <li>FTC_TurretBunker</li>
+        </value>
+    </Operation>
+
+    <!-- Moving Individual items to different techs -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "FT_AntennaTower"
+                or defName = "FT_Radio"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_ReplaceableParts</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+</Patch>

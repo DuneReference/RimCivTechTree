@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- Move mods research to hidden tab -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "FT_ENIAC"
+                or defName = "FT_Lathe"
+                or defName = "FT_HeavyArtillery"
+                or defName = "FT_IndustrialCannon"
+                or defName = "FT_Concrete"
+                or defName = "FT_Chemistry"
+            ]
+        </xpath>
+        <value>
+            <tab>DuneRef_Hidden</tab>
+        </value>
+    </Operation>
+
+    <!-- remove prerequisites so no funky stuff happens when we try to unlock them automatically -->
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "FT_ENIAC"
+                or defName = "FT_Lathe"
+                or defName = "FT_HeavyArtillery"
+                or defName = "FT_IndustrialCannon"
+                or defName = "FT_Concrete"
+                or defName = "FT_Chemistry"
+            ]/prerequisites
+        </xpath>
+    </Operation>
+
+    <!-- Add techs to RimCivTechTree researches -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                defName = "DuneRef_PredictiveSystems"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>FT_ENIAC</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                defName = "DuneRef_GuidanceSystems"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>FT_HeavyArtillery</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                defName = "DuneRef_BrutalWarfare"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>FT_IndustrialCannon</li>
+            <li>FT_HeavyArtillery</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                defName = "DuneRef_Plastics"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>FT_Lathe</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                defName = "DuneRef_Electronics"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>FT_Lathe</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                defName = "DuneRef_Industrialization"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>FT_Concrete</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                defName = "DuneRef_Chemistry"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>FT_Chemistry</li>
+        </value>
+    </Operation>
+
+    <!-- Moving Individual items to different techs -->
+
+    <!-- <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "TCEE_MachineGunTurret"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_ReplaceableParts</li>
+            </researchPrerequisites>
+        </value>
+    </Operation> -->
+
+</Patch>

@@ -211,5 +211,7 @@
         <li IfModActive="ceteam.combatextendedmelee">1.4/Mods/Combat_Extended/Combat_Extended_Melee</li>
         <li IfModActive="bbbbilly.makereinforcedbarrel">1.4/Mods/Make_Reinforced_Barrel</li>
         <li IfModActive="eatkenny.leafzxg.dws.turretcollection">1.4/Mods/Turret_Collection__Unofficial_</li>
+        <li IfModActive="aoba.fortress.industrial">1.4/Mods/Fortifications___Industrial</li>
+        <li IfModActive="aoba.fortress.industrial.citadel">1.4/Mods/Fortifications_Industrial___Citadel</li>
     </v1.4>
 </loadFolders>
