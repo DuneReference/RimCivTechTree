@@ -662,10 +662,10 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Combat Extended</li>
-		</mods>
-		<nomatch Class="PatchOperationReplace">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <nomatch Class="PatchOperationReplace">
             <xpath>
                 Defs/ThingDef[
                        defName = "Weapon_GrenadeFrag"
@@ -810,10 +810,10 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Combat Extended</li>
-		</mods>
-		<nomatch Class="PatchOperationReplace">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <nomatch Class="PatchOperationReplace">
             <xpath>
                 Defs/ThingDef[
                        defName = "Gun_EmpLauncher"
@@ -831,10 +831,10 @@
 
     <!-- to remove rifling that gets added from base class -->
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Combat Extended</li>
-		</mods>
-		<nomatch Class="PatchOperationAdd">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
             <xpath>
                 Defs/ThingDef[
                        defName = "Gun_EmpLauncher"

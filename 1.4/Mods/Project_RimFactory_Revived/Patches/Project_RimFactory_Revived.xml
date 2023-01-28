@@ -371,13 +371,13 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>FishIndustry</li>
-			<li>Fishing Nets</li>
-			<li>[RF] Fishing</li>
-			<li>Thanks For All The Fish</li>
-			<li>Vanilla Fishing Expanded</li>
-		</mods>
+        <mods>
+            <li>FishIndustry</li>
+            <li>Fishing Nets</li>
+            <li>[RF] Fishing</li>
+            <li>Thanks For All The Fish</li>
+            <li>Vanilla Fishing Expanded</li>
+        </mods>
         <match Class="PatchOperationReplace">
             <xpath>
                 Defs/ThingDef[

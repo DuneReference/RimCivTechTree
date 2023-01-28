@@ -62,10 +62,10 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Combat Extended</li>
-		</mods>
-		<nomatch Class="PatchOperationAdd">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
             <xpath>
                 Defs/ThingDef[
                     defName = "VFES_Weapon_GrenadeDynamite"
@@ -82,10 +82,10 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Combat Extended</li>
-		</mods>
-		<nomatch Class="PatchOperationAdd">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
             <xpath>
                 Defs/ThingDef[
                         defName = "VFES_Weapon_GrenadeDynamite"

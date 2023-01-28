@@ -159,7 +159,7 @@
         </xpath>
         <value>
             <recipeMaker>
-			    <researchPrerequisite Inherit='False'>DuneRef_AdvancedShields</researchPrerequisite>
+                <researchPrerequisite Inherit='False'>DuneRef_AdvancedShields</researchPrerequisite>
             </recipeMaker>
         </value>
     </Operation>

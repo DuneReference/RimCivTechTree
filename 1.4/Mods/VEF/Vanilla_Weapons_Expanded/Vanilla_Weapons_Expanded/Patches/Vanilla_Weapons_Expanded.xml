@@ -22,10 +22,10 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Combat Extended</li>
-		</mods>
-		<nomatch Class="PatchOperationReplace">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <nomatch Class="PatchOperationReplace">
             <xpath>
                 Defs/ResearchProjectDef[
                        defName = "VWE_HeavyWeapons"
@@ -56,10 +56,10 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Combat Extended</li>
-		</mods>
-		<nomatch Class="PatchOperationRemove">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <nomatch Class="PatchOperationRemove">
             <xpath>
                 Defs/ResearchProjectDef[
                        defName = "VWE_HeavyWeapons"
@@ -106,23 +106,29 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/ResearchProjectDef[
-                   defName = "DuneRef_ReplaceableParts"
-            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
-        </xpath>
-        <value>
-            <li>VWE_TrenchWarfare</li>
-            <li>VWE_TacticalGrenades</li>
-        </value>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>
+                Defs/ResearchProjectDef[
+                    defName = "DuneRef_ReplaceableParts"
+                ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+            </xpath>
+            <value>
+                <li>VWE_TrenchWarfare</li>
+                <li>VWE_TacticalGrenades</li>
+                <li>VWE_Flamethrower</li>
+            </value>
+        </nomatch>
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Combat Extended</li>
-		</mods>
-		<nomatch Class="PatchOperationAdd">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
             <xpath>
                 Defs/ResearchProjectDef[
                     defName = "DuneRef_Rocketry"
@@ -135,13 +141,13 @@
     </Operation>
     
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Combat Extended</li>
-		</mods>
-		<nomatch Class="PatchOperationAdd">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
             <xpath>
                 Defs/ResearchProjectDef[
-                    defName = "DuneRef_Refining"
+                    defName = "DuneRef_Combustion"
                 ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
             </xpath>
             <value>
@@ -162,10 +168,10 @@
     </Operation>
     
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Combat Extended</li>
-		</mods>
-		<nomatch Class="PatchOperationAdd">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
             <xpath>
                 Defs/ResearchProjectDef[
                     defName = "DuneRef_BrutalWarfare"

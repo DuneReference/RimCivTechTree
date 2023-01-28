@@ -18,7 +18,7 @@
             ]/researchPrerequisites
         </xpath>
         <value>
-			<researchPrerequisites Inherit='False'>
+            <researchPrerequisites Inherit='False'>
                 <li>DuneRef_ScientificTheory</li>
             </researchPrerequisites>
         </value>

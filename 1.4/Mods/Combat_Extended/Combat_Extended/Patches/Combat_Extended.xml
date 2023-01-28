@@ -23,10 +23,10 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Furniture Expanded - Security</li>
-		</mods>
-		<match Class="PatchOperationAdd">
+        <mods>
+            <li>Vanilla Furniture Expanded - Security</li>
+        </mods>
+        <match Class="PatchOperationAdd">
             <xpath>
                 Defs/ResearchProjectDef[
                        defName = "VFES_Artillery_Debug"
@@ -145,11 +145,12 @@
         <xpath>
             Defs/ThingDef[
                    defName = "CE_BarbedWire"
+                or defName = "CE_Embrasure"
             ]
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_SteelWorking</li>
+                <li>DuneRef_MilitaryEngineering</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -257,6 +258,57 @@
         </xpath>
         <value>
             <researchPrerequisite Inherit='False'>DuneRef_AdvancedShields</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Turret_KPV"
+                or defName = "Turret_Heavy"
+                or defName = "Turret_AGSThirty"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit='False'>
+                <li>DuneRef_BrutalWarfare</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Turret_Medium"
+                or defName = "Turret_Flak" 
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit='False'>
+                <li>DuneRef_AdvancedBallistics</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "CE_Apparel_ExoFrame"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit='False'>DuneRef_GuidanceSystems</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "CE_GrenadeLauncher"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit='False'>DuneRef_ReplaceableParts</researchPrerequisite>
         </value>
     </Operation>
 
@@ -411,9 +463,9 @@
     <!-- Vanilla Factions Expanded - Settlers -->
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Factions Expanded - Settlers</li>
-		</mods>
+        <mods>
+            <li>Vanilla Factions Expanded - Settlers</li>
+        </mods>
         <match Class="PatchOperationAdd">
             <xpath>
                 Defs/RecipeDef[
@@ -429,9 +481,9 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Factions Expanded - Settlers</li>
-		</mods>
+        <mods>
+            <li>Vanilla Factions Expanded - Settlers</li>
+        </mods>
         <match Class="PatchOperationAdd">
             <xpath>
                 Defs/RecipeDef[
@@ -465,6 +517,43 @@
             </xpath>
             <value>
                 <researchPrerequisite Inherit='False'>DuneRef_AdvancedShields</researchPrerequisite>
+            </value>
+        </match>
+    </Operation>
+
+    <!-- Vanilla Weapons Expanded -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                    defName = "VWE_Gun_Flamethrower"
+                ]/recipeMaker
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_Combustion</li>
+                    <li>DuneRef_ReplaceableParts</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "VWE_Gun_Flamethrower"
+                ]/recipeMaker/researchPrerequisite
+            </xpath>
+            <value>
+                <researchPrerequisite Inherit='False'></researchPrerequisite>
             </value>
         </match>
     </Operation>

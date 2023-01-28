@@ -113,8 +113,18 @@
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
-            <li>VFES_SentryGuns</li>
             <li>VFES_MissileBarrage</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_BrutalWarfare"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>VFES_SentryGuns</li>
         </value>
     </Operation>
 
@@ -154,33 +164,13 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_PredictiveSystems"
-            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
-        </xpath>
-        <value>
-            <li>VFES_Railgun</li>
-        </value>
-    </Operation>
-    
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/ResearchProjectDef[
-                   defName = "DuneRef_AdvancedShields"
-            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
-        </xpath>
-        <value>
-            <li>VFES_RepulsorTechnology</li>
-        </value>
-    </Operation>
-    
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/ResearchProjectDef[
                    defName = "DuneRef_AdvancedLasers"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
             <li>VFES_EMPCannon</li>
+            <li>VFES_RepulsorTechnology</li>
+            <li>VFES_Railgun</li>
         </value>
     </Operation>
 
@@ -253,20 +243,6 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationReplace">
-            <xpath>
-            Defs/ThingDef[
-                   defName = "VFES_Turret_ChargeRailgunTurret"
-            ]/researchPrerequisites
-        </xpath>
-        <value>
-            <researchPrerequisites Inherit="False">
-                <li>DuneRef_BrutalWarfare</li>
-                <li>DuneRef_OffworldMissions</li>
-            </researchPrerequisites>
-        </value>
-    </Operation>
-
     <Operation Class="PatchOperationAdd">
             <xpath>
             Defs/ThingDef[
@@ -291,6 +267,19 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>VFES_Artillery</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFES_Turret_AutocannonDouble"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_GuidanceSystems</li>
             </researchPrerequisites>
         </value>
     </Operation>

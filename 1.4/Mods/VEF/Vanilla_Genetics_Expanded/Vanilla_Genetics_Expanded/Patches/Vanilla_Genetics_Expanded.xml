@@ -65,9 +65,9 @@
     <!-- Conditional for Vanilla Factions Expanded Insectoids -->
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Factions Expanded - Insectoids</li>
-		</mods>
+        <mods>
+            <li>Vanilla Factions Expanded - Insectoids</li>
+        </mods>
         <match Class="PatchOperationReplace">
             <xpath>
                 Defs/ResearchProjectDef[
@@ -81,9 +81,9 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Factions Expanded - Insectoids</li>
-		</mods>
+        <mods>
+            <li>Vanilla Factions Expanded - Insectoids</li>
+        </mods>
         <match Class="PatchOperationRemove">
             <xpath>
                 Defs/ResearchProjectDef[
@@ -94,9 +94,9 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Factions Expanded - Insectoids</li>
-		</mods>
+        <mods>
+            <li>Vanilla Factions Expanded - Insectoids</li>
+        </mods>
         <match Class="PatchOperationAdd">
             <xpath>
                 Defs/ResearchProjectDef[

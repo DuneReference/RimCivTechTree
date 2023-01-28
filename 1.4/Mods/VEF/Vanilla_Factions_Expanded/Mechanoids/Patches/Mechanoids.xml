@@ -112,9 +112,9 @@
     <!-- Vanilla Coffees And Teas Expanded -->
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Brewing Expanded - Coffees and Teas</li>
-		</mods>
+        <mods>
+            <li>Vanilla Brewing Expanded - Coffees and Teas</li>
+        </mods>
         <match Class="PatchOperationReplace">
             <xpath>
                 Defs/ResearchProjectDef[
@@ -128,9 +128,9 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Brewing Expanded - Coffees and Teas</li>
-		</mods>
+        <mods>
+            <li>Vanilla Brewing Expanded - Coffees and Teas</li>
+        </mods>
         <match Class="PatchOperationRemove">
             <xpath>
                 Defs/ResearchProjectDef[
@@ -141,9 +141,9 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Brewing Expanded - Coffees and Teas</li>
-		</mods>
+        <mods>
+            <li>Vanilla Brewing Expanded - Coffees and Teas</li>
+        </mods>
         <match Class="PatchOperationAdd">
             <xpath>
                 Defs/ResearchProjectDef[
@@ -159,9 +159,9 @@
     <!-- Vanilla Cooking Expanded -->
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Cooking Expanded</li>
-		</mods>
+        <mods>
+            <li>Vanilla Cooking Expanded</li>
+        </mods>
         <match Class="PatchOperationReplace">
             <xpath>
                 Defs/ResearchProjectDef[
@@ -176,9 +176,9 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Cooking Expanded</li>
-		</mods>
+        <mods>
+            <li>Vanilla Cooking Expanded</li>
+        </mods>
         <match Class="PatchOperationRemove">
             <xpath>
                 Defs/ResearchProjectDef[
@@ -190,9 +190,9 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Cooking Expanded</li>
-		</mods>
+        <mods>
+            <li>Vanilla Cooking Expanded</li>
+        </mods>
         <match Class="PatchOperationAdd">
             <xpath>
                 Defs/ResearchProjectDef[
@@ -209,9 +209,9 @@
     <!-- Vanilla Factions Expanded Vikings -->
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Factions Expanded - Vikings</li>
-		</mods>
+        <mods>
+            <li>Vanilla Factions Expanded - Vikings</li>
+        </mods>
         <match Class="PatchOperationReplace">
             <xpath>
                 Defs/ResearchProjectDef[
@@ -225,9 +225,9 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Factions Expanded - Vikings</li>
-		</mods>
+        <mods>
+            <li>Vanilla Factions Expanded - Vikings</li>
+        </mods>
         <match Class="PatchOperationRemove">
             <xpath>
                 Defs/ResearchProjectDef[
@@ -238,9 +238,9 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Factions Expanded - Vikings</li>
-		</mods>
+        <mods>
+            <li>Vanilla Factions Expanded - Vikings</li>
+        </mods>
         <match Class="PatchOperationAdd">
             <xpath>
                 Defs/ResearchProjectDef[
@@ -256,9 +256,9 @@
     <!-- Vanilla Fishing Expanded -->
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Fishing Expanded</li>
-		</mods>
+        <mods>
+            <li>Vanilla Fishing Expanded</li>
+        </mods>
         <match Class="PatchOperationReplace">
             <xpath>
                 Defs/ResearchProjectDef[
@@ -272,9 +272,9 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Fishing Expanded</li>
-		</mods>
+        <mods>
+            <li>Vanilla Fishing Expanded</li>
+        </mods>
         <match Class="PatchOperationRemove">
             <xpath>
                 Defs/ResearchProjectDef[
@@ -285,9 +285,9 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Fishing Expanded</li>
-		</mods>
+        <mods>
+            <li>Vanilla Fishing Expanded</li>
+        </mods>
         <match Class="PatchOperationAdd">
             <xpath>
                 Defs/ResearchProjectDef[

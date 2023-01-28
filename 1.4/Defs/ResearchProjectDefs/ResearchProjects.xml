@@ -694,6 +694,7 @@
         <prerequisites>
             <li>DuneRef_MilitaryTactics</li>
             <li>DuneRef_AdvancedBallistics</li>
+            <li>DuneRef_Rocketry</li>
         </prerequisites>
         <researchViewX>16</researchViewX>
         <researchViewY>0</researchViewY>
@@ -702,6 +703,7 @@
                 <researchUnlocks>
                     <li>PrecisionRifling</li>
                     <li>MultibarrelWeapons</li>
+                    <li>HeavyTurrets</li>
                 </researchUnlocks>
             </li>
         </modExtensions>
@@ -859,7 +861,6 @@
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
                     <li>LongRangeMineralScanner</li>
-                    <li>HeavyTurrets</li>
                     <li>SniperTurret</li>
                 </researchUnlocks>
             </li>
@@ -1047,6 +1048,7 @@
         <baseCost>29000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
+            <li>DuneRef_BrutalWarfare</li>
             <li>DuneRef_AdvancedAI</li>
         </prerequisites>
         <researchViewX>22</researchViewX>
@@ -1296,7 +1298,6 @@
         <baseCost>55000</baseCost>
         <techLevel>Ultra</techLevel>
         <prerequisites>
-            <li>DuneRef_BrutalWarfare</li>
             <li>DuneRef_SpaceTechnology</li>
             <li>DuneRef_AdvancedLasers</li>
             <li>DuneRef_AdvancedShields</li>

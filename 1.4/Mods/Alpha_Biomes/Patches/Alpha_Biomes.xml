@@ -60,10 +60,10 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Combat Extended</li>
-		</mods>
-		<nomatch Class="PatchOperationReplace">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <nomatch Class="PatchOperationReplace">
             <xpath>
                 Defs/ThingDef[
                     defName = "AB_Shell_Tar"

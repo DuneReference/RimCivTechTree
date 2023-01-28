@@ -31,9 +31,9 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Weapons Expanded - Non-Lethal</li>
-		</mods>
+        <mods>
+            <li>Vanilla Weapons Expanded - Non-Lethal</li>
+        </mods>
         <match Class="PatchOperationReplace">
             <xpath>
                 Defs/ThingDef[
@@ -78,9 +78,9 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Factions Expanded - Settlers</li>
-		</mods>
+        <mods>
+            <li>Vanilla Factions Expanded - Settlers</li>
+        </mods>
         <match Class="PatchOperationAdd">
             <xpath>
                 Defs/ThingDef[
@@ -96,9 +96,9 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Factions Expanded - Settlers</li>
-		</mods>
+        <mods>
+            <li>Vanilla Factions Expanded - Settlers</li>
+        </mods>
         <match Class="PatchOperationAdd">
             <xpath>
                 Defs/ThingDef[
@@ -114,9 +114,9 @@
     </Operation>
 
     <Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Factions Expanded - Settlers</li>
-		</mods>
+        <mods>
+            <li>Vanilla Factions Expanded - Settlers</li>
+        </mods>
         <match Class="PatchOperationAdd">
             <xpath>
                 Defs/ThingDef[
