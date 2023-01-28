@@ -210,5 +210,6 @@
         <li IfModActive="ceteam.combatextendedguns">1.4/Mods/Combat_Extended/Combat_Extended_Guns</li>
         <li IfModActive="ceteam.combatextendedmelee">1.4/Mods/Combat_Extended/Combat_Extended_Melee</li>
         <li IfModActive="bbbbilly.makereinforcedbarrel">1.4/Mods/Make_Reinforced_Barrel</li>
+        <li IfModActive="eatkenny.leafzxg.dws.turretcollection">1.4/Mods/Turret_Collection__Unofficial_</li>
     </v1.4>
 </loadFolders>

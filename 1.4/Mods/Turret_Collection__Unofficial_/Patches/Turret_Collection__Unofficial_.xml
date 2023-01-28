@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- Move mods research to hidden tab -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>
+                Defs/ResearchProjectDef[
+                       defName = "TC_Artillery"
+                    or defName = "TC_AutoTurret"
+                    or defName = "TC_AvengerTurret"
+                    or defName = "TCEE_ClusterMunition"
+                ]
+            </xpath>
+            <value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>
+                Defs/ResearchProjectDef[
+                       defName = "TC_HeavyArtillery"
+                    or defName = "TC_AdvancedNavalTurret"
+                    or defName = "TC_AdvancedMultiPurpose"
+                    or defName = "TC_PrecisionGuidanceKit"
+                    or defName = "TC_MissileTech"
+                ]/tab
+            </xpath>
+            <value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+        </match>
+    </Operation>
+
+    <!-- remove prerequisites so no funky stuff happens when we try to unlock them automatically -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <nomatch Class="PatchOperationRemove">
+            <xpath>
+                Defs/ResearchProjectDef[
+                       defName = "TC_Artillery"
+                    or defName = "TC_AutoTurret"
+                    or defName = "TC_AvengerTurret"
+                    or defName = "TCEE_ClusterMunition"
+                ]/prerequisites
+            </xpath>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <match Class="PatchOperationRemove">
+            <xpath>
+                Defs/ResearchProjectDef[
+                       defName = "TC_HeavyArtillery"
+                    or defName = "TC_AdvancedNavalTurret"
+                    or defName = "TC_AdvancedMultiPurpose"
+                    or defName = "TC_PrecisionGuidanceKit"
+                    or defName = "TC_MissileTech"
+                ]/prerequisites
+            </xpath>
+        </match>
+    </Operation>
+
+    <!-- Hide tabs created by this mod -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ResearchTabDef[defName="CE_Turrets_TC"]</xpath>
+            <value>
+                <modExtensions>
+                    <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
+                        <hidden>True</hidden>
+                    </li>
+                </modExtensions>
+            </value>
+        </match>
+    </Operation>
+
+    <!-- Add techs to RimCivTechTree researches -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>
+                Defs/ResearchProjectDef[
+                    defName = "DuneRef_AdvancedBallistics"
+                ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+            </xpath>
+            <value>
+                <li>TC_Artillery</li>
+                <li>TC_AutoTurret</li>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>
+                Defs/ResearchProjectDef[
+                    defName = "DuneRef_BrutalWarfare"
+                ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+            </xpath>
+            <value>
+                <li>TCEE_ClusterMunition</li>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>
+                Defs/ResearchProjectDef[
+                    defName = "DuneRef_GuidanceSystems"
+                ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+            </xpath>
+            <value>
+                <li>TC_AvengerTurret</li>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <!-- Moving Individual items to different techs -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "TCEE_MachineGunTurret"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_ReplaceableParts</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "TCEE_GatlingGunTurret"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_AdvancedBallistics</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <nomatch Class="PatchOperationReplace">
+            <xpath>
+                Defs/ThingDef[
+                    defName = "TCEE_ChargedMiniTurret"
+                ]/researchPrerequisites
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_AdvancedBallistics</li>
+                </researchPrerequisites>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <nomatch Class="PatchOperationReplace">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "TCEE_ChargedMiniTurret_Crate"
+                    or defName = "Gun_IncendiaryLauncher"
+                ]/recipeMaker/researchPrerequisite
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_AdvancedBallistics</li>
+                </researchPrerequisites>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "TC_CannonTurret"
+            ]/label
+        </xpath>
+        <value>
+            <label>Cannon Turret</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "TC_CannonTurret"
+                or defName = "TC_AvengerTurret"
+                or defName = "TC_ATGMTurret"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_BrutalWarfare</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "TC_AntiMaterielTurret"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_BrutalWarfare</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "TC_RocketLauncher"
+                    or defName = "TC_IncendiaryLauncher"
+                    or defName = "TC_Howitzer"
+                ]/researchPrerequisites
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_BrutalWarfare</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "TC_IncendiaryLauncher"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_BrutalWarfare</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "TCEE_NavalGunTurret"
+                ]/researchPrerequisites
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_BrutalWarfare</li>
+                    <li>DuneRef_PredictiveSystems</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "TC_AdvancedNavalGun"
+                ]/researchPrerequisites
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_BrutalWarfare</li>
+                    <li>DuneRef_GuidanceSystems</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+    </Operation>
+
+</Patch>
