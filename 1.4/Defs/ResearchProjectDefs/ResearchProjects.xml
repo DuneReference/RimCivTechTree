@@ -752,35 +752,10 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>DuneRef_Plastics</defName>
-        <label>Plastics</label>
-        <description>Plastics</description>
-        <baseCost>11000</baseCost>
-        <techLevel>Industrial</techLevel>
-        <prerequisites>
-            <li>DuneRef_Combustion</li>
-        </prerequisites>
-        <researchViewX>16</researchViewX>
-        <researchViewY>8</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks>
-                    <li>MicroelectronicsBasics</li>
-                    <li>Fabrication</li>
-                </researchUnlocks>
-            </li>
-        </modExtensions>
-        <tags>
-            <li>ClassicStart</li>
-        </tags>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
         <defName>DuneRef_NuclearFission</defName>
         <label>Nuclear Fission</label>
         <description>Nuclear Fission</description>
-        <baseCost>13000</baseCost>
+        <baseCost>18000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Computers</li>
@@ -797,27 +772,27 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>DuneRef_SyntheticMaterials</defName>
-        <label>Synthetic Materials</label>
-        <description>Synthetic Materials</description>
-        <baseCost>13000</baseCost>
+        <defName>DuneRef_Plastics</defName>
+        <label>Plastics</label>
+        <description>Plastics</description>
+        <baseCost>18000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>DuneRef_Plastics</li>
-            <li>DuneRef_Chemistry</li>
+            <li>DuneRef_Combustion</li>
         </prerequisites>
         <researchViewX>17</researchViewX>
         <researchViewY>8</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
-                    <li>NutrientPaste</li>
-                    <li>SolarPanels</li>
-                    <li>Firefoam</li>
-                    <li>AdvancedFabrication</li>
+                    <li>MicroelectronicsBasics</li>
+                    <li>Fabrication</li>
                 </researchUnlocks>
             </li>
         </modExtensions>
+        <tags>
+            <li>ClassicStart</li>
+        </tags>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     </ResearchProjectDef>
 
@@ -827,7 +802,7 @@
         <defName>DuneRef_Telecommunications</defName>
         <label>Telecommunications</label>
         <description>Telecommunications</description>
-        <baseCost>15000</baseCost>
+        <baseCost>20000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Computers</li>
@@ -849,7 +824,7 @@
         <defName>DuneRef_GuidanceSystems</defName>
         <label>Guidance Systems</label>
         <description>Guidance Systems</description>
-        <baseCost>15000</baseCost>
+        <baseCost>20000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Rocketry</li>
@@ -872,7 +847,7 @@
         <defName>DuneRef_Lasers</defName>
         <label>Lasers</label>
         <description>Lasers</description>
-        <baseCost>15000</baseCost>
+        <baseCost>20000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_NuclearFission</li>
@@ -890,20 +865,25 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>DuneRef_Composites</defName>
-        <label>Composites</label>
-        <description>Composites</description>
-        <baseCost>15000</baseCost>
-        <techLevel>Spacer</techLevel>
+        <defName>DuneRef_SyntheticMaterials</defName>
+        <label>Synthetic Materials</label>
+        <description>Synthetic Materials</description>
+        <baseCost>20000</baseCost>
+        <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>DuneRef_Ecology</li>
-            <li>DuneRef_SyntheticMaterials</li>
+            <li>DuneRef_Plastics</li>
+            <li>DuneRef_Chemistry</li>
         </prerequisites>
         <researchViewX>18</researchViewX>
-        <researchViewY>7</researchViewY>
+        <researchViewY>8</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks />
+                <researchUnlocks>
+                    <li>NutrientPaste</li>
+                    <li>SolarPanels</li>
+                    <li>Firefoam</li>
+                    <li>AdvancedFabrication</li>
+                </researchUnlocks>
             </li>
         </modExtensions>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -913,7 +893,7 @@
         <defName>DuneRef_Robotics</defName>
         <label>Robotics</label>
         <description>Robotics</description>
-        <baseCost>17000</baseCost>
+        <baseCost>22000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Computers</li>
@@ -926,7 +906,28 @@
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
                     <li>Autodoors</li>
+                    <li>MultiAnalyzer</li>
                 </researchUnlocks>
+            </li>
+        </modExtensions>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_Composites</defName>
+        <label>Composites</label>
+        <description>Composites</description>
+        <baseCost>22000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>DuneRef_Ecology</li>
+            <li>DuneRef_SyntheticMaterials</li>
+        </prerequisites>
+        <researchViewX>19</researchViewX>
+        <researchViewY>7</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks />
             </li>
         </modExtensions>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -939,13 +940,13 @@
         <defName>DuneRef_Nanotechnology</defName>
         <label>Nanotechnology</label>
         <description>Nanotechnology</description>
-        <baseCost>21000</baseCost>
+        <baseCost>31000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Composites</li>
             <li>DuneRef_Computers</li>
         </prerequisites>
-        <researchViewX>20</researchViewX>
+        <researchViewX>21</researchViewX>
         <researchViewY>6</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -953,19 +954,22 @@
             </li>
         </modExtensions>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
         <defName>DuneRef_Shields</defName>
         <label>Shields</label>
         <description>Shields</description>
-        <baseCost>21000</baseCost>
+        <baseCost>31000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_SyntheticMaterials</li>
             <li>DuneRef_Computers</li>
         </prerequisites>
-        <researchViewX>20</researchViewX>
+        <researchViewX>21</researchViewX>
         <researchViewY>8</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -975,42 +979,46 @@
             </li>
         </modExtensions>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
         <defName>DuneRef_AdvancedAI</defName>
         <label>Advanced AI</label>
         <description>Advanced AI</description>
-        <baseCost>25000</baseCost>
+        <baseCost>35000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Robotics</li>
             <li>DuneRef_Telecommunications</li>
         </prerequisites>
-        <researchViewX>21</researchViewX>
+        <researchViewX>22</researchViewX>
         <researchViewY>3</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks>
-                    <li>MultiAnalyzer</li>
-                </researchUnlocks>
+                <researchUnlocks />
             </li>
         </modExtensions>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
         <defName>DuneRef_Cybernetics</defName>
         <label>Cybernetics</label>
         <description>Cybernetics</description>
-        <baseCost>25000</baseCost>
+        <baseCost>35000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Medicine</li>
             <li>DuneRef_Robotics</li>
             <li>DuneRef_Nanotechnology</li>
         </prerequisites>
-        <researchViewX>21</researchViewX>
+        <researchViewX>22</researchViewX>
         <researchViewY>4</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -1020,18 +1028,21 @@
             </li>
         </modExtensions>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
         <defName>DuneRef_AdvancedPowerCells</defName>
         <label>Advanced Power Cells</label>
         <description>Advanced Power Cells</description>
-        <baseCost>25000</baseCost>
+        <baseCost>35000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Shields</li>
         </prerequisites>
-        <researchViewX>21</researchViewX>
+        <researchViewX>22</researchViewX>
         <researchViewY>7</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -1039,19 +1050,22 @@
             </li>
         </modExtensions>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
         <defName>DuneRef_AdvancedLasers</defName>
         <label>Advanced Lasers</label>
         <description>Advanced Lasers</description>
-        <baseCost>29000</baseCost>
+        <baseCost>49000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_BrutalWarfare</li>
             <li>DuneRef_AdvancedAI</li>
         </prerequisites>
-        <researchViewX>22</researchViewX>
+        <researchViewX>23</researchViewX>
         <researchViewY>1</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -1070,13 +1084,13 @@
         <defName>DuneRef_SmartMaterials</defName>
         <label>Smart Materials</label>
         <description>Smart Materials</description>
-        <baseCost>29000</baseCost>
+        <baseCost>49000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_AdvancedAI</li>
             <li>DuneRef_Cybernetics</li>
         </prerequisites>
-        <researchViewX>22</researchViewX>
+        <researchViewX>23</researchViewX>
         <researchViewY>2</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -1093,14 +1107,14 @@
         <defName>DuneRef_OffworldMissions</defName>
         <label>Offworld Missions</label>
         <description>Offworld Missions</description>
-        <baseCost>29000</baseCost>
+        <baseCost>49000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_AdvancedPowerCells</li>
             <li>DuneRef_AdvancedAI</li>
             <li>DuneRef_Nanotechnology</li>
         </prerequisites>
-        <researchViewX>22</researchViewX>
+        <researchViewX>23</researchViewX>
         <researchViewY>4</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -1124,12 +1138,12 @@
         <defName>DuneRef_PredictiveSystems</defName>
         <label>Predictive Systems</label>
         <description>Predictive Systems</description>
-        <baseCost>29000</baseCost>
+        <baseCost>49000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_AdvancedAI</li>
         </prerequisites>
-        <researchViewX>22</researchViewX>
+        <researchViewX>23</researchViewX>
         <researchViewY>5</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -1149,13 +1163,13 @@
         <defName>DuneRef_Genetics</defName>
         <label>Genetics</label>
         <description>Genetics</description>
-        <baseCost>35000</baseCost>
+        <baseCost>55000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Medicine</li>
             <li>DuneRef_PredictiveSystems</li>
         </prerequisites>
-        <researchViewX>23</researchViewX>
+        <researchViewX>24</researchViewX>
         <researchViewY>7</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -1174,38 +1188,14 @@
         <defName>DuneRef_Mechanites</defName>
         <label>Mechanites</label>
         <description>Mechanites</description>
-        <baseCost>41000</baseCost>
+        <baseCost>66000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_OffworldMissions</li>
             <li>DuneRef_SmartMaterials</li>
         </prerequisites>
-        <researchViewX>24</researchViewX>
+        <researchViewX>26</researchViewX>
         <researchViewY>4</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks />
-            </li>
-        </modExtensions>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <requiredResearchFacilities>
-            <li>MultiAnalyzer</li>
-        </requiredResearchFacilities>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>DuneRef_AdvancedShields</defName>
-        <label>Advanced Shields</label>
-        <description>Advanced Shields</description>
-        <baseCost>41000</baseCost>
-        <techLevel>Spacer</techLevel>
-        <prerequisites>
-            <li>DuneRef_AdvancedPowerCells</li>
-            <li>DuneRef_AdvancedLasers</li>
-            <li>DuneRef_PredictiveSystems</li>
-        </prerequisites>
-        <researchViewX>24</researchViewX>
-        <researchViewY>5</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks />
@@ -1221,14 +1211,38 @@
         <defName>DuneRef_Nanites</defName>
         <label>Nanites</label>
         <description>Nanites</description>
-        <baseCost>41000</baseCost>
+        <baseCost>66000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_OffworldMissions</li>
             <li>DuneRef_SmartMaterials</li>
         </prerequisites>
-        <researchViewX>24</researchViewX>
+        <researchViewX>26</researchViewX>
         <researchViewY>6</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks />
+            </li>
+        </modExtensions>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_AdvancedShields</defName>
+        <label>Advanced Shields</label>
+        <description>Advanced Shields</description>
+        <baseCost>66000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>DuneRef_AdvancedPowerCells</li>
+            <li>DuneRef_Nanites</li>
+            <li>DuneRef_PredictiveSystems</li>
+        </prerequisites>
+        <researchViewX>27</researchViewX>
+        <researchViewY>5</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks />
@@ -1244,13 +1258,13 @@
         <defName>DuneRef_Bioregeneration</defName>
         <label>Bioregeneration</label>
         <description>Bioregeneration</description>
-        <baseCost>47000</baseCost>
+        <baseCost>66000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Genetics</li>
             <li>DuneRef_SmartMaterials</li>
         </prerequisites>
-        <researchViewX>25</researchViewX>
+        <researchViewX>27</researchViewX>
         <researchViewY>2</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -1269,14 +1283,14 @@
         <defName>DuneRef_SpaceTechnology</defName>
         <label>Space Technology</label>
         <description>Space Technology</description>
-        <baseCost>47000</baseCost>
+        <baseCost>66000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Mechanites</li>
             <li>DuneRef_Nanites</li>
         </prerequisites>
-        <researchViewX>25</researchViewX>
-        <researchViewY>8</researchViewY>
+        <researchViewX>27</researchViewX>
+        <researchViewY>7</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks />
@@ -1295,14 +1309,14 @@
         <defName>DuneRef_QuantumArmaments</defName>
         <label>Quantum Armaments</label>
         <description>Quantum Armaments</description>
-        <baseCost>55000</baseCost>
+        <baseCost>80000</baseCost>
         <techLevel>Ultra</techLevel>
         <prerequisites>
             <li>DuneRef_SpaceTechnology</li>
             <li>DuneRef_AdvancedLasers</li>
             <li>DuneRef_AdvancedShields</li>
         </prerequisites>
-        <researchViewX>26</researchViewX>
+        <researchViewX>28</researchViewX>
         <researchViewY>1</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -1319,13 +1333,13 @@
         <defName>DuneRef_QuantumIndustry</defName>
         <label>Quantum Industry</label>
         <description>Quantum Industry</description>
-        <baseCost>55000</baseCost>
+        <baseCost>80000</baseCost>
         <techLevel>Ultra</techLevel>
         <prerequisites>
             <li>DuneRef_SpaceTechnology</li>
         </prerequisites>
-        <researchViewX>26</researchViewX>
-        <researchViewY>5</researchViewY>
+        <researchViewX>28</researchViewX>
+        <researchViewY>6</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks />
@@ -1341,13 +1355,13 @@
         <defName>DuneRef_SwarmIntelligence</defName>
         <label>Swarm Intelligence</label>
         <description>Swarm Intelligence</description>
-        <baseCost>63000</baseCost>
+        <baseCost>88000</baseCost>
         <techLevel>Ultra</techLevel>
         <prerequisites>
             <li>DuneRef_Mechanites</li>
             <li>DuneRef_Bioregeneration</li>
         </prerequisites>
-        <researchViewX>27</researchViewX>
+        <researchViewX>29</researchViewX>
         <researchViewY>2</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -1366,14 +1380,14 @@
         <defName>DuneRef_UnseenGrasp</defName>
         <label>Unseen Grasp</label>
         <description>Unseen Grasp</description>
-        <baseCost>73000</baseCost>
+        <baseCost>98000</baseCost>
         <techLevel>Archotech</techLevel>
         <prerequisites>
             <li>DuneRef_SwarmIntelligence</li>
             <li>DuneRef_QuantumIndustry</li>
             <li>DuneRef_Genetics</li>
         </prerequisites>
-        <researchViewX>28</researchViewX>
+        <researchViewX>30</researchViewX>
         <researchViewY>3</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -1390,14 +1404,14 @@
         <defName>DuneRef_UnseenFlight</defName>
         <label>Unseen Flight</label>
         <description>Unseen Flight</description>
-        <baseCost>73000</baseCost>
+        <baseCost>98000</baseCost>
         <techLevel>Archotech</techLevel>
         <prerequisites>
             <li>DuneRef_SwarmIntelligence</li>
             <li>DuneRef_QuantumIndustry</li>
             <li>DuneRef_AdvancedShields</li>
         </prerequisites>
-        <researchViewX>28</researchViewX>
+        <researchViewX>30</researchViewX>
         <researchViewY>6</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
