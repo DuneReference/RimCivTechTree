@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- Move mods research to hidden tab -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "Eccentric_Core"
+                or defName = "Eccentric_NanoFabrication"
+                or defName = "Eccentric_HighDensityHex"
+            ]/tab
+        </xpath>
+        <value>
+            <tab>DuneRef_Hidden</tab>
+        </value>
+    </Operation>
+
+    <!-- remove prerequisites so no funky stuff happens when we try to unlock them automatically -->
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "Eccentric_NanoFabrication"
+                or defName = "Eccentric_HighDensityHex"
+            ]/prerequisites
+        </xpath>
+    </Operation>
+
+    <!-- Add techs to RimCivTechTree researches -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_OffworldMissions"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>Eccentric_Core</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_PredictiveSystems"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>Eccentric_Core</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Nanites"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>Eccentric_NanoFabrication</li>
+            <li>Eccentric_HighDensityHex</li>
+        </value>
+    </Operation>
+
+    <!-- Hide tabs created by this mod -->
+
+    <!-- Special conditional tab edit since all their techs in various mods are in the same tab -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ResearchTabDef[defName="Eccentric_Tech"]/modExtensions</xpath>
+        <match Class="PatchOperationConditional">
+            <xpath>Defs/ResearchTabDef[defName="Eccentric_Tech"]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.HiddenTab"]</xpath>
+            <nomatch Class="PatchOperationAdd">
+                <xpath>Defs/ResearchTabDef[defName="Eccentric_Tech"]/modExtensions</xpath>
+                <value>
+                    <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
+                        <hidden>True</hidden>
+                    </li>
+                </value>
+            </nomatch>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ResearchTabDef[defName="Eccentric_Tech"]</xpath>
+            <value>
+                <modExtensions>
+                    <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
+                        <hidden>True</hidden>
+                    </li>
+                </modExtensions>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <!-- Moving Individual items to different techs -->
+
+    <!-- <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "CE_BarbedWire"
+                or defName = "CE_Embrasure"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_MilitaryEngineering</li>
+            </researchPrerequisites>
+        </value>
+    </Operation> -->
+
+    <!-- Add EccentricAuroraCore to research requirements -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Mechanites"
+                or defName = "DuneRef_Nanites"
+                or defName = "DuneRef_AdvancedShields"
+                or defName = "DuneRef_Bioregeneration"
+                or defName = "DuneRef_SpaceTechnology"
+                or defName = "DuneRef_QuantumArmaments"
+                or defName = "DuneRef_QuantumIndustry"
+                or defName = "DuneRef_SwarmIntelligence"
+                or defName = "DuneRef_UnseenGrasp"
+                or defName = "DuneRef_UnseenFlight"
+            ]/requiredResearchFacilities
+        </xpath>
+        <value>
+            <li>EccentricAuroraCore</li>
+        </value>
+    </Operation>
+
+</Patch>

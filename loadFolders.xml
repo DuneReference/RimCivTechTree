@@ -213,5 +213,8 @@
         <li IfModActive="eatkenny.leafzxg.dws.turretcollection">1.4/Mods/Turret_Collection__Unofficial_</li>
         <li IfModActive="aoba.fortress.industrial">1.4/Mods/Fortifications___Industrial</li>
         <li IfModActive="aoba.fortress.industrial.citadel">1.4/Mods/Fortifications_Industrial___Citadel</li>
+        <li IfModActive="aelanna.eccentrictech.core">1.4/Mods/Eccentric_Tech/Core</li>
+        <li IfModActive="aelanna.eccentrictech.advancedshields">1.4/Mods/Eccentric_Tech/Advanced_Shields</li>
+        <li IfModActive="aelanna.eccentrictech.fusionpower">1.4/Mods/Eccentric_Tech/Fusion_Power</li>
     </v1.4>
 </loadFolders>
