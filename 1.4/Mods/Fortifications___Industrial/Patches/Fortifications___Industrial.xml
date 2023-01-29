@@ -39,7 +39,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                defName = "DuneRef_PredictiveSystems"
+                defName = "DuneRef_AdvancedAI"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -128,5 +128,32 @@
             </researchPrerequisites>
         </value>
     </Operation> -->
+
+    <!-- Add E.N.I.A.C. to research requirements -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_AdvancedLasers"
+                or defName = "DuneRef_SmartMaterials"
+                or defName = "DuneRef_OffworldMissions"
+                or defName = "DuneRef_PredictiveSystems"
+                or defName = "DuneRef_Genetics"
+                or defName = "DuneRef_Mechanites"
+                or defName = "DuneRef_Nanites"
+                or defName = "DuneRef_AdvancedShields"
+                or defName = "DuneRef_Bioregeneration"
+                or defName = "DuneRef_SpaceTechnology"
+                or defName = "DuneRef_QuantumArmaments"
+                or defName = "DuneRef_QuantumIndustry"
+                or defName = "DuneRef_SwarmIntelligence"
+                or defName = "DuneRef_UnseenGrasp"
+                or defName = "DuneRef_UnseenFlight"
+            ]/requiredResearchFacilities
+        </xpath>
+        <value>
+            <li>FT_ENIAC</li>
+        </value>
+    </Operation>
 
 </Patch>
