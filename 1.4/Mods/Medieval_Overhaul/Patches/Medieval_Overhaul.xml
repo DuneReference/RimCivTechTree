@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- Move mods research to hidden tab -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DankPyon_Lumber"
+                or defName = "DankPyon_RusticFurniture"
+                or defName = "DankPyon_RoyalRusticFurniture"
+                or defName = "DankPyon_RusticStorage"
+                or defName = "DankPyon_Presser"
+                or defName = "DankPyon_CarrierBirds"
+                or defName = "DankPyon_LeatherTanning"
+                or defName = "DankPyon_TextileSpinning"
+                or defName = "DankPyon_Silk"
+                or defName = "DankPyon_CandleMaking"
+                or defName = "DankPyon_Jewelry"
+                or defName = "DankPyon_Engineering"
+                or defName = "DankPyon_Mining"
+                or defName = "DankPyon_Windmill"
+                or defName = "DankPyon_Crossbow"
+                or defName = "DankPyon_HeavyCrossbow"
+                or defName = "DankPyon_Ballista"
+                or defName = "DankPyon_Trebuchet"
+                or defName = "DankPyon_RepeaterBallista"
+                or defName = "DankPyon_Alchemy"
+                or defName = "DankPyon_Steel"
+                or defName = "DankPyon_Tar"
+                or defName = "DankPyon_Gunpowder"
+                or defName = "DankPyon_Tailoring"
+                or defName = "DankPyon_ProtectiveClothing"
+                or defName = "DankPyon_ChainArmor"
+                or defName = "DankPyon_HuntingBow"
+                or defName = "DankPyon_WarBow"
+                or defName = "DankPyon_BasicPolearms"
+                or defName = "DankPyon_MilitaryPolearms"
+                or defName = "DankPyon_NoblePolearms"
+                or defName = "DankPyon_BasicMaces"
+                or defName = "DankPyon_MilitaryMaces"
+                or defName = "DankPyon_NobleMaces"
+                or defName = "DankPyon_BasicBlades"
+                or defName = "DankPyon_MilitaryBlades"
+                or defName = "DankPyon_BasicAgriculture"
+                or defName = "DankPyon_IntermediateAgriculture"
+                or defName = "DankPyon_AdvancedAgriculture"
+                or defName = "DankPyon_TreeGriffonBerry"
+                or defName = "DankPyon_BasicCooking"
+                or defName = "DankPyon_IntermediateCooking"
+                or defName = "DankPyon_AdvancedCooking"
+                or defName = "DankPyon_Smoker"
+                or defName = "DankPyon_Grill"
+                or defName = "DankPyon_StewPot"
+                or defName = "DankPyon_Oven"
+                or defName = "DankPyon_AdornedArmor"
+            ]/tab
+        </xpath>
+        <value>
+            <tab>DuneRef_Hidden</tab>
+        </value>
+    </Operation>
+
+    <!-- remove prerequisites so no funky stuff happens when we try to unlock them automatically -->
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "Electricity"
+            ]/prerequisites
+        </xpath>
+    </Operation>
+
+    <!-- Add techs to RimCivTechTree researches -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Clothworking"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>DankPyon_TextileSpinning</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_AnimalHusbandry"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>DankPyon_LeatherTanning</li>
+            <li>DankPyon_HuntingBow</li>
+            <li>DankPyon_CandleMaking</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Woodworking"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>DankPyon_Lumber</li>
+            <li>DankPyon_RusticFurniture</li>
+            <li>DankPyon_HuntingBow</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Agriculture"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>DankPyon_BasicAgriculture</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_LongTermStorage"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>DankPyon_RusticStorage</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Cooking"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>DankPyon_BasicCooking</li>
+            <li>DankPyon_Grill</li>
+            <li>DankPyon_StewPot</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Weaponry"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>DankPyon_WarBow</li>
+            <li>DankPyon_BasicPolearms</li>
+            <li>DankPyon_BasicMaces</li>
+            <li>DankPyon_BasicBlades</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_ComplexCooking"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>DankPyon_IntermediateCooking</li>
+            <li>DankPyon_AdvancedCooking</li>
+            <li>DankPyon_Smoker</li>
+            <li>DankPyon_Oven</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Irrigation"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>DankPyon_IntermediateAgriculture</li>
+            <li>DankPyon_AdvancedAgriculture</li>
+            <li>DankPyon_TreeGriffonBerry</li>
+            <li>DankPyon_Silk</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Steelworking"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>DankPyon_Steel</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Masonry"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>DankPyon_Mining</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_ComplexTextiles"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>DankPyon_RoyalRusticFurniture</li>
+            <li>DankPyon_Tailoring</li>
+            <li>DankPyon_ProtectiveClothing</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_WritingAndCulture"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>DankPyon_Presser</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_WritingAndCulture"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>DankPyon_CarrierBirds</li>
+            <li>DankPyon_Alchemy</li>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Currency"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>DankPyon_TreeGriffonBerry</li>
+            <li>DankPyon_RoyalRusticFurniture</li>
+            <li>DankPyon_Silk</li>
+            <li>DankPyon_NoblePolearms</li>
+            <li>DankPyon_NobleMaces</li>
+            <li>DankPyon_AdornedArmor</li>
+            <li>DankPyon_Jewelry</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Engineering"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>DankPyon_Engineering</li>
+            <li>DankPyon_Windmill</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_MilitaryTactics"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>DankPyon_ChainArmor</li>
+            <li>DankPyon_MilitaryPolearms</li>
+            <li>DankPyon_NoblePolearms</li>
+            <li>DankPyon_MilitaryMaces</li>
+            <li>DankPyon_NobleMaces</li>
+            <li>DankPyon_MilitaryBlades</li>
+            <li>DankPyon_AdornedArmor</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_MilitaryEngineering"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>DankPyon_Tar</li>
+            <li>DankPyon_Crossbow</li>
+            <li>DankPyon_HeavyCrossbow</li>
+            <li>DankPyon_Ballista</li>
+            <li>DankPyon_Trebuchet</li>
+            <li>DankPyon_RepeaterBallista</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Gunpowder"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>DankPyon_Gunpowder</li>
+        </value>
+    </Operation>
+
+    <!-- Hide tabs created by this mod -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchTabDef[defName = "DankPyon_MedievalResearchTab"]
+        </xpath>
+        <value>
+            <modExtensions>
+                <li Class="DuneRef_CustomTechTreeFramework.HiddenTab">
+                    <hidden>True</hidden>
+                </li>
+            </modExtensions>
+        </value>
+    </Operation>
+
+    <!-- Moving Individual items to different techs -->
+
+    <!-- Column 1 -->
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_TentWall"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Clothworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Sign_Butcher"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_AnimalHusbandry</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Candles"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_AnimalHusbandry</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Apiary"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_AnimalHusbandry</li>
+                <li>DuneRef_Woodworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Apiary"
+                or defName = "DankPyon_DryingRack"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_AnimalHusbandry</li>
+                <li>DuneRef_Woodworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_LogWall"
+                or defName = "DankPyon_RusticDoor"
+                or defName = "DankPyon_LogGate"
+                or defName = "DankPyon_Gate"
+                or defName = "DankPyon_Frame_Log"
+                or defName = "DankPyon_Palisade"
+                or defName = "DankPyon_Workbench"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Woodworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_LogColumn"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Woodworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_HayRack"
+                or defName = "DankPyon_GardeningBox"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Woodworking</li>
+                <li>DuneRef_Agriculture</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Sign_Smith"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Woodworking</li>
+                <li>DuneRef_Ironworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_LampPost"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Woodworking</li>
+                <li>DuneRef_Ironworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_RusticCookingTable"
+                or defName = "DankPyon_Sign_Bread"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Woodworking</li>
+                <li>DuneRef_Cooking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_TableBaking"
+                or defName = "DankPyon_RusticCookingTools"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Woodworking</li>
+                <li>DuneRef_Cooking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Sign_Tailor"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Woodworking</li>
+                <li>DuneRef_ComplexTextiles</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_SlabDoor"
+                or defName = "DankPyon_WoodBurningStove"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Stoneworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_RusticHearth"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Stoneworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Millstone"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Stoneworking</li>
+                <li>DuneRef_Agriculture</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Grill"
+                or defName = "DankPyon_StoneOven"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Stoneworking</li>
+                <li>DuneRef_Cooking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_StoneOvenLarge"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Stoneworking</li>
+                <li>DuneRef_ComplexCooking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <!-- Column 2 -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Plant_Flax"
+            ]/plant
+        </xpath>
+        <value>
+            <sowResearchPrerequisites Inherit="False">
+                <li>DuneRef_Agriculture</li>
+            </sowResearchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   @Name = "DankPyon_MarketTent_Base"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_LongTermStorage</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_RusticLamp"
+                or defName = "DankPyon_MetalStrongbox"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Ironworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Furnace"
+                or defName = "DankPyon_Smelter"
+                or defName = "DankPyon_WallLamp"
+                or defName = "DankPyon_RusticLamp"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Ironworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_StewPot"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Ironworking</li>
+                <li>DuneRef_Cooking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Smoker"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Ironworking</li>
+                <li>DuneRef_ComplexCooking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <!-- Column 3 -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/RecipeDef[
+                   defName = "DankPyon_CookMealRationsVegan"
+                or defName = "DankPyon_CookMealRationsVeganBulk"
+            ]/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False">DuneRef_Cooking</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/RecipeDef[
+                   defName = "DankPyon_BakeBread"
+                or defName = "DankPyon_BakeBreadBulk"
+                or defName = "DankPyon_BakeBreadMegaBulk"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Cooking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_ArmorStatue"
+                or defName = "DankPyon_Trench"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Weaponry</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Apparel_Quiver"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Weaponry</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <!-- Column 4 -->
+    
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Tree_Apple"
+                or defName = "DankPyon_Tree_Lemon"
+                or defName = "DankPyon_Tree_Mulberry"
+            ]/plant/sowResearchPrerequisites
+        </xpath>
+        <value>
+            <sowResearchPrerequisites Inherit="False">
+                <li>DuneRef_Irrigation</li>
+            </sowResearchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/RecipeDef[
+                   defName = "DankPyon_CookMealRations"
+                or defName = "DankPyon_CookMealRationsBulk"
+            ]/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False">DuneRef_ComplexCooking</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/RecipeDef[
+                   defName = "DankPyon_CookMealGrilledCheese"
+                or defName = "DankPyon_CookMealGrilledCheeseBulk"
+                or defName = "DankPyon_CookMealHeartyStew"
+                or defName = "DankPyon_CookMealHeartyStewBulk"
+                or defName = "DankPyon_CookMealHuntersStew"
+                or defName = "DankPyon_CookMealHuntersStewBulk"
+                or defName = "DankPyon_CookMealPumpkinSoup"
+                or defName = "DankPyon_CookMealPumpkinSoupBulk"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_ComplexCooking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/RecipeDef[
+                   @Name = "CookMealFineBase"
+                or @Name = "CookMealFineBulkBase"
+            ]/researchPrerequisite
+        </xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Dankpyon_CupAndDice"
+                or defName = "DankPyon_Tarocco"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Recreation</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_RimWar"
+                or defName = "DankPyon_Tarocco"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Recreation</li>
+                <li>DuneRef_ComplexTextiles</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <!-- Column 5 -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_TailorsBench"
+            ]
+        </xpath>
+        <value>
+            <statBases>
+                <WorkTableWorkSpeedFactor Inherit="False">0.75</WorkTableWorkSpeedFactor>
+            </statBases>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_RoyalArmchair"
+                or defName = "DankPyon_RoyalDresser"
+                or defName = "DankPyon_RoyalEndTable"
+                or defName = "DankPyon_RoyalTable2x2c"
+                or defName = "DankPyon_RoyalTable2x4c"
+                or defName = "DankPyon_RoyalTudorBed"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_ComplexTextiles</li>
+                <li>DuneRef_Currency</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Sign_Apothecary"
+                or defName = "DankPyon_RusticBookshelf"
+                or defName = "DankPyon_Bust"
+                or defName = "DankPyon_Sign_Library"
+                or defName = "DankPyon_Lecturn"
+                or defName = "DankPyon_Sign_Tavern"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_WritingAndCulture</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_CastleWall"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Construction</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <!-- Column 6 -->
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/RecipeDef[
+                   @Name="CookMealLavishBase"
+                or @Name="CookMealLavishBulkBase"
+            ]/researchPrerequisite
+        </xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/RecipeDef[
+                   defName = "DankPyon_MakeIngots_Silver"
+                or defName = "DankPyon_MakeCoins_SilverBulk"
+                or defName = "DankPyon_MakeCoin_SilverExtraBulk"
+                or defName = "DankPyon_MakeIngots_Gold"
+                or defName = "DankPyon_MakeIngots_GoldBulk"
+                or defName = "DankPyon_MakeIngots_GoldExtraBulk"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Currency</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_RoyalColumn"
+                or defName = "DankPyon_Sign_Jewelry"
+                or defName = "DankPyon_CleaningBench"
+                or defName = "DankPyon_RoyalChest"
+                or defName = "DankPyon_Pedestal"
+                or defName = "DankPyon_RoyalBookshelf"
+                or defName = "DankPyon_RoyalCloset"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Currency</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <!-- Column 7 -->
+
+    <!-- Column 8 -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_EmbPalisade"
+                or defName = "DankPyon_CavalrySpike"
+                or defName = "DankPyon_CastleWallEmbrasures"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_MilitaryEngineering</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_RTrench"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_MilitaryEngineering</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+</Patch>

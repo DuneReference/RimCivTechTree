@@ -3,13 +3,18 @@
 
     <!-- Move mods research to hidden tab -->
 
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/ResearchProjectDef[defName = "VFEM_HeavyCrossbow"]
-        </xpath>
-        <value>
-            <tab>DuneRef_Hidden</tab>
-        </value>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>
+                Defs/ResearchProjectDef[defName = "VFEM_HeavyCrossbow"]
+            </xpath>
+            <value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+        </nomatch>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
@@ -31,8 +36,7 @@
     <Operation Class="PatchOperationRemove">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "VFEM_HeavyCrossbow"
-                or defName = "VFEM_NobleMedievalApparel"
+                   defName = "VFEM_NobleMedievalApparel"
                 or defName = "VFEM_PlagueMask"
                 or defName = "VFEM_TreeHealroot"
                 or defName = "VFEM_MeatSmoking"
@@ -40,23 +44,41 @@
         </xpath>
     </Operation>
 
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <nomatch Class="PatchOperationRemove">
+            <xpath>
+                Defs/ResearchProjectDef[
+                       defName = "VFEM_HeavyCrossbow"
+                ]/prerequisites
+            </xpath>
+        </nomatch>
+    </Operation>
+
     <!-- Add techs to RimCivTechTree researches -->
 
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/ResearchProjectDef[
-                   defName = "DuneRef_MilitaryEngineering"
-            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
-        </xpath>
-        <value>
-            <li>VFEM_HeavyCrossbow</li>
-        </value>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>
+                Defs/ResearchProjectDef[
+                       defName = "DuneRef_MilitaryEngineering"
+                ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+            </xpath>
+            <value>
+                <li>VFEM_HeavyCrossbow</li>
+            </value>
+        </nomatch>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_ComplexClothworking"
+                   defName = "DuneRef_ComplexTextiles"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -79,7 +101,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_Masonry"
+                   defName = "DuneRef_Cooking"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -134,15 +156,15 @@
     <!-- add tags with faction start info to the cooresponding new ResearchProjectDefs so we can auto-unlock those at the start -->
 
     <Operation Class="PatchOperationConditional">
-        <xpath>Defs/ResearchProjectDef[defName = "DuneRef_ComplexClothworking"]/tags</xpath>
+        <xpath>Defs/ResearchProjectDef[defName = "DuneRef_ComplexTextiles"]/tags</xpath>
         <match Class="PatchOperationAdd">
-            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_ComplexClothworking"]/tags</xpath>
+            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_ComplexTextiles"]/tags</xpath>
             <value>
                 <li>VFEM_MedievalStart</li>
             </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_ComplexClothworking"]</xpath>
+            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_ComplexTextiles"]</xpath>
             <value>
                 <tags>
                     <li>VFEM_MedievalStart</li>
@@ -152,15 +174,15 @@
     </Operation>
 
     <Operation Class="PatchOperationConditional">
-        <xpath>Defs/ResearchProjectDef[defName = "DuneRef_SteelWorking"]/tags</xpath>
+        <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Steelworking"]/tags</xpath>
         <match Class="PatchOperationAdd">
-            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_SteelWorking"]/tags</xpath>
+            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Steelworking"]/tags</xpath>
             <value>
                 <li>VFEM_MedievalStart</li>
             </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_SteelWorking"]</xpath>
+            <xpath>Defs/ResearchProjectDef[defName = "DuneRef_Steelworking"]</xpath>
             <value>
                 <tags>
                     <li>VFEM_MedievalStart</li>

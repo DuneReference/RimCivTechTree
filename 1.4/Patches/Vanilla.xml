@@ -5,30 +5,65 @@
 
     <!-- Neolithic -->
 
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/ResearchProjectDef[
-                   defName = "TreeSowing"
-                or defName = "Cocoa"
-                or defName = "Devilstrand"
-                or defName = "PsychoidBrewing"
-                or defName = "Brewing"
-                or defName = "PassiveCooler"
-                or defName = "Pemmican"
-                or defName = "RecurveBow"
-            ]
-        </xpath>
-        <value>
-            <tab>DuneRef_Hidden</tab>
-        </value>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>
+                Defs/ResearchProjectDef[
+                       defName = "TreeSowing"
+                    or defName = "Cocoa"
+                    or defName = "Devilstrand"
+                    or defName = "PsychoidBrewing"
+                    or defName = "Brewing"
+                    or defName = "PassiveCooler"
+                    or defName = "Pemmican"
+                    or defName = "RecurveBow"
+                ]
+            </xpath>
+            <value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationReplace">
+            <xpath>
+                Defs/ResearchProjectDef[
+                       defName = "TreeSowing"
+                    or defName = "Cocoa"
+                    or defName = "Devilstrand"
+                    or defName = "PsychoidBrewing"
+                    or defName = "Brewing"
+                    or defName = "PassiveCooler"
+                    or defName = "Pemmican"
+                    or defName = "RecurveBow"
+                ]/tab
+            </xpath>
+            <value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+        </match>
     </Operation>
 
-    <Operation Class="PatchOperationRemove">
-        <xpath>
-            Defs/ResearchProjectDef[
-                   defName = "Cocoa"
-            ]/prerequisites
-        </xpath>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <nomatch Class="PatchOperationRemove">
+            <xpath>
+                Defs/ResearchProjectDef[
+                       defName = "Cocoa"
+                ]/prerequisites
+            </xpath>
+        </nomatch>
+        <match Class="PatchOperationRemove">
+            <xpath>
+                Defs/ResearchProjectDef[
+                       defName = "Cocoa"
+                    or defName = "Brewing"
+                ]/prerequisites
+            </xpath>
+        </match>
     </Operation>
 
     <!-- remove tags with faction start info so we can apply the start info to new techs that contain this one -->
@@ -55,23 +90,59 @@
 
     <!-- Medieval -->
 
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/ResearchProjectDef[
-                   defName = "Greatbow"
-                or defName = "ComplexClothing"
-                or defName = "CarpetMaking"
-                or defName = "Smithing"
-                or defName = "Stonecutting"
-                or defName = "LongBlades"
-                or defName = "PlateArmor"
-            ]
-        </xpath>
-        <value>
-            <tab>DuneRef_Hidden</tab>
-        </value>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>
+                Defs/ResearchProjectDef[
+                       defName = "Greatbow"
+                    or defName = "ComplexClothing"
+                    or defName = "CarpetMaking"
+                    or defName = "Smithing"
+                    or defName = "Stonecutting"
+                    or defName = "LongBlades"
+                    or defName = "PlateArmor"
+                ]
+            </xpath>
+            <value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationReplace">
+            <xpath>
+                Defs/ResearchProjectDef[
+                       defName = "Greatbow"
+                    or defName = "CarpetMaking"
+                    or defName = "Smithing"
+                    or defName = "Stonecutting"
+                    or defName = "LongBlades"
+                    or defName = "PlateArmor"
+                ]/tab
+            </xpath>
+            <value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+        </match>
     </Operation>
 
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs/ResearchProjectDef[
+                       defName = "ComplexClothing"
+                ]
+            </xpath>
+            <value>
+                <tab>DuneRef_Hidden</tab>
+            </value>
+        </match>
+    </Operation>
+    
     <!-- Conditional because Vanilla Furniture Expanded adds tab -->
     <Operation Class="PatchOperationConditional">
         <xpath>Defs/ResearchProjectDef[defName = "ComplexFurniture"]/tab</xpath>
@@ -89,14 +160,30 @@
         </nomatch>
     </Operation>
 
-    <Operation Class="PatchOperationRemove">
-        <xpath>
-            Defs/ResearchProjectDef[
-                   defName = "Greatbow"
-                or defName = "LongBlades"
-                or defName = "PlateArmor"
-            ]/prerequisites
-        </xpath>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <nomatch Class="PatchOperationRemove">
+            <xpath>
+                Defs/ResearchProjectDef[
+                       defName = "Greatbow"
+                    or defName = "LongBlades"
+                    or defName = "PlateArmor"
+                ]/prerequisites
+            </xpath>
+        </nomatch>
+        <match Class="PatchOperationRemove">
+            <xpath>
+                Defs/ResearchProjectDef[
+                       defName = "Greatbow"
+                    or defName = "ComplexClothing"
+                    or defName = "Smithing"
+                    or defName = "LongBlades"
+                    or defName = "PlateArmor"
+                ]/prerequisites
+            </xpath>
+        </match>
     </Operation>
 
     <!-- remove tags with faction start info so we can apply the start info to new techs that contain this one -->
@@ -484,17 +571,11 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ThingDef[
-                   defName = "TableSculpting"
-                or defName = "TableButcher"
-                or defName = "AnimalSleepingBox"
-                or defName = "Stool"
+                   defName = "Stool"
                 or defName = "Table1x2c"
                 or defName = "Table2x2c"
                 or defName = "Table2x4c"
                 or defName = "Table3x3c"
-                or defName = "EggBox"
-                or defName = "HoopstoneRing"
-                or defName = "GameOfUrBoard"
             ]
         </xpath>
         <value>
@@ -502,6 +583,84 @@
                 <li>DuneRef_Woodworking</li>
             </researchPrerequisites>
         </value>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "TableSculpting"
+                ]
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_Woodworking</li>
+                </researchPrerequisites>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationReplace">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "TableSculpting"
+                ]/tab
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_Woodworking</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "TableButcher"
+                or defName = "AnimalSleepingBox"
+                or defName = "EggBox"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Woodworking</li>
+                <li>DuneRef_AnimalHusbandry</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "TableButcher"
+                ]
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_Woodworking</li>
+                    <li>DuneRef_AnimalHusbandry</li>
+                </researchPrerequisites>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationReplace">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "TableButcher"
+                ]/researchPrerequisites
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_Woodworking</li>
+                    <li>DuneRef_AnimalHusbandry</li>
+                </researchPrerequisites>
+            </value>
+        </match>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
@@ -517,17 +676,34 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/ThingDef[
-                   defName = "FueledStove"
-            ]
-        </xpath>
-        <value>
-            <researchPrerequisites Inherit="False">
-                <li>DuneRef_SteelWorking</li>
-            </researchPrerequisites>
-        </value>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "FueledStove"
+                ]/researchPrerequisites
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_Apprenticeship</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "FueledStove"
+                ]
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_Apprenticeship</li>
+                </researchPrerequisites>
+            </value>
+        </nomatch>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
@@ -547,14 +723,25 @@
         <xpath>
             Defs/ThingDef[
                    defName = "Armchair"
-                or defName = "BilliardsTable"
-                or defName = "PokerTable"
-                or defName = "RoyalBed"
             ]/researchPrerequisites
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_ComplexClothworking</li>
+                <li>DuneRef_ComplexTextiles</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "RoyalBed"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_ComplexTextiles</li>
+                <li>DuneRef_Currency</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -562,13 +749,9 @@
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
-                   defName = "Bed"
-                or defName = "ChessTable"
                 or defName = "DiningChair"
-                or defName = "DoubleBed"
                 or defName = "Dresser"
                 or defName = "EndTable"
-                or defName = "Shelf"
             ]/researchPrerequisites
         </xpath>
         <value>
@@ -581,12 +764,57 @@
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
+                or defName = "Shelf"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_LongTermStorage</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "Bed"
+                    or defName = "DoubleBed"
+                ]
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_Woodworking</li>
+                </researchPrerequisites>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationReplace">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "Bed"
+                    or defName = "DoubleBed"
+                ]/researchPrerequisites
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_Woodworking</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
                    defName = "Vent"
             ]/researchPrerequisites
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_SteelWorking</li>
+                <li>DuneRef_Engineering</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -656,7 +884,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Masonry</li>
+                <li>DuneRef_Woodworking</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -683,15 +911,39 @@
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
-                   defName = "ToolCabinet"
-                or defName = "ChemfuelPoweredGenerator"
-                or defName = "PowerConduit"
-                or defName = "WoodFiredGenerator"
+                   defName = "WoodFiredGenerator"
             ]/researchPrerequisites
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_ScientificTheory</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "ToolCabinet"
+                or defName = "PowerConduit"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Education</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "ChemfuelPoweredGenerator"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Apprenticeship</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -789,7 +1041,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_ScientificTheory</li>
+                <li>DuneRef_Apprenticeship</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -937,7 +1189,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Woodworking</li>
+                <li>DuneRef_WritingAndCulture</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -980,12 +1232,253 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationRemove">
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <nomatch Class="PatchOperationRemove">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "SimpleResearchBench"
+                ]/costList
+            </xpath>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ThingDef[
-                   defName = "SimpleResearchBench"
-            ]/costList
+                   defName = "Plant_Corn"
+                or defName = "Plant_Haygrass"
+                or defName = "Plant_Potato"
+                or defName = "Plant_Rice"
+                or defName = "Plant_Strawberry"
+                or defName = "Plant_Healroot"
+                or defName = "Plant_Dandelion"
+                or defName = "Plant_Daylily"
+                or defName = "Plant_Rose"
+                or defName = "Plant_Cotton"
+                or defName = "Plant_Hops"
+                or defName = "Plant_Psychoid"
+                or defName = "Plant_Smokeleaf"
+                or defName = "Plant_Tinctoria"
+            ]/plant
         </xpath>
+        <value>
+            <sowResearchPrerequisites Inherit="False">
+                <li>DuneRef_Agriculture</li>
+            </sowResearchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Wall"
+                or defName = "Door"
+                or defName = "Column"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Woodworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Fence"
+                or defName = "FenceGate"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_AnimalHusbandry</li>
+                <li>DuneRef_Woodworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/TerrainDef[
+                   defName = "Concrete"
+                or @Name = "FineTileStoneBase"
+                or @Name = "TileStoneBase"
+                or defName = "PavedTile"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Masonry</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "AnimalFlap"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_AnimalHusbandry</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "GameOfUrBoard"
+                or defName = "HoopstoneRing"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Recreation</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>                
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "ChessTable"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Recreation</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "HorseshoesPin"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Recreation</li>
+                <li>DuneRef_Ironworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "BilliardsTable"
+                or defName = "PokerTable"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Recreation</li>
+                <li>DuneRef_ComplexTextiles</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "HandTailoringBench"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Clothworking</li>
+                <li>DuneRef_Woodworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "MeleeWeapon_Ikwa"
+                or defName = "MeleeWeapon_Gladius"
+                or defName = "MeleeWeapon_BreachAxe"
+                or defName = "MeleeWeapon_Mace"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Weaponry</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/RecipeDef[
+                   defName = "CookMealSimple"
+                or defName = "CookMealSimpleBulk"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_ComplexCooking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/RecipeDef[
+                   defName = "CookMealFine"
+                or defName = "CookMealFine_Veg"
+                or defName = "CookMealFine_Meat"
+                or defName = "CookMealFineBulk"
+                or defName = "CookMealFineBulk_Meat"
+                or defName = "CookMealFineBulk_Veg"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_ExpandedCulture</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/RecipeDef[
+                   defName = "CookMealLavish"
+                or defName = "CookMealLavish_Veg"
+                or defName = "CookMealLavish_Meat"
+                or defName = "CookMealLavishBulk"
+                or defName = "CookMealLavishBulk_Meat"
+                or defName = "CookMealLavishBulk_Veg"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_ExpandedCulture</li>
+                <li>DuneRef_Currency</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "TableStonecutter"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Woodworking</li>
+                <li>DuneRef_Stoneworking</li>
+            </researchPrerequisites>
+        </value>
     </Operation>
 
 </Patch>

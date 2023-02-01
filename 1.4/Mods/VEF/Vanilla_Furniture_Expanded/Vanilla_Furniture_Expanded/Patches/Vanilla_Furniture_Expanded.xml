@@ -49,7 +49,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_Masonry"
+                   defName = "DuneRef_Stoneworking"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -60,7 +60,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_Masonry"
+                   defName = "DuneRef_Stoneworking"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -150,7 +150,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Masonry</li>
+                <li>DuneRef_Stoneworking</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -165,16 +165,15 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Health</li>
+                <li>DuneRef_Woodworking</li>
             </researchPrerequisites>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-            <xpath>
+        <xpath>
             Defs/ThingDef[
-                   defName = "Misc_FileCabinet"
-                or defName = "Shelf_1x1c"
+                   defName = "Shelf_1x1c"
                 or defName = "Seat_SquareChair"
                 or defName = "Table_Counter"
                 or defName = "Table_Wardrobe"
@@ -188,20 +187,33 @@
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-            <xpath>
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Misc_FileCabinet"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Education</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
             Defs/ThingDef[
                    defName = "Shelf_WeaponRack"
             ]/researchPrerequisites
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_SteelWorking</li>
+                <li>DuneRef_Steelworking</li>
             </researchPrerequisites>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-            <xpath>
+        <xpath>
             Defs/ThingDef[
                    defName = "Seat_RoyalArmchair"
                 or defName = "Seat_RoyalChair"
@@ -209,14 +221,14 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_ComplexClothworking</li>
-                <li>DuneRef_Construction</li>
+                <li>DuneRef_ComplexTextiles</li>
+                <li>DuneRef_Currency</li>
             </researchPrerequisites>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-            <xpath>
+        <xpath>
             Defs/ThingDef[
                    defName = "Radio_Industrial"
             ]/researchPrerequisites
@@ -229,7 +241,7 @@
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-            <xpath>
+        <xpath>
             Defs/ThingDef[
                    defName = "Joy_InudstrialComputer"
             ]/researchPrerequisites
@@ -242,7 +254,7 @@
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-            <xpath>
+        <xpath>
             Defs/ThingDef[
                    defName = "Joy_Piano"
             ]/researchPrerequisites
@@ -255,7 +267,7 @@
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-            <xpath>
+        <xpath>
             Defs/ThingDef[
                    defName = "Joy_ModernComputer"
             ]/researchPrerequisites
@@ -265,6 +277,17 @@
                 <li>DuneRef_Computers</li>
                 <li>DuneRef_Lasers</li>
             </researchPrerequisites>
+        </value>
+    </Operation>Bed_StoneSlab
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Bed_StoneSlab"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False" />
         </value>
     </Operation>
 

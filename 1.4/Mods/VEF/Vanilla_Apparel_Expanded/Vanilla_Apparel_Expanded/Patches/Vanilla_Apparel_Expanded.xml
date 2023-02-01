@@ -123,7 +123,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_ScientificTheory</li>
+                <li>DuneRef_Education</li>
             </researchPrerequisites>
         </value>
     </Operation>

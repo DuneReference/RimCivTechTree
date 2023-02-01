@@ -17,7 +17,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_Pottery"
+                   defName = "DuneRef_Agriculture"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -68,7 +68,7 @@
             </xpath>
             <value>
                 <researchPrerequisites Inherit="False">
-                    <li>DuneRef_Health</li>
+                    <li>DuneRef_Woodworking</li>
                 </researchPrerequisites>
             </value>
         </match>
@@ -81,7 +81,7 @@
             </xpath>
             <value>
                 <researchPrerequisites Inherit="False">
-                    <li>DuneRef_Health</li>
+                    <li>DuneRef_Woodworking</li>
                 </researchPrerequisites>
             </value>
         </nomatch>
@@ -96,7 +96,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Clothworking</li>
+                <li>DuneRef_AnimalHusbandry</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -109,7 +109,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Woodworking</li>
+                <li>DuneRef_Recreation</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -122,7 +122,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Masonry</li>
+                <li>DuneRef_Stoneworking</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -160,6 +160,20 @@
             <recipeMaker>
                 <researchPrerequisite Inherit='False'>DuneRef_AdvancedShields</researchPrerequisite>
             </recipeMaker>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFEV_Apiary"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_AnimalHusbandry</li>
+                <li>DuneRef_Woodworking</li>
+            </researchPrerequisites>
         </value>
     </Operation>
 

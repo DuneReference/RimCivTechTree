@@ -63,7 +63,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_SteelWorking</li>
+                <li>DuneRef_Steelworking</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -76,7 +76,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_SteelWorking</li>
+                <li>DuneRef_Steelworking</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -89,7 +89,6 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Woodworking</li>
                 <li>DuneRef_WritingAndCulture</li>
             </researchPrerequisites>
         </value>
@@ -104,7 +103,7 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_Construction</li>
-                <li>DuneRef_WritingAndCulture</li>
+                <li>DuneRef_Currency</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -117,7 +116,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Clothworking</li>
+                <li>DuneRef_AnimalHusbandry</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -144,6 +143,61 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_SmartMaterials</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Plant_Fibercorn"
+                or defName = "Plant_Nutrifungus"
+            ]/plant
+        </xpath>
+        <value>
+            <sowResearchPrerequisites Inherit="False">
+                <li>DuneRef_Agriculture</li>
+            </sowResearchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "MorbidSlab_Medium"
+                or defName = "MorbidSlab_Broad"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Masonry</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/TerrainDef[
+                   @Name = "IdeoStoneTileBase"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Masonry</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/TerrainDef[
+                   @Name = "VME_CorporateFineStoneTiles"
+                or @Name = "VME_ShintaoFineStoneTiles"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Masonry</li>
             </researchPrerequisites>
         </value>
     </Operation>

@@ -526,4 +526,17 @@
         </nomatch>
     </Operation>
 
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "PRF_MineShaft"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Masonry</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
 </Patch>

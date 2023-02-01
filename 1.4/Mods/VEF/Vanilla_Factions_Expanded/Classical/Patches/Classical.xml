@@ -135,8 +135,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_Clothworking"
-                or defName = "DuneRef_Woodworking"
+                   defName = "DuneRef_ComplexTextiles"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -147,13 +146,10 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_Masonry"
+                   defName = "DuneRef_Woodworking"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
-            <li>VFEC_TemperatureControl</li>
-            <li>VFEC_CementMaking</li>
-            <li>VFEC_WoodfiredCrematorium</li>
             <li>VFEC_Beacons</li>
         </value>
     </Operation>
@@ -161,7 +157,31 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_Pottery"
+                   defName = "DuneRef_Stoneworking"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>VFEC_TemperatureControl</li>
+            <li>VFEC_Beacons</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Masonry"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>VFEC_CementMaking</li>
+            <li>VFEC_WoodfiredCrematorium</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Agriculture"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -195,7 +215,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_SteelWorking"
+                   defName = "DuneRef_Steelworking"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -218,7 +238,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_SteelWorking"
+                   defName = "DuneRef_Steelworking"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -292,7 +312,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Health</li>
+                <li>DuneRef_AncientEra</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -305,8 +325,8 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Clothworking</li>
-                <li>DuneRef_SteelWorking</li>
+                <li>DuneRef_WritingAndCulture</li>
+                <li>DuneRef_Steelworking</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -319,7 +339,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_ComplexClothworking</li>
+                <li>DuneRef_ComplexTextiles</li>
             </researchPrerequisites>
         </value>
     </Operation>

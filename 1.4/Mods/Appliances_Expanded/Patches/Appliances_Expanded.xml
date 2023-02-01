@@ -19,7 +19,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit='False'>
-                <li>DuneRef_ScientificTheory</li>
+                <li>DuneRef_Apprenticeship</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -50,7 +50,7 @@
             </xpath>
             <value>
                 <researchPrerequisites Inherit='False'>
-                    <li>DuneRef_ScientificTheory</li>
+                    <li>DuneRef_Apprenticeship</li>
                 </researchPrerequisites>
             </value>
         </match>
@@ -64,7 +64,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit='False'>
-                <li>DuneRef_ScientificTheory</li>
+                <li>DuneRef_Apprenticeship</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -77,7 +77,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit='False'>
-                <li>DuneRef_ScientificTheory</li>
+                <li>DuneRef_Apprenticeship</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -95,7 +95,7 @@
             </xpath>
             <value>
                 <researchPrerequisites Inherit='False'>
-                    <li>DuneRef_ScientificTheory</li>
+                    <li>DuneRef_Apprenticeship</li>
                 </researchPrerequisites>
             </value>
         </match>

@@ -37,11 +37,10 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_Masonry"
+                   defName = "DuneRef_Stoneworking"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
-            <li>VFE_Res_Obelisk</li>
             <li>VFE_Res_WallCarvings</li>
         </value>
     </Operation>
@@ -49,7 +48,18 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_Pottery"
+                   defName = "DuneRef_Masonry"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>VFE_Res_Obelisk</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Agriculture"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>

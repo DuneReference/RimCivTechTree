@@ -24,7 +24,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_ComplexClothworking</li>
+                <li>DuneRef_ComplexTextiles</li>
                 <li>DuneRef_Construction</li>
             </researchPrerequisites>
         </value>

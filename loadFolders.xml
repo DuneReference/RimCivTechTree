@@ -216,5 +216,6 @@
         <li IfModActive="aelanna.eccentrictech.core">1.4/Mods/Eccentric_Tech/Core</li>
         <li IfModActive="aelanna.eccentrictech.advancedshields">1.4/Mods/Eccentric_Tech/Advanced_Shields</li>
         <li IfModActive="aelanna.eccentrictech.fusionpower">1.4/Mods/Eccentric_Tech/Fusion_Power</li>
+        <li IfModActive="dankpyon.medieval.overhaul">1.4/Mods/Medieval_Overhaul</li>
     </v1.4>
 </loadFolders>

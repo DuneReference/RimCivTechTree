@@ -69,7 +69,7 @@
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-            <xpath>
+        <xpath>
             Defs/TerrainDef[
                 defName = "VFEArch_ConcreteFoundation"
             ]/researchPrerequisites
@@ -95,7 +95,7 @@
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-            <xpath>
+        <xpath>
             Defs/ThingDef[
                    defName = "VFEArch_ArmoredDoor"
                 or defName = "VFEArch_ArmoredWall"
@@ -104,6 +104,19 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_BrutalWarfare</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFEArch_BrickFence"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Masonry</li>
             </researchPrerequisites>
         </value>
     </Operation>

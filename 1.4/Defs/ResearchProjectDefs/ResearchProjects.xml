@@ -5,33 +5,13 @@
     <!-- Ancient Era -->
 
     <ResearchProjectDef>
-        <defName>DuneRef_Pottery</defName>
-        <label>Pottery</label>
-        <description>Pottery</description>
-        <baseCost>200</baseCost>
+        <defName>DuneRef_AncientEra</defName>
+        <label>Ancient Era</label>
+        <description>Ancient Era</description>
+        <baseCost>1</baseCost>
         <techLevel>Neolithic</techLevel>
         <researchViewX>0</researchViewX>
-        <researchViewY>4</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks>
-                    <li>TreeSowing</li>
-                </researchUnlocks>
-            </li>
-        </modExtensions>
-        <tags>
-            <li>TribalStart</li>
-        </tags>
-    </ResearchProjectDef>
-    
-    <ResearchProjectDef>
-        <defName>DuneRef_Health</defName>
-        <label>Health</label>
-        <description>Health</description>
-        <baseCost>200</baseCost>
-        <techLevel>Neolithic</techLevel>
-        <researchViewX>0</researchViewX>
-        <researchViewY>5</researchViewY>
+        <researchViewY>0</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
@@ -41,18 +21,75 @@
                 </researchUnlocks>
             </li>
         </modExtensions>
-        <tags>
-            <li>TribalStart</li>
-        </tags>
     </ResearchProjectDef>
-    
+
     <ResearchProjectDef>
-        <defName>DuneRef_Masonry</defName>
-        <label>Masonry</label>
-        <description>Masonry</description>
+        <defName>DuneRef_Clothworking</defName>
+        <label>Clothworking</label>
+        <description>Clothworking</description>
         <baseCost>200</baseCost>
         <techLevel>Neolithic</techLevel>
-        <researchViewX>0</researchViewX>
+        <hiddenPrerequisites>
+            <li>DuneRef_AncientEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>1</researchViewX>
+        <researchViewY>1</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks />
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_AnimalHusbandry</defName>
+        <label>Animal Husbandry</label>
+        <description>Animal Husbandry</description>
+        <baseCost>200</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <hiddenPrerequisites>
+            <li>DuneRef_AncientEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>1</researchViewX>
+        <researchViewY>2</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks />
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_Woodworking</defName>
+        <label>Woodworking</label>
+        <description>Woodworking</description>
+        <baseCost>200</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <hiddenPrerequisites>
+            <li>DuneRef_AncientEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>1</researchViewX>
+        <researchViewY>6</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks>
+                    <li>ComplexFurniture</li>
+                    <li>RecurveBow</li>
+                </researchUnlocks>
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_Stoneworking</defName>
+        <label>Stoneworking</label>
+        <description>Stoneworking</description>
+        <baseCost>200</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <hiddenPrerequisites>
+            <li>DuneRef_AncientEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>1</researchViewX>
         <researchViewY>7</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -62,32 +99,176 @@
             </li>
         </modExtensions>
     </ResearchProjectDef>
-    
+
     <ResearchProjectDef>
-        <defName>DuneRef_Clothworking</defName>
-        <label>Clothworking</label>
-        <description>Clothworking</description>
+        <defName>DuneRef_Agriculture</defName>
+        <label>Agriculture</label>
+        <description>Agriculture</description>
         <baseCost>400</baseCost>
         <techLevel>Neolithic</techLevel>
-        <researchViewX>1</researchViewX>
-        <researchViewY>0</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_AncientEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>3</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks>
+                    <li>TreeSowing</li>
+                </researchUnlocks>
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_LongTermStorage</defName>
+        <label>Long Term Storage</label>
+        <description>Long Term Storage</description>
+        <baseCost>400</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <prerequisites>
+            <li>DuneRef_Woodworking</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_AncientEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>4</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks />
             </li>
         </modExtensions>
     </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_Ironworking</defName>
+        <label>Iron Working</label>
+        <description>Iron Working</description>
+        <baseCost>400</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <prerequisites>
+            <li>DuneRef_Stoneworking</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_AncientEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>7</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks />
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_Cooking</defName>
+        <label>Cooking</label>
+        <description>Cooking</description>
+        <baseCost>700</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <prerequisites>
+            <li>DuneRef_Agriculture</li>
+            <li>DuneRef_AnimalHusbandry</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_AncientEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>3</researchViewX>
+        <researchViewY>2</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks />
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_Weaponry</defName>
+        <label>Weaponry</label>
+        <description>Weaponry</description>
+        <baseCost>700</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <prerequisites>
+            <li>DuneRef_Woodworking</li>
+            <li>DuneRef_Ironworking</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_AncientEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>3</researchViewX>
+        <researchViewY>5</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks>
+                    <li>Greatbow</li>
+                </researchUnlocks>
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
     
+    <!-- Classical Era -->
+
+    <ResearchProjectDef>
+        <defName>DuneRef_ClassicalEra</defName>
+        <label>Classical Era</label>
+        <description>Classical Era</description>
+        <baseCost>1</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <researchViewX>4</researchViewX>
+        <researchViewY>0</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.OrPrerequisites">
+                <orHiddenPrerequisites>
+                    <li>DuneRef_Clothworking</li>
+                    <li>DuneRef_AnimalHusbandry</li>
+                    <li>DuneRef_Woodworking</li>
+                    <li>DuneRef_Stoneworking</li>
+                    <li>DuneRef_Agriculture</li>
+                    <li>DuneRef_LongTermStorage</li>
+                    <li>DuneRef_Ironworking</li>
+                    <li>DuneRef_Cooking</li>
+                    <li>DuneRef_Weaponry</li>
+                </orHiddenPrerequisites>
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_ComplexCooking</defName>
+        <label>Complex Cooking</label>
+        <description>Complex Cooking</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>DuneRef_Cooking</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_ClassicalEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>5</researchViewX>
+        <researchViewY>2</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks />
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
     <ResearchProjectDef>
         <defName>DuneRef_Irrigation</defName>
         <label>Irrigation</label>
         <description>Irrigation</description>
-        <baseCost>400</baseCost>
+        <baseCost>1000</baseCost>
         <techLevel>Neolithic</techLevel>
         <prerequisites>
-            <li>DuneRef_Pottery</li>
+            <li>DuneRef_Agriculture</li>
         </prerequisites>
-        <researchViewX>1</researchViewX>
+        <hiddenPrerequisites>
+            <li>DuneRef_ClassicalEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>5</researchViewX>
         <researchViewY>3</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -98,24 +279,93 @@
             </li>
         </modExtensions>
     </ResearchProjectDef>
-    
+
     <ResearchProjectDef>
-        <defName>DuneRef_Woodworking</defName>
-        <label>Woodworking</label>
-        <description>Woodworking</description>
-        <baseCost>400</baseCost>
-        <techLevel>Neolithic</techLevel>
+        <defName>DuneRef_Recreation</defName>
+        <label>Recreation</label>
+        <description>Recreation</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Medieval</techLevel>
         <prerequisites>
-            <li>DuneRef_Health</li>
+            <li>DuneRef_LongTermStorage</li>
         </prerequisites>
-        <researchViewX>1</researchViewX>
-        <researchViewY>6</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_ClassicalEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>5</researchViewX>
+        <researchViewY>4</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks />
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+    
+    <!-- @@ Middle Ages @@ -->
+
+    <ResearchProjectDef>
+        <defName>DuneRef_Steelworking</defName>
+        <label>Steel Working</label>
+        <description>Steel Working</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>DuneRef_Stoneworking</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_ClassicalEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>5</researchViewX>
+        <researchViewY>7</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
-                    <li>ComplexFurniture</li>
-                    <li>RecurveBow</li>
-                    <li>Greatbow</li>
+                    <li>Smithing</li>
+                </researchUnlocks>
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_Masonry</defName>
+        <label>Masonry</label>
+        <description>Masonry</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>DuneRef_Stoneworking</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_ClassicalEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>5</researchViewX>
+        <researchViewY>8</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks />
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_ComplexTextiles</defName>
+        <label>Complex Textiles</label>
+        <description>Complex Textiles</description>
+        <baseCost>1500</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>DuneRef_Clothworking</li>
+            <li>DuneRef_AnimalHusbandry</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_ClassicalEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>6</researchViewX>
+        <researchViewY>1</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks>
+                    <li>ComplexClothing</li>
                 </researchUnlocks>
             </li>
         </modExtensions>
@@ -125,13 +375,16 @@
         <defName>DuneRef_WritingAndCulture</defName>
         <label>Writing and Culture</label>
         <description>Writing and Culture</description>
-        <baseCost>700</baseCost>
+        <baseCost>1500</baseCost>
         <techLevel>Neolithic</techLevel>
         <prerequisites>
-            <li>DuneRef_Pottery</li>
-            <li>DuneRef_Woodworking</li>
+            <li>DuneRef_ComplexCooking</li>
+            <li>DuneRef_Recreation</li>
         </prerequisites>
-        <researchViewX>2</researchViewX>
+        <hiddenPrerequisites>
+            <li>DuneRef_ClassicalEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>6</researchViewX>
         <researchViewY>4</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -143,60 +396,63 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>DuneRef_SteelWorking</defName>
-        <label>Steel Working</label>
-        <description>Steel Working</description>
-        <baseCost>700</baseCost>
-        <techLevel>Neolithic</techLevel>
+        <defName>DuneRef_Construction</defName>
+        <label>Construction</label>
+        <description>Construction</description>
+        <baseCost>1500</baseCost>
+        <techLevel>Medieval</techLevel>
         <prerequisites>
+            <li>DuneRef_Woodworking</li>
             <li>DuneRef_Masonry</li>
         </prerequisites>
-        <researchViewX>2</researchViewX>
-        <researchViewY>7</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_ClassicalEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>6</researchViewX>
+        <researchViewY>8</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks>
-                    <li>Smithing</li>
-                </researchUnlocks>
+                <researchUnlocks />
             </li>
         </modExtensions>
     </ResearchProjectDef>
-    
-    <!-- @@ Middle Ages @@ -->
-    <!-- Classical Era -->
 
     <ResearchProjectDef>
-        <defName>DuneRef_ComplexClothworking</defName>
-        <label>Complex Clothworking</label>
-        <description>Complex Clothworking</description>
-        <baseCost>1000</baseCost>
+        <defName>DuneRef_ExpandedCulture</defName>
+        <label>Expanded Culture</label>
+        <description>Expanded Culture</description>
+        <baseCost>2000</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
-            <li>DuneRef_Clothworking</li>
             <li>DuneRef_WritingAndCulture</li>
         </prerequisites>
-        <researchViewX>3</researchViewX>
+        <hiddenPrerequisites>
+            <li>DuneRef_ClassicalEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>7</researchViewX>
         <researchViewY>2</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks>
-                    <li>ComplexClothing</li>
-                </researchUnlocks>
+                <researchUnlocks />
             </li>
         </modExtensions>
     </ResearchProjectDef>
-    
+
     <ResearchProjectDef>
         <defName>DuneRef_Currency</defName>
         <label>Currency</label>
         <description>Currency</description>
-        <baseCost>1000</baseCost>
+        <baseCost>2000</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
-            <li>DuneRef_Clothworking</li>
+            <li>DuneRef_ComplexTextiles</li>
             <li>DuneRef_WritingAndCulture</li>
+            <li>DuneRef_Ironworking</li>
         </prerequisites>
-        <researchViewX>3</researchViewX>
+        <hiddenPrerequisites>
+            <li>DuneRef_ClassicalEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>7</researchViewX>
         <researchViewY>4</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -206,55 +462,22 @@
             </li>
         </modExtensions>
     </ResearchProjectDef>
-    
-    <ResearchProjectDef>
-        <defName>DuneRef_ExpandedCulture</defName>
-        <label>Expanded Culture</label>
-        <description>Expanded Culture</description>
-        <baseCost>1500</baseCost>
-        <techLevel>Medieval</techLevel>
-        <prerequisites>
-            <li>DuneRef_WritingAndCulture</li>
-        </prerequisites>
-        <researchViewX>4</researchViewX>
-        <researchViewY>1</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks />
-            </li>
-        </modExtensions>
-    </ResearchProjectDef>
 
     <ResearchProjectDef>
         <defName>DuneRef_Engineering</defName>
         <label>Engineering</label>
         <description>Engineering</description>
-        <baseCost>1500</baseCost>
+        <baseCost>2000</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
-            <li>DuneRef_ComplexClothworking</li>
-            <li>DuneRef_SteelWorking</li>
+            <li>DuneRef_Steelworking</li>
+            <li>DuneRef_Masonry</li>
+            <li>DuneRef_Weaponry</li>
         </prerequisites>
-        <researchViewX>4</researchViewX>
-        <researchViewY>5</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks />
-            </li>
-        </modExtensions>
-    </ResearchProjectDef>
-    
-    <ResearchProjectDef>
-        <defName>DuneRef_Construction</defName>
-        <label>Construction</label>
-        <description>Construction</description>
-        <baseCost>1500</baseCost>
-        <techLevel>Medieval</techLevel>
-        <prerequisites>
-            <li>DuneRef_Woodworking</li>
-            <li>DuneRef_SteelWorking</li>
-        </prerequisites>
-        <researchViewX>4</researchViewX>
+        <hiddenPrerequisites>
+            <li>DuneRef_ClassicalEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>7</researchViewX>
         <researchViewY>6</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -266,17 +489,48 @@
     <!-- Medieval Era -->
 
     <ResearchProjectDef>
+        <defName>DuneRef_MedievalEra</defName>
+        <label>Medieval Era</label>
+        <description>Medieval Era</description>
+        <baseCost>1</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>8</researchViewX>
+        <researchViewY>0</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.OrPrerequisites">
+                <orHiddenPrerequisites>
+                    <li>DuneRef_ComplexCooking</li>
+                    <li>DuneRef_Irrigation</li>
+                    <li>DuneRef_Recreation</li>
+                    <li>DuneRef_Steelworking</li>
+                    <li>DuneRef_Masonry</li>
+                    <li>DuneRef_ComplexTextiles</li>
+                    <li>DuneRef_WritingAndCulture</li>
+                    <li>DuneRef_Construction</li>
+                    <li>DuneRef_ExpandedCulture</li>
+                    <li>DuneRef_Currency</li>
+                    <li>DuneRef_Engineering</li>
+                </orHiddenPrerequisites>
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
         <defName>DuneRef_MilitaryTactics</defName>
         <label>Military Tactics</label>
         <description>Military Tactics</description>
-        <baseCost>2000</baseCost>
+        <baseCost>2500</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
-            <li>DuneRef_ComplexClothworking</li>
-            <li>DuneRef_SteelWorking</li>
+            <li>DuneRef_ComplexTextiles</li>
+            <li>DuneRef_Steelworking</li>
+            <li>DuneRef_Weaponry</li>
         </prerequisites>
-        <researchViewX>5</researchViewX>
-        <researchViewY>0</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_MedievalEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>9</researchViewX>
+        <researchViewY>3</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
@@ -291,14 +545,41 @@
         <defName>DuneRef_MilitaryEngineering</defName>
         <label>Military Engineering</label>
         <description>Military Engineering</description>
-        <baseCost>2500</baseCost>
+        <baseCost>3000</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_Engineering</li>
+            <li>DuneRef_MilitaryTactics</li>
             <li>DuneRef_Construction</li>
         </prerequisites>
-        <researchViewX>6</researchViewX>
+        <hiddenPrerequisites>
+            <li>DuneRef_MedievalEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>10</researchViewX>
         <researchViewY>6</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks />
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_ScientificTheory</defName>
+        <label>Scientific Theory</label>
+        <description>Scientific Theory</description>
+        <baseCost>3000</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>DuneRef_Irrigation</li>
+            <li>DuneRef_ExpandedCulture</li>
+            <li>DuneRef_Engineering</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_MedievalEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>10</researchViewX>
+        <researchViewY>2</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks />
@@ -309,16 +590,128 @@
     <!-- Renaissance Era -->
 
     <ResearchProjectDef>
+        <defName>DuneRef_RenaissanceEra</defName>
+        <label>Renaissance Era</label>
+        <description>Renaissance Era</description>
+        <baseCost>1</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>11</researchViewX>
+        <researchViewY>0</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.OrPrerequisites">
+                <orHiddenPrerequisites>
+                    <li>DuneRef_MilitaryTactics</li>
+                    <li>DuneRef_MilitaryEngineering</li>
+                    <li>DuneRef_ScientificTheory</li>
+                </orHiddenPrerequisites>
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_Apprenticeship</defName>
+        <label>Apprenticeship</label>
+        <description>Apprenticeship</description>
+        <baseCost>3500</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>DuneRef_Currency</li>
+            <li>DuneRef_Engineering</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_RenaissanceEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>12</researchViewX>
+        <researchViewY>4</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks>
+                    <li>BiofuelRefining</li>
+                </researchUnlocks>
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
         <defName>DuneRef_Gunpowder</defName>
         <label>Gunpowder</label>
         <description>Gunpowder</description>
-        <baseCost>3000</baseCost>
+        <baseCost>3500</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_MilitaryEngineering</li>
             <li>DuneRef_Currency</li>
         </prerequisites>
-        <researchViewX>7</researchViewX>
+        <hiddenPrerequisites>
+            <li>DuneRef_RenaissanceEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>12</researchViewX>
+        <researchViewY>6</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks />
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_Education</defName>
+        <label>Education</label>
+        <description>Education</description>
+        <baseCost>4000</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>DuneRef_ScientificTheory</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_RenaissanceEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>13</researchViewX>
+        <researchViewY>2</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks />
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_Flight</defName>
+        <label>Flight</label>
+        <description>Flight</description>
+        <baseCost>4000</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>DuneRef_Currency</li>
+            <li>DuneRef_ScientificTheory</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_RenaissanceEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>13</researchViewX>
+        <researchViewY>3</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks>
+                    <li>TransportPod</li>
+                </researchUnlocks>
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_MetalCasting</defName>
+        <label>Metal Casting</label>
+        <description>Metal Casting</description>
+        <baseCost>4000</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>DuneRef_Gunpowder</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_RenaissanceEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>13</researchViewX>
         <researchViewY>6</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -331,23 +724,22 @@
     <!-- Industrial Era -->
 
     <ResearchProjectDef>
-        <defName>DuneRef_ScientificTheory</defName>
-        <label>Scientific Theory</label>
-        <description>Scientific Theory</description>
-        <baseCost>4000</baseCost>
-        <techLevel>Industrial</techLevel>
-        <prerequisites>
-            <li>DuneRef_Irrigation</li>
-            <li>DuneRef_Engineering</li>
-        </prerequisites>
-        <researchViewX>9</researchViewX>
-        <researchViewY>4</researchViewY>
+        <defName>DuneRef_IndustrialEra</defName>
+        <label>Industrial Era</label>
+        <description>Industrial Era</description>
+        <baseCost>1</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>14</researchViewX>
+        <researchViewY>0</researchViewY>
         <modExtensions>
-            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks>
-                    <li>BiofuelRefining</li>
-                    <li>TransportPod</li>
-                </researchUnlocks>
+            <li Class="DuneRef_CustomTechTreeFramework.OrPrerequisites">
+                <orHiddenPrerequisites>
+                    <li>DuneRef_Apprenticeship</li>
+                    <li>DuneRef_Gunpowder</li>
+                    <li>DuneRef_Education</li>
+                    <li>DuneRef_Flight</li>
+                    <li>DuneRef_MetalCasting</li>
+                </orHiddenPrerequisites>
             </li>
         </modExtensions>
     </ResearchProjectDef>
@@ -359,13 +751,14 @@
         <baseCost>5000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>DuneRef_ScientificTheory</li>
-            <li>DuneRef_ExpandedCulture</li>
-            <li>DuneRef_Construction</li>
-            <li>DuneRef_ComplexClothworking</li>
+            <li>DuneRef_Apprenticeship</li>
+            <li>DuneRef_MetalCasting</li>
         </prerequisites>
-        <researchViewX>10</researchViewX>
-        <researchViewY>2</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_IndustrialEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>15</researchViewX>
+        <researchViewY>6</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
@@ -382,10 +775,13 @@
         <baseCost>6000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
+            <li>DuneRef_Education</li>
             <li>DuneRef_Industrialization</li>
-            <li>DuneRef_ExpandedCulture</li>
         </prerequisites>
-        <researchViewX>11</researchViewX>
+        <hiddenPrerequisites>
+            <li>DuneRef_IndustrialEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>16</researchViewX>
         <researchViewY>1</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -401,9 +797,12 @@
         <baseCost>6000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>DuneRef_ScientificTheory</li>
+            <li>DuneRef_Education</li>
         </prerequisites>
-        <researchViewX>11</researchViewX>
+        <hiddenPrerequisites>
+            <li>DuneRef_IndustrialEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>16</researchViewX>
         <researchViewY>3</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -426,11 +825,13 @@
         <baseCost>6000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>DuneRef_Gunpowder</li>
             <li>DuneRef_Industrialization</li>
         </prerequisites>
-        <researchViewX>11</researchViewX>
-        <researchViewY>6</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_IndustrialEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>16</researchViewX>
+        <researchViewY>7</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
@@ -443,31 +844,6 @@
         </tags>
     </ResearchProjectDef>
 
-    <!-- Modern Era -->
-
-    <ResearchProjectDef>
-        <defName>DuneRef_ReplaceableParts</defName>
-        <label>Replaceable Parts</label>
-        <description>Replaceable Parts</description>
-        <baseCost>7000</baseCost>
-        <techLevel>Industrial</techLevel>
-        <prerequisites>
-            <li>DuneRef_Rifling</li>
-            <li>DuneRef_ScientificTheory</li>
-        </prerequisites>
-        <researchViewX>12</researchViewX>
-        <researchViewY>4</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks>
-                    <li>FlakArmor</li>
-                    <li>BlowbackOperation</li>
-                    <li>GasOperation</li>
-                </researchUnlocks>
-            </li>
-        </modExtensions>
-    </ResearchProjectDef>
-
     <ResearchProjectDef>
         <defName>DuneRef_Refining</defName>
         <label>Refining</label>
@@ -477,11 +853,37 @@
         <prerequisites>
             <li>DuneRef_Industrialization</li>
         </prerequisites>
-        <researchViewX>12</researchViewX>
-        <researchViewY>8</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_IndustrialEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>17</researchViewX>
+        <researchViewY>6</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks />
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <!-- Modern Era -->
+
+    <ResearchProjectDef>
+        <defName>DuneRef_ModernEra</defName>
+        <label>Modern Era</label>
+        <description>Modern Era</description>
+        <baseCost>1</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>18</researchViewX>
+        <researchViewY>0</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.OrPrerequisites">
+                <orHiddenPrerequisites>
+                    <li>DuneRef_Industrialization</li>
+                    <li>DuneRef_GasPower</li>
+                    <li>DuneRef_Sanitation</li>
+                    <li>DuneRef_Rifling</li>
+                    <li>DuneRef_Refining</li>
+                </orHiddenPrerequisites>
             </li>
         </modExtensions>
     </ResearchProjectDef>
@@ -495,7 +897,10 @@
         <prerequisites>
             <li>DuneRef_GasPower</li>
         </prerequisites>
-        <researchViewX>13</researchViewX>
+        <hiddenPrerequisites>
+            <li>DuneRef_ModernEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>19</researchViewX>
         <researchViewY>1</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -517,9 +922,12 @@
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Sanitation</li>
-            <li>DuneRef_ReplaceableParts</li>
+            <li>DuneRef_GasPower</li>
         </prerequisites>
-        <researchViewX>13</researchViewX>
+        <hiddenPrerequisites>
+            <li>DuneRef_ModernEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>19</researchViewX>
         <researchViewY>3</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -527,25 +935,6 @@
                     <li>PackagedSurvivalMeal</li>
                     <li>SmokepopBelt</li>
                 </researchUnlocks>
-            </li>
-        </modExtensions>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>DuneRef_Flight</defName>
-        <label>Flight</label>
-        <description>Flight</description>
-        <baseCost>8000</baseCost>
-        <techLevel>Industrial</techLevel>
-        <prerequisites>
-            <li>DuneRef_Refining</li>
-            <li>DuneRef_ReplaceableParts</li>
-        </prerequisites>
-        <researchViewX>13</researchViewX>
-        <researchViewY>4</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks />
             </li>
         </modExtensions>
     </ResearchProjectDef>
@@ -559,13 +948,42 @@
         <prerequisites>
             <li>DuneRef_Refining</li>
         </prerequisites>
-        <researchViewX>13</researchViewX>
-        <researchViewY>8</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_ModernEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>19</researchViewX>
+        <researchViewY>5</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
                     <li>IEDs</li>
                     <li>Mortars</li>
+                </researchUnlocks>
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_ReplaceableParts</defName>
+        <label>Replaceable Parts</label>
+        <description>Replaceable Parts</description>
+        <baseCost>8000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>DuneRef_Rifling</li>
+            <li>DuneRef_Education</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_ModernEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>19</researchViewX>
+        <researchViewY>7</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks>
+                    <li>FlakArmor</li>
+                    <li>BlowbackOperation</li>
+                    <li>GasOperation</li>
                 </researchUnlocks>
             </li>
         </modExtensions>
@@ -579,10 +997,12 @@
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Electronics</li>
-            <li>DuneRef_Flight</li>
         </prerequisites>
-        <researchViewX>14</researchViewX>
-        <researchViewY>2</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_ModernEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>20</researchViewX>
+        <researchViewY>1</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
@@ -592,9 +1012,6 @@
             </li>
         </modExtensions>
     </ResearchProjectDef>
-
-    <!-- @@ Modern Era @@ -->
-    <!-- Atomic Era -->
 
     <ResearchProjectDef>
         <defName>DuneRef_Refrigeration</defName>
@@ -606,8 +1023,11 @@
             <li>DuneRef_Chemistry</li>
             <li>DuneRef_Electronics</li>
         </prerequisites>
-        <researchViewX>14</researchViewX>
-        <researchViewY>5</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_ModernEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>20</researchViewX>
+        <researchViewY>2</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
@@ -620,25 +1040,52 @@
         </tags>
     </ResearchProjectDef>
 
+    <!-- @@ Modern Era @@ -->
+
     <ResearchProjectDef>
-        <defName>DuneRef_Ecology</defName>
-        <label>Ecology</label>
-        <description>Ecology</description>
+        <defName>DuneRef_AdvancedFlight</defName>
+        <label>Advanced Flight</label>
+        <description>Advanced Flight</description>
         <baseCost>9000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>DuneRef_Industrialization</li>
-            <li>DuneRef_Sanitation</li>
+            <li>DuneRef_Flight</li>
+            <li>DuneRef_Combustion</li>
+            <li>DuneRef_ReplaceableParts</li>
         </prerequisites>
-        <researchViewX>14</researchViewX>
-        <researchViewY>7</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_ModernEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>20</researchViewX>
+        <researchViewY>6</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks>
-                    <li>Hydroponics</li>
-                    <li>GeothermalPower</li>
-                    <li>MoisturePump</li>
-                </researchUnlocks>
+                <researchUnlocks />
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <!-- Atomic Era -->
+
+    <ResearchProjectDef>
+        <defName>DuneRef_AtomicEra</defName>
+        <label>Atomic Era</label>
+        <description>Atomic Era</description>
+        <baseCost>1</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>21</researchViewX>
+        <researchViewY>0</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.OrPrerequisites">
+                <orHiddenPrerequisites>
+                    <li>DuneRef_Electronics</li>
+                    <li>DuneRef_Chemistry</li>
+                    <li>DuneRef_Combustion</li>
+                    <li>DuneRef_ReplaceableParts</li>
+                    <li>DuneRef_Radio</li>
+                    <li>DuneRef_Refrigeration</li>
+                    <li>DuneRef_AdvancedFlight</li>
+                </orHiddenPrerequisites>
             </li>
         </modExtensions>
     </ResearchProjectDef>
@@ -650,11 +1097,14 @@
         <baseCost>10000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>DuneRef_Radio</li>
+            <li>DuneRef_AdvancedFlight</li>
             <li>DuneRef_Chemistry</li>
         </prerequisites>
-        <researchViewX>15</researchViewX>
-        <researchViewY>3</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_AtomicEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>22</researchViewX>
+        <researchViewY>6</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
@@ -674,8 +1124,11 @@
             <li>DuneRef_Combustion</li>
             <li>DuneRef_ReplaceableParts</li>
         </prerequisites>
-        <researchViewX>15</researchViewX>
-        <researchViewY>4</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_AtomicEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>22</researchViewX>
+        <researchViewY>7</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
@@ -686,43 +1139,24 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>DuneRef_BrutalWarfare</defName>
-        <label>Brutal Warfare</label>
-        <description>Brutal Warfare</description>
+        <defName>DuneRef_Telecommunications</defName>
+        <label>Telecommunications</label>
+        <description>Telecommunications</description>
         <baseCost>11000</baseCost>
-        <techLevel>Industrial</techLevel>
+        <techLevel>Spacer</techLevel>
         <prerequisites>
-            <li>DuneRef_MilitaryTactics</li>
-            <li>DuneRef_AdvancedBallistics</li>
-            <li>DuneRef_Rocketry</li>
+            <li>DuneRef_Radio</li>
         </prerequisites>
-        <researchViewX>16</researchViewX>
-        <researchViewY>0</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks>
-                    <li>PrecisionRifling</li>
-                    <li>MultibarrelWeapons</li>
-                    <li>HeavyTurrets</li>
-                </researchUnlocks>
-            </li>
-        </modExtensions>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>DuneRef_Computers</defName>
-        <label>Computers</label>
-        <description>Computers</description>
-        <baseCost>11000</baseCost>
-        <techLevel>Industrial</techLevel>
-        <prerequisites>
-            <li>DuneRef_Electronics</li>
-        </prerequisites>
-        <researchViewX>16</researchViewX>
+        <hiddenPrerequisites>
+            <li>DuneRef_AtomicEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>23</researchViewX>
         <researchViewY>1</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks />
+                <researchUnlocks>
+                    <li>TubeTelevision</li>
+                </researchUnlocks>
             </li>
         </modExtensions>
     </ResearchProjectDef>
@@ -734,11 +1168,13 @@
         <baseCost>11000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>DuneRef_Ecology</li>
             <li>DuneRef_Refrigeration</li>
         </prerequisites>
-        <researchViewX>16</researchViewX>
-        <researchViewY>4</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_AtomicEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>23</researchViewX>
+        <researchViewY>3</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
@@ -752,20 +1188,98 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
+        <defName>DuneRef_Computers</defName>
+        <label>Computers</label>
+        <description>Computers</description>
+        <baseCost>18000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>DuneRef_Telecommunications</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_AtomicEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>24</researchViewX>
+        <researchViewY>1</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks />
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_Ecology</defName>
+        <label>Ecology</label>
+        <description>Ecology</description>
+        <baseCost>18000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>DuneRef_Refrigeration</li>
+            <li>DuneRef_Telecommunications</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_AtomicEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>24</researchViewX>
+        <researchViewY>2</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks>
+                    <li>Hydroponics</li>
+                    <li>GeothermalPower</li>
+                    <li>MoisturePump</li>
+                </researchUnlocks>
+            </li>
+        </modExtensions>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
         <defName>DuneRef_NuclearFission</defName>
         <label>Nuclear Fission</label>
         <description>Nuclear Fission</description>
         <baseCost>18000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
-            <li>DuneRef_Computers</li>
+            <li>DuneRef_Refrigeration</li>
             <li>DuneRef_Rocketry</li>
         </prerequisites>
-        <researchViewX>17</researchViewX>
+        <hiddenPrerequisites>
+            <li>DuneRef_AtomicEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>24</researchViewX>
         <researchViewY>5</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks />
+            </li>
+        </modExtensions>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_BrutalWarfare</defName>
+        <label>Brutal Warfare</label>
+        <description>Brutal Warfare</description>
+        <baseCost>18000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>DuneRef_AdvancedBallistics</li>
+            <li>DuneRef_Rocketry</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_AtomicEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>24</researchViewX>
+        <researchViewY>8</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks>
+                    <li>PrecisionRifling</li>
+                    <li>MultibarrelWeapons</li>
+                    <li>HeavyTurrets</li>
+                </researchUnlocks>
             </li>
         </modExtensions>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -778,10 +1292,14 @@
         <baseCost>18000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
+            <li>DuneRef_Chemistry</li>
             <li>DuneRef_Combustion</li>
         </prerequisites>
-        <researchViewX>17</researchViewX>
-        <researchViewY>8</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_AtomicEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>24</researchViewX>
+        <researchViewY>4</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
@@ -796,74 +1314,6 @@
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     </ResearchProjectDef>
 
-    <!-- Information Era -->
-
-    <ResearchProjectDef>
-        <defName>DuneRef_Telecommunications</defName>
-        <label>Telecommunications</label>
-        <description>Telecommunications</description>
-        <baseCost>20000</baseCost>
-        <techLevel>Spacer</techLevel>
-        <prerequisites>
-            <li>DuneRef_Computers</li>
-            <li>DuneRef_Radio</li>
-        </prerequisites>
-        <researchViewX>18</researchViewX>
-        <researchViewY>1</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks>
-                    <li>TubeTelevision</li>
-                </researchUnlocks>
-            </li>
-        </modExtensions>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>DuneRef_GuidanceSystems</defName>
-        <label>Guidance Systems</label>
-        <description>Guidance Systems</description>
-        <baseCost>20000</baseCost>
-        <techLevel>Spacer</techLevel>
-        <prerequisites>
-            <li>DuneRef_Rocketry</li>
-            <li>DuneRef_AdvancedBallistics</li>
-        </prerequisites>
-        <researchViewX>18</researchViewX>
-        <researchViewY>3</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks>
-                    <li>LongRangeMineralScanner</li>
-                    <li>SniperTurret</li>
-                </researchUnlocks>
-            </li>
-        </modExtensions>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>DuneRef_Lasers</defName>
-        <label>Lasers</label>
-        <description>Lasers</description>
-        <baseCost>20000</baseCost>
-        <techLevel>Spacer</techLevel>
-        <prerequisites>
-            <li>DuneRef_NuclearFission</li>
-        </prerequisites>
-        <researchViewX>18</researchViewX>
-        <researchViewY>5</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks>
-                    <li>FlatscreenTelevision</li>
-                </researchUnlocks>
-            </li>
-        </modExtensions>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    </ResearchProjectDef>
-
     <ResearchProjectDef>
         <defName>DuneRef_SyntheticMaterials</defName>
         <label>Synthetic Materials</label>
@@ -872,10 +1322,12 @@
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Plastics</li>
-            <li>DuneRef_Chemistry</li>
         </prerequisites>
-        <researchViewX>18</researchViewX>
-        <researchViewY>8</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_AtomicEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>25</researchViewX>
+        <researchViewY>4</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
@@ -889,6 +1341,34 @@
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     </ResearchProjectDef>
 
+    <!-- Information Era -->
+
+    <ResearchProjectDef>
+        <defName>DuneRef_InformationEra</defName>
+        <label>Information Era</label>
+        <description>Information Era</description>
+        <baseCost>1</baseCost>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>26</researchViewX>
+        <researchViewY>0</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.OrPrerequisites">
+                <orHiddenPrerequisites>
+                    <li>DuneRef_Rocketry</li>
+                    <li>DuneRef_AdvancedBallistics</li>
+                    <li>DuneRef_Telecommunications</li>
+                    <li>DuneRef_Medicine</li>
+                    <li>DuneRef_Computers</li>
+                    <li>DuneRef_Ecology</li>
+                    <li>DuneRef_NuclearFission</li>
+                    <li>DuneRef_BrutalWarfare</li>
+                    <li>DuneRef_Plastics</li>
+                    <li>DuneRef_SyntheticMaterials</li>
+                </orHiddenPrerequisites>
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
     <ResearchProjectDef>
         <defName>DuneRef_Robotics</defName>
         <label>Robotics</label>
@@ -897,11 +1377,13 @@
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Computers</li>
-            <li>DuneRef_GuidanceSystems</li>
-            <li>DuneRef_Lasers</li>
+            <li>DuneRef_Plastics</li>
         </prerequisites>
-        <researchViewX>19</researchViewX>
-        <researchViewY>2</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_InformationEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>27</researchViewX>
+        <researchViewY>1</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
@@ -923,8 +1405,11 @@
             <li>DuneRef_Ecology</li>
             <li>DuneRef_SyntheticMaterials</li>
         </prerequisites>
-        <researchViewX>19</researchViewX>
-        <researchViewY>7</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_InformationEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>27</researchViewX>
+        <researchViewY>3</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks />
@@ -933,8 +1418,81 @@
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     </ResearchProjectDef>
 
+    <ResearchProjectDef>
+        <defName>DuneRef_Lasers</defName>
+        <label>Lasers</label>
+        <description>Lasers</description>
+        <baseCost>22000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>DuneRef_NuclearFission</li>
+            <li>DuneRef_AdvancedBallistics</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_InformationEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>27</researchViewX>
+        <researchViewY>7</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks>
+                    <li>FlatscreenTelevision</li>
+                </researchUnlocks>
+            </li>
+        </modExtensions>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_GuidanceSystems</defName>
+        <label>Guidance Systems</label>
+        <description>Guidance Systems</description>
+        <baseCost>24000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>DuneRef_Lasers</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_InformationEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>28</researchViewX>
+        <researchViewY>7</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks>
+                    <li>LongRangeMineralScanner</li>
+                    <li>SniperTurret</li>
+                </researchUnlocks>
+            </li>
+        </modExtensions>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+    </ResearchProjectDef>
+
     <!-- @@ Spacer Era @@ -->
     <!-- Future Era -->
+
+    <ResearchProjectDef>
+        <defName>DuneRef_FutureEra</defName>
+        <label>Future Era</label>
+        <description>Future Era</description>
+        <baseCost>1</baseCost>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>29</researchViewX>
+        <researchViewY>0</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.OrPrerequisites">
+                <orHiddenPrerequisites>
+                    <li>DuneRef_Robotics</li>
+                    <li>DuneRef_Lasers</li>
+                    <li>DuneRef_Composites</li>
+                    <li>DuneRef_GuidanceSystems</li>
+                </orHiddenPrerequisites>
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
 
     <ResearchProjectDef>
         <defName>DuneRef_Nanotechnology</defName>
@@ -944,10 +1502,13 @@
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Composites</li>
-            <li>DuneRef_Computers</li>
+            <li>DuneRef_Robotics</li>
         </prerequisites>
-        <researchViewX>21</researchViewX>
-        <researchViewY>6</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_FutureEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>30</researchViewX>
+        <researchViewY>5</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks />
@@ -966,11 +1527,14 @@
         <baseCost>31000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
-            <li>DuneRef_SyntheticMaterials</li>
-            <li>DuneRef_Computers</li>
+            <li>DuneRef_GuidanceSystems</li>
+            <li>DuneRef_Robotics</li>
         </prerequisites>
-        <researchViewX>21</researchViewX>
-        <researchViewY>8</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_FutureEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>30</researchViewX>
+        <researchViewY>7</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
@@ -994,7 +1558,10 @@
             <li>DuneRef_Robotics</li>
             <li>DuneRef_Telecommunications</li>
         </prerequisites>
-        <researchViewX>22</researchViewX>
+        <hiddenPrerequisites>
+            <li>DuneRef_FutureEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>31</researchViewX>
         <researchViewY>3</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -1018,7 +1585,10 @@
             <li>DuneRef_Robotics</li>
             <li>DuneRef_Nanotechnology</li>
         </prerequisites>
-        <researchViewX>22</researchViewX>
+        <hiddenPrerequisites>
+            <li>DuneRef_FutureEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>31</researchViewX>
         <researchViewY>4</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -1042,36 +1612,14 @@
         <prerequisites>
             <li>DuneRef_Shields</li>
         </prerequisites>
-        <researchViewX>22</researchViewX>
-        <researchViewY>7</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_FutureEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>31</researchViewX>
+        <researchViewY>5</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks />
-            </li>
-        </modExtensions>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <requiredResearchFacilities>
-            <li>MultiAnalyzer</li>
-        </requiredResearchFacilities>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>DuneRef_AdvancedLasers</defName>
-        <label>Advanced Lasers</label>
-        <description>Advanced Lasers</description>
-        <baseCost>49000</baseCost>
-        <techLevel>Spacer</techLevel>
-        <prerequisites>
-            <li>DuneRef_BrutalWarfare</li>
-            <li>DuneRef_AdvancedAI</li>
-        </prerequisites>
-        <researchViewX>23</researchViewX>
-        <researchViewY>1</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks>
-                    <li>ChargedShot</li>
-                </researchUnlocks>
             </li>
         </modExtensions>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -1090,8 +1638,11 @@
             <li>DuneRef_AdvancedAI</li>
             <li>DuneRef_Cybernetics</li>
         </prerequisites>
-        <researchViewX>23</researchViewX>
-        <researchViewY>2</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_FutureEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>32</researchViewX>
+        <researchViewY>1</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks />
@@ -1114,7 +1665,10 @@
             <li>DuneRef_AdvancedAI</li>
             <li>DuneRef_Nanotechnology</li>
         </prerequisites>
-        <researchViewX>23</researchViewX>
+        <hiddenPrerequisites>
+            <li>DuneRef_FutureEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>32</researchViewX>
         <researchViewY>4</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -1143,13 +1697,45 @@
         <prerequisites>
             <li>DuneRef_AdvancedAI</li>
         </prerequisites>
-        <researchViewX>23</researchViewX>
-        <researchViewY>5</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_FutureEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>32</researchViewX>
+        <researchViewY>7</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
                     <li>ReconArmor</li>
                     <li>PoweredArmor</li>
+                </researchUnlocks>
+            </li>
+        </modExtensions>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_AdvancedLasers</defName>
+        <label>Advanced Lasers</label>
+        <description>Advanced Lasers</description>
+        <baseCost>49000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>DuneRef_BrutalWarfare</li>
+            <li>DuneRef_AdvancedAI</li>
+            <li>DuneRef_Shields</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_FutureEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>32</researchViewX>
+        <researchViewY>8</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks>
+                    <li>ChargedShot</li>
                 </researchUnlocks>
             </li>
         </modExtensions>
@@ -1169,8 +1755,11 @@
             <li>DuneRef_Medicine</li>
             <li>DuneRef_PredictiveSystems</li>
         </prerequisites>
-        <researchViewX>24</researchViewX>
-        <researchViewY>7</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_FutureEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>33</researchViewX>
+        <researchViewY>2</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks />
@@ -1185,6 +1774,32 @@
     <!-- Spacer Era -->
 
     <ResearchProjectDef>
+        <defName>DuneRef_SpacerEra</defName>
+        <label>Spacer Era</label>
+        <description>Spacer Era</description>
+        <baseCost>1</baseCost>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>34</researchViewX>
+        <researchViewY>0</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.OrPrerequisites">
+                <orHiddenPrerequisites>
+                    <li>DuneRef_Nanotechnology</li>
+                    <li>DuneRef_Shields</li>
+                    <li>DuneRef_AdvancedAI</li>
+                    <li>DuneRef_Cybernetics</li>
+                    <li>DuneRef_AdvancedPowerCells</li>
+                    <li>DuneRef_SmartMaterials</li>
+                    <li>DuneRef_OffworldMissions</li>
+                    <li>DuneRef_PredictiveSystems</li>
+                    <li>DuneRef_AdvancedLasers</li>
+                    <li>DuneRef_Genetics</li>
+                </orHiddenPrerequisites>
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
         <defName>DuneRef_Mechanites</defName>
         <label>Mechanites</label>
         <description>Mechanites</description>
@@ -1194,8 +1809,11 @@
             <li>DuneRef_OffworldMissions</li>
             <li>DuneRef_SmartMaterials</li>
         </prerequisites>
-        <researchViewX>26</researchViewX>
-        <researchViewY>4</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_SpacerEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>35</researchViewX>
+        <researchViewY>3</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks />
@@ -1217,8 +1835,11 @@
             <li>DuneRef_OffworldMissions</li>
             <li>DuneRef_SmartMaterials</li>
         </prerequisites>
-        <researchViewX>26</researchViewX>
-        <researchViewY>6</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_SpacerEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>35</researchViewX>
+        <researchViewY>5</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks />
@@ -1241,8 +1862,11 @@
             <li>DuneRef_Nanites</li>
             <li>DuneRef_PredictiveSystems</li>
         </prerequisites>
-        <researchViewX>27</researchViewX>
-        <researchViewY>5</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_SpacerEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>36</researchViewX>
+        <researchViewY>7</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks />
@@ -1264,8 +1888,11 @@
             <li>DuneRef_Genetics</li>
             <li>DuneRef_SmartMaterials</li>
         </prerequisites>
-        <researchViewX>27</researchViewX>
-        <researchViewY>2</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_SpacerEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>36</researchViewX>
+        <researchViewY>1</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
@@ -1289,8 +1916,11 @@
             <li>DuneRef_Mechanites</li>
             <li>DuneRef_Nanites</li>
         </prerequisites>
-        <researchViewX>27</researchViewX>
-        <researchViewY>7</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_SpacerEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>36</researchViewX>
+        <researchViewY>4</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks />
@@ -1306,6 +1936,27 @@
     <!-- Ultra Era -->
 
     <ResearchProjectDef>
+        <defName>DuneRef_UltraEra</defName>
+        <label>Ultra Era</label>
+        <description>Ultra Era</description>
+        <baseCost>1</baseCost>
+        <techLevel>Ultra</techLevel>
+        <researchViewX>37</researchViewX>
+        <researchViewY>0</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.OrPrerequisites">
+                <orHiddenPrerequisites>
+                    <li>DuneRef_Mechanites</li>
+                    <li>DuneRef_Nanites</li>
+                    <li>DuneRef_AdvancedShields</li>
+                    <li>DuneRef_Bioregeneration</li>
+                    <li>DuneRef_SpaceTechnology</li>
+                </orHiddenPrerequisites>
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
         <defName>DuneRef_QuantumArmaments</defName>
         <label>Quantum Armaments</label>
         <description>Quantum Armaments</description>
@@ -1316,8 +1967,11 @@
             <li>DuneRef_AdvancedLasers</li>
             <li>DuneRef_AdvancedShields</li>
         </prerequisites>
-        <researchViewX>28</researchViewX>
-        <researchViewY>1</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_UltraEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>38</researchViewX>
+        <researchViewY>8</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks />
@@ -1338,8 +1992,11 @@
         <prerequisites>
             <li>DuneRef_SpaceTechnology</li>
         </prerequisites>
-        <researchViewX>28</researchViewX>
-        <researchViewY>6</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_UltraEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>38</researchViewX>
+        <researchViewY>3</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks />
@@ -1361,8 +2018,11 @@
             <li>DuneRef_Mechanites</li>
             <li>DuneRef_Bioregeneration</li>
         </prerequisites>
-        <researchViewX>29</researchViewX>
-        <researchViewY>2</researchViewY>
+        <hiddenPrerequisites>
+            <li>DuneRef_UltraEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>39</researchViewX>
+        <researchViewY>1</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks />
@@ -1377,6 +2037,25 @@
     <!-- Archotech Era -->
 
     <ResearchProjectDef>
+        <defName>DuneRef_ArchotechEra</defName>
+        <label>Archotech Era</label>
+        <description>Archotech Era</description>
+        <baseCost>1</baseCost>
+        <techLevel>Archotech</techLevel>
+        <researchViewX>40</researchViewX>
+        <researchViewY>0</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.OrPrerequisites">
+                <orHiddenPrerequisites>
+                    <li>DuneRef_QuantumArmaments</li>
+                    <li>DuneRef_QuantumIndustry</li>
+                    <li>DuneRef_SwarmIntelligence</li>
+                </orHiddenPrerequisites>
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
         <defName>DuneRef_UnseenGrasp</defName>
         <label>Unseen Grasp</label>
         <description>Unseen Grasp</description>
@@ -1387,7 +2066,10 @@
             <li>DuneRef_QuantumIndustry</li>
             <li>DuneRef_Genetics</li>
         </prerequisites>
-        <researchViewX>30</researchViewX>
+        <hiddenPrerequisites>
+            <li>DuneRef_ArchotechEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>41</researchViewX>
         <researchViewY>3</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
@@ -1411,7 +2093,10 @@
             <li>DuneRef_QuantumIndustry</li>
             <li>DuneRef_AdvancedShields</li>
         </prerequisites>
-        <researchViewX>30</researchViewX>
+        <hiddenPrerequisites>
+            <li>DuneRef_ArchotechEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>41</researchViewX>
         <researchViewY>6</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">

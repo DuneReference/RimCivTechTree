@@ -22,7 +22,6 @@
         <xpath>
             Defs/ThingDef[
                    defName = "StoolBar"
-                or defName = "TableFiveFingerFilet"
             ]/researchPrerequisites
         </xpath>
         <value>
@@ -35,15 +34,40 @@
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
-                   defName = "ChemBoiler"
-                or defName = "Chemlamp"
-                or defName = "ChemlampPost"
-                or defName = "Windmill"
+                   defName = "TableFiveFingerFilet"
             ]/researchPrerequisites
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_ScientificTheory</li>
+                <li>DuneRef_Recreation</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "ChemBoiler"
+                or defName = "Chemlamp"
+                or defName = "ChemlampPost"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Apprenticeship</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Windmill"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Engineering</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -56,7 +80,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_ComplexClothworking</li>
+                <li>DuneRef_ComplexTextiles</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -74,7 +98,7 @@
             <value>
                 <recipeMaker>
                     <researchPrerequisites Inherit="False">
-                        <li>DuneRef_ScientificTheory</li>
+                        <li>DuneRef_Gunpowder</li>
                     </researchPrerequisites>
                 </recipeMaker>
             </value>
