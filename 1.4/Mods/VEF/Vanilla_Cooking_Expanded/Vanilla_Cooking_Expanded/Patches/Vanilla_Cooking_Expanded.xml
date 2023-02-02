@@ -125,20 +125,12 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationAdd">
+    <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/RecipeDef[
                    defName = "VCE_CookDessertFine"
                 or defName = "VCE_CookDessertFineBulk"
-                or defName = "VCE_CookGrillFine"
-                or defName = "VCE_CookGrillFineBulk"
-                or defName = "VCE_CookBakeFine"
-                or defName = "VCE_CookBakeFineBulk"
-                or defName = ""
-                or defName = ""
-                or defName = ""
-                or defName = ""
-            ]
+            ]/researchPrerequisite
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
@@ -147,20 +139,49 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationAdd">
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/RecipeDef[
+                   defName = "VCE_CookGrillFine"
+                or defName = "VCE_CookGrillFineBulk"
+                or defName = "VCE_CookBakeFine"
+                or defName = "VCE_CookBakeFineBulk"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_ExpandedCulture</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/RecipeDef[
                    defName = "VCE_CookDessertLavish"
                 or defName = "VCE_CookDessertLavishBulk"
                 or defName = "VCE_CookDessertGourmet"
-                or defName = "VCE_CookGrillLavish"
+                or defName = "VCE_CookMealGourmet"
+            ]/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_ExpandedCulture</li>
+                <li>DuneRef_Currency</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/RecipeDef[
+                   defName = "VCE_CookGrillLavish"
                 or defName = "VCE_CookGrillLavishhBulk"
                 or defName = "VCE_CookGrillGourmet"
-                or defName = "VCE_CookMealGourmet"
                 or defName = "VCE_CookBakeLavish"
                 or defName = "VCE_CookBakeLavishBulk"
                 or defName = "VCE_CookBakeGourmet"
-            ]
+            ]/researchPrerequisites
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
@@ -172,17 +193,120 @@
 
     <Operation Class="PatchOperationAdd">
         <xpath>
-            Defs/RecipeDef[
-                   defName = "VCE_UncookedSoupSimple"
+            Defs/ThingDef[
+                   defName = "VCE_CookedSoupSimple"
+                or defName = "VCE_UncookedSoupSimple"
+                or defName = "VCE_CookedSoupFine"
                 or defName = "VCE_UncookedSoupFine"
                 or defName = "VCE_UncookedSoupLavish"
                 or defName = "VCE_CookedSoupGourmet"
+                or defName = "VCE_UncookedSoupGourmet"
             ]
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Electricity</li>
+                <li>DuneRef_Electronics</li>
             </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VCE_CookSoupLavish"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Electronics</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <!-- Medival overhaul dupes: tomato, sugarcane, pumpkin, onion, garlic, cabbage -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VCE_Agave"
+                or defName = "VCE_Allspice"
+                or defName = "VCE_Beet"
+                or defName = "VCE_BellPepper"
+                or defName = "VCE_Blueberry"
+                or defName = "VCE_BrusselsSprout"
+                or defName = "VCE_Buckwheat"
+                or defName = "VCE_Cabbage"
+                or defName = "VCE_Cassava"
+                or defName = "VCE_Celery"
+                or defName = "VCE_Chickpea"
+                or defName = "VCE_Eggplant"
+                or defName = "VCE_Garlic"
+                or defName = "VCE_Beans"
+                or defName = "VCE_Lettuce"
+                or defName = "VCE_Okra"
+                or defName = "VCE_Onion"
+                or defName = "VCE_Peas"
+                or defName = "VCE_Peanut"
+                or defName = "VCE_Pepper"
+                or defName = "VCE_Pineapple"
+                or defName = "VCE_Soybean"
+                or defName = "VCE_Sugarcane"
+                or defName = "VCE_Sunflower"
+                or defName = "VCE_SweetPotato"
+                or defName = "VCE_Wasabi"
+                or defName = "VCE_Healshroom"
+            ]/plant/sowResearchPrerequisites
+        </xpath>
+        <value>
+            <sowResearchPrerequisites Inherit="False">
+                <li>DuneRef_Agriculture</li>
+            </sowResearchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VCE_Sorghum"
+                or defName = "VCE_Tomato"
+                or defName = "VCE_Canola"
+                or defName = "VCE_Tinctshroom"
+            ]/plant/sowResearchPrerequisites
+        </xpath>
+        <value>
+            <sowResearchPrerequisites Inherit="False">
+                <li>DuneRef_Irrigation</li>
+            </sowResearchPrerequisites>
+        </value>
+    </Operation>
+
+    <!-- the 3 that instantly burst into flour are here because that's imbalanced with medieval overhaul where you have to mill wheat-->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VCE_Barley"
+                or defName = "VCE_Wheat"
+                or defName = "VCE_Oats"
+            ]/plant/sowResearchPrerequisites
+        </xpath>
+        <value>
+            <sowResearchPrerequisites Inherit="False">
+                <li>DuneRef_Ecology</li>
+            </sowResearchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VCE_TilledSoil"
+            ]
+        </xpath>
+        <value>
+            <sowResearchPrerequisites Inherit="False">
+                <li>DuneRef_Agriculture</li>
+            </sowResearchPrerequisites>
         </value>
     </Operation>
 

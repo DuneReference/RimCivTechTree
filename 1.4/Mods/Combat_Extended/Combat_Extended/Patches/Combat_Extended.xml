@@ -312,6 +312,19 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "PlantBlazebulb"
+            ]/plant/sowResearchPrerequisites
+        </xpath>
+        <value>
+            <sowResearchPrerequisites Inherit="False">
+                <li>DuneRef_Irrigation</li>
+            </sowResearchPrerequisites>
+        </value>
+    </Operation>
+
     <!-- VFE - Classical -->
 
     <Operation Class="PatchOperationFindMod">

@@ -278,16 +278,18 @@
                 <li>DuneRef_Lasers</li>
             </researchPrerequisites>
         </value>
-    </Operation>Bed_StoneSlab
+    </Operation>
 
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ThingDef[
-                   defName = "Bed_StoneSlab"
+                   defName = "Seat_Cushion"
             ]
         </xpath>
         <value>
-            <researchPrerequisite Inherit="False" />
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Clothworking</li>
+            </researchPrerequisites>
         </value>
     </Operation>
 

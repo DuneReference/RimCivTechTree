@@ -247,6 +247,7 @@
                 or defName = "WashBucket"
                 or defName = "LitterBox"
                 or defName = "PrimitiveWell"
+                or defName = "ToiletStallDoor"
             ]
         </xpath>
         <value>
@@ -368,4 +369,30 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "BiosolidsComposter"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Irrigation</li>
+                <li>DuneRef_Steelworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "BurnPit"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Steelworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
 </Patch>

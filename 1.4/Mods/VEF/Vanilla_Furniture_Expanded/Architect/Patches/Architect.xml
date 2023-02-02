@@ -121,4 +121,53 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFEArch_AnimalGate"
+                or defName = "VFEArch_PicketFence"
+                or defName = "VFEArch_LowFence"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_AnimalHusbandry</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFEArch_SingleDoor"
+                or defName = "VFEArch_SingleDoor_Flipped"
+                or defName = "VFEArch_LogWall"
+                or defName = "VFEArch_FineWall"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Woodworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/TerrainDef[
+                   defName = "VFEArch_WoodPlankFloorWalnut"
+                or defName = "VFEArch_WoodPlankFloorBirch"
+                or defName = "VFEArch_WoodPlankFloorMahogany"
+                or defName = "VFEArch_FineWoodenFloorWalnut"
+                or defName = "VFEArch_FineWoodenFloorBirch"
+                or defName = "VFEArch_FineWoodenFloorMahogany"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Woodworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
 </Patch>

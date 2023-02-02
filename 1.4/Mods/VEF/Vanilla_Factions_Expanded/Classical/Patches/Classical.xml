@@ -357,4 +357,17 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFEC_Plant_Poppy"
+            ]/plant/sowResearchPrerequisites
+        </xpath>
+        <value>
+            <sowResearchPrerequisites Inherit="False">
+                <li>DuneRef_Agriculture</li>
+            </sowResearchPrerequisites>
+        </value>
+    </Operation>
+
 </Patch>

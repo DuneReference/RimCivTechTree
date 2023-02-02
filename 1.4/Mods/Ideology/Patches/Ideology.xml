@@ -188,16 +188,16 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationReplace">
+    <Operation Class="PatchOperationAdd">
         <xpath>
-            Defs/TerrainDef[
-                   @Name = "VME_CorporateFineStoneTiles"
-                or @Name = "VME_ShintaoFineStoneTiles"
-            ]/researchPrerequisites
+            Defs/ThingDef[
+                   defName = "SlabBed"
+                or defName = "SlabDoubleBed"
+            ]
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Masonry</li>
+                <li>DuneRef_Stoneworking</li>
             </researchPrerequisites>
         </value>
     </Operation>

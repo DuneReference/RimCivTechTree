@@ -576,6 +576,7 @@
                 or defName = "Table2x2c"
                 or defName = "Table2x4c"
                 or defName = "Table3x3c"
+                or defName = "TrapSpike"
             ]
         </xpath>
         <value>
@@ -605,7 +606,7 @@
             <xpath>
                 Defs/ThingDef[
                        defName = "TableSculpting"
-                ]/tab
+                ]/researchPrerequisites
             </xpath>
             <value>
                 <researchPrerequisites Inherit="False">
@@ -749,7 +750,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
-                or defName = "DiningChair"
+                   defName = "DiningChair"
                 or defName = "Dresser"
                 or defName = "EndTable"
             ]/researchPrerequisites
@@ -761,11 +762,12 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationReplace">
+    <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ThingDef[
-                or defName = "Shelf"
-            ]/researchPrerequisites
+                   defName = "Shelf"
+                or defName = "ShelfSmall"
+            ]
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
@@ -774,7 +776,21 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationFindMod">
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Bed"
+                or defName = "DoubleBed"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Woodworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <!-- <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Medieval Overhaul</li>
         </mods>
@@ -804,7 +820,7 @@
                 </researchPrerequisites>
             </value>
         </match>
-    </Operation>
+    </Operation> -->
 
     <Operation Class="PatchOperationReplace">
         <xpath>
@@ -842,6 +858,19 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_Electronics</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "AnimalBed"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Clothworking</li>
             </researchPrerequisites>
         </value>
     </Operation>

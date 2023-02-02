@@ -92,4 +92,47 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "AB_ExoticDoor"
+                or defName = "AB_ExoticWall"
+                or defName = "AB_ExoticColumn"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Stoneworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/TerrainDef[
+                   defName = "AB_AlienWoodFloors_MushroomStalks"
+                or defName = "AB_AlienWoodFloors_RedWood"
+                or defName = "AB_CrystalWoodFloors_RedWood"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Woodworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/TerrainDef[
+                  defName = "AB_TarmacFloor"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Industrialization</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
 </Patch>

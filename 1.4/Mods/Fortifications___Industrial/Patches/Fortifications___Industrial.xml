@@ -156,4 +156,32 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "FT_Sandbag"
+                or defName = "FT_WallSandbag"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_MilitaryEngineering</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>FT_PlankFloor
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/TerrainDef[
+                   defName = "FT_PlankFloor"
+                or defName = "FT_Concrete"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Industrialization</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
 </Patch>

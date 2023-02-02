@@ -94,4 +94,19 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VBE_Plant_Tobacco"
+                or defName = "VBE_Plant_Coffee"
+                or defName = "VBE_Plant_Tea"
+            ]/plant/sowResearchPrerequisites
+        </xpath>
+        <value>
+            <sowResearchPrerequisites Inherit="False">
+                <li>DuneRef_Agriculture</li>
+            </sowResearchPrerequisites>
+        </value>
+    </Operation>
+
 </Patch>

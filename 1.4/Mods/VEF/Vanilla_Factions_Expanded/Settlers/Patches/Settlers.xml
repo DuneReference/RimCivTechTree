@@ -127,4 +127,17 @@
         </nomatch>
     </Operation>
 
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Plant_Chemroot"
+            ]/plant/sowResearchPrerequisites
+        </xpath>
+        <value>
+            <sowResearchPrerequisites Inherit="False">
+                <li>DuneRef_Irrigation</li>
+            </sowResearchPrerequisites>
+        </value>
+    </Operation>
+
 </Patch>

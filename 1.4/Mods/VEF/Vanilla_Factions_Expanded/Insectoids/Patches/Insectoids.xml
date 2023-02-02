@@ -164,4 +164,17 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFEI_Plant_Armillarix"
+            ]/plant/sowResearchPrerequisites
+        </xpath>
+        <value>
+            <sowResearchPrerequisites Inherit="False">
+                <li>DuneRef_Ecology</li>
+            </sowResearchPrerequisites>
+        </value>
+    </Operation>
+
 </Patch>  
