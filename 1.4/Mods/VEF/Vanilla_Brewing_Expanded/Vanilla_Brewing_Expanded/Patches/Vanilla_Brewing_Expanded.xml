@@ -100,7 +100,7 @@
                    defName = "VBE_Plant_Tobacco"
                 or defName = "VBE_Plant_Coffee"
                 or defName = "VBE_Plant_Tea"
-            ]/plant/sowResearchPrerequisites
+            ]/plant
         </xpath>
         <value>
             <sowResearchPrerequisites Inherit="False">

@@ -168,7 +168,7 @@
         <xpath>
             Defs/ThingDef[
                    defName = "VFEI_Plant_Armillarix"
-            ]/plant/sowResearchPrerequisites
+            ]/plant
         </xpath>
         <value>
             <sowResearchPrerequisites Inherit="False">

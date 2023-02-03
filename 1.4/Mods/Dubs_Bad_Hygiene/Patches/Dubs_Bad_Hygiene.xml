@@ -383,11 +383,11 @@
         </value>
     </Operation>
     
-    <Operation Class="PatchOperationReplace">
+    <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ThingDef[
                    defName = "BurnPit"
-            ]/researchPrerequisites
+            ]
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">

@@ -316,7 +316,7 @@
         <xpath>
             Defs/ThingDef[
                    defName = "PlantBlazebulb"
-            ]/plant/sowResearchPrerequisites
+            ]/plant
         </xpath>
         <value>
             <sowResearchPrerequisites Inherit="False">

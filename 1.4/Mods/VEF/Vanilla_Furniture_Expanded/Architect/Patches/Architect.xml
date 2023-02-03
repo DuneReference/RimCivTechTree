@@ -158,6 +158,7 @@
                    defName = "VFEArch_WoodPlankFloorWalnut"
                 or defName = "VFEArch_WoodPlankFloorBirch"
                 or defName = "VFEArch_WoodPlankFloorMahogany"
+                or defName = "VFEArch_WoodPlankFloorConcrete"
                 or defName = "VFEArch_FineWoodenFloorWalnut"
                 or defName = "VFEArch_FineWoodenFloorBirch"
                 or defName = "VFEArch_FineWoodenFloorMahogany"

@@ -80,6 +80,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
+                <li>DuneRef_Recreation</li>
                 <li>DuneRef_ComplexTextiles</li>
             </researchPrerequisites>
         </value>
@@ -131,7 +132,7 @@
         <xpath>
             Defs/ThingDef[
                    defName = "Plant_Chemroot"
-            ]/plant/sowResearchPrerequisites
+            ]/plant
         </xpath>
         <value>
             <sowResearchPrerequisites Inherit="False">

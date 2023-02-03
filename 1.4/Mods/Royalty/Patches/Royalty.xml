@@ -73,7 +73,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_Currency"
+                   defName = "DuneRef_Wealth"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -385,7 +385,7 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_Masonry</li>
-                <li>DuneRef_Currency</li>
+                <li>DuneRef_Wealth</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -400,7 +400,7 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_Steelworking</li>
-                <li>DuneRef_Currency</li>
+                <li>DuneRef_Wealth</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -497,7 +497,7 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_Masonry</li>
-                <li>DuneRef_Currency</li>
+                <li>DuneRef_Wealth</li>
             </researchPrerequisites>
         </value>
     </Operation>

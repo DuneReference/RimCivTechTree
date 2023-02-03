@@ -167,7 +167,7 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_ExpandedCulture</li>
-                <li>DuneRef_Currency</li>
+                <li>DuneRef_Wealth</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -186,7 +186,7 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_ExpandedCulture</li>
-                <li>DuneRef_Currency</li>
+                <li>DuneRef_Wealth</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -212,8 +212,11 @@
 
     <Operation Class="PatchOperationReplace">
         <xpath>
-            Defs/ThingDef[
-                   defName = "VCE_CookSoupLavish"
+            Defs/RecipeDef[
+                   defName = "VCE_CookSoupSimple"
+                or defName = "VCE_CookSoupFine"
+                or defName = "VCE_CookSoupLavish"
+                or defName = "VCE_CookSoupGourmet"
             ]/researchPrerequisites
         </xpath>
         <value>
@@ -255,7 +258,7 @@
                 or defName = "VCE_SweetPotato"
                 or defName = "VCE_Wasabi"
                 or defName = "VCE_Healshroom"
-            ]/plant/sowResearchPrerequisites
+            ]/plant
         </xpath>
         <value>
             <sowResearchPrerequisites Inherit="False">
@@ -271,7 +274,7 @@
                 or defName = "VCE_Tomato"
                 or defName = "VCE_Canola"
                 or defName = "VCE_Tinctshroom"
-            ]/plant/sowResearchPrerequisites
+            ]/plant
         </xpath>
         <value>
             <sowResearchPrerequisites Inherit="False">
@@ -288,7 +291,7 @@
                    defName = "VCE_Barley"
                 or defName = "VCE_Wheat"
                 or defName = "VCE_Oats"
-            ]/plant/sowResearchPrerequisites
+            ]/plant
         </xpath>
         <value>
             <sowResearchPrerequisites Inherit="False">
@@ -299,14 +302,14 @@
 
     <Operation Class="PatchOperationAdd">
         <xpath>
-            Defs/ThingDef[
+            Defs/TerrainDef[
                    defName = "VCE_TilledSoil"
             ]
         </xpath>
         <value>
-            <sowResearchPrerequisites Inherit="False">
+            <researchPrerequisites Inherit="False">
                 <li>DuneRef_Agriculture</li>
-            </sowResearchPrerequisites>
+            </researchPrerequisites>
         </value>
     </Operation>
 

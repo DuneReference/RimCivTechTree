@@ -742,7 +742,7 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_ComplexTextiles</li>
-                <li>DuneRef_Currency</li>
+                <li>DuneRef_Wealth</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -1491,7 +1491,7 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_ExpandedCulture</li>
-                <li>DuneRef_Currency</li>
+                <li>DuneRef_Wealth</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -1506,6 +1506,33 @@
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_Woodworking</li>
                 <li>DuneRef_Stoneworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "PlantPot"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Agriculture</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Bedroll"
+                or defName = "BedrollDouble"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Clothworking</li>
             </researchPrerequisites>
         </value>
     </Operation>

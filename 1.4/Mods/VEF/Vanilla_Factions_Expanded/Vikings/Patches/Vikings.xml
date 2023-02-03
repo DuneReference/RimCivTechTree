@@ -68,7 +68,7 @@
             </xpath>
             <value>
                 <researchPrerequisites Inherit="False">
-                    <li>DuneRef_Woodworking</li>
+                    <li>DuneRef_AnimalHusbandry</li>
                 </researchPrerequisites>
             </value>
         </match>
@@ -81,7 +81,7 @@
             </xpath>
             <value>
                 <researchPrerequisites Inherit="False">
-                    <li>DuneRef_Woodworking</li>
+                    <li>DuneRef_AnimalHusbandry</li>
                 </researchPrerequisites>
             </value>
         </nomatch>

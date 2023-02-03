@@ -222,7 +222,7 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_ComplexTextiles</li>
-                <li>DuneRef_Currency</li>
+                <li>DuneRef_Wealth</li>
             </researchPrerequisites>
         </value>
     </Operation>

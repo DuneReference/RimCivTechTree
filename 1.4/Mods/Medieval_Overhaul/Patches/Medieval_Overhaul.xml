@@ -253,12 +253,7 @@
         </xpath>
         <value>
             <li>DankPyon_TreeGriffonBerry</li>
-            <li>DankPyon_RoyalRusticFurniture</li>
             <li>DankPyon_Silk</li>
-            <li>DankPyon_NoblePolearms</li>
-            <li>DankPyon_NobleMaces</li>
-            <li>DankPyon_AdornedArmor</li>
-            <li>DankPyon_Jewelry</li>
         </value>
     </Operation>
 
@@ -288,6 +283,19 @@
             <li>DankPyon_NobleMaces</li>
             <li>DankPyon_MilitaryBlades</li>
             <li>DankPyon_AdornedArmor</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ResearchProjectDef[
+                   defName = "DuneRef_Wealth"
+            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+        </xpath>
+        <value>
+            <li>DankPyon_RoyalRusticFurniture</li>
+            <li>DankPyon_AdornedArmor</li>
+            <li>DankPyon_Jewelry</li>
         </value>
     </Operation>
 
@@ -382,8 +390,7 @@
             Defs/ThingDef[
                    defName = "DankPyon_Apiary"
                 or defName = "DankPyon_DryRack"
-                or defName = "DankPyon_TanningRack"
-            ]/researchPrerequisites
+            ]
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
@@ -398,6 +405,7 @@
             Defs/ThingDef[
                    defName = "DankPyon_Apiary"
                 or defName = "DankPyon_DryingRack"
+                or defName = "DankPyon_TanningRack"
             ]/researchPrerequisites
         </xpath>
         <value>
@@ -869,7 +877,7 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_ComplexTextiles</li>
-                <li>DuneRef_Currency</li>
+                <li>DuneRef_Wealth</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -937,13 +945,8 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ThingDef[
-                   defName = "DankPyon_RoyalColumn"
-                or defName = "DankPyon_Sign_Jewelry"
-                or defName = "DankPyon_CleaningBench"
-                or defName = "DankPyon_RoyalChest"
+                   defName = "DankPyon_CleaningBench"
                 or defName = "DankPyon_Pedestal"
-                or defName = "DankPyon_RoyalBookshelf"
-                or defName = "DankPyon_RoyalCloset"
             ]
         </xpath>
         <value>
@@ -953,9 +956,66 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_RoyalColumn"
+                or defName = "DankPyon_Sign_Jewelry"
+                or defName = "DankPyon_RoyalChest"
+                or defName = "DankPyon_RoyalBookshelf"
+                or defName = "DankPyon_RoyalCloset"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Wealth</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
     <!-- Column 7 -->
 
     <!-- Column 8 -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Headgear_Armet"
+                or @Name = "DankPyon_SalletBase"
+                or defName = "DankPyon_Headgear_HeraldicGreatHelm1c"
+                or defName = "DankPyon_Apparel_Breast_Plate"
+                or defName = "DankPyon_Apparel_Brigandine"
+                or defName = "DankPyon_Headgear_ClosedBascinetHelmet"
+                or defName = "DankPyon_Headgear_Bascinet_KlappvisierHelmetClosed"
+                or defName = "DankPyon_MeleeWeapon_FencingSword"
+                or defName = "DankPyon_Headgear_GreatHelm"
+                or defName = "DankPyon_Headgear_KlappvisorBascinet"
+                or defName = "DankPyon_Headgear_WolfBascinet"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_MilitaryTactics</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Apparel_AdornedHeavyPlate"
+                or defName = "DankPyon_Adorned_GreatHelm"
+                or defName = "DankPyon_Headgear_ArmetGilded"
+                or defName = "DankPyon_Apparel_FullPlateGilded"
+            ]/recipeMaker/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_MilitaryTactics</li>
+                <li>DuneRef_Wealth</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
 
     <Operation Class="PatchOperationAdd">
         <xpath>

@@ -236,27 +236,6 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>DuneRef_ComplexCooking</defName>
-        <label>Complex Cooking</label>
-        <description>Complex Cooking</description>
-        <baseCost>1000</baseCost>
-        <techLevel>Medieval</techLevel>
-        <prerequisites>
-            <li>DuneRef_Cooking</li>
-        </prerequisites>
-        <hiddenPrerequisites>
-            <li>DuneRef_ClassicalEra</li>
-        </hiddenPrerequisites>
-        <researchViewX>5</researchViewX>
-        <researchViewY>2</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks />
-            </li>
-        </modExtensions>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
         <defName>DuneRef_Irrigation</defName>
         <label>Irrigation</label>
         <description>Irrigation</description>
@@ -304,6 +283,29 @@
     <!-- @@ Middle Ages @@ -->
 
     <ResearchProjectDef>
+        <defName>DuneRef_Currency</defName>
+        <label>Currency</label>
+        <description>Currency</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>DuneRef_Ironworking</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_ClassicalEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>5</researchViewX>
+        <researchViewY>6</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks>
+                    <li>CarpetMaking</li>
+                </researchUnlocks>
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
         <defName>DuneRef_Steelworking</defName>
         <label>Steel Working</label>
         <description>Steel Working</description>
@@ -348,25 +350,22 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>DuneRef_ComplexTextiles</defName>
-        <label>Complex Textiles</label>
-        <description>Complex Textiles</description>
+        <defName>DuneRef_ComplexCooking</defName>
+        <label>Complex Cooking</label>
+        <description>Complex Cooking</description>
         <baseCost>1500</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
-            <li>DuneRef_Clothworking</li>
-            <li>DuneRef_AnimalHusbandry</li>
+            <li>DuneRef_Cooking</li>
         </prerequisites>
         <hiddenPrerequisites>
             <li>DuneRef_ClassicalEra</li>
         </hiddenPrerequisites>
         <researchViewX>6</researchViewX>
-        <researchViewY>1</researchViewY>
+        <researchViewY>2</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks>
-                    <li>ComplexClothing</li>
-                </researchUnlocks>
+                <researchUnlocks />
             </li>
         </modExtensions>
     </ResearchProjectDef>
@@ -380,6 +379,7 @@
         <prerequisites>
             <li>DuneRef_ComplexCooking</li>
             <li>DuneRef_Recreation</li>
+            <li>DuneRef_Currency</li>
         </prerequisites>
         <hiddenPrerequisites>
             <li>DuneRef_ClassicalEra</li>
@@ -418,46 +418,25 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>DuneRef_ExpandedCulture</defName>
-        <label>Expanded Culture</label>
-        <description>Expanded Culture</description>
+        <defName>DuneRef_BattleTactics</defName>
+        <label>Battle Tactics</label>
+        <description>Battle Tactics</description>
         <baseCost>2000</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
-            <li>DuneRef_WritingAndCulture</li>
+            <li>DuneRef_Steelworking</li>
+            <li>DuneRef_Weaponry</li>
         </prerequisites>
         <hiddenPrerequisites>
             <li>DuneRef_ClassicalEra</li>
         </hiddenPrerequisites>
         <researchViewX>7</researchViewX>
-        <researchViewY>2</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks />
-            </li>
-        </modExtensions>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>DuneRef_Currency</defName>
-        <label>Currency</label>
-        <description>Currency</description>
-        <baseCost>2000</baseCost>
-        <techLevel>Medieval</techLevel>
-        <prerequisites>
-            <li>DuneRef_ComplexTextiles</li>
-            <li>DuneRef_WritingAndCulture</li>
-            <li>DuneRef_Ironworking</li>
-        </prerequisites>
-        <hiddenPrerequisites>
-            <li>DuneRef_ClassicalEra</li>
-        </hiddenPrerequisites>
-        <researchViewX>7</researchViewX>
-        <researchViewY>4</researchViewY>
+        <researchViewY>5</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
-                    <li>CarpetMaking</li>
+                    <li>LongBlades</li>
+                    <li>PlateArmor</li>
                 </researchUnlocks>
             </li>
         </modExtensions>
@@ -504,13 +483,56 @@
                     <li>DuneRef_Recreation</li>
                     <li>DuneRef_Steelworking</li>
                     <li>DuneRef_Masonry</li>
-                    <li>DuneRef_ComplexTextiles</li>
                     <li>DuneRef_WritingAndCulture</li>
                     <li>DuneRef_Construction</li>
-                    <li>DuneRef_ExpandedCulture</li>
                     <li>DuneRef_Currency</li>
                     <li>DuneRef_Engineering</li>
                 </orHiddenPrerequisites>
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_ComplexTextiles</defName>
+        <label>Complex Textiles</label>
+        <description>Complex Textiles</description>
+        <baseCost>2500</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>DuneRef_Clothworking</li>
+            <li>DuneRef_AnimalHusbandry</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_MedievalEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>9</researchViewX>
+        <researchViewY>1</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks>
+                    <li>ComplexClothing</li>
+                </researchUnlocks>
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_ExpandedCulture</defName>
+        <label>Expanded Culture</label>
+        <description>Expanded Culture</description>
+        <baseCost>2500</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>DuneRef_WritingAndCulture</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_MedievalEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>9</researchViewX>
+        <researchViewY>3</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks />
             </li>
         </modExtensions>
     </ResearchProjectDef>
@@ -522,20 +544,39 @@
         <baseCost>2500</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
-            <li>DuneRef_ComplexTextiles</li>
-            <li>DuneRef_Steelworking</li>
-            <li>DuneRef_Weaponry</li>
+            <li>DuneRef_BattleTactics</li>
         </prerequisites>
         <hiddenPrerequisites>
             <li>DuneRef_MedievalEra</li>
         </hiddenPrerequisites>
         <researchViewX>9</researchViewX>
-        <researchViewY>3</researchViewY>
+        <researchViewY>5</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks />
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_Wealth</defName>
+        <label>Wealth</label>
+        <description>Wealth</description>
+        <baseCost>3000</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>DuneRef_WritingAndCulture</li>
+            <li>DuneRef_Engineering</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_MedievalEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>10</researchViewX>
+        <researchViewY>4</researchViewY>
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
-                    <li>LongBlades</li>
-                    <li>PlateArmor</li>
+                    <li>CarpetMaking</li>
                 </researchUnlocks>
             </li>
         </modExtensions>
@@ -572,7 +613,6 @@
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_Irrigation</li>
-            <li>DuneRef_ExpandedCulture</li>
             <li>DuneRef_Engineering</li>
         </prerequisites>
         <hiddenPrerequisites>
@@ -603,6 +643,9 @@
                     <li>DuneRef_MilitaryTactics</li>
                     <li>DuneRef_MilitaryEngineering</li>
                     <li>DuneRef_ScientificTheory</li>
+                    <li>DuneRef_Wealth</li>
+                    <li>DuneRef_ExpandedCulture</li>
+                    <li>DuneRef_ComplexTextiles</li>
                 </orHiddenPrerequisites>
             </li>
         </modExtensions>
@@ -615,8 +658,9 @@
         <baseCost>3500</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
-            <li>DuneRef_Currency</li>
+            <li>DuneRef_Wealth</li>
             <li>DuneRef_Engineering</li>
+            <li>DuneRef_ComplexTextiles</li>
         </prerequisites>
         <hiddenPrerequisites>
             <li>DuneRef_RenaissanceEra</li>
@@ -640,7 +684,7 @@
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_MilitaryEngineering</li>
-            <li>DuneRef_Currency</li>
+            <li>DuneRef_Wealth</li>
         </prerequisites>
         <hiddenPrerequisites>
             <li>DuneRef_RenaissanceEra</li>
@@ -662,6 +706,7 @@
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_ScientificTheory</li>
+            <li>DuneRef_ExpandedCulture</li>
         </prerequisites>
         <hiddenPrerequisites>
             <li>DuneRef_RenaissanceEra</li>
@@ -682,7 +727,7 @@
         <baseCost>4000</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
-            <li>DuneRef_Currency</li>
+            <li>DuneRef_Wealth</li>
             <li>DuneRef_ScientificTheory</li>
         </prerequisites>
         <hiddenPrerequisites>
