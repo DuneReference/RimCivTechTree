@@ -250,4 +250,14 @@
         </value>
     </Operation>
 
+    <!-- Remove this halberd because the combat extended melee halberd with the same name is just better-->
+    
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VWE_MeleeWeapon_Halberd"
+            ]/recipeMaker
+        </xpath>
+    </Operation>
+
 </Patch>

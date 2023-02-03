@@ -371,31 +371,6 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>DuneRef_WritingAndCulture</defName>
-        <label>Writing and Culture</label>
-        <description>Writing and Culture</description>
-        <baseCost>1500</baseCost>
-        <techLevel>Neolithic</techLevel>
-        <prerequisites>
-            <li>DuneRef_ComplexCooking</li>
-            <li>DuneRef_Recreation</li>
-            <li>DuneRef_Currency</li>
-        </prerequisites>
-        <hiddenPrerequisites>
-            <li>DuneRef_ClassicalEra</li>
-        </hiddenPrerequisites>
-        <researchViewX>6</researchViewX>
-        <researchViewY>4</researchViewY>
-        <modExtensions>
-            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
-                <researchUnlocks>
-                    <li>Brewing</li>
-                </researchUnlocks>
-            </li>
-        </modExtensions>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
         <defName>DuneRef_Construction</defName>
         <label>Construction</label>
         <description>Construction</description>
@@ -413,6 +388,31 @@
         <modExtensions>
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks />
+            </li>
+        </modExtensions>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DuneRef_WritingAndCulture</defName>
+        <label>Writing and Culture</label>
+        <description>Writing and Culture</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <prerequisites>
+            <li>DuneRef_ComplexCooking</li>
+            <li>DuneRef_Recreation</li>
+            <li>DuneRef_Currency</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>DuneRef_ClassicalEra</li>
+        </hiddenPrerequisites>
+        <researchViewX>7</researchViewX>
+        <researchViewY>4</researchViewY>
+        <modExtensions>
+            <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
+                <researchUnlocks>
+                    <li>Brewing</li>
+                </researchUnlocks>
             </li>
         </modExtensions>
     </ResearchProjectDef>
@@ -659,7 +659,6 @@
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_Wealth</li>
-            <li>DuneRef_Engineering</li>
             <li>DuneRef_ComplexTextiles</li>
         </prerequisites>
         <hiddenPrerequisites>

@@ -71,12 +71,25 @@
         <xpath>
             Defs/ThingDef[
                    defName = "VHGE_GasPoweredSmithy"
-                or defName = "VHGE_GasOperatedPodLauncher"
             ]/researchPrerequisites
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
                 <li>VHGE_GasExtraction</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VHGE_GasOperatedPodLauncher"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>VHGE_GasExtraction</li>
+                <li>DuneRef_Flight</li>
             </researchPrerequisites>
         </value>
     </Operation>

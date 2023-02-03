@@ -780,47 +780,6 @@
 
     <Operation Class="PatchOperationReplace">
         <xpath>
-            Defs/RecipeDef[
-                   defName = "DankPyon_CookMealRations"
-                or defName = "DankPyon_CookMealRationsBulk"
-            ]/researchPrerequisite
-        </xpath>
-        <value>
-            <researchPrerequisite Inherit="False">DuneRef_ComplexCooking</researchPrerequisite>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationReplace">
-        <xpath>
-            Defs/RecipeDef[
-                   defName = "DankPyon_CookMealGrilledCheese"
-                or defName = "DankPyon_CookMealGrilledCheeseBulk"
-                or defName = "DankPyon_CookMealHeartyStew"
-                or defName = "DankPyon_CookMealHeartyStewBulk"
-                or defName = "DankPyon_CookMealHuntersStew"
-                or defName = "DankPyon_CookMealHuntersStewBulk"
-                or defName = "DankPyon_CookMealPumpkinSoup"
-                or defName = "DankPyon_CookMealPumpkinSoupBulk"
-            ]/researchPrerequisites
-        </xpath>
-        <value>
-            <researchPrerequisites Inherit="False">
-                <li>DuneRef_ComplexCooking</li>
-            </researchPrerequisites>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationRemove">
-        <xpath>
-            Defs/RecipeDef[
-                   @Name = "CookMealFineBase"
-                or @Name = "CookMealFineBulkBase"
-            ]/researchPrerequisite
-        </xpath>
-    </Operation>
-
-    <Operation Class="PatchOperationReplace">
-        <xpath>
             Defs/ThingDef[
                    defName = "Dankpyon_CupAndDice"
                 or defName = "DankPyon_Tarocco"
@@ -847,73 +806,6 @@
             </researchPrerequisites>
         </value>
     </Operation>
-
-    <!-- Column 5 -->
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/ThingDef[
-                   defName = "DankPyon_TailorsBench"
-            ]
-        </xpath>
-        <value>
-            <statBases>
-                <WorkTableWorkSpeedFactor Inherit="False">0.75</WorkTableWorkSpeedFactor>
-            </statBases>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationReplace">
-        <xpath>
-            Defs/ThingDef[
-                   defName = "DankPyon_RoyalArmchair"
-                or defName = "DankPyon_RoyalDresser"
-                or defName = "DankPyon_RoyalEndTable"
-                or defName = "DankPyon_RoyalTable2x2c"
-                or defName = "DankPyon_RoyalTable2x4c"
-                or defName = "DankPyon_RoyalTudorBed"
-            ]/researchPrerequisites
-        </xpath>
-        <value>
-            <researchPrerequisites Inherit="False">
-                <li>DuneRef_ComplexTextiles</li>
-                <li>DuneRef_Wealth</li>
-            </researchPrerequisites>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/ThingDef[
-                   defName = "DankPyon_Sign_Apothecary"
-                or defName = "DankPyon_RusticBookshelf"
-                or defName = "DankPyon_Bust"
-                or defName = "DankPyon_Sign_Library"
-                or defName = "DankPyon_Lecturn"
-                or defName = "DankPyon_Sign_Tavern"
-            ]
-        </xpath>
-        <value>
-            <researchPrerequisites Inherit="False">
-                <li>DuneRef_WritingAndCulture</li>
-            </researchPrerequisites>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationReplace">
-        <xpath>
-            Defs/ThingDef[
-                   defName = "DankPyon_CastleWall"
-            ]/researchPrerequisites
-        </xpath>
-        <value>
-            <researchPrerequisites Inherit="False">
-                <li>DuneRef_Construction</li>
-            </researchPrerequisites>
-        </value>
-    </Operation>
-
-    <!-- Column 6 -->
 
     <Operation Class="PatchOperationRemove">
         <xpath>
@@ -956,26 +848,129 @@
         </value>
     </Operation>
 
+    <!-- Column 5 -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/RecipeDef[
+                   defName = "DankPyon_CookMealRations"
+                or defName = "DankPyon_CookMealRationsBulk"
+            ]/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False">DuneRef_ComplexCooking</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/RecipeDef[
+                   defName = "DankPyon_CookMealGrilledCheese"
+                or defName = "DankPyon_CookMealGrilledCheeseBulk"
+                or defName = "DankPyon_CookMealHeartyStew"
+                or defName = "DankPyon_CookMealHeartyStewBulk"
+                or defName = "DankPyon_CookMealHuntersStew"
+                or defName = "DankPyon_CookMealHuntersStewBulk"
+                or defName = "DankPyon_CookMealPumpkinSoup"
+                or defName = "DankPyon_CookMealPumpkinSoupBulk"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_ComplexCooking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+            Defs/RecipeDef[
+                   @Name = "CookMealFineBase"
+                or @Name = "CookMealFineBulkBase"
+            ]/researchPrerequisite
+        </xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_CastleWall"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Construction</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <!-- Column 6 -->
+
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ThingDef[
-                   defName = "DankPyon_RoyalColumn"
-                or defName = "DankPyon_Sign_Jewelry"
-                or defName = "DankPyon_RoyalChest"
-                or defName = "DankPyon_RoyalBookshelf"
-                or defName = "DankPyon_RoyalCloset"
+                   defName = "DankPyon_Sign_Apothecary"
+                or defName = "DankPyon_RusticBookshelf"
+                or defName = "DankPyon_Bust"
+                or defName = "DankPyon_Sign_Library"
+                or defName = "DankPyon_Lecturn"
+                or defName = "DankPyon_Sign_Tavern"
             ]
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Wealth</li>
+                <li>DuneRef_WritingAndCulture</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VPE_Apparel_PlateArmorPrestige"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_BattleTactics</li>
+                <li>DuneRef_Currency</li>
             </researchPrerequisites>
         </value>
     </Operation>
 
     <!-- Column 7 -->
 
-    <!-- Column 8 -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_TailorsBench"
+            ]
+        </xpath>
+        <value>
+            <statBases>
+                <WorkTableWorkSpeedFactor Inherit="False">0.75</WorkTableWorkSpeedFactor>
+            </statBases>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_RoyalArmchair"
+                or defName = "DankPyon_RoyalDresser"
+                or defName = "DankPyon_RoyalEndTable"
+                or defName = "DankPyon_RoyalTable2x2c"
+                or defName = "DankPyon_RoyalTable2x4c"
+                or defName = "DankPyon_RoyalTudorBed"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_ComplexTextiles</li>
+                <li>DuneRef_Wealth</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
 
     <Operation Class="PatchOperationReplace">
         <xpath>
@@ -1003,15 +998,47 @@
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
+                   defName = "DankPyon_Headgear_ArmetGilded"
+                or defName = "DankPyon_Apparel_FullPlateGilded"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_MilitaryTactics</li>
+                <li>DuneRef_Wealth</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
                    defName = "DankPyon_Apparel_AdornedHeavyPlate"
                 or defName = "DankPyon_Adorned_GreatHelm"
-                or defName = "DankPyon_Headgear_ArmetGilded"
-                or defName = "DankPyon_Apparel_FullPlateGilded"
             ]/recipeMaker/researchPrerequisites
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_MilitaryTactics</li>
+                <li>DuneRef_Wealth</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <!-- Column 8 -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_RoyalColumn"
+                or defName = "DankPyon_Sign_Jewelry"
+                or defName = "DankPyon_RoyalChest"
+                or defName = "DankPyon_RoyalBookshelf"
+                or defName = "DankPyon_RoyalCloset"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
                 <li>DuneRef_Wealth</li>
             </researchPrerequisites>
         </value>
