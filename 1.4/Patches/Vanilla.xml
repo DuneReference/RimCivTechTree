@@ -1537,4 +1537,175 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "FueledSmithy"
+                ]/researchPrerequisites
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_Engineering</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+    </Operation>
+
+    <!-- Fix bench recipes -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "FueledSmithy"
+                    or defName = "ElectricSmithy"
+                ]
+            </xpath>
+            <value>
+                <modExtensions>
+                    <li Class="RecipeInheritance.ThingDefExtension">
+                        <inheritRecipesFrom>
+                            <li>DankPyon_Anvil</li>
+                        </inheritRecipesFrom>
+                    </li>
+                </modExtensions>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "ElectricTailoringBench"
+                ]
+            </xpath>
+            <value>
+                <modExtensions>
+                    <li Class="RecipeInheritance.ThingDefExtension">
+                        <inheritRecipesFrom>
+                            <li>DankPyon_TailorsBench</li>
+                        </inheritRecipesFrom>
+                    </li>
+                </modExtensions>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "FueledStove"
+                    or defName = "ElectricStove"
+                ]
+            </xpath>
+            <value>
+                <modExtensions>
+                    <li Class="RecipeInheritance.ThingDefExtension">
+                        <inheritRecipesFrom>
+                            <li>DankPyon_RusticCookingTable</li>
+                        </inheritRecipesFrom>
+                    </li>
+                </modExtensions>
+            </value>
+        </match>
+    </Operation>
+
+    <!-- Add linkables -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "CraftingSpot"
+                    or defName = "FueledSmithy"
+                    or defName = "ElectricSmithy"
+                ]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities
+            </xpath>
+            <value>
+                <li>DankPyon_Grinder</li>
+                <li>DankPyon_Bellows</li>
+                <li>DankPyon_QuenchingBucket</li>
+                <li>DankPyon_ToolRack</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "HandTailoringBench"
+                    or defName = "ElectricTailoringBench"
+                    or defName = "TableMachining"
+                    or defName = "FabricationBench"
+                    or defName = "TableStonecutter"
+                    or defName = "TableButcher"
+                    or defName = "ButcherSpot"
+                ]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities
+            </xpath>
+            <value>
+                <li>DankPyon_ToolRack</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "FueledStove"
+                    or defName = "ElectricStove"
+                ]/comps
+            </xpath>
+            <value>
+                <li Class="CompProperties_AffectedByFacilities">
+                    <linkableFacilities>
+                        <li>DankPyon_RusticCookingTools</li>
+                    </linkableFacilities>
+                </li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "DrugLab"
+                ]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities
+            </xpath>
+            <value>
+                <li>DankPyon_RusticCookingTools</li>
+                <li>DankPyon_QuenchingBucket</li>
+            </value>
+        </match>
+    </Operation>
+
 </Patch>

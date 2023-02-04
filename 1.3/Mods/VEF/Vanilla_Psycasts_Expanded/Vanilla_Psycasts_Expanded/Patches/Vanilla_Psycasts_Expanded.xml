@@ -68,4 +68,20 @@
         </nomatch>
     </Operation>
 
+    <!-- Moving Individual items to different techs -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VPE_Apparel_PlateArmorPrestige"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_BattleTactics</li>
+                <li>DuneRef_Currency</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
 </Patch>

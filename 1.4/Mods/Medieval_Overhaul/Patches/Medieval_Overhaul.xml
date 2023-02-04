@@ -668,6 +668,7 @@
                 or defName = "DankPyon_Smelter"
                 or defName = "DankPyon_WallLamp"
                 or defName = "DankPyon_RusticLamp"
+                or defName = "DankPyon_Anvil"
             ]/researchPrerequisites
         </xpath>
         <value>
@@ -737,14 +738,39 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ThingDef[
-                   defName = "DankPyon_ArmorStatue"
-                or defName = "DankPyon_Trench"
+                   defName = "DankPyon_Trench"
             ]
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_Weaponry</li>
             </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_ArmorStatue"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_ArmorStatue"
+            ]
+        </xpath>
+        <value>
+            <recipeMaker>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_Weaponry</li>
+                </researchPrerequisites>
+            </recipeMaker>
         </value>
     </Operation>
 
@@ -838,13 +864,38 @@
         <xpath>
             Defs/ThingDef[
                    defName = "DankPyon_CleaningBench"
-                or defName = "DankPyon_Pedestal"
             ]
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_Currency</li>
             </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Pedestal"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Pedestal"
+            ]
+        </xpath>
+        <value>
+            <recipeMaker>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_Currency</li>
+                </researchPrerequisites>
+            </recipeMaker>
         </value>
     </Operation>
 
@@ -911,7 +962,6 @@
             Defs/ThingDef[
                    defName = "DankPyon_Sign_Apothecary"
                 or defName = "DankPyon_RusticBookshelf"
-                or defName = "DankPyon_Bust"
                 or defName = "DankPyon_Sign_Library"
                 or defName = "DankPyon_Lecturn"
                 or defName = "DankPyon_Sign_Tavern"
@@ -924,17 +974,29 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationReplace">
+    <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ThingDef[
-                   defName = "VPE_Apparel_PlateArmorPrestige"
-            ]/recipeMaker/researchPrerequisite
+                   defName = "DankPyon_Bust"
+            ]
         </xpath>
         <value>
-            <researchPrerequisites Inherit="False">
-                <li>DuneRef_BattleTactics</li>
-                <li>DuneRef_Currency</li>
-            </researchPrerequisites>
+            <researchPrerequisites Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Bust"
+            ]
+        </xpath>
+        <value>
+            <recipeMaker>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_WritingAndCulture</li>
+                </researchPrerequisites>
+            </recipeMaker>
         </value>
     </Operation>
 
@@ -1069,6 +1131,141 @@
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_MilitaryEngineering</li>
             </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <!-- Fix bench recipes -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Workbench"
+            ]
+        </xpath>
+        <value>
+            <modExtensions>
+                <li Class="RecipeInheritance.ThingDefExtension">
+                    <inheritRecipesFrom>
+                        <li>CraftingSpot</li>
+                    </inheritRecipesFrom>
+                </li>
+            </modExtensions>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_AlchemyBench"
+            ]
+        </xpath>
+        <value>
+            <modExtensions>
+                <li Class="RecipeInheritance.ThingDefExtension">
+                    <inheritRecipesFrom>
+                        <li>DrugLab</li>
+                    </inheritRecipesFrom>
+                </li>
+            </modExtensions>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_TailorsBench"
+            ]
+        </xpath>
+        <value>
+            <modExtensions>
+                <li Class="RecipeInheritance.ThingDefExtension">
+                    <inheritRecipesFrom>
+                        <li>HandTailoringBench</li>
+                    </inheritRecipesFrom>
+                </li>
+            </modExtensions>
+        </value>
+    </Operation>
+
+    <!-- edit bench values -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Anvil"
+            ]/statBases
+        </xpath>
+        <value>
+            <WorkTableWorkSpeedFactor>0.75</WorkTableWorkSpeedFactor>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_RusticCookingTable"
+                or defName = "DankPyon_AlchemyBench"
+            ]
+        </xpath>
+        <value>
+            <statBases>
+                <WorkTableWorkSpeedFactor>0.75</WorkTableWorkSpeedFactor>
+            </statBases>
+        </value>
+    </Operation>
+
+    <!-- Add linkables -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Workbench"
+                or defName = "DankPyon_Trestle"
+                or defName = "DankPyon_TailorsBench"
+                or defName = "DankPyon_Anvil"
+                or defName = "DankPyon_AlchemyBench"
+                or defName = "DankPyon_JewelryBench"
+            ]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities
+        </xpath>
+        <value>
+            <li>ToolCabinet</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_AlchemyBench"
+            ]
+        </xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_AffectedByFacilities">
+                    <linkableFacilities>
+                        <li>DankPyon_QuenchingBucket</li>
+                        <li>DankPyon_RusticCookingTools</li>
+                    </linkableFacilities>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_ButchersBlock"
+                or defName = "DankPyon_SpinningWheel"
+            ]
+        </xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_AffectedByFacilities">
+                    <linkableFacilities>
+                        <li>DankPyon_ToolRack</li>
+                        <li>ToolCabinet</li>
+                    </linkableFacilities>
+                </li>
+            </comps>
         </value>
     </Operation>
 

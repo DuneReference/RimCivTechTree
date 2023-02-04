@@ -182,6 +182,8 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Agriculture"
+                or defName = "DuneRef_Woodworking"
+                or defName = "DuneRef_Ironworking"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -220,8 +222,33 @@
         </xpath>
         <value>
             <li>VFEC_BronzeWorking</li>
-            <li>VFEC_CraftingBench</li>
         </value>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>
+                Defs/ResearchProjectDef[
+                       defName = "DuneRef_Steelworking"
+                ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+            </xpath>
+            <value>
+                <li>VFEC_CraftingBench</li>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs/ResearchProjectDef[
+                       defName = "DuneRef_Engineering"
+                ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+            </xpath>
+            <value>
+                <li>VFEC_CraftingBench</li>
+            </value>
+        </match>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
@@ -293,8 +320,7 @@
     <Operation Class="PatchOperationReplace">
             <xpath>
             Defs/ThingDef[
-                   defName = "VFEC_MeatDryingRack"
-                or defName = "VFEC_LargePassiveCooler"
+                   defName = "VFEC_LargePassiveCooler"
             ]/researchPrerequisites
         </xpath>
         <value>
@@ -368,6 +394,63 @@
                 <li>DuneRef_Agriculture</li>
             </sowResearchPrerequisites>
         </value>
+    </Operation>
+
+    <!-- Fix bench recipes -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "VFEC_CraftingBench"
+                ]/modExtensions/li[@Class="RecipeInheritance.ThingDefExtension"]/inheritRecipesFrom
+            </xpath>
+            <value>
+                <li>DankPyon_Workbench</li>
+            </value>
+        </match>
+    </Operation>
+
+    <!-- edit bench values -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>
+                Defs/ThingDef[
+                        defName = "VFEC_CraftingBench"
+                ]/statBases/WorkTableWorkSpeedFactor
+            </xpath>
+            <value>
+                <WorkTableWorkSpeedFactor>1.50</WorkTableWorkSpeedFactor>
+            </value>
+        </match>
+    </Operation>
+
+    <!-- Add linkables -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "VFEC_CraftingBench"
+                ]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities
+            </xpath>
+            <value>
+                <li>DankPyon_Grinder</li>
+                <li>DankPyon_Bellows</li>
+                <li>DankPyon_QuenchingBucket</li>
+                <li>DankPyon_ToolRack</li>
+            </value>
+        </match>
     </Operation>
 
 </Patch>

@@ -338,6 +338,19 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/RecipeDef[
+                   defName = "MakeMolotovCocktail"
+            ]
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit='False'>
+                <li>DuneRef_Apprenticeship</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
     <!-- VFE - Classical -->
 
     <Operation Class="PatchOperationFindMod">
@@ -580,6 +593,24 @@
             </xpath>
             <value>
                 <researchPrerequisite Inherit='False'></researchPrerequisite>
+            </value>
+        </match>
+    </Operation>
+
+    <!-- Add linkables -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "AmmoBench"
+                ]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities
+            </xpath>
+            <value>
+                <li>DankPyon_ToolRack</li>
             </value>
         </match>
     </Operation>
