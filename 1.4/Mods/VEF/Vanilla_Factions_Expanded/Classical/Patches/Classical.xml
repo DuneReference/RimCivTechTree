@@ -217,7 +217,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_Steelworking"
+                   defName = "DuneRef_Ironworking"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -265,7 +265,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_Steelworking"
+                   defName = "DuneRef_BattleTactics"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -279,7 +279,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ResearchProjectDef[
-                   defName = "DuneRef_Engineering"
+                   defName = "DuneRef_MilitaryEngineering"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -370,19 +370,6 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationReplace">
-            <xpath>
-            Defs/ThingDef[
-                   defName = "VFEC_Turret_Scorpion"
-            ]/researchPrerequisites
-        </xpath>
-        <value>
-            <researchPrerequisites Inherit="False">
-                <li>DuneRef_MilitaryEngineering</li>
-            </researchPrerequisites>
-        </value>
-    </Operation>
-
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ThingDef[
@@ -393,6 +380,20 @@
             <sowResearchPrerequisites Inherit="False">
                 <li>DuneRef_Agriculture</li>
             </sowResearchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/TerrainDef[
+                   defName = "VFEC_BronzeTile"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Ironworking</li>
+                <li>DuneRef_Masonry</li>
+            </researchPrerequisites>
         </value>
     </Operation>
 

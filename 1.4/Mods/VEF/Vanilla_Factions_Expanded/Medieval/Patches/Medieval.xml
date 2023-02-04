@@ -98,15 +98,29 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationAdd">
-        <xpath>
-            Defs/ResearchProjectDef[
-                   defName = "DuneRef_Cooking"
-            ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
-        </xpath>
-        <value>
-            <li>VFEM_MeatSmoking</li>
-        </value>
+    <!-- Medieval Overhaul hides the thing, so remove it from tech tree. -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationRemove">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "VFEM_MeatSmoker"
+                ]/researchPrerequisites
+            </xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>
+                Defs/ResearchProjectDef[
+                       defName = "DuneRef_ComplexCooking"
+                    or defName = "DuneRef_Ironworking"
+                ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
+            </xpath>
+            <value>
+                <li>VFEM_MeatSmoking</li>
+            </value>
+        </nomatch>
     </Operation>
 
     <!-- Hide tabs created by this mod -->
@@ -229,6 +243,33 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_Stoneworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFEM_Shield_Heater"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_AnimalHusbandry</li>
+                <li>DuneRef_Weaponry</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFEM_MeleeWeapon_HeavyMace"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Weaponry</li>
             </researchPrerequisites>
         </value>
     </Operation>

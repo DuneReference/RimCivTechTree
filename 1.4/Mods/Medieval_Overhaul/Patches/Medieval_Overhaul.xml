@@ -419,6 +419,22 @@
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/ThingDef[
+                   defName = "DankPyon_ShieldKite"
+            ]
+        </xpath>
+        <value>
+            <recipeMaker>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_AnimalHusbandry</li>
+                    <li>DuneRef_Weaponry</li>
+                </researchPrerequisites>
+            </recipeMaker>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
                    defName = "DankPyon_LogWall"
                 or defName = "DankPyon_RusticDoor"
                 or defName = "DankPyon_RusticChest"

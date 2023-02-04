@@ -97,6 +97,7 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_AnimalHusbandry</li>
+                <li>DuneRef_Weaponry</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -186,6 +187,35 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_Woodworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFE_MeleeWeapon_BeardedAxe"
+                or defName = "VFE_MeleeWeapon_Seax"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Weaponry</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFEV_Apparel_RavagerArmor"
+                or defName = "VFEV_Shield_Round"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_AnimalHusbandry</li>
+                <li>DuneRef_Weaponry</li>
             </researchPrerequisites>
         </value>
     </Operation>

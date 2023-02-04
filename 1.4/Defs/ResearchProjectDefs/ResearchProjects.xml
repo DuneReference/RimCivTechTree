@@ -670,6 +670,7 @@
             <li Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks">
                 <researchUnlocks>
                     <li>BiofuelRefining</li>
+                    <li>TransportPod</li>
                 </researchUnlocks>
             </li>
         </modExtensions>

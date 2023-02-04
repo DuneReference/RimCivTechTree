@@ -18,6 +18,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Steelworking"
+                or defName = "DuneRef_ComplexCooking"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>

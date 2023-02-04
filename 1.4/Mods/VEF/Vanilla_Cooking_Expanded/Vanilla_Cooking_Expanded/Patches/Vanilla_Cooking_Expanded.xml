@@ -62,6 +62,7 @@
         <xpath>
             Defs/ResearchProjectDef[
                    defName = "DuneRef_Steelworking"
+                or defName = "DuneRef_ComplexCooking"
             ]/modExtensions/li[@Class="DuneRef_CustomTechTreeFramework.ResearchUnlocks"]/researchUnlocks
         </xpath>
         <value>
@@ -106,6 +107,7 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_Steelworking</li>
+                <li>DuneRef_Cooking</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -195,12 +197,8 @@
         <xpath>
             Defs/ThingDef[
                    defName = "VCE_CookedSoupSimple"
-                or defName = "VCE_UncookedSoupSimple"
                 or defName = "VCE_CookedSoupFine"
-                or defName = "VCE_UncookedSoupFine"
-                or defName = "VCE_UncookedSoupLavish"
                 or defName = "VCE_CookedSoupGourmet"
-                or defName = "VCE_UncookedSoupGourmet"
             ]
         </xpath>
         <value>

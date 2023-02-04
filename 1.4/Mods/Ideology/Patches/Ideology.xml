@@ -211,7 +211,38 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Currency</li>
+                <li>DuneRef_Wealth</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VME_EldritchSlab_Medium"
+                or defName = "VME_EldritchSlab_Broad"
+                or defName = "VME_EsotericismSlab_Medium"
+                or defName = "VME_EsotericismSlab_Broad"
+                or defName = "VME_TaoistSlab_Medium"
+                or defName = "VME_TaoistSlab_Broad"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Masonry</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/TerrainDef[
+                   @Name = "PolishedStoneFloorBase"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Masonry</li>
             </researchPrerequisites>
         </value>
     </Operation>

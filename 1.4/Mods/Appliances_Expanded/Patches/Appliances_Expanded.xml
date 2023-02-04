@@ -15,6 +15,7 @@
                 or defName = "CA_ChemfuelFloodlight"
                 or defName = "CE_ChemfuelStove"
                 or defName = "CAS_ChemfuelWallLight"
+                or defName = "CE_ChemfuelGrill"
             ]/researchPrerequisites
         </xpath>
         <value>

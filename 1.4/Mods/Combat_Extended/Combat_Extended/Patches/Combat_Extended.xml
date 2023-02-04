@@ -189,7 +189,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Steelworking</li>
+                <li>DuneRef_Weaponry</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -351,6 +351,19 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "CE_Apparel_MeleeShield"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Weaponry</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
     <!-- VFE - Classical -->
 
     <Operation Class="PatchOperationFindMod">
@@ -365,7 +378,7 @@
                 ]
             </xpath>
             <value>
-                <researchPrerequisite Inherit='False'>DuneRef_Steelworking</researchPrerequisite>
+                <researchPrerequisite Inherit='False'>DuneRef_Weaponry</researchPrerequisite>
             </value>
         </match>
     </Operation>
