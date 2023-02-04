@@ -217,6 +217,6 @@
         <li IfModActive="aelanna.eccentrictech.advancedshields">1.4/Mods/Eccentric_Tech/Advanced_Shields</li>
         <li IfModActive="aelanna.eccentrictech.fusionpower">1.4/Mods/Eccentric_Tech/Fusion_Power</li>
         <li IfModActive="dankpyon.medieval.overhaul">1.4/Mods/Medieval_Overhaul</li>
-        <li IfModActive="vanillaexpanded.vmemese">1.4/Mods/Vanilla_Ideology_Expanded/Memes_and_Structures</li>
+        <li IfModActive="vanillaexpanded.vmemese">1.4/Mods/VEF/Vanilla_Ideology_Expanded/Memes_and_Structures</li>
     </v1.4>
 </loadFolders>
