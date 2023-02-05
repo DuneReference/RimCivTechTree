@@ -26,6 +26,7 @@
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_ComplexTextiles</li>
                 <li>DuneRef_Construction</li>
+                <li>DuneRef_Wealth</li>
             </researchPrerequisites>
         </value>
     </Operation>

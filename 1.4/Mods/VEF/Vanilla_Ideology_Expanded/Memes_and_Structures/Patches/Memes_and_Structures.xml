@@ -20,7 +20,8 @@
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/TerrainDef[
-                   @Name="VME_ShintaoCarpetFineBase"
+                   @Name = "VME_ShintaoCarpetFineBase"
+                or defName = "VME_ShintaoCarpetBase"
             ]/researchPrerequisites
         </xpath>
         <value>

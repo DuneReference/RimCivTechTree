@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!-- @@ Neolithic Era @@ -->
     <!-- Ancient Era -->
 
     <ResearchProjectDef>
@@ -166,7 +165,7 @@
         <defName>DuneRef_Cooking</defName>
         <label>Cooking</label>
         <description>Cooking</description>
-        <baseCost>700</baseCost>
+        <baseCost>800</baseCost>
         <techLevel>Neolithic</techLevel>
         <prerequisites>
             <li>DuneRef_Agriculture</li>
@@ -188,7 +187,7 @@
         <defName>DuneRef_Weaponry</defName>
         <label>Weaponry</label>
         <description>Weaponry</description>
-        <baseCost>700</baseCost>
+        <baseCost>800</baseCost>
         <techLevel>Neolithic</techLevel>
         <prerequisites>
             <li>DuneRef_Woodworking</li>
@@ -239,7 +238,7 @@
         <defName>DuneRef_Irrigation</defName>
         <label>Irrigation</label>
         <description>Irrigation</description>
-        <baseCost>1000</baseCost>
+        <baseCost>1600</baseCost>
         <techLevel>Neolithic</techLevel>
         <prerequisites>
             <li>DuneRef_Agriculture</li>
@@ -263,7 +262,7 @@
         <defName>DuneRef_Recreation</defName>
         <label>Recreation</label>
         <description>Recreation</description>
-        <baseCost>1000</baseCost>
+        <baseCost>1600</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_LongTermStorage</li>
@@ -279,14 +278,12 @@
             </li>
         </modExtensions>
     </ResearchProjectDef>
-    
-    <!-- @@ Middle Ages @@ -->
 
     <ResearchProjectDef>
         <defName>DuneRef_Currency</defName>
         <label>Currency</label>
         <description>Currency</description>
-        <baseCost>1000</baseCost>
+        <baseCost>1600</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_Ironworking</li>
@@ -309,7 +306,7 @@
         <defName>DuneRef_Steelworking</defName>
         <label>Steel Working</label>
         <description>Steel Working</description>
-        <baseCost>1000</baseCost>
+        <baseCost>1600</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_Stoneworking</li>
@@ -332,7 +329,7 @@
         <defName>DuneRef_Masonry</defName>
         <label>Masonry</label>
         <description>Masonry</description>
-        <baseCost>1000</baseCost>
+        <baseCost>1600</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_Stoneworking</li>
@@ -353,7 +350,7 @@
         <defName>DuneRef_ComplexCooking</defName>
         <label>Complex Cooking</label>
         <description>Complex Cooking</description>
-        <baseCost>1500</baseCost>
+        <baseCost>2500</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_Cooking</li>
@@ -374,7 +371,7 @@
         <defName>DuneRef_Construction</defName>
         <label>Construction</label>
         <description>Construction</description>
-        <baseCost>1500</baseCost>
+        <baseCost>2500</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_Woodworking</li>
@@ -396,7 +393,7 @@
         <defName>DuneRef_WritingAndCulture</defName>
         <label>Writing and Culture</label>
         <description>Writing and Culture</description>
-        <baseCost>2000</baseCost>
+        <baseCost>3500</baseCost>
         <techLevel>Neolithic</techLevel>
         <prerequisites>
             <li>DuneRef_ComplexCooking</li>
@@ -421,7 +418,7 @@
         <defName>DuneRef_BattleTactics</defName>
         <label>Battle Tactics</label>
         <description>Battle Tactics</description>
-        <baseCost>2000</baseCost>
+        <baseCost>3500</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_Steelworking</li>
@@ -446,7 +443,7 @@
         <defName>DuneRef_Engineering</defName>
         <label>Engineering</label>
         <description>Engineering</description>
-        <baseCost>2000</baseCost>
+        <baseCost>3500</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_Steelworking</li>
@@ -496,7 +493,7 @@
         <defName>DuneRef_ComplexTextiles</defName>
         <label>Complex Textiles</label>
         <description>Complex Textiles</description>
-        <baseCost>2500</baseCost>
+        <baseCost>4500</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_Clothworking</li>
@@ -520,7 +517,7 @@
         <defName>DuneRef_ExpandedCulture</defName>
         <label>Expanded Culture</label>
         <description>Expanded Culture</description>
-        <baseCost>2500</baseCost>
+        <baseCost>4500</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_WritingAndCulture</li>
@@ -541,7 +538,7 @@
         <defName>DuneRef_MilitaryTactics</defName>
         <label>Military Tactics</label>
         <description>Military Tactics</description>
-        <baseCost>2500</baseCost>
+        <baseCost>4500</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_BattleTactics</li>
@@ -562,7 +559,7 @@
         <defName>DuneRef_Wealth</defName>
         <label>Wealth</label>
         <description>Wealth</description>
-        <baseCost>3000</baseCost>
+        <baseCost>5500</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_WritingAndCulture</li>
@@ -586,7 +583,7 @@
         <defName>DuneRef_MilitaryEngineering</defName>
         <label>Military Engineering</label>
         <description>Military Engineering</description>
-        <baseCost>3000</baseCost>
+        <baseCost>5500</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_Engineering</li>
@@ -609,7 +606,7 @@
         <defName>DuneRef_ScientificTheory</defName>
         <label>Scientific Theory</label>
         <description>Scientific Theory</description>
-        <baseCost>3000</baseCost>
+        <baseCost>5500</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_Irrigation</li>
@@ -655,7 +652,7 @@
         <defName>DuneRef_Apprenticeship</defName>
         <label>Apprenticeship</label>
         <description>Apprenticeship</description>
-        <baseCost>3500</baseCost>
+        <baseCost>6500</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_Wealth</li>
@@ -680,7 +677,7 @@
         <defName>DuneRef_Gunpowder</defName>
         <label>Gunpowder</label>
         <description>Gunpowder</description>
-        <baseCost>3500</baseCost>
+        <baseCost>6500</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_MilitaryEngineering</li>
@@ -702,7 +699,7 @@
         <defName>DuneRef_Education</defName>
         <label>Education</label>
         <description>Education</description>
-        <baseCost>4000</baseCost>
+        <baseCost>7500</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_ScientificTheory</li>
@@ -724,7 +721,7 @@
         <defName>DuneRef_Flight</defName>
         <label>Flight</label>
         <description>Flight</description>
-        <baseCost>4000</baseCost>
+        <baseCost>7500</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_Wealth</li>
@@ -748,7 +745,7 @@
         <defName>DuneRef_MetalCasting</defName>
         <label>Metal Casting</label>
         <description>Metal Casting</description>
-        <baseCost>4000</baseCost>
+        <baseCost>7500</baseCost>
         <techLevel>Medieval</techLevel>
         <prerequisites>
             <li>DuneRef_Gunpowder</li>
@@ -765,7 +762,6 @@
         </modExtensions>
     </ResearchProjectDef>
     
-    <!-- @@ Industrial Era @@ -->
     <!-- Industrial Era -->
 
     <ResearchProjectDef>
@@ -793,7 +789,7 @@
         <defName>DuneRef_Industrialization</defName>
         <label>Industrialization</label>
         <description>Industrialization</description>
-        <baseCost>5000</baseCost>
+        <baseCost>9000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Apprenticeship</li>
@@ -817,7 +813,7 @@
         <defName>DuneRef_GasPower</defName>
         <label>Gas Power</label>
         <description>Gas Power</description>
-        <baseCost>6000</baseCost>
+        <baseCost>10000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Education</li>
@@ -839,7 +835,7 @@
         <defName>DuneRef_Sanitation</defName>
         <label>Sanitation</label>
         <description>Sanitation</description>
-        <baseCost>6000</baseCost>
+        <baseCost>10000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Education</li>
@@ -867,7 +863,7 @@
         <defName>DuneRef_Rifling</defName>
         <label>Rifling</label>
         <description>Rifling</description>
-        <baseCost>6000</baseCost>
+        <baseCost>10000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Industrialization</li>
@@ -893,7 +889,7 @@
         <defName>DuneRef_Refining</defName>
         <label>Refining</label>
         <description>Refining</description>
-        <baseCost>7000</baseCost>
+        <baseCost>11000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Industrialization</li>
@@ -937,7 +933,7 @@
         <defName>DuneRef_Electronics</defName>
         <label>Electronics</label>
         <description>Electronics</description>
-        <baseCost>8000</baseCost>
+        <baseCost>12000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_GasPower</li>
@@ -963,7 +959,7 @@
         <defName>DuneRef_Chemistry</defName>
         <label>Chemistry</label>
         <description>Chemistry</description>
-        <baseCost>8000</baseCost>
+        <baseCost>12000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Sanitation</li>
@@ -988,7 +984,7 @@
         <defName>DuneRef_Combustion</defName>
         <label>Combustion</label>
         <description>Combustion</description>
-        <baseCost>8000</baseCost>
+        <baseCost>12000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Refining</li>
@@ -1012,7 +1008,7 @@
         <defName>DuneRef_ReplaceableParts</defName>
         <label>Replaceable Parts</label>
         <description>Replaceable Parts</description>
-        <baseCost>8000</baseCost>
+        <baseCost>12000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Rifling</li>
@@ -1038,7 +1034,7 @@
         <defName>DuneRef_Radio</defName>
         <label>Radio</label>
         <description>Radio</description>
-        <baseCost>9000</baseCost>
+        <baseCost>13000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Electronics</li>
@@ -1062,7 +1058,7 @@
         <defName>DuneRef_Refrigeration</defName>
         <label>Refrigeration</label>
         <description>Refrigeration</description>
-        <baseCost>9000</baseCost>
+        <baseCost>13000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Chemistry</li>
@@ -1085,13 +1081,11 @@
         </tags>
     </ResearchProjectDef>
 
-    <!-- @@ Modern Era @@ -->
-
     <ResearchProjectDef>
         <defName>DuneRef_AdvancedFlight</defName>
         <label>Advanced Flight</label>
         <description>Advanced Flight</description>
-        <baseCost>9000</baseCost>
+        <baseCost>13000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Flight</li>
@@ -1139,7 +1133,7 @@
         <defName>DuneRef_Rocketry</defName>
         <label>Rocketry</label>
         <description>Rocketry</description>
-        <baseCost>10000</baseCost>
+        <baseCost>14000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_AdvancedFlight</li>
@@ -1163,7 +1157,7 @@
         <defName>DuneRef_AdvancedBallistics</defName>
         <label>Advanced Ballistics</label>
         <description>Advanced Ballistics</description>
-        <baseCost>10000</baseCost>
+        <baseCost>14000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Combustion</li>
@@ -1187,7 +1181,7 @@
         <defName>DuneRef_Telecommunications</defName>
         <label>Telecommunications</label>
         <description>Telecommunications</description>
-        <baseCost>11000</baseCost>
+        <baseCost>15000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Radio</li>
@@ -1210,7 +1204,7 @@
         <defName>DuneRef_Medicine</defName>
         <label>Medicine</label>
         <description>Medicine</description>
-        <baseCost>11000</baseCost>
+        <baseCost>15000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Refrigeration</li>
@@ -1236,7 +1230,7 @@
         <defName>DuneRef_Computers</defName>
         <label>Computers</label>
         <description>Computers</description>
-        <baseCost>18000</baseCost>
+        <baseCost>22000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Telecommunications</li>
@@ -1257,7 +1251,7 @@
         <defName>DuneRef_Ecology</defName>
         <label>Ecology</label>
         <description>Ecology</description>
-        <baseCost>18000</baseCost>
+        <baseCost>22000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Refrigeration</li>
@@ -1284,7 +1278,7 @@
         <defName>DuneRef_NuclearFission</defName>
         <label>Nuclear Fission</label>
         <description>Nuclear Fission</description>
-        <baseCost>18000</baseCost>
+        <baseCost>22000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Refrigeration</li>
@@ -1307,7 +1301,7 @@
         <defName>DuneRef_BrutalWarfare</defName>
         <label>Brutal Warfare</label>
         <description>Brutal Warfare</description>
-        <baseCost>18000</baseCost>
+        <baseCost>22000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_AdvancedBallistics</li>
@@ -1334,7 +1328,7 @@
         <defName>DuneRef_Plastics</defName>
         <label>Plastics</label>
         <description>Plastics</description>
-        <baseCost>18000</baseCost>
+        <baseCost>22000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Chemistry</li>
@@ -1363,7 +1357,7 @@
         <defName>DuneRef_SyntheticMaterials</defName>
         <label>Synthetic Materials</label>
         <description>Synthetic Materials</description>
-        <baseCost>20000</baseCost>
+        <baseCost>24000</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>DuneRef_Plastics</li>
@@ -1418,7 +1412,7 @@
         <defName>DuneRef_Robotics</defName>
         <label>Robotics</label>
         <description>Robotics</description>
-        <baseCost>22000</baseCost>
+        <baseCost>26000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Computers</li>
@@ -1444,7 +1438,7 @@
         <defName>DuneRef_Composites</defName>
         <label>Composites</label>
         <description>Composites</description>
-        <baseCost>22000</baseCost>
+        <baseCost>26000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Ecology</li>
@@ -1467,7 +1461,7 @@
         <defName>DuneRef_Lasers</defName>
         <label>Lasers</label>
         <description>Lasers</description>
-        <baseCost>22000</baseCost>
+        <baseCost>26000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_NuclearFission</li>
@@ -1492,7 +1486,7 @@
         <defName>DuneRef_GuidanceSystems</defName>
         <label>Guidance Systems</label>
         <description>Guidance Systems</description>
-        <baseCost>24000</baseCost>
+        <baseCost>28000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Lasers</li>
@@ -1516,7 +1510,6 @@
         </requiredResearchFacilities>
     </ResearchProjectDef>
 
-    <!-- @@ Spacer Era @@ -->
     <!-- Future Era -->
 
     <ResearchProjectDef>
@@ -1543,7 +1536,7 @@
         <defName>DuneRef_Nanotechnology</defName>
         <label>Nanotechnology</label>
         <description>Nanotechnology</description>
-        <baseCost>31000</baseCost>
+        <baseCost>35000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Composites</li>
@@ -1569,7 +1562,7 @@
         <defName>DuneRef_Shields</defName>
         <label>Shields</label>
         <description>Shields</description>
-        <baseCost>31000</baseCost>
+        <baseCost>35000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_GuidanceSystems</li>
@@ -1597,7 +1590,7 @@
         <defName>DuneRef_AdvancedAI</defName>
         <label>Advanced AI</label>
         <description>Advanced AI</description>
-        <baseCost>35000</baseCost>
+        <baseCost>39000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Robotics</li>
@@ -1623,7 +1616,7 @@
         <defName>DuneRef_Cybernetics</defName>
         <label>Cybernetics</label>
         <description>Cybernetics</description>
-        <baseCost>35000</baseCost>
+        <baseCost>39000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Medicine</li>
@@ -1652,7 +1645,7 @@
         <defName>DuneRef_AdvancedPowerCells</defName>
         <label>Advanced Power Cells</label>
         <description>Advanced Power Cells</description>
-        <baseCost>35000</baseCost>
+        <baseCost>39000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Shields</li>
@@ -1677,7 +1670,7 @@
         <defName>DuneRef_SmartMaterials</defName>
         <label>Smart Materials</label>
         <description>Smart Materials</description>
-        <baseCost>49000</baseCost>
+        <baseCost>53000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_AdvancedAI</li>
@@ -1703,7 +1696,7 @@
         <defName>DuneRef_OffworldMissions</defName>
         <label>Offworld Missions</label>
         <description>Offworld Missions</description>
-        <baseCost>49000</baseCost>
+        <baseCost>53000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_AdvancedPowerCells</li>
@@ -1737,7 +1730,7 @@
         <defName>DuneRef_PredictiveSystems</defName>
         <label>Predictive Systems</label>
         <description>Predictive Systems</description>
-        <baseCost>49000</baseCost>
+        <baseCost>53000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_AdvancedAI</li>
@@ -1765,7 +1758,7 @@
         <defName>DuneRef_AdvancedLasers</defName>
         <label>Advanced Lasers</label>
         <description>Advanced Lasers</description>
-        <baseCost>49000</baseCost>
+        <baseCost>53000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_BrutalWarfare</li>
@@ -1794,7 +1787,7 @@
         <defName>DuneRef_Genetics</defName>
         <label>Genetics</label>
         <description>Genetics</description>
-        <baseCost>55000</baseCost>
+        <baseCost>59000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Medicine</li>
@@ -1848,7 +1841,7 @@
         <defName>DuneRef_Mechanites</defName>
         <label>Mechanites</label>
         <description>Mechanites</description>
-        <baseCost>66000</baseCost>
+        <baseCost>70000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_OffworldMissions</li>
@@ -1874,7 +1867,7 @@
         <defName>DuneRef_Nanites</defName>
         <label>Nanites</label>
         <description>Nanites</description>
-        <baseCost>66000</baseCost>
+        <baseCost>70000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_OffworldMissions</li>
@@ -1900,7 +1893,7 @@
         <defName>DuneRef_AdvancedShields</defName>
         <label>Advanced Shields</label>
         <description>Advanced Shields</description>
-        <baseCost>66000</baseCost>
+        <baseCost>70000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_AdvancedPowerCells</li>
@@ -1927,7 +1920,7 @@
         <defName>DuneRef_Bioregeneration</defName>
         <label>Bioregeneration</label>
         <description>Bioregeneration</description>
-        <baseCost>66000</baseCost>
+        <baseCost>70000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Genetics</li>
@@ -1955,7 +1948,7 @@
         <defName>DuneRef_SpaceTechnology</defName>
         <label>Space Technology</label>
         <description>Space Technology</description>
-        <baseCost>66000</baseCost>
+        <baseCost>70000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>DuneRef_Mechanites</li>
@@ -1977,7 +1970,6 @@
         </requiredResearchFacilities>
     </ResearchProjectDef>
 
-    <!-- @@ Ultra Era @@ -->
     <!-- Ultra Era -->
 
     <ResearchProjectDef>
@@ -2005,7 +1997,7 @@
         <defName>DuneRef_QuantumArmaments</defName>
         <label>Quantum Armaments</label>
         <description>Quantum Armaments</description>
-        <baseCost>80000</baseCost>
+        <baseCost>84000</baseCost>
         <techLevel>Ultra</techLevel>
         <prerequisites>
             <li>DuneRef_SpaceTechnology</li>
@@ -2032,7 +2024,7 @@
         <defName>DuneRef_QuantumIndustry</defName>
         <label>Quantum Industry</label>
         <description>Quantum Industry</description>
-        <baseCost>80000</baseCost>
+        <baseCost>84000</baseCost>
         <techLevel>Ultra</techLevel>
         <prerequisites>
             <li>DuneRef_SpaceTechnology</li>
@@ -2057,7 +2049,7 @@
         <defName>DuneRef_SwarmIntelligence</defName>
         <label>Swarm Intelligence</label>
         <description>Swarm Intelligence</description>
-        <baseCost>88000</baseCost>
+        <baseCost>92000</baseCost>
         <techLevel>Ultra</techLevel>
         <prerequisites>
             <li>DuneRef_Mechanites</li>
@@ -2104,7 +2096,7 @@
         <defName>DuneRef_UnseenGrasp</defName>
         <label>Unseen Grasp</label>
         <description>Unseen Grasp</description>
-        <baseCost>98000</baseCost>
+        <baseCost>102000</baseCost>
         <techLevel>Archotech</techLevel>
         <prerequisites>
             <li>DuneRef_SwarmIntelligence</li>
@@ -2131,7 +2123,7 @@
         <defName>DuneRef_UnseenFlight</defName>
         <label>Unseen Flight</label>
         <description>Unseen Flight</description>
-        <baseCost>98000</baseCost>
+        <baseCost>102000</baseCost>
         <techLevel>Archotech</techLevel>
         <prerequisites>
             <li>DuneRef_SwarmIntelligence</li>

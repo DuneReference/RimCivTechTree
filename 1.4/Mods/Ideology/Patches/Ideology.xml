@@ -206,12 +206,24 @@
         <xpath>
             Defs/TerrainDef[
                    @Name="IdeoCarpetBase"
-                or @Name="IdeoCarpetTemplateBase"
             ]/researchPrerequisites
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Wealth</li>
+                <li>DuneRef_Currency</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/TerrainTemplateDef[
+                   @Name="IdeoCarpetTemplateBase"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Currency</li>
             </researchPrerequisites>
         </value>
     </Operation>

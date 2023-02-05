@@ -287,6 +287,39 @@
         </value>
     </Operation>
 
+    <!-- 
+        Remove scorpion from architet menu if medieval overhaul is on.
+        has it's own version that's better integrated and has same combat stats.
+    -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationRemove">
+            <xpath>
+                Defs/ThingDef[
+                        defName = "VFEC_Turret_Scorpion"
+                ]/designationCategory
+            </xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "VFEC_CraftingBench"
+                ]/modExtensions/li[@Class="RecipeInheritance.ThingDefExtension"]/inheritRecipesFrom
+            </xpath>
+            <value>
+                <li>DankPyon_Workbench</li>
+            </value>
+        </match>
+    </Operation>
+
     <!-- Hide tabs created by this mod -->
 
     <!-- Special conditional tab edit since all their techs in various mods are in the same tab -->
@@ -326,6 +359,20 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_Woodworking</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFEC_Shield_Heavy"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_AnimalHusbandry</li>
+                <li>DuneRef_Weaponry</li>
             </researchPrerequisites>
         </value>
     </Operation>

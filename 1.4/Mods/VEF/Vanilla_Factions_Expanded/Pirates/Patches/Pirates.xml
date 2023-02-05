@@ -147,7 +147,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Gunpowder</li>
+                <li>DuneRef_MetalCasting</li>
             </researchPrerequisites>
         </value>
     </Operation>

@@ -57,4 +57,21 @@
         </nomatch>
     </Operation>
 
+    <!-- Moving Individual items to different techs -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "KIT_Turret_12Pounder"
+                or defName = "KIT_Turret_Bombard"
+                or defName = "KIT_Turret_Organ"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_MetalCasting</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
 </Patch>

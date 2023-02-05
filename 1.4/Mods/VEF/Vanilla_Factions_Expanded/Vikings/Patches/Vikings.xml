@@ -196,6 +196,7 @@
             Defs/ThingDef[
                    defName = "VFE_MeleeWeapon_BeardedAxe"
                 or defName = "VFE_MeleeWeapon_Seax"
+                or defName = "VFEV_Apparel_RavagerHelmet"
             ]/recipeMaker/researchPrerequisite
         </xpath>
         <value>
