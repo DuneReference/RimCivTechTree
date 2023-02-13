@@ -1,5 +1,4 @@
 <loadFolders>
-        <li>1.3</li>
     <v1.4>
         <li>/</li>
         <li>1.4</li>
@@ -109,10 +108,11 @@
         <li IfModActive="arandomkiwi.powerpp">1.4/Mods/Power__</li>
         <li IfModActive="dunereference.peoplemover">1.4/Mods/PeopleMover</li>
         <li IfModActive="ceteam.combatextended">1.4/Mods/Combat_Extended/Combat_Extended</li>
-        <li IfModActive="ceteam.combatextendedarmors">1.4/Mods/Combat_Extended/Combat_Extended_Armors</li>
-        <li IfModActive="ceteam.combatextendedarmory">1.4/Mods/Combat_Extended/Combat_Extended_Armory</li>
-        <li IfModActive="ceteam.combatextendedguns">1.4/Mods/Combat_Extended/Combat_Extended_Guns</li>
-        <li IfModActive="ceteam.combatextendedmelee">1.4/Mods/Combat_Extended/Combat_Extended_Melee</li>
+        <li IfModActive="ceteam.combatextendedarmors">1.4/Mods/Combat_Extended/Armors</li>
+        <li IfModActive="ceteam.combatextendedarmory">1.4/Mods/Combat_Extended/Armory</li>
+        <li IfModActive="ceteam.combatextendedattachments">1.4/Mods/Combat_Extended/Attachments</li>
+        <li IfModActive="ceteam.combatextendedguns">1.4/Mods/Combat_Extended/Guns</li>
+        <li IfModActive="ceteam.combatextendedmelee">1.4/Mods/Combat_Extended/Melee</li>
         <li IfModActive="bbbbilly.makereinforcedbarrel">1.4/Mods/Make_Reinforced_Barrel</li>
         <li IfModActive="eatkenny.leafzxg.dws.turretcollection">1.4/Mods/Turret_Collection__Unofficial_</li>
         <li IfModActive="aoba.fortress.industrial">1.4/Mods/Fortifications___Industrial</li>
@@ -124,5 +124,6 @@
         <li IfModActive="dankpyon.medieval.overhaul">1.4/Mods/Medieval_Overhaul</li>
         <li IfModActive="vanillaexpanded.vmemese">1.4/Mods/VEF/Vanilla_Ideology_Expanded/Memes_and_Structures</li>
         <li IfModActive="metalocif.zeppelin">1.4/Mods/Medieval_Zeppelin</li>
+        <li IfModActive="vanillaexpanded.vwetb">1.4/Mods/VEF/Vanilla_Weapons_Expanded/Tribal</li>
     </v1.4>
 </loadFolders>

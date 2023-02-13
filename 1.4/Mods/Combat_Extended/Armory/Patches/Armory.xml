@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Turret_M2HB"
+                or defName = "Turret_MkNineteenGL"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_AdvancedBallistics</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Turret_SPGNine"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_BrutalWarfare</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "CE_Gun_RPKSixteen"
+            ]
+        </xpath>
+        <value>
+            <recipeMaker>
+                <researchPrerequisites Inherit="False">
+                    <li>DuneRef_BrutalWarfare</li>
+                </researchPrerequisites>
+            </recipeMaker>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "CE_Gun_RPKSixteen"
+            ]
+        </xpath>
+        <value>
+            <recipeMaker>
+                <researchPrerequisite Inherit="False" />
+            </recipeMaker>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "CE_Gun_MTwoFifty"
+                or defName = "CE_Gun_MFive"
+            ]/recipeMaker/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_BrutalWarfare</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "CE_Gun_KSTwentyThree"
+            ]
+        </xpath>
+        <value>
+            <recipeMaker>
+                <researchPrerequisite Inherit="False">DuneRef_BrutalWarfare</researchPrerequisite>
+            </recipeMaker>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Turret_TwelvePounder"
+                or defName = "Turret_12PounderBombard"
+                or defName = "Turret_OrganGun"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_MetalCasting</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "CE_Gun_TaurusJudge"
+            ]
+        </xpath>
+        <value>
+            <recipeMaker>
+                <researchPrerequisite Inherit="False">DuneRef_ReplaceableParts</researchPrerequisite>
+            </recipeMaker>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "CE_Gun_FNFiveSeven"
+                or defName = "CE_Gun_SRTweintyFive"
+                or defName = "CE_Gun_SRS"
+                or defName = "CE_Gun_AKSSeventyFourU"
+                or defName = "CE_ATFour"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False">DuneRef_ReplaceableParts</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <!-- Removing items I've designated as superfluous -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "CE_Gun_AVB"
+                or defName = "CE_Gun_AKTwelve"
+                or defName = "CE_Gun_AK74GL"
+                or defName = "CE_Gun_DPtwentySeven"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "CE_Gun_AVB"
+                or defName = "CE_Gun_AKTwelve"
+                or defName = "CE_Gun_AK74GL"
+                or defName = "CE_Gun_DPtwentySeven"
+            ]/recipeMaker
+        </xpath>
+        <value>
+            <recipeUsers Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Turret_12PounderBombard"
+                or defName = "Turret_TwelvePounder"
+                or defName = "Turret_SPGNine"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Turret_12PounderBombard"
+                or defName = "Turret_SPGNine"
+            ]/designationCategory
+        </xpath>
+        <value>
+            <designationCategory Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Turret_TwelvePounder"
+            ]
+        </xpath>
+        <value>
+            <designationCategory Inherit="False" />
+        </value>
+    </Operation>
+
+</Patch>

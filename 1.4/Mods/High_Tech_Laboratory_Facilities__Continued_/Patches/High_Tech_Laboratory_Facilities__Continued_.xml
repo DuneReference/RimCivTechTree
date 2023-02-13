@@ -93,4 +93,233 @@
         </xpath>
     </Operation>
 
+    <!-- CE Patches -->
+
+    <!-- X-1 Cybernetic Body Defense Suit -->
+    <!-- Based around being like CE's patch for Trooper Armor, but 1.5x better in every field I change her-->
+    
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "Apparel_CyberSuit"]/statBases/Mass</xpath>
+        <value>
+            <Bulk>27</Bulk>
+            <WornBulk>4</WornBulk>
+            <Mass>13</Mass>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "Apparel_CyberSuit"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>21</ArmorRating_Sharp>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "Apparel_CyberSuit"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>42</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "Apparel_CyberSuit"]/statBases</xpath>
+        <value>
+            <Flammability>0.17</Flammability>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "Apparel_CyberSuit"]/statBases/MaxHitPoints</xpath>
+        <value>
+            <MaxHitPoints>600</MaxHitPoints>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "Apparel_CyberSuit"]/apparel/bodyPartGroups</xpath>
+        <value>
+            <li>Neck</li>
+            <li>Feet</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Apparel_CyberSuit"]</xpath>
+        <value>
+            <li Class="CombatExtended.PartialArmorExt">
+                <stats>
+                    <li>
+                        <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+                        <parts>
+                            <li>Neck</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+                        <parts>
+                            <li>Neck</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+                        <parts>
+                            <li>Leg</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+                        <parts>
+                            <li>Leg</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+                        <parts>
+                            <li>Arm</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+                        <parts>
+                            <li>Arm</li>
+                        </parts>
+                    </li>
+                </stats>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- XMA-1 "Leviathan" Mechanized Combat Armature -->
+    <!-- Based around being like CE's patch for Cataphract Armor, but 1.5x better in every field I change her-->
+    
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "Apparel_Leviathan"]/statBases/Mass</xpath>
+        <value>
+            <Bulk>67</Bulk>
+            <WornBulk>10</WornBulk>
+            <Mass>53</Mass>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "Apparel_Leviathan"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>42</ArmorRating_Sharp>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "Apparel_Leviathan"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>90</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "Apparel_Leviathan"]/statBases</xpath>
+        <value>
+            <Flammability>0</Flammability>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "Apparel_Leviathan"]/statBases/MaxHitPoints</xpath>
+        <value>
+            <MaxHitPoints>900</MaxHitPoints>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "Apparel_Leviathan"]/apparel/bodyPartGroups</xpath>
+        <value>
+            <li>Feet</li>
+            <li>Hands</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Apparel_Leviathan"]</xpath>
+        <value>
+            <li Class="CombatExtended.PartialArmorExt">
+                <stats>		  				  
+                    <li>
+                      <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+                      <parts>
+                          <li>Hand</li>
+                      </parts>
+                    </li>
+                    <li>
+                      <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+                      <parts>
+                          <li>Hand</li>
+                      </parts>
+                    </li>
+                </stats>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- XMA-1 "Leviathan" MCA Helmet -->
+    <!-- Based around being like CE's patch for Cataphract Helmet, but 1.5x better in every field I change her-->
+    
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "Apparel_LeviathanH"]/statBases/Mass</xpath>
+        <value>
+            <Bulk>4</Bulk>
+            <WornBulk>0.7</WornBulk>
+            <Mass>4.4</Mass>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "Apparel_LeviathanH"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>33</ArmorRating_Sharp>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "Apparel_LeviathanH"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>75</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "Apparel_LeviathanH"]/statBases/MaxHitPoints</xpath>
+        <value>
+            <MaxHitPoints>390</MaxHitPoints>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "Apparel_LeviathanH"]/apparel/layers</xpath>
+        <value>
+            <li>OnHead</li>
+            <li>StrappedHead</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Apparel_LeviathanH"]</xpath>
+        <value>
+            <li Class="CombatExtended.PartialArmorExt">
+                <stats>
+                    <li>
+                        <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+                        <parts>
+                            <li>Eye</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+                        <parts>
+                            <li>Eye</li>
+                        </parts>
+                    </li>
+                </stats>
+            </li>
+        </value>
+    </Operation>
+
 </Patch>

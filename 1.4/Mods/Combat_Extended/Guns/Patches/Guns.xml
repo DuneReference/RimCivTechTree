@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "CE_Artillery_Howitzer"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_AdvancedBallistics</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "CE_Gun_Crossbow"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False">DuneRef_MilitaryEngineering</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "CE_Gun_RPGSeven"
+                or defName = "CE_Gun_PTRS"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False">DuneRef_BrutalWarfare</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "CE_Gun_AKM"
+                or defName = "CE_Gun_MTwoFourNine"
+                or defName = "CE_Gun_MilkorMGL"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False">DuneRef_ReplaceableParts</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "CE_Gun_Flamethrower"
+            ]/recipeMaker
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Combustion</li>
+                <li>DuneRef_ReplaceableParts</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "CE_Gun_Flamethrower"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False"></researchPrerequisite>
+        </value>
+    </Operation>
+
+    <!-- Removing items I've designated as superfluous -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "CE_Gun_Crossbow"
+                or defName = "CE_Gun_WinchesterNintyFour"
+                or defName = "CE_Gun_HecateTwo"
+                or defName = "CE_Gun_SVD"
+                or defName = "CE_Gun_MSixty"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                    defName = "CE_Gun_Crossbow"
+            ]/recipeMaker/recipeUsers
+        </xpath>
+        <value>
+            <recipeUsers Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "CE_Gun_SWGovernor"
+            ]
+        </xpath>
+        <value>
+            <recipeMaker>
+                <researchPrerequisite Inherit="False" />
+                <recipeUsers Inherit="False" />
+            </recipeMaker>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "CE_Gun_WinchesterNintyFour"
+                or defName = "CE_Gun_HecateTwo"
+                or defName = "CE_Gun_SVD"
+                or defName = "CE_Gun_MSixty"
+            ]/recipeMaker
+        </xpath>
+        <value>
+            <recipeUsers Inherit="False" />
+        </value>
+    </Operation>
+
+</Patch>

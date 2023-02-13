@@ -107,4 +107,34 @@
         </nomatch>
     </Operation>
 
+    <!-- Removing items I've designated as superfluous -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VAE_Footwear_PlateBoots"
+                or defName = "VAE_Handwear_PlateGloves"
+                or defName = "VAE_Apparel_PlateHelmet"
+                or defName = "VAE_Apparel_Gambeson"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VAE_Footwear_PlateBoots"
+                or defName = "VAE_Handwear_PlateGloves"
+                or defName = "VAE_Apparel_PlateHelmet"
+                or defName = "VAE_Apparel_Gambeson"
+            ]/recipeMaker/recipeUsers
+        </xpath>
+        <value>
+            <recipeUsers Inherit="False" />
+        </value>
+    </Operation>
+
 </Patch>

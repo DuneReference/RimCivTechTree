@@ -308,7 +308,7 @@
             ]/recipeMaker/researchPrerequisite
         </xpath>
         <value>
-            <researchPrerequisite Inherit='False'>DuneRef_ReplaceableParts</researchPrerequisite>
+            <researchPrerequisite Inherit='False'>DuneRef_Rifling</researchPrerequisite>
         </value>
     </Operation>
 

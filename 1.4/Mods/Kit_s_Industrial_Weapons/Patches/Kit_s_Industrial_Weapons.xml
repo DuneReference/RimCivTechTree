@@ -55,4 +55,47 @@
         </nomatch>
     </Operation>
 
+    <!-- Moving Individual items to different techs -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "KIT_Gun_PrecisionLMG"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False">DuneRef_ReplaceableParts</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <!-- Removing items I've designated as superfluous -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "KIT_Gun_SemiAutomaticPistol"
+                or defName = "KIT_Gun_AntiqueSniperRifle"
+                or defName = "KIT_Gun_BayonetRifle"
+                or defName = "KIT_Gun_BoltSMG"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "KIT_Gun_SemiAutomaticPistol"
+                or defName = "KIT_Gun_AntiqueSniperRifle"
+                or defName = "KIT_Gun_BayonetRifle"
+                or defName = "KIT_Gun_BoltSMG"
+            ]/recipeMaker/recipeUsers
+        </xpath>
+        <value>
+            <recipeUsers Inherit="False" />
+        </value>
+    </Operation>
+
 </Patch>

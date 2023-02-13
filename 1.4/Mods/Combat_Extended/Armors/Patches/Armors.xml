@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+    <!-- Moving Individual items to different techs -->
+
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
@@ -37,6 +39,30 @@
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_ReplaceableParts</li>
             </researchPrerequisites>
+        </value>
+    </Operation>
+    
+    <!-- Removing items I've designated as superfluous -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                    defName = "CE_Armor_Balaclava"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                    defName = "CE_Armor_Balaclava"
+            ]/recipeMaker
+        </xpath>
+        <value>
+            <recipeUsers Inherit="False" />
         </value>
     </Operation>
     

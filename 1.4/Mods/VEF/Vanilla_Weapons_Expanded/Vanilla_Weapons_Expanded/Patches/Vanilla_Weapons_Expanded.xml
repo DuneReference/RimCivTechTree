@@ -227,6 +227,17 @@
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
+                    defName = "VWE_Gun_LeverActionRifle"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False">DuneRef_ReplaceableParts</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
                    defName = "VWE_FlashGrenade"
                 or defName = "VWE_SmokeGrenade"
                 or defName = "VWE_Gun_FireExtinguisher"
@@ -250,20 +261,6 @@
         </value>
     </Operation>
 
-    <!-- Remove this halberd because the combat extended melee halberd with the same name is just better-->
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Combat Extended</li>
-        </mods>
-        <match Class="PatchOperationRemove">
-            <xpath>
-                Defs/ThingDef[
-                       defName = "VWE_MeleeWeapon_Halberd"
-                ]/recipeMaker
-            </xpath>
-        </match>
-    </Operation>
-
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
@@ -274,6 +271,92 @@
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_Weaponry</li>
             </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VWE_CombatHandgun"
+                or defName = "VWE_Gun_HMG"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False">DuneRef_ReplaceableParts</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <!-- Remove this halberd because the combat extended melee halberd with the same name is just better-->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <match Class="PatchOperationRemove">
+            <xpath>
+                Defs/ThingDef[
+                        defName = "VWE_MeleeWeapon_Halberd"
+                ]/recipeMaker
+            </xpath>
+        </match>
+    </Operation>
+
+    <!-- Removing items I've designated as superfluous -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VWE_Bow_Long"
+                or defName = "VWE_Bow_Crossbow"
+                or defName = "VWE_Gun_Musket"
+                or defName = "VWE_Gun_Flintlock"
+                or defName = "VWE_Gun_HandCannon"
+                or defName = "VWE_Gun_ChargePistol"
+                or defName = "VWE_Gun_LeverActionRifle"
+                or defName = "VWE_Gun_AntiMaterialRifle"
+                or defName = "VWE_Gun_MarksmanRifle"
+                or defName = "VWE_Gun_ChargeSniperRifle"
+                or defName = "VWE_Gun_BattleRifle"
+                or defName = "VWE_Gun_ServiceRifle"
+                or defName = "VWE_Gun_LightSMG" 
+                or defName = "VWE_Gun_SMG"
+                or defName = "VWE_Gun_ChargeSMG"
+                or defName = "VWE_SawedOffShotgun"
+                or defName = "VWE_Gun_ChargeShotgun"
+                or defName = "VWE_Gun_ChargeLMG"
+                or defName = "VWE_Gun_GrenadeLauncher"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VWE_Bow_Long"
+                or defName = "VWE_Bow_Crossbow"
+                or defName = "VWE_Gun_Musket"
+                or defName = "VWE_Gun_Flintlock"
+                or defName = "VWE_Gun_HandCannon"
+                or defName = "VWE_Gun_ChargePistol"
+                or defName = "VWE_Gun_LeverActionRifle"
+                or defName = "VWE_Gun_AntiMaterialRifle"
+                or defName = "VWE_Gun_MarksmanRifle"
+                or defName = "VWE_Gun_ChargeSniperRifle"
+                or defName = "VWE_Gun_BattleRifle"
+                or defName = "VWE_Gun_ServiceRifle"
+                or defName = "VWE_Gun_LightSMG"
+                or defName = "VWE_Gun_SMG"
+                or defName = "VWE_Gun_ChargeSMG"
+                or defName = "VWE_SawedOffShotgun"
+                or defName = "VWE_Gun_ChargeShotgun"
+                or defName = "VWE_Gun_ChargeLMG"
+                or defName = "VWE_Gun_GrenadeLauncher"
+            ]/recipeMaker/recipeUsers
+        </xpath>
+        <value>
+            <recipeUsers Inherit="False" />
         </value>
     </Operation>
 

@@ -1016,6 +1016,19 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_MeleeWeapon_WoodcuttersAxe"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_BattleTactics</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
     <!-- Column 7 -->
 
     <Operation Class="PatchOperationAdd">
@@ -1146,6 +1159,20 @@
         <value>
             <researchPrerequisites Inherit="False">
                 <li>DuneRef_MilitaryEngineering</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_MeleeWeapon_TwoHandedMallet"
+                or defName = "DankPyon_MeleeWeapon_MorningStar"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_MilitaryTactics</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -1282,6 +1309,94 @@
                     </linkableFacilities>
                 </li>
             </comps>
+        </value>
+    </Operation>
+
+    <!-- Removing items I've designated as superfluous -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_MeleeWeapon_Longaxe"
+                or defName = "DankPyon_MeleeWeapon_ArmingSword"
+                or defName = "DankPyon_MeleeWeapon_Longsword"
+                or defName = "DankPyon_MeleeWeapon_NomadMace"
+                or defName = "DankPyon_MeleeWeapon_TwoHandedFlangedMace"
+                or defName = "DankPyon_MeleeWeapon_HookedBlade"
+                or defName = "DankPyon_MeleeWeapon_Pitchfork"
+                or defName = "DankPyon_MeleeWeapon_BoarSpear"
+                or defName = "DankPyon_MeleeWeapon_Swordlance"
+                or defName = "Dankpyon_Apparel_Gambeson"
+                or defName = "DankPyon_MeleeWeapon_Halberd"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Headgear_Armet"
+            ]/recipeMaker/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_MeleeWeapon_Longaxe"
+                or defName = "DankPyon_MeleeWeapon_ArmingSword"
+                or defName = "DankPyon_MeleeWeapon_Longsword"
+                or defName = "DankPyon_MeleeWeapon_NomadMace"
+                or defName = "DankPyon_MeleeWeapon_TwoHandedFlangedMace"
+                or defName = "DankPyon_MeleeWeapon_HookedBlade"
+                or defName = "DankPyon_MeleeWeapon_Pitchfork"
+                or defName = "DankPyon_MeleeWeapon_BoarSpear"
+                or defName = "DankPyon_MeleeWeapon_Swordlance"
+                or defName = "Dankpyon_Apparel_Gambeson"
+                or defName = "DankPyon_MeleeWeapon_Halberd"
+            ]/recipeMaker
+        </xpath>
+        <value>
+            <recipeUsers Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Headgear_Armet"
+            ]/recipeMaker/recipeUsers
+        </xpath>
+        <value>
+            <recipeUsers Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Turret_Ballista"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "DankPyon_Turret_Ballista"
+            ]/designationCategory
+        </xpath>
+        <value>
+            <designationCategory Inherit="False" />
         </value>
     </Operation>
 

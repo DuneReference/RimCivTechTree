@@ -141,4 +141,30 @@
         </value>
     </Operation>
 
+    <!-- Removing items I've designated as superfluous -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFES_Gun_HuntingRifle"
+                or defName = "VFES_Headgear_Sombrero"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFES_Gun_HuntingRifle"
+                or defName = "VFES_Headgear_Sombrero"
+            ]/recipeMaker/recipeUsers
+        </xpath>
+        <value>
+            <recipeUsers Inherit="False" />
+        </value>
+    </Operation>
+
 </Patch>

@@ -69,6 +69,8 @@
         </nomatch>
     </Operation>
 
+    <!-- Moving Individual items to different techs -->
+
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
@@ -78,7 +80,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_AdvancedBallistics</li>
+                <li>DuneRef_BrutalWarfare</li>
             </researchPrerequisites>
         </value>
     </Operation>
@@ -106,6 +108,29 @@
                 <li>DuneRef_Composites</li>
                 <li>DuneRef_Computers</li>
             </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VWE_Gun_Autocannon"
+                or defName = "VWE_Gun_UraniumSlugRifle"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False">DuneRef_GuidanceSystems</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VWE_Gun_SwarmMissileLauncher"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False">DuneRef_BrutalWarfare</researchPrerequisite>
         </value>
     </Operation>
 

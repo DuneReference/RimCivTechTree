@@ -184,4 +184,42 @@
         </value>
     </Operation>
 
+        <!-- Removing items I've designated as superfluous -->
+    
+        <Operation Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "FT_Turret_Mortar"
+                ]
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False" />
+            </value>
+        </Operation>
+
+        <Operation Class="PatchOperationReplace">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "FT_VFES_Turret_Artillery"
+                    or defName = "FT_TurretPrince"
+                ]/researchPrerequisites
+            </xpath>
+            <value>
+                <researchPrerequisites Inherit="False" />
+            </value>
+        </Operation>
+    
+        <Operation Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "FT_Turret_Mortar"
+                    or defName = "FT_VFES_Turret_Artillery"
+                    or defName = "FT_TurretPrince"
+                ]
+            </xpath>
+            <value>
+                <designationCategory Inherit="False" />
+            </value>
+        </Operation>
+
 </Patch>

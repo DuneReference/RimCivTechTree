@@ -1584,6 +1584,40 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Gun_AssaultRifle"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False">DuneRef_ReplaceableParts</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Gun_MachinePistol"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False">DuneRef_Rifling</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <!-- TODO: Patch for only vanilla, some mod is adding the recipemaker here -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Gun_DoomsdayRocket"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False">DuneRef_BrutalWarfare</researchPrerequisite>
+        </value>
+    </Operation>
+
     <!-- Fix bench recipes -->
 
     <Operation Class="PatchOperationFindMod">
@@ -1735,6 +1769,68 @@
                 <li>DankPyon_QuenchingBucket</li>
             </value>
         </match>
+    </Operation>
+
+    <!-- Removing items I've designated as superfluous -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "MeleeWeapon_Gladius"
+                or defName = "MeleeWeapon_Mace"
+                or defName = "MeleeWeapon_Ikwa"
+            ]/recipeMaker/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Gun_Revolver"
+                or defName = "Gun_Autopistol"
+                or defName = "Gun_SniperRifle"
+                or defName = "Gun_LMG"
+                or defName = "Apparel_FlakVest"
+                or defName = "Bow_Recurve"
+                or defName = "Bow_Great"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "MeleeWeapon_Gladius"
+                or defName = "MeleeWeapon_Mace"
+                or defName = "MeleeWeapon_Ikwa"
+                or defName = "Gun_Revolver"
+                or defName = "Gun_Autopistol"
+                or defName = "Gun_SniperRifle"
+                or defName = "Gun_LMG"
+                or defName = "Apparel_FlakVest"
+            ]/recipeMaker
+        </xpath>
+        <value>
+            <recipeUsers Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "Bow_Recurve"
+                or defName = "Bow_Great"
+            ]/recipeMaker/recipeUsers
+        </xpath>
+        <value>
+            <recipeUsers Inherit="False" />
+        </value>
     </Operation>
 
 </Patch>

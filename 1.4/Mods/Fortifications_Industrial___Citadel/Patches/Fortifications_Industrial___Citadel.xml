@@ -84,5 +84,27 @@
             </researchPrerequisites>
         </value>
     </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                    defName = "FTC_Autocannon_Turret"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                    defName = "FTC_Autocannon_Turret"
+            ]
+        </xpath>
+        <value>
+            <designationCategory Inherit="False" />
+        </value>
+    </Operation>
     
 </Patch>

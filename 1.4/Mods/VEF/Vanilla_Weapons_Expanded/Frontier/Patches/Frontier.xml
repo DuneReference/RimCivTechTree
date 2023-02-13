@@ -33,4 +33,105 @@
         </value>
     </Operation>
 
+    <!-- Moving Individual items to different techs -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                    defName = "VWEFT_Gun_HandheldGatlingGun"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False">DuneRef_ReplaceableParts</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <!-- Removing items I've designated as superfluous -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VWEFT_Gun_HeavyRevolver"
+                or defName = "VWEFT_Gun_VolcanicPistol"
+                or defName = "VWEFT_Gun_Derringer"
+                or defName = "VWEFT_Gun_RepeatingShotgun"
+            ]/recipeMaker/researchPrerequisite
+        </xpath>
+        <value>
+            <researchPrerequisite Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded - Coilguns</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "VWEFT_Gun_GaussRevolver"
+                ]
+            </xpath>
+            <value>
+                <recipeMaker>
+                    <researchPrerequisite Inherit="False" />
+                </recipeMaker>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded - Laser</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "VWEFT_Gun_SalvagedLaserRevolver"
+                    or defName = "VWEFT_Gun_SalvagedLaserHuntingRifle"
+                    or defName = "VWEFT_Gun_SalvagedLaserRepeater"
+                ]
+            </xpath>
+            <value>
+                <recipeMaker>
+                    <researchPrerequisite Inherit="False" />
+                </recipeMaker>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VWEFT_Gun_HeavyRevolver"
+                or defName = "VWEFT_Gun_VolcanicPistol"
+                or defName = "VWEFT_Gun_Derringer"
+                or defName = "VWEFT_Gun_SalvagedLaserRevolver"
+                or defName = "VWEFT_Gun_GaussRevolver"
+                or defName = "VWEFT_Gun_SalvagedLaserHuntingRifle"
+                or defName = "VWEFT_Gun_SalvagedLaserRepeater"
+                or defName = "VWEFT_Gun_RepeatingShotgun"
+            ]/recipeMaker
+        </xpath>
+        <value>
+            <recipeUsers Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded - Coilguns</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>
+                Defs/ThingDef[
+                       defName = "VWEFT_Gun_GaussRevolver"
+                ]/recipeMaker
+            </xpath>
+            <value>
+                <recipeUsers Inherit="False" />
+            </value>
+        </match>
+    </Operation>
+
 </Patch>

@@ -121,23 +121,10 @@
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/ThingDef[
-                   defName = "VFE_TailorCabinet"
-                or defName = "VFE_SmithyCabinet"
-            ]/researchPrerequisites
-        </xpath>
-        <value>
-            <researchPrerequisites Inherit="False">
-                <li>DuneRef_Industrialization</li>
-            </researchPrerequisites>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationReplace">
-        <xpath>
-            Defs/ThingDef[
                    defName = "VFE_MachiningCabinet"
                 or defName = "VFE_TailorCabinet"
                 or defName = "VFE_FabricationCabinet"
+                or defName = "VFE_SmithyCabinet"
             ]/researchPrerequisites
         </xpath>
         <value>
@@ -158,7 +145,7 @@
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_Robotics</li>
+                <li>DuneRef_Computers</li>
             </researchPrerequisites>
         </value>
     </Operation>

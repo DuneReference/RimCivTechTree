@@ -287,23 +287,6 @@
         </value>
     </Operation>
 
-    <!-- 
-        Remove scorpion from architet menu if medieval overhaul is on.
-        has it's own version that's better integrated and has same combat stats.
-    -->
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Medieval Overhaul</li>
-        </mods>
-        <match Class="PatchOperationRemove">
-            <xpath>
-                Defs/ThingDef[
-                        defName = "VFEC_Turret_Scorpion"
-                ]/designationCategory
-            </xpath>
-        </match>
-    </Operation>
-
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Medieval Overhaul</li>
@@ -499,6 +482,30 @@
                 <li>DankPyon_ToolRack</li>
             </value>
         </match>
+    </Operation>
+
+    <!-- Removing items I've designated as superfluous -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                   defName = "VFEC_Turret_Scorpion"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[
+                    defName = "VFEC_Turret_Scorpion"
+            ]/designationCategory
+        </xpath>
+        <value>
+            <designationCategory Inherit="False" />
+        </value>
     </Operation>
 
 </Patch>
