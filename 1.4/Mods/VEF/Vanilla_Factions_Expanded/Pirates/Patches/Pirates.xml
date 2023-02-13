@@ -155,62 +155,86 @@
     <Operation Class="PatchOperationReplace">
         <xpath>
             Defs/VFEPirates.WarcasketDef[
+                   defName = "VFEP_Warcasket_Cataphract"
+                or defName = "VFEP_WarcasketHelmet_Cataphract"
+                or defName = "VFEP_WarcasketShoulders_Cataphract"
+                or defName = "VFEP_Warcasket_Recon"
+                or defName = "VFEP_WarcasketHelmet_Recon"
+                or defName = "VFEP_WarcasketShoulders_Recon"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_Shields</li>
+                <li>DuneRef_BrutalWarfare</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/VFEPirates.WarcasketDef[
+                   defName = "VFEP_Warcasket_Marine"
+                or defName = "VFEP_WarcasketHelmet_Marine"
+                or defName = "VFEP_WarcasketShoulders_Marine"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_GuidanceSystems</li>
+                <li>DuneRef_BrutalWarfare</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/VFEPirates.WarcasketDef[
                    defName = "VFEP_Warcasket_Barrage"
                 or defName = "VFEP_WarcasketHelmet_Barrage"
                 or defName = "VFEP_WarcasketShoulders_Barrage"
-            ]/researchPrerequisites
-        </xpath>
-        <value>
-            <researchPrerequisites Inherit="False">
-                <li>DuneRef_Composites</li>
-                <li>DuneRef_BrutalWarfare</li>
-            </researchPrerequisites>
-        </value>
-    </Operation>
-
-        <Operation Class="PatchOperationReplace">
-        <xpath>
-            Defs/VFEPirates.WarcasketDef[
-                   defName = "VFEP_Warcasket_Aerial"
+                or defName = "VFEP_Warcasket_Aerial"
                 or defName = "VFEP_WarcasketHelmet_Aerial"
                 or defName = "VFEP_WarcasketShoulders_Aerial"
-            ]/researchPrerequisites
-        </xpath>
-        <value>
-            <researchPrerequisites Inherit="False">
-                <li>DuneRef_Rocketry</li>
-                <li>DuneRef_BrutalWarfare</li>
-            </researchPrerequisites>
-        </value>
-    </Operation>
-
-        <Operation Class="PatchOperationReplace">
-        <xpath>
-            Defs/VFEPirates.WarcasketDef[
-                   defName = "VFEP_Warcasket_Hazard"
+                or defName = "VFEP_Warcasket_Hazard"
                 or defName = "VFEP_WarcasketHelmet_Hazard"
                 or defName = "VFEP_WarcasketShoulders_Hazard"
-            ]/researchPrerequisites
-        </xpath>
-        <value>
-            <researchPrerequisites Inherit="False">
-                <li>DuneRef_Chemistry</li>
-                <li>DuneRef_BrutalWarfare</li>
-            </researchPrerequisites>
-        </value>
-    </Operation>
-
-        <Operation Class="PatchOperationReplace">
-        <xpath>
-            Defs/VFEPirates.WarcasketDef[
-                   defName = "VFEP_Warcasket_Shock"
+                or defName = "VFEP_Warcasket_Shock"
                 or defName = "VFEP_WarcasketHelmet_Shock"
                 or defName = "VFEP_WarcasketShoulders_Shock"
             ]/researchPrerequisites
         </xpath>
         <value>
             <researchPrerequisites Inherit="False">
-                <li>DuneRef_GuidanceSystems</li>
+                <li>DuneRef_PredictiveSystems</li>
+                <li>DuneRef_BrutalWarfare</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/VFEPirates.WarcasketDef[
+                   defName = "VFEP_Warcasket_Brute"
+                or defName = "VFEP_WarcasketHelmet_Brute"
+                or defName = "VFEP_WarcasketShoulders_Brute"
+                or defName = "VFEP_Warcasket_Controller"
+                or defName = "VFEP_WarcasketHelmet_Controller"
+                or defName = "VFEP_WarcasketShoulders_Controller"
+                or defName = "VFEP_Warcasket_Guardian"
+                or defName = "VFEP_WarcasketHelmet_Guardian"
+                or defName = "VFEP_WarcasketShoulders_Guardian"
+                or defName = "VFEP_Warcasket_Sarcophagus"
+                or defName = "VFEP_WarcasketHelmet_Sarcophagus"
+                or defName = "VFEP_WarcasketShoulders_Sarcophagus"
+                or defName = "VFEP_Warcasket_Siegebreaker"
+                or defName = "VFEP_WarcasketHelmet_Siegebreaker"
+                or defName = "VFEP_WarcasketShoulders_Siegebreaker"
+            ]/researchPrerequisites
+        </xpath>
+        <value>
+            <researchPrerequisites Inherit="False">
+                <li>DuneRef_AdvancedShields</li>
                 <li>DuneRef_BrutalWarfare</li>
             </researchPrerequisites>
         </value>
